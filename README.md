@@ -13,7 +13,8 @@ a template for android with gradle
 * SDK with Build Tools 17.0.0 (released 5/16/2013)
 
 ##HOW TO
-Learn how to develop with IntelliJ/Android Studio and Gradle. Watch the how to video
+Learn how to develop with IntelliJ/Android Studio and Gradle.
+[http://snowdream.github.io/blog/android/2013/12/25/how-to-develop-with-android-gradle-template/](http://snowdream.github.io/blog/android/2013/12/25/how-to-develop-with-android-gradle-template/)
 
 ##Gradle Plugin User Guide
 [http://tools.android.com/tech-docs/new-build-system/user-guide](http://tools.android.com/tech-docs/new-build-system/user-guide)
