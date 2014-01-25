@@ -56,7 +56,7 @@ if (ext.properties.containsKey('signing.keyId') &&
 }
 
 if (!ext.properties.containsKey('nexusUsername')) {
-    if (System.console()) {
+    if (System.console() != null) {
         ext.set('nexusUsername', new String(System.console().readPassword(
                 "\n\$ Type in username for Sonatype nexus account ${nexusUsername}: ")))
     } else {
@@ -65,7 +65,7 @@ if (!ext.properties.containsKey('nexusUsername')) {
 }
 
 if (!ext.properties.containsKey('nexusPassword')) {
-    if (System.console()) {
+    if (System.console() != null) {
         ext.set('nexusPassword', new String(System.console().readPassword(
                 "\n\$ Type in password for Sonatype nexus account ${nexusUsername}: ")))
     } else {
