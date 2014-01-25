@@ -3,6 +3,10 @@ jdk: oraclejdk7
 env:
   matrix:
     - ANDROID_SDKS=android-19,sysimg-19  ANDROID_TARGET=android-19  ANDROID_ABI=armeabi-v7a
+  global:
+    - secure: HL+OKBCpGbFB3h/0p63b5zZokMedeHfDv8gbi6HIHfoKyfxsLYZvoksEGnaeUXxjBbfJ0FGgFWh98+WoxT7rZ86TLSHK7QTQeZlvBeNVrIfgC3d4kHP+XLyg50wYOe/9fRSk9Hfp6AGHRwqq2+7yY+t0Ra2oKip56cB51rsnEWU=
+    - secure: RbXqRIUZgZABfN2aMHJO5cBaMTMFR42m7kh7Wibz8kdeL792MoIjIZRvTeYYKlW+dSU+FDj2dceJEGtbSEFxa6OLNCigGetN9F8aWB6ohTNK1DB79x0OykuywQeSSBT9MZebu8H63/hjUu8M7pzKaQHS8JqdaBg03jX4G1xjCp4=
+
 before_install:
   # Install base Android SDK
   - sudo apt-get update -qq
