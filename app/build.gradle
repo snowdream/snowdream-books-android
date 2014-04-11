@@ -21,4 +21,5 @@ apply from: '../config/android.gradle'
 dependencies {
     compile project(':lib')
     compile 'com.android.support:appcompat-v7:+'
+    compile 'com.github.castorflex.smoothprogressbar:library:0.4.0'
 }
