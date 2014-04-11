@@ -19,6 +19,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-    </style>
+        <item name="android:windowNoTitle">true</item>
+</style>
 
 </resources>

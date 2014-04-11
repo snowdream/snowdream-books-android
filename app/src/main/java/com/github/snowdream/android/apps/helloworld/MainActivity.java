@@ -19,14 +19,8 @@ package com.github.snowdream.android.apps.helloworld;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-
-import com.github.snowdream.android.helloworld.HelloWorldLib;
+import android.view.*;
+import android.webkit.*;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -64,6 +58,14 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public boolean onKeyDown(int keyCoder,KeyEvent event){
+        if(webView.canGoBack() && keyCoder == KeyEvent.KEYCODE_BACK){
+            webview.goBack();   //goBack()表示返回webView的上一页面
+
+            return true;
+        }
+        return false;
+    }
     /**
      * A placeholder fragment containing a simple view.
      */
@@ -77,8 +79,21 @@ public class MainActivity extends ActionBarActivity {
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-            TextView text = (TextView)rootView.findViewById(R.id.content);
-            text.setText(HelloWorldLib.getHelloWorld());
+            WebView webView = (WebView)rootView.findViewById(R.id.webView);
+
+            WebSettings webSettings = webView.getSettings();
+            webSettings.setJavaScriptEnabled(true);
+            webSettings.setAllowFileAccess(true);
+            webSettings.setBuiltInZoomControls(true);
+            webView.loadUrl("http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/");
+
+            webView.setWebViewClient(new WebViewClient());
+            webView.setWebChromeClient(new WebChromeClient(){
+                @Override
+                public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
+                    return super.onJsAlert(view, url, message, result);
+                }
+            });
             return rootView;
         }
     }
