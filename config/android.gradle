@@ -62,9 +62,9 @@ android.applicationVariants.all { variant ->
     def apk = variant.packageApplication.outputFile;
     def newName = "";
 
-    newName = apk.name.replace(project.name, POM_NAME + "-v" + android.defaultConfig.versionName);
+    newName = apk.name.replace(project.name+"-", "");
     newName = newName.replace("-" + variant.buildType.name, "");
-    newName = newName.replace(".apk", "-" + variant.buildType.name.toLowerCase() + ".apk");
+   newName = newName.replace(".apk", "-" + variant.buildType.name.toLowerCase() + "-v" + android.defaultConfig.versionName+ ".apk");
 
     variant.packageApplication.outputFile = new File(apk.parentFile, newName);
     if (variant.zipAlign) {

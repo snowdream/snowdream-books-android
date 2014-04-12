@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.snowdream.android.apps.helloworld;
+package com.github.snowdream.android.app.books;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -79,7 +79,7 @@ public class MainActivity extends Activity{
             }
         });
 
-        webView.loadUrl("http://yanghui.qiniudn.com/javascript");
+        webView.loadUrl(BuildConfig.BOOK_URL);
     }
 
     @Override

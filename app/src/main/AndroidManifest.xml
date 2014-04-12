@@ -16,7 +16,7 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.snowdream.android.apps.helloworld"
+    package="com.github.snowdream.android.app.books"
     android:versionCode="1"
     android:versionName="1.0" >
 

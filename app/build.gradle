@@ -19,7 +19,26 @@ apply plugin: 'idea'
 apply from: '../config/android.gradle'
 
 dependencies {
-    compile project(':lib')
     compile 'com.android.support:appcompat-v7:+'
     compile 'com.github.castorflex.smoothprogressbar:library:0.4.0'
+}
+
+android {
+    productFlavors {
+        javascript {
+            packageName "com.github.snowdream.android.app.books.javascript"
+            buildConfigField "String", "BOOK_URL", "\"http://yanghui.qiniudn.com/javascript\""
+        }
+
+        Pro_Git{
+            packageName "com.github.snowdream.android.app.books.progit"
+            buildConfigField "String", "BOOK_URL", "\"http://gitbookio.github.io/git/\""
+        }
+
+        How_to_Make_a_Computer_Operating_System{
+            packageName "com.github.snowdream.android.app.books.howtomakeacomputeros"
+            buildConfigField "String", "BOOK_URL", "\"http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/\""
+        }
+
+    }
 }
