@@ -16,27 +16,71 @@
 
 package com.github.snowdream.android.apps.helloworld;
 
+import android.app.Activity;
+import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
-import android.view.*;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 import android.webkit.*;
+import fr.castorflex.android.smoothprogressbar.SmoothProgressBar;
 
 
-public class MainActivity extends ActionBarActivity {
-
+public class MainActivity extends Activity{
+    private  WebView webView = null;
+    private SmoothProgressBar progressbar =null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
+        initUI();
     }
 
+    private void initUI(){
+        setContentView(R.layout.activity_main);
+
+        webView = (WebView)findViewById(R.id.webView);
+        progressbar = (SmoothProgressBar)findViewById(R.id.progressbar);
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setAllowFileAccess(true);
+        webSettings.setSupportZoom(true);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setUseWideViewPort(true);
+        String appCachePath = getApplicationContext().getCacheDir().getAbsolutePath();
+        webSettings.setAppCachePath(appCachePath);
+        webSettings.setAppCacheEnabled(true);
+
+
+        webView.setWebViewClient(new WebViewClient(){
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                progressbar.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                progressbar.setVisibility(View.INVISIBLE);
+            }
+
+            @Override
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                super.onReceivedError(view, errorCode, description, failingUrl);
+                progressbar.setVisibility(View.INVISIBLE);
+            }
+        });
+        webView.setWebChromeClient(new WebChromeClient(){
+            @Override
+            public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
+                return super.onJsAlert(view, url, message, result);
+            }
+        });
+
+        webView.loadUrl("http://yanghui.qiniudn.com/javascript");
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -60,42 +104,11 @@ public class MainActivity extends ActionBarActivity {
 
     public boolean onKeyDown(int keyCoder,KeyEvent event){
         if(webView.canGoBack() && keyCoder == KeyEvent.KEYCODE_BACK){
-            webview.goBack();   //goBack()表示返回webView的上一页面
+            webView.goBack();
 
             return true;
         }
         return false;
-    }
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-
-            WebView webView = (WebView)rootView.findViewById(R.id.webView);
-
-            WebSettings webSettings = webView.getSettings();
-            webSettings.setJavaScriptEnabled(true);
-            webSettings.setAllowFileAccess(true);
-            webSettings.setBuiltInZoomControls(true);
-            webView.loadUrl("http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/");
-
-            webView.setWebViewClient(new WebViewClient());
-            webView.setWebChromeClient(new WebChromeClient(){
-                @Override
-                public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
-                    return super.onJsAlert(view, url, message, result);
-                }
-            });
-            return rootView;
-        }
     }
 
 }
