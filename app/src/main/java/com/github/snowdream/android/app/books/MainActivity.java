@@ -24,10 +24,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.*;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import fr.castorflex.android.smoothprogressbar.SmoothProgressBar;
 
 
 public class MainActivity extends Activity{
+    private static final String TEST_DEVICE_ID = "INSERT_YOUR_TEST_DEVICE_ID_HERE";
+  
     private  WebView webView = null;
     private SmoothProgressBar progressbar =null;
     @Override
@@ -80,6 +84,15 @@ public class MainActivity extends Activity{
         });
 
         webView.loadUrl(BuildConfig.BOOK_URL);
+        
+        
+    // The "loadAdOnCreate" and "testDevices" XML attributes no longer available.
+    AdView adView = (AdView) this.findViewById(R.id.adView);
+    AdRequest adRequest = new AdRequest.Builder()
+        .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+        .addTestDevice(TEST_DEVICE_ID)
+        .build();
+    adView.loadAd(adRequest);
     }
 
     @Override
