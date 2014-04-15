@@ -83,6 +83,13 @@ public class MainActivity extends Activity{
     }
 
     @Override
+    protected void onDestroy() {
+        webView.stopLoading();
+        webView.destroy();
+        super.onDestroy();
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         
         // Inflate the menu; this adds items to the action bar if it is present.

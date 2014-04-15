@@ -25,9 +25,9 @@ dependencies {
 
 android {
     productFlavors {
-        javascript {
+        Learn_JavaScript{
             packageName "com.github.snowdream.android.app.books.javascript"
-            buildConfigField "String", "BOOK_URL", "\"http://yanghui.qiniudn.com/javascript\""
+            buildConfigField "String", "BOOK_URL", "\"http://gitbookio.github.io/javascript\""
         }
 
         Pro_Git{
