@@ -51,6 +51,7 @@ public class MainActivity extends Activity{
         webSettings.setAllowFileAccess(true);
         webSettings.setSupportZoom(true);
         webSettings.setBuiltInZoomControls(true);
+        webSettings.setRenderPriority(WebSettings.RenderPriority.HIGH);
         webSettings.setUseWideViewPort(true);
         String appCachePath = getApplicationContext().getCacheDir().getAbsolutePath();
         webSettings.setAppCachePath(appCachePath);

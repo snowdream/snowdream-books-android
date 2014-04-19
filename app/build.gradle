@@ -28,7 +28,7 @@ android {
     productFlavors {
         Learn_JavaScript{
             packageName "com.github.snowdream.android.app.books.javascript"
-            buildConfigField "String", "BOOK_URL", "\"http://gitbookio.github.io/javascript\""
+            buildConfigField "String", "BOOK_URL", "\"file:///android_asset/index.html\""
         }
 
         Pro_Git{
