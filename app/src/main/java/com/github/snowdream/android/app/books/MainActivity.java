@@ -18,6 +18,7 @@ package com.github.snowdream.android.app.books;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -28,23 +29,26 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import fr.castorflex.android.smoothprogressbar.SmoothProgressBar;
 
+import java.io.*;
 
-public class MainActivity extends Activity{
+
+public class MainActivity extends Activity {
     private static final String TEST_DEVICE_ID = "INSERT_YOUR_TEST_DEVICE_ID_HERE";
-  
-    private  WebView webView = null;
-    private SmoothProgressBar progressbar =null;
+
+    private WebView webView = null;
+    private SmoothProgressBar progressbar = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initUI();
     }
 
-    private void initUI(){
+    private void initUI() {
         setContentView(R.layout.activity_main);
 
-        webView = (WebView)findViewById(R.id.webView);
-        progressbar = (SmoothProgressBar)findViewById(R.id.progressbar);
+        webView = (WebView) findViewById(R.id.webView);
+        progressbar = (SmoothProgressBar) findViewById(R.id.progressbar);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setDomStorageEnabled(true);
@@ -56,9 +60,12 @@ public class MainActivity extends Activity{
         String appCachePath = getApplicationContext().getCacheDir().getAbsolutePath();
         webSettings.setAppCachePath(appCachePath);
         webSettings.setAppCacheEnabled(true);
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN){
+            webSettings.setAllowUniversalAccessFromFileURLs(true);
+            webSettings.setAllowFileAccessFromFileURLs(true);
+        }
 
-
-        webView.setWebViewClient(new WebViewClient(){
+        webView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 super.onPageStarted(view, url, favicon);
@@ -77,23 +84,28 @@ public class MainActivity extends Activity{
                 progressbar.setVisibility(View.INVISIBLE);
             }
         });
-        webView.setWebChromeClient(new WebChromeClient(){
+        webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
                 return super.onJsAlert(view, url, message, result);
             }
         });
 
-        webView.loadUrl(BuildConfig.BOOK_URL);
-        
-        
-    // The "loadAdOnCreate" and "testDevices" XML attributes no longer available.
-    AdView adView = (AdView) this.findViewById(R.id.adView);
-    AdRequest adRequest = new AdRequest.Builder()
-        .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-        .addTestDevice(TEST_DEVICE_ID)
-        .build();
-    adView.loadAd(adRequest);
+        if (URLUtil.isNetworkUrl(BuildConfig.BOOK_URL)) {
+            webView.loadUrl(BuildConfig.BOOK_URL);
+        } else {
+            String html = getHTMLDataBuffer(BuildConfig.BOOK_URL);
+            webView.loadDataWithBaseURL("file:///android_asset/", html, "text/html", "UTF-8", null);
+        }
+
+
+        // The "loadAdOnCreate" and "testDevices" XML attributes no longer available.
+        AdView adView = (AdView) this.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice(TEST_DEVICE_ID)
+                .build();
+        adView.loadAd(adRequest);
     }
 
     @Override
@@ -105,7 +117,7 @@ public class MainActivity extends Activity{
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        
+
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
@@ -123,8 +135,8 @@ public class MainActivity extends Activity{
         return super.onOptionsItemSelected(item);
     }
 
-    public boolean onKeyDown(int keyCoder,KeyEvent event){
-        if(webView.canGoBack() && keyCoder == KeyEvent.KEYCODE_BACK){
+    public boolean onKeyDown(int keyCoder, KeyEvent event) {
+        if (webView.canGoBack() && keyCoder == KeyEvent.KEYCODE_BACK) {
             webView.goBack();
 
             return true;
@@ -132,4 +144,41 @@ public class MainActivity extends Activity{
         return false;
     }
 
+    private String getHTMLDataBuffer(String url) {
+        InputStream htmlStream;
+        try {
+            if (url.contains("sdcard")) {
+                String tempPath = url.substring(7, url.length());//remove file:// from the url
+                File file = new File(tempPath);
+                htmlStream = new FileInputStream(file);
+            } else {
+                String tempPath = url.replace("file:///android_asset/", "");
+                htmlStream = getApplicationContext().getAssets().open(tempPath);
+            }
+            Reader is = null;
+            try {
+                is = new BufferedReader(new InputStreamReader(htmlStream, "UTF8"));
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+
+            // read string from reader
+            final char[] buffer = new char[1024];
+            StringBuilder out = new StringBuilder();
+            int read;
+            do {
+                read = is.read(buffer, 0, buffer.length);
+                if (read > 0) {
+                    out.append(buffer, 0, read);
+                }
+            } while (read >= 0);
+
+            return out.toString();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
