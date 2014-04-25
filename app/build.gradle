@@ -41,5 +41,59 @@ android {
             buildConfigField "String", "BOOK_URL", "\"http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/\""
         }
 
+        Survive_JavaScript{
+            packageName "com.github.snowdream.android.app.books.survivejavascript"
+            buildConfigField "String", "BOOK_URL", "\"http://survivejs.com/\""
+        }
+        
+        Learn_Markdown{
+            packageName "com.github.snowdream.android.app.books.learnmarkdown"
+            buildConfigField "String", "BOOK_URL", "\"http://gitbookio.github.io/markdown/\""
+        }
+        
+        About_Haskell{
+            packageName "com.github.snowdream.android.app.books.abouthaskell"
+            buildConfigField "String", "BOOK_URL", "\"http://denisshevchenko.github.io/ohaskell/\""
+        }
+        
+        Ramayana_Book{
+            packageName "com.github.snowdream.android.app.books.ramayanabook"
+            buildConfigField "String", "BOOK_URL", "\"http://svenkatreddy.github.io/Ramayana_Book/\""
+        }
+                
+        Build_Your_Own_Lisp{
+            packageName "com.github.snowdream.android.app.books.buildyourownlisp"
+            buildConfigField "String", "BOOK_URL", "\"http://gh.landersbenjamin.com/BuildYourOwnLispGitbook/\""
+        }
+                
+        Mac_OS_X_Setup_Guide{
+            packageName "com.github.snowdream.android.app.books.macosxsetupguide"
+            buildConfigField "String", "BOOK_URL", "\"http://sourabhbajaj.com/mac-setup/\""
+        }
+                
+        FileMaker_Open_Directory{
+            packageName "com.github.snowdream.android.app.books.filwmakeropendirectory"
+            buildConfigField "String", "BOOK_URL", "\"http://fmod.fmtricks.com/\""
+        }
+                
+        Exobook{
+            packageName "com.github.snowdream.android.app.books.exobook"
+            buildConfigField "String", "BOOK_URL", "\"http://codac.co/\""
+        }
+                
+        Learn_Gulp_js{
+            packageName "com.github.snowdream.android.app.books.learngulpjs"
+            buildConfigField "String", "BOOK_URL", "\"http://coalman.github.io/tott-gulpjs/book/\""
+        }
+                
+        Erle_Robot_the_educational_drone{
+            packageName "com.github.snowdream.android.app.books.erlerobottheeducationaldrone"
+            buildConfigField "String", "BOOK_URL", "\"http://erlerobot.github.io/erle_gitbook/\""
+        }
+                
+        R_Package_for_Gitbook_and_R_Markdown{
+            packageName "com.github.snowdream.android.app.books.rpackageforgitbookandrmarkdown"
+            buildConfigField "String", "BOOK_URL", "\"http://jason.bryer.org/Rgitbook/\""
+        }
     }
 }
