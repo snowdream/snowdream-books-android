@@ -46,6 +46,11 @@ android {
             buildConfigField "String", "BOOK_URL", "\"http://survivejs.com/\""
         }
         
+        Rust_by_Example{
+            packageName "com.github.snowdream.android.app.books.rustbyexample"
+            buildConfigField "String", "BOOK_URL", "\"http://rustbyexample.com/\""
+        }
+        
         Learn_Markdown{
             packageName "com.github.snowdream.android.app.books.learnmarkdown"
             buildConfigField "String", "BOOK_URL", "\"http://gitbookio.github.io/markdown/\""
@@ -94,6 +99,16 @@ android {
         R_Package_for_Gitbook_and_R_Markdown{
             packageName "com.github.snowdream.android.app.books.rpackageforgitbookandrmarkdown"
             buildConfigField "String", "BOOK_URL", "\"http://jason.bryer.org/Rgitbook/\""
+        }
+
+        Hard_Rock_CoffeeScript{
+            packageName "com.github.snowdream.android.app.books.hardrockcoffeescript"
+            buildConfigField "String", "BOOK_URL", "\"http://alchapone.github.io/hard-rock-coffeescript/\""
+        }
+
+        Gradschool_Survival_Manual{
+            packageName "com.github.snowdream.android.app.books.gradleschoolsurvival"
+            buildConfigField "String", "BOOK_URL", "\"http://openmetric.org/gradschool/book/index.html\""
         }
     }
 }
