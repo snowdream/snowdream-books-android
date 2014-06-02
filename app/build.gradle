@@ -110,5 +110,100 @@ android {
             packageName "com.github.snowdream.android.app.books.gradleschoolsurvival"
             buildConfigField "String", "BOOK_URL", "\"http://openmetric.org/gradschool/book/index.html\""
         }
+
+        Heroku_Node_js{
+            packageName "com.github.snowdream.android.app.books.herokunodejs"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/samypesse/heroku-node\""
+        }
+
+        GitBook_Documentation{
+            packageName "com.github.snowdream.android.app.books.gitbookdocumentation"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/gitbookio/documentation\""
+        }
+
+        Sitecore_MVC_The_Community_Book{
+            packageName "com.github.snowdream.android.app.books.sitecoremvc"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/gallarotti/sitecore-mvc-the-community-book\""
+        }
+
+        RubyKin{
+            packageName "com.github.snowdream.android.app.books.rubykin"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/mrdougwright/rubykin\""
+        }
+
+        Javascript_Challenges{
+            packageName "com.github.snowdream.android.app.books.javascriptchallenges"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/amischol/javascript_challenges\""
+        }
+        
+        Git_Tutorial{
+            packageName "com.github.snowdream.android.app.books.gittutorial"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/lvwzhen/git-tutorial\""
+        }
+        
+        Devise_젬_파헤치기{
+            packageName "com.github.snowdream.android.app.books.devisebook"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/luciuschoi/exploring_devise\""
+        }
+        
+        Les_règles_YSlow{
+            packageName "com.github.snowdream.android.app.books.lesyslow"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/olivjan/yslow\""
+        }
+
+        The_Guide_To_Cuba{
+            packageName "com.github.snowdream.android.app.books.theguidetocuba"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/frodsan/theguidetocuba\""
+        }
+
+        SFERA{
+            packageName "com.github.snowdream.android.app.books.sfera"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/ideutschlion/sfera\""
+        }
+
+        The_Guide_to_Cortex_Chinese_Version{
+            packageName "com.github.snowdream.android.app.books.theguidetocortex"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/kaelzhang/the-guide-to-cortex-chinese-version\""
+        }
+
+        Dataviz{
+            packageName "com.github.snowdream.android.app.books.dataviz"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/doughertyjack/dataviz\""
+        }
+
+        Manual_definitivo_de_Laravel{
+            packageName "com.github.snowdream.android.app.books.manualdefinitivodelaravel"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/jlmerdiez/laravel\""
+        }
+
+        gulp_book{
+            packageName "com.github.snowdream.android.app.books.gulpbook"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/davinov/gulp-book\""
+        }
+
+        makescape_adage_gitbook{
+            packageName "com.github.snowdream.android.app.books.makescapeadagegitbook"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/capbri/makescape-adage-gitbook\""
+        }
+
+        초보자를_위한_레일스_가이드북{
+            packageName "com.github.snowdream.android.app.books.railsguidebook"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/rorlab/railsguidebook\""
+        }
+
+        RORLa_오픈소스_프로젝트_매뉴얼{
+            packageName "com.github.snowdream.android.app.books.RORLa"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/rorlab/rorla\""
+        }
+
+        Dog_Of_Science{
+            packageName "com.github.snowdream.android.app.books.DogofScience"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/emptymalei/dogofscience\""
+        }
+
+        Inventario2{
+            packageName "com.github.snowdream.android.app.books.Inventario2"
+            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/rmontanana/inventario2\""
+        }
     }
 }
