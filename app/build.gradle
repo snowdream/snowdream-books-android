@@ -205,5 +205,10 @@ android {
             packageName "com.github.snowdream.android.app.books.Inventario2"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/rmontanana/inventario2\""
         }
+        
+        The_Swift_Programming_Language_In_Chinese{
+            packageName "com.github.snowdream.android.app.books.theswiftprogramminglanguageinchinese"
+            buildConfigField "String", "BOOK_URL", "\"http://numbbbbb.github.io/the-swift-programming-language-in-chinese/\""
+        }
     }
 }
