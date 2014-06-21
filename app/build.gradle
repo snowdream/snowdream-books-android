@@ -210,5 +210,35 @@ android {
             packageName "com.github.snowdream.android.app.books.theswiftprogramminglanguageinchinese"
             buildConfigField "String", "BOOK_URL", "\"http://numbbbbb.github.io/the-swift-programming-language-in-chinese/\""
         }
+
+        Swift_cheat_sheet{
+            packageName "com.github.snowdream.android.app.books.swiftcheatsheet"
+            buildConfigField "String", "BOOK_URL", "\"http://mhm5000.gitbooks.io/swift-cheat-sheet/\""
+        }
+        
+        Android_Training_Course_in_Chinese{
+            packageName "com.github.snowdream.android.app.books.androidtraininginchinese"
+            buildConfigField "String", "BOOK_URL", "\"http://hukai.me/android-training-course-in-chinese/index.html\""
+        }
+
+        Git_for_Everyone{
+            packageName "com.github.snowdream.android.app.books.gitforeveryone"
+            buildConfigField "String", "BOOK_URL", "\"http://anotheruiguy.gitbooks.io/gitforeveryone/\""
+        }
+        
+        Rails_102{
+            packageName "com.github.snowdream.android.app.books.rails102"
+            buildConfigField "String", "BOOK_URL", "\"http://rocodev.gitbooks.io/rails-102/\""
+        }
+
+        Konpa{
+            packageName "com.github.snowdream.android.app.books.konpa"
+            buildConfigField "String", "BOOK_URL", "\"http://leny_be.gitbooks.io/konpa/\""
+        }
+
+        Nodeexpreslibsass_from_scratch{
+            packageName "com.github.snowdream.android.app.books.nodeexpreslibsass"
+            buildConfigField "String", "BOOK_URL", "\"http://anotheruiguy.gitbooks.io/nodeexpreslibsass_from-scratch/\""
+        }
     }
 }
