@@ -1,0 +1,1948 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="./manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Introduction | GitHub Cheat Sheet</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="A collection of cool hidden and not so hidden features of Git and GitHub. This cheat sheet was inspired by Zach Holman&#39;s Git and GitHub Secrets talk at Aloha Ruby Conference 2012 (slides) and his More Git and GitHub Secrets talk at WDCNZ 2013 (slides).">
+        <meta name="generator" content="GitBook 0.5.6">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="snowdream">
+    
+    
+    <link rel="next" href="./index.html#github" />
+    
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-github="snowdream/android-books" data-level="0" data-basepath="." data-revision="1403630191262">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/snowdream/android-books" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/snowdream/android-books/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/snowdream/android-books/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="./" >GitHub Cheat Sheet</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/snowdream" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/edit/master/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="index.html#github">
+            
+                
+                    <a href="./index.html#github">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         GitHub
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="index.html#%E7%A9%BA%E7%99%BD%E3%81%AE%E7%84%A1%E8%A6%96">
+            
+                
+                    <a href="./index.html#%E7%A9%BA%E7%99%BD%E3%81%AE%E7%84%A1%E8%A6%96">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         空白の無視
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="index.html#%E3%82%BF%E3%83%96%E5%B9%85%E3%81%AE%E8%AA%BF%E7%AF%80">
+            
+                
+                    <a href="./index.html#%E3%82%BF%E3%83%96%E5%B9%85%E3%81%AE%E8%AA%BF%E7%AF%80">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         タブ幅の調節
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="index.html#%E7%89%B9%E5%AE%9A%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E5%B1%A5%E6%AD%B4">
+            
+                
+                    <a href="./index.html#%E7%89%B9%E5%AE%9A%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E5%B1%A5%E6%AD%B4">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         特定のユーザーによるコミット履歴
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="index.html#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%B3">
+            
+                
+                    <a href="./index.html#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%B3">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         リポジトリのクローン
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="index.html#%E5%85%A8%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E5%88%A5%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E6%AF%94%E8%BC%83">
+            
+                
+                    <a href="./index.html#%E5%85%A8%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E5%88%A5%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E6%AF%94%E8%BC%83">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         全ブランチを別のブランチと比較
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="index.html#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E5%90%8C%E5%A3%AB%E3%81%AE%E6%AF%94%E8%BC%83">
+            
+                
+                    <a href="./index.html#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E5%90%8C%E5%A3%AB%E3%81%AE%E6%AF%94%E8%BC%83">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         ブランチ同士の比較
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="index.html#%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%95%E3%82%8C%E3%81%9F%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E9%96%93%E3%81%A7%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%AF%94%E8%BC%83">
+            
+                
+                    <a href="./index.html#%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%95%E3%82%8C%E3%81%9F%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E9%96%93%E3%81%A7%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%AF%94%E8%BC%83">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         フォークされたリポジトリ間でのブランチ比較
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="index.html#gists">
+            
+                
+                    <a href="./index.html#gists">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                         Gists
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="index.html#gitio">
+            
+                
+                    <a href="./index.html#gitio">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                         Git.io
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="index.html#%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88">
+            
+                
+                    <a href="./index.html#%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                         キーボード・ショートカット
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.11" data-path="index.html#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E6%8C%87%E5%AE%9A%E8%A1%8C%E3%81%AE%E5%BC%B7%E8%AA%BF">
+            
+                
+                    <a href="./index.html#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E6%8C%87%E5%AE%9A%E8%A1%8C%E3%81%AE%E5%BC%B7%E8%AA%BF">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                         コードの指定行の強調
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.12" data-path="index.html#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%92%E9%96%89%E3%81%98%E3%82%8B">
+            
+                
+                    <a href="./index.html#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%92%E9%96%89%E3%81%98%E3%82%8B">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                         コミットからissueを閉じる
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.13" data-path="index.html#%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%81%AE%E7%9B%B8%E4%BA%92%E3%83%AA%E3%83%B3%E3%82%AF">
+            
+                
+                    <a href="./index.html#%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%81%AE%E7%9B%B8%E4%BA%92%E3%83%AA%E3%83%B3%E3%82%AF">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.13.</b>
+                        
+                         issueの相互リンク
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.14" data-path="index.html#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%A7%E3%81%AEci%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A1%A8%E7%A4%BA">
+            
+                
+                    <a href="./index.html#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%A7%E3%81%AEci%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A1%A8%E7%A4%BA">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.14.</b>
+                        
+                         pull requestでのCI結果の表示
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.15" data-path="index.html#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E6%A7%8B%E6%96%87%E5%BC%B7%E8%AA%BF">
+            
+                
+                    <a href="./index.html#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E6%A7%8B%E6%96%87%E5%BC%B7%E8%AA%BF">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.15.</b>
+                        
+                         Markdownファイルでの構文強調
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.16" data-path="index.html#emoji">
+            
+                
+                    <a href="./index.html#emoji">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.16.</b>
+                        
+                         Emoji
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.17" data-path="index.html#%E7%94%BB%E5%83%8F%E5%8F%8A%E3%81%B3%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3gif">
+            
+                
+                    <a href="./index.html#%E7%94%BB%E5%83%8F%E5%8F%8A%E3%81%B3%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3gif">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.17.</b>
+                        
+                         画像及びアニメーションGIF
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.17.1" data-path="index.html#github-wiki%E3%81%B8%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E6%B7%BB%E4%BB%98">
+            
+                
+                    <a href="./index.html#github-wiki%E3%81%B8%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E6%B7%BB%E4%BB%98">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.17.1.</b>
+                        
+                         GitHub Wikiへの画像の添付
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.18" data-path="index.html#%E7%B4%A0%E6%97%A9%E3%81%8F%E5%BC%95%E7%94%A8">
+            
+                
+                    <a href="./index.html#%E7%B4%A0%E6%97%A9%E3%81%8F%E5%BC%95%E7%94%A8">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.18.</b>
+                        
+                         素早く引用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.19" data-path="index.html#%E8%A8%AD%E5%AE%9A%E6%B8%88%E3%81%BF%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AE%E8%BF%BD%E5%8A%A0">
+            
+                
+                    <a href="./index.html#%E8%A8%AD%E5%AE%9A%E6%B8%88%E3%81%BF%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AE%E8%BF%BD%E5%8A%A0">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.19.</b>
+                        
+                         設定済みライセンスの追加
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.20" data-path="index.html#%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88">
+            
+                
+                    <a href="./index.html#%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.20.</b>
+                        
+                         タスクリスト
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.20.1" data-path="index.html#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88">
+            
+                
+                    <a href="./index.html#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.20.1.</b>
+                        
+                         Markdownファイルでのタスクリスト
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.21" data-path="index.html#%E7%9B%B8%E5%AF%BE%E3%83%AA%E3%83%B3%E3%82%AF">
+            
+                
+                    <a href="./index.html#%E7%9B%B8%E5%AF%BE%E3%83%AA%E3%83%B3%E3%82%AF">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.21.</b>
+                        
+                         相対リンク
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.22" data-path="index.html#github-pages%E3%81%A7%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A8%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88">
+            
+                
+                    <a href="./index.html#github-pages%E3%81%A7%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A8%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.22.</b>
+                        
+                         GitHub Pagesでのメタデータとプラグインのサポート
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.23" data-path="index.html#%E6%96%87%E6%9B%B8%E5%86%85%E3%81%AEyaml%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF">
+            
+                
+                    <a href="./index.html#%E6%96%87%E6%9B%B8%E5%86%85%E3%81%AEyaml%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.23.</b>
+                        
+                         文書内のYAMLメタデータ
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.24" data-path="index.html#%E8%A1%A8%E5%BD%A2%E5%BC%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E8%A1%A8%E7%A4%BA">
+            
+                
+                    <a href="./index.html#%E8%A1%A8%E5%BD%A2%E5%BC%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E8%A1%A8%E7%A4%BA">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.24.</b>
+                        
+                         表形式のデータ表示
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25" data-path="index.html#%E5%B7%AE%E5%88%86%E3%81%AE%E8%A1%A8%E7%A4%BA">
+            
+                
+                    <a href="./index.html#%E5%B7%AE%E5%88%86%E3%81%AE%E8%A1%A8%E7%A4%BA">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.</b>
+                        
+                         差分の表示
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.25.1" data-path="index.html#%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0%E6%B8%88%E3%81%BF%E3%81%AE%E5%B7%AE%E5%88%86">
+            
+                
+                    <a href="./index.html#%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0%E6%B8%88%E3%81%BF%E3%81%AE%E5%B7%AE%E5%88%86">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.1.</b>
+                        
+                         レンダリング済みの差分
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.2" data-path="index.html#%E3%83%9E%E3%83%83%E3%83%97%E5%B7%AE%E5%88%86%E3%81%AE%E5%8F%AF%E8%A6%96%E5%8C%96">
+            
+                
+                    <a href="./index.html#%E3%83%9E%E3%83%83%E3%83%97%E5%B7%AE%E5%88%86%E3%81%AE%E5%8F%AF%E8%A6%96%E5%8C%96">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.2.</b>
+                        
+                         マップ差分の可視化
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.3" data-path="index.html#%E5%B7%AE%E5%88%86%E8%A1%A8%E7%A4%BA%E3%81%AE%E5%89%8D%E5%BE%8C%E3%82%92%E8%A1%A8%E7%A4%BA">
+            
+                
+                    <a href="./index.html#%E5%B7%AE%E5%88%86%E8%A1%A8%E7%A4%BA%E3%81%AE%E5%89%8D%E5%BE%8C%E3%82%92%E8%A1%A8%E7%A4%BA">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.3.</b>
+                        
+                         差分表示の前後を表示
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.4" data-path="index.html#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92diff%E3%81%BE%E3%81%9F%E3%81%AFpatch%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97">
+            
+                
+                    <a href="./index.html#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92diff%E3%81%BE%E3%81%9F%E3%81%AFpatch%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.4.</b>
+                        
+                         pull requestの内容をDIFFまたはPATCH形式で取得
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.5" data-path="index.html#%E7%94%BB%E5%83%8F%E3%81%AE%E8%A1%A8%E7%A4%BA%E3%81%A8diff">
+            
+                
+                    <a href="./index.html#%E7%94%BB%E5%83%8F%E3%81%AE%E8%A1%A8%E7%A4%BA%E3%81%A8diff">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.5.</b>
+                        
+                         画像の表示とDIFF
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.26" data-path="index.html#hub">
+            
+                
+                    <a href="./index.html#hub">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.26.</b>
+                        
+                         Hub
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.27" data-path="index.html#%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BA%E8%80%85%E3%81%A8%E3%81%AE%E6%91%A9%E6%93%A6%E3%81%AE%E8%BB%BD%E6%B8%9B">
+            
+                
+                    <a href="./index.html#%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BA%E8%80%85%E3%81%A8%E3%81%AE%E6%91%A9%E6%93%A6%E3%81%AE%E8%BB%BD%E6%B8%9B">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.27.</b>
+                        
+                         共同開発者との摩擦の軽減
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.28" data-path="index.html#%E9%96%8B%E7%99%BA%E5%8F%82%E5%8A%A0%E3%81%AE%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3">
+            
+                
+                    <a href="./index.html#%E9%96%8B%E7%99%BA%E5%8F%82%E5%8A%A0%E3%81%AE%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.28.</b>
+                        
+                         開発参加のガイドライン
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.29" data-path="index.html#github%E6%83%85%E5%A0%B1">
+            
+                
+                    <a href="./index.html#github%E6%83%85%E5%A0%B1">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.29.</b>
+                        
+                         GitHub情報
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.29.1" data-path="index.html#github-talks">
+            
+                
+                    <a href="./index.html#github-talks">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.29.1.</b>
+                        
+                         GitHub Talks
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="index.html#git">
+            
+                
+                    <a href="./index.html#git">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Git
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="index.html#%E7%9B%B4%E5%89%8D%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81">
+            
+                
+                    <a href="./index.html#%E7%9B%B4%E5%89%8D%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         直前のブランチ
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="index.html#%E7%A9%BA%E7%99%BD%E3%81%AE%E5%89%8A%E9%99%A4">
+            
+                
+                    <a href="./index.html#%E7%A9%BA%E7%99%BD%E3%81%AE%E5%89%8A%E9%99%A4">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         空白の削除
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="index.html#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88">
+            
+                
+                    <a href="./index.html#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         pull requestのチェックアウト
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="index.html#%E7%A9%BA%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88-trollface">
+            
+                
+                    <a href="./index.html#%E7%A9%BA%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88-trollface">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         空のコミット :trollface:
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="index.html#git%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0">
+            
+                
+                    <a href="./index.html#git%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         Gitステータスのスタイリング
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="index.html#git%E3%83%AD%E3%82%B0%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0">
+            
+                
+                    <a href="./index.html#git%E3%83%AD%E3%82%B0%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         Gitログのスタイリング
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.7" data-path="index.html#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%83%AD%E3%82%B0%E3%81%AE%E6%A4%9C%E7%B4%A2">
+            
+                
+                    <a href="./index.html#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%83%AD%E3%82%B0%E3%81%AE%E6%A4%9C%E7%B4%A2">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                         コミットログの検索
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.8" data-path="index.html#%E3%83%9E%E3%83%BC%E3%82%B8%E6%B8%88%E3%81%BF%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81">
+            
+                
+                    <a href="./index.html#%E3%83%9E%E3%83%BC%E3%82%B8%E6%B8%88%E3%81%BF%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                         マージ済みブランチ
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.9" data-path="index.html#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%82%E7%85%A7%E3%81%99%E3%82%8B%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC">
+            
+                
+                    <a href="./index.html#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%82%E7%85%A7%E3%81%99%E3%82%8B%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                         ローカル・リポジトリを参照するウェブサーバー
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10" data-path="index.html#git%E3%81%AE%E8%A8%AD%E5%AE%9A">
+            
+                
+                    <a href="./index.html#git%E3%81%AE%E8%A8%AD%E5%AE%9A">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                         Gitの設定
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.10.1" data-path="index.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9">
+            
+                
+                    <a href="./index.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.1.</b>
+                        
+                         エイリアス
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10.2" data-path="index.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E8%87%AA%E5%8B%95%E4%BF%AE%E6%AD%A3">
+            
+                
+                    <a href="./index.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E8%87%AA%E5%8B%95%E4%BF%AE%E6%AD%A3">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.2.</b>
+                        
+                         コマンドの自動修正
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10.3" data-path="index.html#%E8%89%B2%E8%A8%AD%E5%AE%9A">
+            
+                
+                    <a href="./index.html#%E8%89%B2%E8%A8%AD%E5%AE%9A">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.3.</b>
+                        
+                         色設定
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.11" data-path="index.html#git%E6%83%85%E5%A0%B1">
+            
+                
+                    <a href="./index.html#git%E6%83%85%E5%A0%B1">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                         Git情報
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.11.1" data-path="index.html#git-books">
+            
+                
+                    <a href="./index.html#git-books">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.1.</b>
+                        
+                         Git Books
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="index.html#%E8%A8%B3%E6%B3%A8">
+            
+                
+                    <a href="./index.html#%E8%A8%B3%E6%B3%A8">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         訳注
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 0%;min-width: 0%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="./index.html#github" title="GitHub" class="chapter  new-chapter" data-progress="1" style="left: 1.8181818181818181%;"></a>
+    
+        <a href="./index.html#%E7%A9%BA%E7%99%BD%E3%81%AE%E7%84%A1%E8%A6%96" title="空白の無視" class="chapter  " data-progress="1.1" style="left: 3.6363636363636362%;"></a>
+    
+        <a href="./index.html#%E3%82%BF%E3%83%96%E5%B9%85%E3%81%AE%E8%AA%BF%E7%AF%80" title="タブ幅の調節" class="chapter  " data-progress="1.2" style="left: 5.454545454545454%;"></a>
+    
+        <a href="./index.html#%E7%89%B9%E5%AE%9A%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E5%B1%A5%E6%AD%B4" title="特定のユーザーによるコミット履歴" class="chapter  " data-progress="1.3" style="left: 7.2727272727272725%;"></a>
+    
+        <a href="./index.html#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%B3" title="リポジトリのクローン" class="chapter  " data-progress="1.4" style="left: 9.090909090909092%;"></a>
+    
+        <a href="./index.html#%E5%85%A8%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E5%88%A5%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E6%AF%94%E8%BC%83" title="全ブランチを別のブランチと比較" class="chapter  " data-progress="1.5" style="left: 10.909090909090908%;"></a>
+    
+        <a href="./index.html#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E5%90%8C%E5%A3%AB%E3%81%AE%E6%AF%94%E8%BC%83" title="ブランチ同士の比較" class="chapter  " data-progress="1.6" style="left: 12.727272727272727%;"></a>
+    
+        <a href="./index.html#%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%95%E3%82%8C%E3%81%9F%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E9%96%93%E3%81%A7%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%AF%94%E8%BC%83" title="フォークされたリポジトリ間でのブランチ比較" class="chapter  " data-progress="1.7" style="left: 14.545454545454545%;"></a>
+    
+        <a href="./index.html#gists" title="Gists" class="chapter  " data-progress="1.8" style="left: 16.363636363636363%;"></a>
+    
+        <a href="./index.html#gitio" title="Git.io" class="chapter  " data-progress="1.9" style="left: 18.181818181818183%;"></a>
+    
+        <a href="./index.html#%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88" title="キーボード・ショートカット" class="chapter  " data-progress="1.10" style="left: 20%;"></a>
+    
+        <a href="./index.html#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E6%8C%87%E5%AE%9A%E8%A1%8C%E3%81%AE%E5%BC%B7%E8%AA%BF" title="コードの指定行の強調" class="chapter  " data-progress="1.11" style="left: 21.818181818181817%;"></a>
+    
+        <a href="./index.html#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%92%E9%96%89%E3%81%98%E3%82%8B" title="コミットからissueを閉じる" class="chapter  " data-progress="1.12" style="left: 23.636363636363637%;"></a>
+    
+        <a href="./index.html#%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%81%AE%E7%9B%B8%E4%BA%92%E3%83%AA%E3%83%B3%E3%82%AF" title="issueの相互リンク" class="chapter  " data-progress="1.13" style="left: 25.454545454545453%;"></a>
+    
+        <a href="./index.html#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%A7%E3%81%AEci%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A1%A8%E7%A4%BA" title="pull requestでのCI結果の表示" class="chapter  " data-progress="1.14" style="left: 27.272727272727273%;"></a>
+    
+        <a href="./index.html#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E6%A7%8B%E6%96%87%E5%BC%B7%E8%AA%BF" title="Markdownファイルでの構文強調" class="chapter  " data-progress="1.15" style="left: 29.09090909090909%;"></a>
+    
+        <a href="./index.html#emoji" title="Emoji" class="chapter  " data-progress="1.16" style="left: 30.90909090909091%;"></a>
+    
+        <a href="./index.html#%E7%94%BB%E5%83%8F%E5%8F%8A%E3%81%B3%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3gif" title="画像及びアニメーションGIF" class="chapter  " data-progress="1.17" style="left: 32.72727272727273%;"></a>
+    
+        <a href="./index.html#github-wiki%E3%81%B8%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E6%B7%BB%E4%BB%98" title="GitHub Wikiへの画像の添付" class="chapter  " data-progress="1.17.1" style="left: 34.54545454545455%;"></a>
+    
+        <a href="./index.html#%E7%B4%A0%E6%97%A9%E3%81%8F%E5%BC%95%E7%94%A8" title="素早く引用" class="chapter  " data-progress="1.18" style="left: 36.36363636363637%;"></a>
+    
+        <a href="./index.html#%E8%A8%AD%E5%AE%9A%E6%B8%88%E3%81%BF%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AE%E8%BF%BD%E5%8A%A0" title="設定済みライセンスの追加" class="chapter  " data-progress="1.19" style="left: 38.18181818181818%;"></a>
+    
+        <a href="./index.html#%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88" title="タスクリスト" class="chapter  " data-progress="1.20" style="left: 40%;"></a>
+    
+        <a href="./index.html#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88" title="Markdownファイルでのタスクリスト" class="chapter  " data-progress="1.20.1" style="left: 41.81818181818182%;"></a>
+    
+        <a href="./index.html#%E7%9B%B8%E5%AF%BE%E3%83%AA%E3%83%B3%E3%82%AF" title="相対リンク" class="chapter  " data-progress="1.21" style="left: 43.63636363636363%;"></a>
+    
+        <a href="./index.html#github-pages%E3%81%A7%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A8%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88" title="GitHub Pagesでのメタデータとプラグインのサポート" class="chapter  " data-progress="1.22" style="left: 45.45454545454545%;"></a>
+    
+        <a href="./index.html#%E6%96%87%E6%9B%B8%E5%86%85%E3%81%AEyaml%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF" title="文書内のYAMLメタデータ" class="chapter  " data-progress="1.23" style="left: 47.27272727272727%;"></a>
+    
+        <a href="./index.html#%E8%A1%A8%E5%BD%A2%E5%BC%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E8%A1%A8%E7%A4%BA" title="表形式のデータ表示" class="chapter  " data-progress="1.24" style="left: 49.09090909090909%;"></a>
+    
+        <a href="./index.html#%E5%B7%AE%E5%88%86%E3%81%AE%E8%A1%A8%E7%A4%BA" title="差分の表示" class="chapter  " data-progress="1.25" style="left: 50.90909090909091%;"></a>
+    
+        <a href="./index.html#%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0%E6%B8%88%E3%81%BF%E3%81%AE%E5%B7%AE%E5%88%86" title="レンダリング済みの差分" class="chapter  " data-progress="1.25.1" style="left: 52.72727272727273%;"></a>
+    
+        <a href="./index.html#%E3%83%9E%E3%83%83%E3%83%97%E5%B7%AE%E5%88%86%E3%81%AE%E5%8F%AF%E8%A6%96%E5%8C%96" title="マップ差分の可視化" class="chapter  " data-progress="1.25.2" style="left: 54.54545454545455%;"></a>
+    
+        <a href="./index.html#%E5%B7%AE%E5%88%86%E8%A1%A8%E7%A4%BA%E3%81%AE%E5%89%8D%E5%BE%8C%E3%82%92%E8%A1%A8%E7%A4%BA" title="差分表示の前後を表示" class="chapter  " data-progress="1.25.3" style="left: 56.36363636363637%;"></a>
+    
+        <a href="./index.html#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92diff%E3%81%BE%E3%81%9F%E3%81%AFpatch%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97" title="pull requestの内容をDIFFまたはPATCH形式で取得" class="chapter  " data-progress="1.25.4" style="left: 58.18181818181818%;"></a>
+    
+        <a href="./index.html#%E7%94%BB%E5%83%8F%E3%81%AE%E8%A1%A8%E7%A4%BA%E3%81%A8diff" title="画像の表示とDIFF" class="chapter  " data-progress="1.25.5" style="left: 60%;"></a>
+    
+        <a href="./index.html#hub" title="Hub" class="chapter  " data-progress="1.26" style="left: 61.81818181818182%;"></a>
+    
+        <a href="./index.html#%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BA%E8%80%85%E3%81%A8%E3%81%AE%E6%91%A9%E6%93%A6%E3%81%AE%E8%BB%BD%E6%B8%9B" title="共同開発者との摩擦の軽減" class="chapter  " data-progress="1.27" style="left: 63.63636363636363%;"></a>
+    
+        <a href="./index.html#%E9%96%8B%E7%99%BA%E5%8F%82%E5%8A%A0%E3%81%AE%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3" title="開発参加のガイドライン" class="chapter  " data-progress="1.28" style="left: 65.45454545454545%;"></a>
+    
+        <a href="./index.html#github%E6%83%85%E5%A0%B1" title="GitHub情報" class="chapter  " data-progress="1.29" style="left: 67.27272727272727%;"></a>
+    
+        <a href="./index.html#github-talks" title="GitHub Talks" class="chapter  " data-progress="1.29.1" style="left: 69.0909090909091%;"></a>
+    
+        <a href="./index.html#git" title="Git" class="chapter  new-chapter" data-progress="2" style="left: 70.9090909090909%;"></a>
+    
+        <a href="./index.html#%E7%9B%B4%E5%89%8D%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81" title="直前のブランチ" class="chapter  " data-progress="2.1" style="left: 72.72727272727273%;"></a>
+    
+        <a href="./index.html#%E7%A9%BA%E7%99%BD%E3%81%AE%E5%89%8A%E9%99%A4" title="空白の削除" class="chapter  " data-progress="2.2" style="left: 74.54545454545455%;"></a>
+    
+        <a href="./index.html#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88" title="pull requestのチェックアウト" class="chapter  " data-progress="2.3" style="left: 76.36363636363636%;"></a>
+    
+        <a href="./index.html#%E7%A9%BA%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88-trollface" title="空のコミット :trollface:" class="chapter  " data-progress="2.4" style="left: 78.18181818181819%;"></a>
+    
+        <a href="./index.html#git%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0" title="Gitステータスのスタイリング" class="chapter  " data-progress="2.5" style="left: 80%;"></a>
+    
+        <a href="./index.html#git%E3%83%AD%E3%82%B0%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0" title="Gitログのスタイリング" class="chapter  " data-progress="2.6" style="left: 81.81818181818181%;"></a>
+    
+        <a href="./index.html#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%83%AD%E3%82%B0%E3%81%AE%E6%A4%9C%E7%B4%A2" title="コミットログの検索" class="chapter  " data-progress="2.7" style="left: 83.63636363636364%;"></a>
+    
+        <a href="./index.html#%E3%83%9E%E3%83%BC%E3%82%B8%E6%B8%88%E3%81%BF%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81" title="マージ済みブランチ" class="chapter  " data-progress="2.8" style="left: 85.45454545454545%;"></a>
+    
+        <a href="./index.html#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%82%E7%85%A7%E3%81%99%E3%82%8B%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC" title="ローカル・リポジトリを参照するウェブサーバー" class="chapter  " data-progress="2.9" style="left: 87.27272727272727%;"></a>
+    
+        <a href="./index.html#git%E3%81%AE%E8%A8%AD%E5%AE%9A" title="Gitの設定" class="chapter  " data-progress="2.10" style="left: 89.0909090909091%;"></a>
+    
+        <a href="./index.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9" title="エイリアス" class="chapter  " data-progress="2.10.1" style="left: 90.9090909090909%;"></a>
+    
+        <a href="./index.html#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E8%87%AA%E5%8B%95%E4%BF%AE%E6%AD%A3" title="コマンドの自動修正" class="chapter  " data-progress="2.10.2" style="left: 92.72727272727273%;"></a>
+    
+        <a href="./index.html#%E8%89%B2%E8%A8%AD%E5%AE%9A" title="色設定" class="chapter  " data-progress="2.10.3" style="left: 94.54545454545455%;"></a>
+    
+        <a href="./index.html#git%E6%83%85%E5%A0%B1" title="Git情報" class="chapter  " data-progress="2.11" style="left: 96.36363636363636%;"></a>
+    
+        <a href="./index.html#git-books" title="Git Books" class="chapter  " data-progress="2.11.1" style="left: 98.18181818181819%;"></a>
+    
+        <a href="./index.html#%E8%A8%B3%E6%B3%A8" title="訳注" class="chapter  new-chapter" data-progress="3" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_3">
+                    
+                        <h1 id="github-">GitHubカンニング・ペーパー</h1>
+<p>これはGitやGitHubの隠された機能やよく知られていない機能の一覧だ。<a href="https://github.com/holman" target="_blank">Zach Holman</a>によるAloha Ruby Conference 2012での<a href="https://github.com/tiimgreen/github-cheat-sheet" target="_blank">Git and GitHub Secrets</a>（<a href="https://github.com/tiimgreen/github-cheat-sheet" target="_blank">スライド</a>）とWDCNZ 2013での<a href="https://vimeo.com/72955426" target="_blank">More Git and GitHub Secrets</a>（<a href="https://speakerdeck.com/holman/more-git-and-github-secrets" target="_blank">スライド</a>）の二つのトークを元にしている。</p>
+<p><em>Read this in other languages: <a href="README.html">English</a>, <a href="README.ko.html">한국어</a>, <a href="README.ja.html">日本語</a>, <a href="README.zh-cn.html">简体中文</a>.</em></p>
+<h1 id="-">目次</h1>
+<ul>
+<li><a href="#github">GitHub</a><ul>
+<li><a href="#%E7%A9%BA%E7%99%BD%E3%81%AE%E7%84%A1%E8%A6%96">空白の無視</a></li>
+<li><a href="#%E3%82%BF%E3%83%96%E5%B9%85%E3%81%AE%E8%AA%BF%E7%AF%80">タブ幅の調節</a></li>
+<li><a href="#%E7%89%B9%E5%AE%9A%E3%81%AE%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E5%B1%A5%E6%AD%B4">特定のユーザーによるコミット履歴</a></li>
+<li><a href="#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%B3">リポジトリのクローン</a></li>
+<li><a href="#%E5%85%A8%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%82%92%E5%88%A5%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E6%AF%94%E8%BC%83">全ブランチを別のブランチと比較</a></li>
+<li><a href="#%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E5%90%8C%E5%A3%AB%E3%81%AE%E6%AF%94%E8%BC%83">ブランチ同士の比較</a></li>
+<li><a href="#%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%95%E3%82%8C%E3%81%9F%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E9%96%93%E3%81%A7%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%AF%94%E8%BC%83">フォークされたリポジトリ間でのブランチ比較</a></li>
+<li><a href="#gists">Gists</a></li>
+<li><a href="#gitio">Git.io</a></li>
+<li><a href="#%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88">キーボード・ショートカット</a></li>
+<li><a href="#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AE%E6%8C%87%E5%AE%9A%E8%A1%8C%E3%81%AE%E5%BC%B7%E8%AA%BF">コードの指定行の強調</a></li>
+<li><a href="#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%8B%E3%82%89%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%92%E9%96%89%E3%81%98%E3%82%8B">コミットからissueを閉じる</a></li>
+<li><a href="#%E3%82%A4%E3%82%B7%E3%83%A5%E3%83%BC%E3%81%AE%E7%9B%B8%E4%BA%92%E3%83%AA%E3%83%B3%E3%82%AF">issueの相互リンク</a></li>
+<li><a href="#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%A7%E3%81%AEci%E7%B5%90%E6%9E%9C%E3%81%AE%E8%A1%A8%E7%A4%BA">pull requestでのCI結果の表示</a></li>
+<li><a href="#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E6%A7%8B%E6%96%87%E5%BC%B7%E8%AA%BF">Markdownファイルでの構文強調</a></li>
+<li><a href="#emoji">Emoji</a></li>
+<li><a href="#%E7%94%BB%E5%83%8F%E5%8F%8A%E3%81%B3%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3gif">画像及びアニメーションGIF</a><ul>
+<li><a href="#github-wiki%E3%81%B8%E3%81%AE%E7%94%BB%E5%83%8F%E3%81%AE%E6%B7%BB%E4%BB%98">GitHub Wikiへの画像の添付</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B4%A0%E6%97%A9%E3%81%8F%E5%BC%95%E7%94%A8">素早く引用</a></li>
+<li><a href="#%E8%A8%AD%E5%AE%9A%E6%B8%88%E3%81%BF%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9%E3%81%AE%E8%BF%BD%E5%8A%A0">設定済みライセンスの追加</a></li>
+<li><a href="#%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88">タスクリスト</a><ul>
+<li><a href="#markdown%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88">Markdownファイルでのタスクリスト</a></li>
+</ul>
+</li>
+<li><a href="#%E7%9B%B8%E5%AF%BE%E3%83%AA%E3%83%B3%E3%82%AF">相対リンク</a></li>
+<li><a href="#github-pages%E3%81%A7%E3%81%AE%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A8%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%AE%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88">GitHub Pagesでのメタデータとプラグインのサポート</a></li>
+<li><a href="#%E6%96%87%E6%9B%B8%E5%86%85%E3%81%AEyaml%E3%83%A1%E3%82%BF%E3%83%87%E3%83%BC%E3%82%BF">文書内のYAMLメタデータ</a></li>
+<li><a href="#%E8%A1%A8%E5%BD%A2%E5%BC%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E8%A1%A8%E7%A4%BA">表形式のデータ表示</a></li>
+<li><a href="#%E5%B7%AE%E5%88%86%E3%81%AE%E8%A1%A8%E7%A4%BA">差分の表示</a><ul>
+<li><a href="#%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0%E6%B8%88%E3%81%BF%E3%81%AE%E5%B7%AE%E5%88%86">レンダリング済みの差分</a></li>
+<li><a href="#%E3%83%9E%E3%83%83%E3%83%97%E5%B7%AE%E5%88%86%E3%81%AE%E5%8F%AF%E8%A6%96%E5%8C%96">マップ差分の可視化</a></li>
+<li><a href="#%E5%B7%AE%E5%88%86%E8%A1%A8%E7%A4%BA%E3%81%AE%E5%89%8D%E5%BE%8C%E3%82%92%E8%A1%A8%E7%A4%BA">差分表示の前後を表示</a></li>
+<li><a href="#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92diff%E3%81%BE%E3%81%9F%E3%81%AFpatch%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97">pull requestの内容をDIFFまたはPATCH形式で取得</a></li>
+<li><a href="#%E7%94%BB%E5%83%8F%E3%81%AE%E8%A1%A8%E7%A4%BA%E3%81%A8diff">画像の表示とDIFF</a></li>
+</ul>
+</li>
+<li><a href="#hub">Hub</a></li>
+<li><a href="#%E5%85%B1%E5%90%8C%E9%96%8B%E7%99%BA%E8%80%85%E3%81%A8%E3%81%AE%E6%91%A9%E6%93%A6%E3%81%AE%E8%BB%BD%E6%B8%9B">共同開発者との摩擦の軽減</a></li>
+<li><a href="#%E9%96%8B%E7%99%BA%E5%8F%82%E5%8A%A0%E3%81%AE%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3">開発参加のガイドライン</a></li>
+<li><a href="#github%E6%83%85%E5%A0%B1">GitHub情報</a><ul>
+<li><a href="#github-talks">GitHub Talks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#git">Git</a><ul>
+<li><a href="#%E7%9B%B4%E5%89%8D%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81">直前のブランチ</a></li>
+<li><a href="#%E7%A9%BA%E7%99%BD%E3%81%AE%E5%89%8A%E9%99%A4">空白の削除</a></li>
+<li><a href="#%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88">pull requestのチェックアウト</a></li>
+<li><a href="#%E7%A9%BA%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88-trollface">空のコミット :trollface:</a></li>
+<li><a href="#git%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0">Gitステータスのスタイリング</a></li>
+<li><a href="#git%E3%83%AD%E3%82%B0%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AA%E3%83%B3%E3%82%B0">Gitログのスタイリング</a></li>
+<li><a href="#%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%83%AD%E3%82%B0%E3%81%AE%E6%A4%9C%E7%B4%A2">コミットログの検索</a></li>
+<li><a href="#%E3%83%9E%E3%83%BC%E3%82%B8%E6%B8%88%E3%81%BF%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81">マージ済みブランチ</a></li>
+<li><a href="#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E5%8F%82%E7%85%A7%E3%81%99%E3%82%8B%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC">ローカル・リポジトリを参照するウェブサーバー</a></li>
+<li><a href="#git%E3%81%AE%E8%A8%AD%E5%AE%9A">Gitの設定</a><ul>
+<li><a href="#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9">エイリアス</a></li>
+<li><a href="#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E8%87%AA%E5%8B%95%E4%BF%AE%E6%AD%A3">コマンドの自動修正</a></li>
+<li><a href="#%E8%89%B2%E8%A8%AD%E5%AE%9A">色設定</a></li>
+</ul>
+</li>
+<li><a href="#git%E6%83%85%E5%A0%B1">Git情報</a><ul>
+<li><a href="#git-books">Git Books</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E8%A8%B3%E6%B3%A8">訳注</a></li>
+</ul>
+<h2 id="github">GitHub</h2>
+<h3 id="-">空白の無視</h3>
+<p>GitHub上で差分ページを表示している時、そのURLに<code>?w=1</code>を加えると、空白の変化によるできた差分は表示されなくなり、コード上の変化だけを参照することができる。</p>
+<p><img src="https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67" alt="Diff without whitespace"></p>
+<p><a href="https://github.com/blog/967-github-secrets" target="_blank"><em>GitHubの秘密についてもっと詳しく</em></a></p>
+<h3 id="-">タブ幅の調節</h3>
+<p>差分やファイルを表示している時、URLに<code>?ts=4</code>を追加するとタブを空白4つの幅で表示する。デフォルトは8つだ。<code>ts</code>に指定した数で表示されるということだ。これはGistやrawファイルを表示している時には適用されない。</p>
+<p>例えば<a href="https://github.com/pengwynn/flint/blob/master/flint/flint.go" target="_blank">Goのソースファイル</a>を表示している時、<code>?ts=4</code>を追加する前はこのように表示されるが:</p>
+<p><img src="http://i.imgur.com/GIT1Fr0.png" alt="Before, tab space example"></p>
+<p><code>?ts=4</code>を<a href="https://github.com/pengwynn/flint/blob/master/flint/flint.go?ts=4" target="_blank">追加すると</a>このように表示される:</p>
+<p><img src="http://i.imgur.com/70FL4H9.png" alt="After, tab space example"></p>
+<h3 id="-">特定のユーザーによるコミット履歴</h3>
+<p>特定のユーザーによるあるリポジトリへのコミット履歴のみを参照したい場合は、<code>?author=username</code>をURLの末尾に付ける。</p>
+<pre><code>https://github.com/rails/rails/commits/master?author=dhh
+</code></pre><p><img src="http://i.imgur.com/mDWwuaY.png" alt="DHH commit history"></p>
+<p><a href="https://help.github.com/articles/differences-between-commit-views" target="_blank"><em>コミット・ビューの違いについてもっと詳しく</em></a></p>
+<h3 id="-">リポジトリのクローン</h3>
+<p>リポジトリをクローンする時、URLの末尾の<code>.git</code>は無くても構わない。</p>
+<pre><code class="lang-bash">$ git clone https://github.com/tiimgreen/github-cheat-sheet
+</code></pre>
+<p><a href="http://git-scm.com/docs/git-clone" target="_blank"><em>Gitの<code>clone</code>コマンドについてもっと詳しく</em></a></p>
+<h3 id="-">全ブランチを別のブランチと比較</h3>
+<p>コミット一覧ボタンの隣から<a href="https://github.com/tiimgreen/github-cheat-sheet/branches" target="_blank">ブランチ一覧</a>ページに行くと:</p>
+<pre><code>https://github.com/{user}/{repo}/branches
+</code></pre><p>メイン・ブランチにマージされていないブランチの一覧が表示される。</p>
+<p>このページからボタンをクリックしてブランチ比較ページへ移動したりブランチを削除することができる。</p>
+<p><img src="http://i.imgur.com/gKWPe8a.png" alt="Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches"></p>
+<p>しかしながら<code>master</code>以外、(例えば<code>development</code>)のブランチと比較したい場合もあるだろう。その場合、以下のようにURLの最後にそのブランチ名を追加すれば良い:</p>
+<pre><code>https://github.com/{user}/{repo}/branches/{branch}
+</code></pre><p><img src="http://i.imgur.com/jpc6Urb.png" alt="Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master"></p>
+<p>マージ済みのブランチを表示するには<code>?merged=1</code>をURLに追加する。</p>
+<p><img src="http://i.imgur.com/KmYyCVh.png" alt="Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1"></p>
+<p>このビューでは、コマンドラインを使うことなく簡単にページ上でブランチを削除することができるだろう。</p>
+<h3 id="-">ブランチ同士の比較</h3>
+<p>GitHubのブランチ比較は以下のようなURLで提供されている:</p>
+<pre><code>https://github.com/user/repo/compare/{range}
+</code></pre><p><code>{range}</code>を<code>master...4-1-stable</code>に変更する。</p>
+<p>例えば:</p>
+<pre><code>https://github.com/rails/rails/compare/master...4-1-stable
+</code></pre><p><img src="http://i.imgur.com/0Z52X5Y.png" alt="Rails branch compare example"></p>
+<p><code>{range}</code>には以下のように変更することもできる:</p>
+<pre><code>https://github.com/rails/rails/compare/master@{1.day.ago}...master
+https://github.com/rails/rails/compare/master@{2014-10-04}...master
+</code></pre><p><em>日付の形式は<code>YYYY-DD-MM</code>だ。</em></p>
+<p><img src="http://i.imgur.com/5dtzESz.png" alt="Another compare example"></p>
+<p>するとmasterブランチと特定の期間または日時との比較が行えるだろう。</p>
+<p><a href="https://help.github.com/articles/comparing-commits-across-time" target="_blank"><em>時間を指定してのブランチ比較についてもっと詳しく</em></a></p>
+<h3 id="-">フォークされたリポジトリ間でのブランチ比較</h3>
+<p>GitHubでフォークされたリポジトリ同士でブランチを比較する場合、以下のようなURLを変更する:</p>
+<pre><code>https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
+</code></pre><p>例:</p>
+<pre><code>https://github.com/rails/rails/compare/byroot:master...master
+</code></pre><p><img src="http://i.imgur.com/Q1W6qcB.png" alt="Forked branch compare"></p>
+<h3 id="gists">Gists</h3>
+<p><a href="https://gist.github.com/" target="_blank">Gists</a>は少量のコード群を管理する最適な手段だ。ちゃんとしたリポジトリをいちいち作成する必要はない。</p>
+<p><img src="http://i.imgur.com/VkKI1LC.png?1" alt="Gist"></p>
+<p>GistのURLの最後に<code>.pibb</code>を付ける(<a href="https://gist.github.com/hail2u/9477708.pibb" target="_blank">例</a>)と<em>HTMLのみ</em>のバージョンが表示されるので、そのソースは他のウェブサイトに貼り付けるにはもってこいだろう。</p>
+<p>簡単なものとはいえ、完全なGitリポジトリとして機能するため、以下のようにすれば普通のGitリポジトリと同じようにクローンすることができる:</p>
+<pre><code class="lang-bash">$ git clone https://gist.github.com/tiimgreen/<span class="hljs-number">10545817</span>
+</code></pre>
+<p><img src="http://i.imgur.com/dULZXXo.png" alt="Gists"></p>
+<p><a href="https://help.github.com/articles/creating-gists" target="_blank"><em>Gistの作成についてもっと詳しく</em></a></p>
+<h3 id="git-io">Git.io</h3>
+<p><a href="http://git.io" target="_blank">Git.io</a>はGitHubの提供するGitHub専用のシンプルな短縮URLサービスだ。</p>
+<p><img src="http://i.imgur.com/6JUfbcG.png?1" alt="Git.io"></p>
+<p>cURLを使って利用することができる:</p>
+<pre><code class="lang-bash">$ curl -i http://git.io -F <span class="hljs-string">"url=https://github.com/..."</span>
+HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">201</span> Created
+Location: http://git.io/abc123
+
+$ curl -i http://git.io/abc123
+HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">302</span> Found
+Location: https://github.com/...
+</code></pre>
+<p><a href="https://github.com/blog/985-git-io-github-url-shortener" target="_blank"><em>Git.ioについてもっと詳しく</em></a></p>
+<h3 id="-">キーボード・ショートカット</h3>
+<p>リポジトリをブラウザーで開いている時は、ショートカットを利用して様々な機能ヘ簡単にアクセスできるようになっている。</p>
+<ul>
+<li><code>t</code>を押すとファイルの検索インターフェイスが起動する。</li>
+<li><code>w</code>を押すとブランチ選択インターフェイスが起動する。</li>
+<li><code>s</code>を押すとコマンド・バーにフォーカスが当たる。</li>
+<li>issue画面で<code>l</code>を押すとラベルの編集インターフェイスが開かれる。</li>
+<li><strong>ファイルを参照している時</strong>（例: <code>https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md</code>)に<code>y</code>を押すと、参照している時の状態で固定されるURLに変更される。つまりそのファイルのコードが後に変化したとしても、そのURLでは今とまったく同じ状態で表示されるということだ。</li>
+</ul>
+<p><code>?</code>を押すとそのページで使える全ショートカットが表示されるだろう。</p>
+<p><img src="http://i.imgur.com/y5ZfNEm.png" alt="Keyboard shortcuts"></p>
+<p><a href="https://help.github.com/articles/using-the-command-bar" target="_blank"><em>コマンドバーについてもっと詳しく</em></a></p>
+<h3 id="-">コードの指定行の強調</h3>
+<p>コードのURLの末尾に<code>#L52</code>と付けるか行番号をクリックすると、その行が強調表示される。</p>
+<p>これは範囲指定も可能だ（例: <code>#L53-L60</code>）。こういった範囲を選択するには<code>shift</code>を押しながら二つの行をクリックしても良い:</p>
+<pre><code>https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L60
+</code></pre><p><img src="http://i.imgur.com/8AhjrCz.png" alt="Line Highlighting"></p>
+<h3 id="-issue-">コミットからissueを閉じる</h3>
+<p>あるコミットでissueを解決した場合、コミットメッセージで<code>fix/fixes/fixed</code>や<code>close/closes/closed</code>、<code>resolve/resolves/resolved</code>に続けてissue番号を指定すると、そのコミットがmasterブランチにpushされると同時に指定issueが閉じられるだろう。</p>
+<pre><code class="lang-bash">$ git commit -m <span class="hljs-string">"Fix screwup, fixes #12"</span>
+</code></pre>
+<p>こうするとissue#12が閉じられ、閉じたissueにはそのコミットへの参照が自動的に追加される。</p>
+<p><img src="http://i.imgur.com/Uh1gZdx.png" alt="Closing Repo"></p>
+<p><a href="https://help.github.com/articles/closing-issues-via-commit-messages" target="_blank"><em>コミット・メッセージからissueを閉じる方法についてもっと詳しく</em></a></p>
+<h3 id="issue-">issueの相互リンク</h3>
+<p>同じリポジトリの違うissueへリンクを張り参照させたい場合、<code>#</code>に続けてissue番号を指定する。そうすると自動的にリンクが作成されるだろう。</p>
+<p>別のリポジトリのissueの場合は<code>user_name/repo_name#ISSUE_NUMBER</code>とすれば良い（例: <code>tiimgreen/toc#12</code>）。</p>
+<p><img src="https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67" alt="Cross-Link Issues"></p>
+<h3 id="pull-request-ci-">pull requestでのCI結果の表示</h3>
+<p>適切に設定を行えばpull requestを受け取るたびに、通常のコミットと同じように<a href="https://travis-ci.org/" target="_blank">Travis CI</a>がそのpull requestをビルドするだろう。どう設定するかは<a href="http://docs.travis-ci.com/user/getting-started/" target="_blank">Travis CI: Getting started</a>を読むと良い。</p>
+<p><a href="https://github.com/octokit/octokit.rb/pull/452" target="_blank"><img src="https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png" alt="Travis CI status"></a></p>
+<p><a href="https://github.com/blog/1227-commit-status-api" target="_blank"><em>コミット・ステータスAPIについてもっと詳しく</em></a></p>
+<h3 id="markdown-">Markdownファイルでの構文強調</h3>
+<p>例えばMarkdownファイルでRubyのコードを構文強調したいならば以下のようにする:</p>
+<pre><code>```ruby
+require &#39;tabbit&#39;
+table = Tabbit.new(&#39;Name&#39;, &#39;Email&#39;)
+table.add_row(&#39;Tim Green&#39;, &#39;tiimgreen@gmail.com&#39;)
+puts table.to_s
+```
+</code></pre><p>こうすると以下のように表示されることになる:</p>
+<pre><code class="lang-ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">'tabbit'</span>
+table = <span class="hljs-constant">Tabbit</span>.new(<span class="hljs-string">'Name'</span>, <span class="hljs-string">'Email'</span>)
+table.add_row(<span class="hljs-string">'Tim Green'</span>, <span class="hljs-string">'tiimgreen@gmail.com'</span>)
+puts table.to_s
+</code></pre>
+<p>GitHubでは<a href="https://github.com/github/linguist" target="_blank">Linguist</a>を使って言語を判別し構文強調を行っている。構文強調がサポートされている言語の一覧は<a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">言語定義YAMLファイル</a>を参照すればわかるだろう。</p>
+<p><a href="https://help.github.com/articles/github-flavored-markdown" target="_blank"><em>GitHub Flavored Markdownについてもっと詳しく</em></a></p>
+<h3 id="emoji">Emoji</h3>
+<p>Emojiはpull requestやissue、READMEなどで<code>:name_of_emoji:</code>と書くと利用できる:</p>
+<pre><code>:smile:
+</code></pre><p>こう書くと以下のように表示される:</p>
+<p>:smile:</p>
+<p>GitHubでサポートされているEmojiの完全なリストは<a href="http://www.emoji-cheat-sheet.com/" target="_blank">Emoji cheat sheet for Campfire and GitHub</a>か<a href="https://github.com/scotch-io/All-Github-Emoji-Icons" target="_blank">All-Github-Emoji-Icons</a>で確認できる。</p>
+<p>GitHubで使われているEmojiのトップ5は以下の通りだ:</p>
+<ol>
+<li>:shipit: - <code>:shipit:</code></li>
+<li>:sparkles: - <code>:sparkles:</code></li>
+<li>:-1: - <code>:-1:</code></li>
+<li>:+1: - <code>:+1:</code></li>
+<li>:clap: - <code>:clap:</code></li>
+</ol>
+<h3 id="-gif">画像及びアニメーションGIF</h3>
+<p>画像やアニメーションGIFはコミットのコメントやREADMEなどで利用できる:</p>
+<pre><code>![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
+</code></pre><p><img src="http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif" alt="Peter don&#39;t care"></p>
+<p>あらゆる画像はGitHubでキャッシュされるので、画像のホスティング先が落ちていたとしても変わらず表示されるだろう。</p>
+<h4 id="github-wiki-">GitHub Wikiへの画像の添付</h4>
+<p>GitHub Wikiで画像を追加する方法がいくつかある。通常のMarkdown記法（前節を参照）はもちろん使える。しかしそれだけではなく、画像の幅と高さを指定する記法も使うことができる:</p>
+<pre><code class="lang-markdown">[[ http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif | height = 100px ]]
+</code></pre>
+<p>こうすると以下のようになる:</p>
+<p><img src="http://i.imgur.com/J5bMf7S.png" alt="Just a screenshot"></p>
+<h3 id="-">素早く引用</h3>
+<p>issueのスレッドで他の人のコメントを引用してコメントしたい場合、引用したい文章を選択した状態で<code>r</code>を押すと、ブロック引用の記法を使ってテキストエリアにコピーされる。</p>
+<p><img src="http://i.imgur.com/TzpMIOA.png" alt="Quick Quote"></p>
+<p><a href="https://github.com/blog/1399-quick-quotes" target="_blank"><em>素早く引用する方法についてもっと詳しく</em></a></p>
+<h3 id="-">設定済みライセンスの追加</h3>
+<p>GitHub上でリポジトリを作成する時、あらかじめ設定されているライセンスを追加することもできる:</p>
+<p><img src="http://i.imgur.com/Chqj4Fg.png" alt="Licese"></p>
+<p>既に存在するリポジトリであってもウェブ上のインターフェイスからファイルを作成することで追加できる。<code>LICENSE</code>というファイル名にした場合、ライセンスを選択するオプションが表示されるのだ:</p>
+<p><img src="http://i.imgur.com/fTjQict.png" alt="License"></p>
+<p><code>.gitignore</code>も同じように作成時に追加することも、後で追加することもできる。</p>
+<p><a href="https://help.github.com/articles/open-source-licensing" target="_blank"><em>オープンソース・ライセンスについてもっと詳しく</em></a></p>
+<h3 id="-">タスクリスト</h3>
+<p>issueやpull requestでは以下のように（空白に注意）書くとチェックボックスを作成することができる:</p>
+<pre><code>- [ ] Be awesome
+- [ ] Prepare dinner
+  - [ ] Research recipe
+  - [ ] Buy ingredients
+  - [ ] Cook recipe
+- [ ] Sleep
+</code></pre><p><img src="http://i.imgur.com/jJBXhsY.png" alt="Task List"></p>
+<p>これらチェックボックスにチェックが入れられると、同時にMarkdownソースも更新される:</p>
+<pre><code>- [x] Be awesome
+- [ ] Prepare dinner
+  - [x] Research recipe
+  - [x] Buy ingredients
+  - [ ] Cook recipe
+- [ ] Sleep
+</code></pre><p><a href="https://help.github.com/articles/writing-on-github#task-lists" target="_blank"><em>タスク・リストについてもっと詳しく</em></a></p>
+<h4 id="markdown-">Markdownファイルでのタスクリスト</h4>
+<p>通常のMarkdownファイルでも<strong>読み取り専用</strong>のチェックリストを以下のような記法で追加することができる:</p>
+<pre><code>- [ ] Mercury
+- [x] Venus
+- [x] Earth
+- [x] Mars
+- [ ] Jupiter
+</code></pre><ul>
+<li><input name='quiz-row-2-0-0' id='quiz-row-2-0-0' type='checkbox'/><label class="quiz-label" for="quiz-row-2-0-0"> Mercury</label></li>
+<li><input name='quiz-row-2-0-1' id='quiz-row-2-0-1' type='checkbox' checked/><label class="quiz-label" for="quiz-row-2-0-1"> Venus</label></li>
+<li><input name='quiz-row-2-0-2' id='quiz-row-2-0-2' type='checkbox' checked/><label class="quiz-label" for="quiz-row-2-0-2"> Earth</label></li>
+<li><input name='quiz-row-2-0-3' id='quiz-row-2-0-3' type='checkbox' checked/><label class="quiz-label" for="quiz-row-2-0-3"> Mars</label></li>
+<li><input name='quiz-row-2-0-4' id='quiz-row-2-0-4' type='checkbox'/><label class="quiz-label" for="quiz-row-2-0-4"> Jupiter</label></li>
+</ul>
+<p><a href="https://github.com/blog/1825-task-lists-in-all-markdown-documents" target="_blank"><em>Markdownファイルでのタスクリストについてもっと詳しく</em></a></p>
+<h3 id="-">相対リンク</h3>
+<p>Markdownファイルでリポジトリ内のコンテンツへ張る場合、相対リンクを利用することが推奨されている。</p>
+<pre><code class="lang-markdown">[<span class="hljs-link_label">Link to a header</span>](<span class="hljs-link_url">#awesome-section</span>)
+[<span class="hljs-link_label">Link to a file</span>](<span class="hljs-link_url">docs/readme</span>)
+</code></pre>
+<p>絶対リンクはURLの変更（例: リポジトリのリネーム、ユーザー名の変更、プロジェクトのフォーク）により更新される。相対リンクを利用すれば、そのままうまく機能するはずだ。</p>
+<p><a href="https://help.github.com/articles/relative-links-in-readmes" target="_blank"><em>相対リンクについてもっと詳しく</em></a></p>
+<h3 id="github-pages-">GitHub Pagesでのメタデータとプラグインのサポート</h3>
+<p>Jekyllのページや投稿ではリポジトリの情報が<code>site.github</code>という名前空間に格納されており、例えば<code>{{ site.github.project_title }}</code>などと書けば表示することができる。</p>
+<p>また、Jemojiとjekyll-mentionsというプラグインがインストールされているので、<a href="#emoji">Emoji</a>や<a href="https://github.com/blog/821" target="_blank">@mentions</a>はJekyllの投稿やページでGitHub.com上と同じように動作する。</p>
+<p><a href="https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages" target="_blank"><em>GitHub Pageでのメタデータとプラグインのサポートについてもっと詳しく</em></a></p>
+<h3 id="-yaml-">文書内のYAMLメタデータ</h3>
+<p><a href="http://jekyllrb.com/" target="_blank">Jekyll</a>を<a href="http://pages.github.com/" target="_blank">GitHub Pages</a>で利用している場合など、多くのブログではYAML形式のメタデータをその記事の先頭に書く必要がある。GitHubではこういったメタデータを読みやすいように表として表示してくれる:</p>
+<p><img src="https://camo.githubusercontent.com/47245aa16728e242f74a9a324ce0d24c0b916075/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36343035302f313232383236372f65303439643063362d323761302d313165332d396464382d6131636432323539393334342e706e67" alt="YAML metadata"></p>
+<p><a href="https://github.com/blog/1647-viewing-yaml-metadata-in-your-documents" target="_blank"><em>文書内のYAMLメタデータの表示についてもっと詳しく</em></a></p>
+<h3 id="-">表形式のデータ表示</h3>
+<p>GitHubでは<code>.csv</code>（カンマ区切り）と<code>.tsv</code>（タブ区切り）の形式で書かれた表を整形して表示する機能をサポートしている。</p>
+<p><img src="https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67" alt="Tabular data"></p>
+<p><a href="https://github.com/blog/1601-see-your-csvs" target="_blank"><em>表形式のデーター表示についてもっと詳しく</em></a></p>
+<h3 id="-">差分の表示</h3>
+<h4 id="-">レンダリング済みの差分表示</h4>
+<p>コミットやpull requestにGitHubでレンダリングされて表示されるもの（例: Markdown）が含まれる場合、その<em>ソース</em>と<em>レンダリング済み</em>の両方の差分を見ることができる。</p>
+<p><img src="https://github-images.s3.amazonaws.com/help/repository/rendered_prose_diff.png" alt="Source / Rendered view"></p>
+<p>レンダリングされた状態での差分を表示したい場合は「Rendered」ボタンをクリックする。レンダリング済みの差分表示では文章の追加や削除、編集がよりわかりやすい:</p>
+<p><img src="https://f.cloud.github.com/assets/17715/2003056/3997edb4-862b-11e3-90be-5e9586edecd7.png" alt="Rendered Prose Diffs"></p>
+<p><a href="https://github.com/blog/1784-rendered-prose-diffs" target="_blank"><em>レンダリング済みの差分表示についてもっと詳しく</em></a></p>
+<h4 id="-">マップ差分の可視化</h4>
+<p>コミットやpull requestにジオデータの変更が含まれている場合はいつも、GitHubではそのジオデータの変化を可視化してくれるだろう。</p>
+<p><a href="https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5" target="_blank"><img src="https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif" alt="Diffable Maps"></a></p>
+<p><a href="https://github.com/blog/1772-diffable-more-customizable-maps" target="_blank"><em>マップ差分の可視化についてもっと詳しく</em></a></p>
+<h4 id="-">差分表示の前後を表示</h4>
+<p>差分表示の行番号付近にある<em>展開</em>ボタンを使うと、その前後の行をクリックして表示させることができる。<em>展開</em>ボタンを押し続けることによってファイル全体を表示することもできるし、またこの機能はあらゆるGitHubの差分表示ビューに用意されている。</p>
+<p><img src="https://f.cloud.github.com/assets/22635/1610539/863c1f64-5584-11e3-82bf-151b406a272f.gif" alt="Expanding Context in Diffs"></p>
+<p><a href="https://github.com/blog/1705-expanding-context-in-diffs" target="_blank"><em>差分表示の前後を表示についてもっと詳しく</em></a></p>
+<h4 id="pull-request-diff-patch-">pull requestの内容をDIFFまたはPATCH形式で取得</h4>
+<p>pull requestによる差分はそのURLの末尾に<code>.diff</code>または<code>.patch</code>を追加すると、それぞれの形式で取得することができる。例えば:</p>
+<pre><code>https://github.com/tiimgreen/github-cheat-sheet/pull/15
+https://github.com/tiimgreen/github-cheat-sheet/pull/15.diff
+https://github.com/tiimgreen/github-cheat-sheet/pull/15.patch
+</code></pre><p>拡張子<code>.diff</code>を追加した場合、このようなプレーンテキストで表示されるだろう:</p>
+<pre><code>diff --git a/README.md b/README.md
+index 88fcf69..8614873 100644
+--- a/README.md
++++ b/README.md
+@@ -28,6 +28,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
+ - [Merged Branches](#merged-branches)
+ - [Quick Licensing](#quick-licensing)
+ - [TODO Lists](#todo-lists)
++- [Relative Links](#relative-links)
+ - [.gitconfig Recommendations](#gitconfig-recommendations)
+     - [Aliases](#aliases)
+     - [Auto-correct](#auto-correct)
+@@ -381,6 +382,19 @@ When they are clicked, they will be updated in the pure Markdown:
+ - [ ] Sleep
+
+(...)
+</code></pre><h4 id="-diff">画像の表示とDIFF</h4>
+<p>GitHubは、PNGやJPG、GIF、PSDといった多くの一般的な画像形式の表示をサポートしている。それに加え、様々な方法でこれら画像形式のバージョンごとの差分を比較することもできる。</p>
+<p><a href="https://github.com/blog/1845-psd-viewing-diffing" target="_blank"><img src="https://cloud.githubusercontent.com/assets/2546/3165594/55f2798a-eb56-11e3-92e7-b79ad791a697.gif" alt="Diffable PSD"></a></p>
+<p><a href="https://help.github.com/articles/rendering-and-diffing-images" target="_blank"><em>画像の表示とDIFFについてもっと詳しく</em></a></p>
+<h3 id="hub">Hub</h3>
+<p><a href="https://github.com/github/hub" target="_blank">Hub</a>はGitのラッパーとして機能するコマンドライン・ツールで、これを利用するとGitHubをコマンドラインからとても簡単に扱えるようになる。</p>
+<p>例えば以下のようにしてリポジトリのクローンが行える:</p>
+<pre><code class="lang-bash">$ hub clone tiimgreen/toc
+</code></pre>
+<p>これが以下のコマンドの代わりというわけだ:</p>
+<pre><code class="lang-bash">$ git clone https://github.com/tiimgreen/toc.git
+</code></pre>
+<p><a href="https://github.com/github/hub#commands" target="_blank"><em>Hubが提供する便利な機能についてもっと詳しく</em></a></p>
+<h3 id="-">共同開発者との摩擦の軽減</h3>
+<p>もし誰かに自分のプロジェクトの利用またはその開発に参加してもらいたい場合、まずはよくある質問に答えることから始めなければならないだろう。このプロジェクトはどういうものなのか？どうやって使うのか？どのように使っても良いのか？どうやれば開発に参加できるのか？どうやれば開発環境を用意できるのか？どうやって自分の加えた機能が既存の機能を破壊しないことが確認できるのか？</p>
+<p><a href="https://github.com/rafalchmiel/friction" target="_blank">Friction</a>はこういった<a href="https://github.com/rafalchmiel/friction/wiki" target="_blank">一般的な質問に対しての答え</a>が用意されているかをチェックしてくれるコマンドライン・ツールだ。例えば以下のような出力を得られる:</p>
+<p><a href="https://github.com/rafalchmiel/friction" target="_blank"><img src="http://i.imgur.com/4EgpWo4.png" alt="Friction output"></a></p>
+<h3 id="-">開発参加のガイドライン</h3>
+<p>リポジトリのルートに<code>CONTRIBUTING</code>という名前のファイルを置くと、issueやpull requestを作成しようとした時にそれへのリンクが表示されるようになる。</p>
+<p><img src="https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067" alt="Contributing Guidelines"></p>
+<p><a href="https://github.com/blog/1184-contributing-guidelines" target="_blank"><em>開発参加のガイドラインについてもっと詳しく</em></a></p>
+<h3 id="github-resources">GitHub Resources</h3>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub Explore</td>
+<td><a href="https://github.com/explore" target="_blank">https://github.com/explore</a></td>
+</tr>
+<tr>
+<td>GitHub Blog</td>
+<td><a href="https://github.com/blog" target="_blank">https://github.com/blog</a></td>
+</tr>
+<tr>
+<td>GitHub Help</td>
+<td><a href="https://help.github.com/" target="_blank">https://help.github.com/</a></td>
+</tr>
+<tr>
+<td>GitHub Training</td>
+<td><a href="http://training.github.com/" target="_blank">http://training.github.com/</a></td>
+</tr>
+<tr>
+<td>GitHub Developer</td>
+<td><a href="https://developer.github.com/" target="_blank">https://developer.github.com/</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="github-talks">GitHub Talks</h4>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>How GitHub Uses GitHub to Build GitHub</td>
+<td><a href="https://www.youtube.com/watch?v=qyz3jkOBbQY" target="_blank">https://www.youtube.com/watch?v=qyz3jkOBbQY</a></td>
+</tr>
+<tr>
+<td>Introduction to Git with Scott Chacon of GitHub</td>
+<td><a href="https://www.youtube.com/watch?v=ZDR433b0HJY" target="_blank">https://www.youtube.com/watch?v=ZDR433b0HJY</a></td>
+</tr>
+<tr>
+<td>How GitHub No Longer Works</td>
+<td><a href="https://www.youtube.com/watch?v=gXD1ITW7iZI" target="_blank">https://www.youtube.com/watch?v=gXD1ITW7iZI</a></td>
+</tr>
+<tr>
+<td>Git and GitHub Secrets</td>
+<td><a href="https://www.youtube.com/watch?v=Foz9yvMkvlA" target="_blank">https://www.youtube.com/watch?v=Foz9yvMkvlA</a></td>
+</tr>
+<tr>
+<td>More Git and GitHub Secrets</td>
+<td><a href="https://www.youtube.com/watch?v=p50xsL-iVgU" target="_blank">https://www.youtube.com/watch?v=p50xsL-iVgU</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="git">Git</h2>
+<h3 id="-">直前のブランチ</h3>
+<p>Gitで直前のブランチへ移動するには:</p>
+<pre><code class="lang-bash">$ git checkout -
+<span class="hljs-comment"># Switched to branch 'master'</span>
+
+$ git checkout -
+<span class="hljs-comment"># Switched to branch 'next'</span>
+
+$ git checkout -
+<span class="hljs-comment"># Switched to branch 'master'</span>
+</code></pre>
+<p><a href="http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging" target="_blank"><em>Gitのブランチ操作についてもっと詳しく</em></a></p>
+<h3 id="-">空白の削除</h3>
+<p>Gitの<code>stripspace</code>コマンドは以下の作業を行う:</p>
+<ul>
+<li>行末の空白文字の削除</li>
+<li>空白行の取りまとめ</li>
+<li>ファイル末尾への改行の追加</li>
+</ul>
+<p>このコマンドを呼ぶ時はファイルを渡さねばならない。例:</p>
+<pre><code class="lang-bash">$ git stripspace &lt; README.md
+</code></pre>
+<p><a href="http://git-scm.com/docs/git-stripspace" target="_blank"><em>Gitの<code>stripspace</code>コマンドについてもっと詳しく</em></a></p>
+<h3 id="pull-request-">pull requestのチェックアウト</h3>
+<p>pull requestはGitHubのリポジトリでは特別なブランチであり、様々な方法でローカルに取り込むことができる:</p>
+<p>特定のpull requestを取り込み、一時的に<code>FETCH_HEAD</code>として保存すると、素早く差分を確認してマージすることが可能だ:</p>
+<pre><code class="lang-bash">$ git fetch origin refs/pull/[PR-Number]/head
+</code></pre>
+<p>参照仕様を使うとすべてのpull requestをローカル・ブランチとして取り込むことができる:</p>
+<pre><code class="lang-bash">$ git fetch origin <span class="hljs-string">'+refs/pull/*/head:refs/remotes/origin/pr/*'</span>
+</code></pre>
+<p>リポジトリの<code>.git/config</code>に以下の行を追加すれば自動的にpull requestを落とすようにもできるだろう:</p>
+<pre><code>[remote &quot;origin&quot;]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    url = git@github.com:tiimgreen/github-cheat-sheet.git
+</code></pre><pre><code>[remote &quot;origin&quot;]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    url = git@github.com:tiimgreen/github-cheat-sheet.git
+    fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+</code></pre><p>フォークされてから送られてきたpull requestに対しては、そのpull requestを参照するリモート・ブランチから直接ローカル・ブランチとしてチェックアウトすると便利だろう:</p>
+<pre><code class="lang-bash">$ git checkout pr/<span class="hljs-number">42</span> pr-<span class="hljs-number">42</span>
+</code></pre>
+<p><a href="https://help.github.com/articles/checking-out-pull-requests-locally" target="_blank"><em>pull requestのチェックアウトについてもっと詳しく</em></a></p>
+<h3 id="-trollface-">空のコミット :trollface:</h3>
+<p><code>--allow-empty</code>オプションを付けると、コードの変化がなくてもコミットを作成することができる:</p>
+<pre><code class="lang-bash">$ git commit -m <span class="hljs-string">"Big-ass commit"</span> --allow-empty
+</code></pre>
+<p>この機能の使い方（便利なもの）としては以下のようなものが挙げられる:</p>
+<ul>
+<li>新たな機能や大きな変更を事前に通知する時</li>
+<li>コード上に現れないような変更をプロジェクトに加えた時</li>
+<li>リポジトリを利用して誰かと連絡を取りたい時</li>
+<li>リポジトリへの最初のコミットをやり直しできるようにしたい時: <code>git commit -m &quot;init repo&quot; --allow-empty</code>.</li>
+</ul>
+<h3 id="git-">Gitステータスのスタイリング</h3>
+<p>普通に実行すると:</p>
+<pre><code class="lang-bash">$ git status
+</code></pre>
+<p>このように表示されるが:</p>
+<p><img src="http://i.imgur.com/o3PEHAA.png" alt="git status"></p>
+<p><code>-sb</code>を追加することによって:</p>
+<pre><code class="lang-bash">$ git status -sb
+</code></pre>
+<p>このように表示することもできる:</p>
+<p><img src="http://i.imgur.com/xNI1bT0.png" alt="git status -sb"></p>
+<p><a href="http://git-scm.com/docs/git-status" target="_blank"><em>Gitの<code>status</code>コマンドについてもっと詳しく</em></a></p>
+<h3 id="git-">Gitログのスタイリング</h3>
+<p>以下のように実行すると:</p>
+<pre><code class="lang-bash">$ git log --all --graph --pretty=format:<span class="hljs-string">'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset'</span> --abbrev-commit --date=relative
+</code></pre>
+<p>このように表示される:</p>
+<p><img src="http://i.imgur.com/EARRQyJ.png" alt="git log --all --graph --pretty=format:&#39;%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --date=relative"></p>
+<p>この設定は<a href="http://stackoverflow.com/users/88355/palesz" target="_blank">Palesz</a>が考えたものだ。</p>
+<p><em>これは<a href="#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9">後述の手順</a>に従ってエイリアスへ追加することもできる。</em></p>
+<p><a href="http://git-scm.com/docs/git-log" target="_blank"><em>Gitの<code>log</code>コマンドについてもっと詳しく</em></a></p>
+<h3 id="-">コミットログの検索</h3>
+<p>指定した文字列を今までのコミット・メッセージから検索して、もっとも新しいものを表示することができる。</p>
+<pre><code class="lang-bash">$ git show :/query
+</code></pre>
+<p><code>query</code>を検索したい文字列（大文字と小文字を区別する）で置き換えると、最新のコミットがそのコミットにおける差分と同時に表示される。</p>
+<pre><code class="lang-bash">$ git show :/typo
+</code></pre>
+<p><img src="http://i.imgur.com/icaGiNt.png" alt="git show :/query"></p>
+<p>注: 終了するには<code>q</code>を押す。</p>
+<h3 id="-">マージ済みブランチ</h3>
+<p>以下のように実行すると:</p>
+<pre><code class="lang-bash">$ git branch --merged
+</code></pre>
+<p>現在のブランチに既にマージされたブランチの一覧が表示される。</p>
+<p>逆に:</p>
+<pre><code class="lang-bash">$ git branch --no-merged
+</code></pre>
+<p>こうするとまだマージされていないブランチが表示されるだろう。</p>
+<p><a href="http://git-scm.com/docs/git-branch" target="_blank"><em>Gitの<code>branch</code>コマンドについてもっと詳しく</em></a></p>
+<h3 id="-">ローカル・リポジトリを参照するウェブサーバー</h3>
+<p>Gitの<code>instaweb</code>コマンドを利用すると、自分の作業リポジトリを<code>gitweb</code>で参照することができる。このコマンドは<code>gitweb</code>とウェブサーバーをセットアップしてローカル・リポジトリをブラウザーで開けるようにする簡単なスクリプトだ。</p>
+<pre><code class="lang-bash">$ git instaweb
+</code></pre>
+<p>以下のようなページが開かれる:</p>
+<p><img src="http://i.imgur.com/Dxekmqc.png" alt="Git instaweb"></p>
+<p><a href="http://git-scm.com/docs/git-instaweb" target="_blank"><em>Gitの<code>instaweb</code>コマンドについてもっと詳しく</em></a></p>
+<h3 id="git-">Gitの設定</h3>
+<p><code>.gitconfig</code>とはあらゆる設定が書き込まれるファイルだ。</p>
+<h4 id="-">エイリアス</h4>
+<p>エイリアスはGitの呼び出し方を自分で好きなように定義できるヘルパー機能だ。例えば<code>git a</code>で<code>git add --all</code>を実行するようにすることができる。</p>
+<p>エイリアスを追加するには<code>~/.gitconfig</code>を開き、以下のような形式で記述していく:</p>
+<pre><code>[alias]
+  co = checkout
+  cm = commit
+  p = push
+  # Show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+</code></pre><p>またはコマンドラインからも設定できる:</p>
+<pre><code class="lang-bash">$ git config --global alias.new_alias git_function
+</code></pre>
+<p>例:</p>
+<pre><code class="lang-bash">$ git config --global alias.cm commit
+</code></pre>
+<p>注: エイリアスが複数のコマンドからなる場合はクオートで括る必要がある:</p>
+<pre><code class="lang-bash">$ git config --global alias.ac <span class="hljs-string">'add -A . &amp;&amp; commit'</span>
+</code></pre>
+<p>おすすめの設定を挙げておこう:</p>
+<table>
+<thead>
+<tr>
+<th>エイリアス</th>
+<th>コマンド</th>
+<th>設定方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git cm</code></td>
+<td><code>git commit</code></td>
+<td><code>git config --global alias.cm commit</code></td>
+</tr>
+<tr>
+<td><code>git co</code></td>
+<td><code>git checkout</code></td>
+<td><code>git config --global alias.co checkout</code></td>
+</tr>
+<tr>
+<td><code>git ac</code></td>
+<td><code>git add . -A</code> <code>git commit</code></td>
+<td><code>git config --global alias.ac &#39;!git add -A &amp;&amp; git commit&#39;</code></td>
+</tr>
+<tr>
+<td><code>git st</code></td>
+<td><code>git status -sb</code></td>
+<td><code>git config --global alias.st &#39;status -sb&#39;</code></td>
+</tr>
+<tr>
+<td><code>git tags</code></td>
+<td><code>git tag -l</code></td>
+<td><code>git config --global alias.tags &#39;tag -l&#39;</code></td>
+</tr>
+<tr>
+<td><code>git branches</code></td>
+<td><code>git branch -a</code></td>
+<td><code>git config --global alias.branches &#39;branch -a&#39;</code></td>
+</tr>
+<tr>
+<td><code>git remotes</code></td>
+<td><code>git remote -v</code></td>
+<td><code>git config --global alias.remotes &#39;remote -v&#39;</code></td>
+</tr>
+<tr>
+<td><code>git lg</code></td>
+<td><code>git log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --</code></td>
+<td><code>git config --global alias.lg &quot;log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="-">コマンドの自動修正</h4>
+<p>多分今は<code>git comit</code>とタイプした場合、以下のような出力を得ることだろう:</p>
+<pre><code class="lang-bash">$ git comit -m <span class="hljs-string">"Message"</span>
+<span class="hljs-comment"># git: 'comit' is not a git command. See 'git --help'.</span>
+
+<span class="hljs-comment"># Did you mean this?</span>
+<span class="hljs-comment">#   commit</span>
+</code></pre>
+<p>これを<code>comit</code>とタイプした時に<code>commit</code>を実行させたい場合、自動修正を有効にすれば良い:</p>
+<pre><code class="lang-bash">$ git config --global help.autocorrect <span class="hljs-number">1</span>
+</code></pre>
+<p>すると以下のような出力を得るようになるだろう:</p>
+<pre><code class="lang-bash">$ git comit -m <span class="hljs-string">"Message"</span>
+<span class="hljs-comment"># WARNING: You called a Git command named 'comit', which does not exist.</span>
+<span class="hljs-comment"># Continuing under the assumption that you meant 'commit'</span>
+<span class="hljs-comment"># in 0.1 seconds automatically...</span>
+</code></pre>
+<h4 id="-">色設定</h4>
+<p>Gitの出力をカラフルにするには以下のような設定を加えると良い:</p>
+<pre><code class="lang-bash">$ git config --global color.ui <span class="hljs-number">1</span>
+</code></pre>
+<p><a href="http://git-scm.com/docs/git-config" target="_blank"><em>Gitの<code>config</code>コマンドについてもっと詳しく</em></a></p>
+<h3 id="git-resources">Git Resources</h3>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Official Git Site</td>
+<td><a href="http://git-scm.com/" target="_blank">http://git-scm.com/</a></td>
+</tr>
+<tr>
+<td>Official Git Video Tutorials</td>
+<td><a href="http://git-scm.com/videos" target="_blank">http://git-scm.com/videos</a></td>
+</tr>
+<tr>
+<td>Code School Try Git</td>
+<td><a href="http://try.github.com/" target="_blank">http://try.github.com/</a></td>
+</tr>
+<tr>
+<td>Introductory Reference &amp; Tutorial for Git</td>
+<td><a href="http://gitref.org/" target="_blank">http://gitref.org/</a></td>
+</tr>
+<tr>
+<td>Official Git Tutorial</td>
+<td><a href="http://git-scm.com/docs/gittutorial" target="_blank">http://git-scm.com/docs/gittutorial</a></td>
+</tr>
+<tr>
+<td>Everyday Git</td>
+<td><a href="http://git-scm.com/docs/everyday" target="_blank">http://git-scm.com/docs/everyday</a></td>
+</tr>
+<tr>
+<td>Git Immersion</td>
+<td><a href="http://gitimmersion.com/" target="_blank">http://gitimmersion.com/</a></td>
+</tr>
+<tr>
+<td>Ry&#39;s Git Tutorial</td>
+<td><a href="http://rypress.com/tutorials/git/index.html" target="_blank">http://rypress.com/tutorials/git/index.html</a></td>
+</tr>
+<tr>
+<td>Git for Designer</td>
+<td><a href="http://hoth.entp.com/output/git_for_designers.html" target="_blank">http://hoth.entp.com/output/git_for_designers.html</a></td>
+</tr>
+<tr>
+<td>Git for Computer Scientists</td>
+<td><a href="http://eagain.net/articles/git-for-computer-scientists/" target="_blank">http://eagain.net/articles/git-for-computer-scientists/</a></td>
+</tr>
+<tr>
+<td>Git Magic</td>
+<td><a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/" target="_blank">http://www-cs-students.stanford.edu/~blynn/gitmagic/</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="git-books">Git Books</h4>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pragmatic Version Control Using Git</td>
+<td><a href="http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git" target="_blank">http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git</a></td>
+</tr>
+<tr>
+<td>Pro Git</td>
+<td><a href="http://git-scm.com/book" target="_blank">http://git-scm.com/book</a></td>
+</tr>
+<tr>
+<td>Git Internals Peepcode</td>
+<td><a href="http://peepcode.com/products/git-internals-pdf" target="_blank">http://peepcode.com/products/git-internals-pdf</a></td>
+</tr>
+<tr>
+<td>Git in the Trenches</td>
+<td><a href="http://cbx33.github.com/gitt/" target="_blank">http://cbx33.github.com/gitt/</a></td>
+</tr>
+<tr>
+<td>Version Control with Git</td>
+<td><a href="http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387" target="_blank">http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387</a></td>
+</tr>
+<tr>
+<td>Pragmatic Guide to Git</td>
+<td><a href="http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git" target="_blank">http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git</a></td>
+</tr>
+<tr>
+<td>Git: Version Control for Everyone</td>
+<td><a href="http://www.packtpub.com/git-version-control-for-everyone/book" target="_blank">http://www.packtpub.com/git-version-control-for-everyone/book</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">訳注</h2>
+<p>これは<a href="https://github.com/tiimgreen/github-cheat-sheet" target="_blank">GitHub Cheat Sheet</a>の日本語訳である。</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <a href="./index.html#github" class="navigation navigation-next navigation-unique" aria-label="Next page: GitHub"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,1946 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="./manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Introduction | GitHub Cheat Sheet</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="A collection of cool hidden and not so hidden features of Git and GitHub. This cheat sheet was inspired by Zach Holman&#39;s Git and GitHub Secrets talk at Aloha Ruby Conference 2012 (slides) and his More Git and GitHub Secrets talk at WDCNZ 2013 (slides).">
+        <meta name="generator" content="GitBook 0.5.6">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="snowdream">
+    
+    
+    <link rel="next" href="./index.html#github" />
+    
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-github="snowdream/android-books" data-level="0" data-basepath="." data-revision="1403630191529">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/snowdream/android-books" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/snowdream/android-books/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/snowdream/android-books/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="./" >GitHub Cheat Sheet</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/snowdream" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/edit/master/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="index.html#github">
+            
+                
+                    <a href="./index.html#github">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         GitHub
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="index.html#ignore-whitespace">
+            
+                
+                    <a href="./index.html#ignore-whitespace">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Ignore Whitespace
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="index.html#adjust-tab-space">
+            
+                
+                    <a href="./index.html#adjust-tab-space">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Adjust Tab Space
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="index.html#commit-history-by-author">
+            
+                
+                    <a href="./index.html#commit-history-by-author">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Commit History by Author
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="index.html#cloning-a-repository">
+            
+                
+                    <a href="./index.html#cloning-a-repository">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Cloning a Repository
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="index.html#compare-all-branches-to-another-branch">
+            
+                
+                    <a href="./index.html#compare-all-branches-to-another-branch">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         Compare all Branches to Another Branch
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="index.html#comparing-branches">
+            
+                
+                    <a href="./index.html#comparing-branches">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         Comparing Branches
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="index.html#compare-branches-across-forked-repositories">
+            
+                
+                    <a href="./index.html#compare-branches-across-forked-repositories">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         Compare Branches across Forked Repositories
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="index.html#gists">
+            
+                
+                    <a href="./index.html#gists">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                         Gists
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="index.html#gitio">
+            
+                
+                    <a href="./index.html#gitio">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                         Git.io
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="index.html#keyboard-shortcuts">
+            
+                
+                    <a href="./index.html#keyboard-shortcuts">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                         Keyboard Shortcuts
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.11" data-path="index.html#line-highlighting-in-repositories">
+            
+                
+                    <a href="./index.html#line-highlighting-in-repositories">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                         Line Highlighting in Repositories
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.12" data-path="index.html#closing-issues-via-commit-messages">
+            
+                
+                    <a href="./index.html#closing-issues-via-commit-messages">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                         Closing Issues via Commit Messages
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.13" data-path="index.html#cross-link-issues">
+            
+                
+                    <a href="./index.html#cross-link-issues">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.13.</b>
+                        
+                         Cross-Link Issues
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.14" data-path="index.html#ci-status-on-pull-requests">
+            
+                
+                    <a href="./index.html#ci-status-on-pull-requests">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.14.</b>
+                        
+                         CI Status on Pull Requests
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.15" data-path="index.html#syntax-highlighting-in-markdown-files">
+            
+                
+                    <a href="./index.html#syntax-highlighting-in-markdown-files">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.15.</b>
+                        
+                         Syntax Highlighting in Markdown Files
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.16" data-path="index.html#emojis">
+            
+                
+                    <a href="./index.html#emojis">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.16.</b>
+                        
+                         Emojis
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.17" data-path="index.html#imagesgifs">
+            
+                
+                    <a href="./index.html#imagesgifs">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.17.</b>
+                        
+                         Images/GIFs
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.17.1" data-path="index.html#embedding-images-in-github-wiki">
+            
+                
+                    <a href="./index.html#embedding-images-in-github-wiki">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.17.1.</b>
+                        
+                         Embedding Images in GitHub Wiki
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.18" data-path="index.html#quick-quoting">
+            
+                
+                    <a href="./index.html#quick-quoting">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.18.</b>
+                        
+                         Quick Quoting
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.19" data-path="index.html#quick-licensing">
+            
+                
+                    <a href="./index.html#quick-licensing">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.19.</b>
+                        
+                         Quick Licensing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.20" data-path="index.html#task-lists">
+            
+                
+                    <a href="./index.html#task-lists">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.20.</b>
+                        
+                         Task Lists
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.20.1" data-path="index.html#task-lists-in-markdown-documents">
+            
+                
+                    <a href="./index.html#task-lists-in-markdown-documents">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.20.1.</b>
+                        
+                         Task Lists in Markdown Documents
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.21" data-path="index.html#relative-links">
+            
+                
+                    <a href="./index.html#relative-links">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.21.</b>
+                        
+                         Relative Links
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.22" data-path="index.html#metadata-and-plugin-support-for-github-pages">
+            
+                
+                    <a href="./index.html#metadata-and-plugin-support-for-github-pages">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.22.</b>
+                        
+                         Metadata and Plugin Support for GitHub Pages
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.23" data-path="index.html#viewing-yaml-metadata-in-your-documents">
+            
+                
+                    <a href="./index.html#viewing-yaml-metadata-in-your-documents">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.23.</b>
+                        
+                         Viewing YAML Metadata in your Documents
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.24" data-path="index.html#rendering-tabular-data">
+            
+                
+                    <a href="./index.html#rendering-tabular-data">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.24.</b>
+                        
+                         Rendering Tabular Data
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25" data-path="index.html#diffs">
+            
+                
+                    <a href="./index.html#diffs">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.</b>
+                        
+                         Diffs
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.25.1" data-path="index.html#rendered-prose-diffs">
+            
+                
+                    <a href="./index.html#rendered-prose-diffs">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.1.</b>
+                        
+                         Rendered prose Diffs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.2" data-path="index.html#diffable-maps">
+            
+                
+                    <a href="./index.html#diffable-maps">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.2.</b>
+                        
+                         Diffable Maps
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.3" data-path="index.html#expanding-context-in-diffs">
+            
+                
+                    <a href="./index.html#expanding-context-in-diffs">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.3.</b>
+                        
+                         Expanding Context in Diffs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.4" data-path="index.html#diff-or-patch-of-pull-request">
+            
+                
+                    <a href="./index.html#diff-or-patch-of-pull-request">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.4.</b>
+                        
+                         Diff or Patch of Pull Request
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.5" data-path="index.html#rendering-and-diffing-images">
+            
+                
+                    <a href="./index.html#rendering-and-diffing-images">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.5.</b>
+                        
+                         Rendering and diffing images
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.26" data-path="index.html#hub">
+            
+                
+                    <a href="./index.html#hub">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.26.</b>
+                        
+                         Hub
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.27" data-path="index.html#decreasing-contributor-friction">
+            
+                
+                    <a href="./index.html#decreasing-contributor-friction">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.27.</b>
+                        
+                         Decreasing Contributor Friction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.28" data-path="index.html#contributing-guidelines">
+            
+                
+                    <a href="./index.html#contributing-guidelines">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.28.</b>
+                        
+                         Contributing Guidelines
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.29" data-path="index.html#github-resources">
+            
+                
+                    <a href="./index.html#github-resources">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.29.</b>
+                        
+                         GitHub Resources
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.29.1" data-path="index.html#github-talks">
+            
+                
+                    <a href="./index.html#github-talks">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.29.1.</b>
+                        
+                         GitHub Talks
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="index.html#git">
+            
+                
+                    <a href="./index.html#git">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Git
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="index.html#previous-branch">
+            
+                
+                    <a href="./index.html#previous-branch">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Previous Branch
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="index.html#stripspace">
+            
+                
+                    <a href="./index.html#stripspace">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Stripspace
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="index.html#checking-out-pull-requests">
+            
+                
+                    <a href="./index.html#checking-out-pull-requests">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Checking out Pull Requests
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="index.html#empty-commits-trollface">
+            
+                
+                    <a href="./index.html#empty-commits-trollface">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         Empty Commits :trollface:
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="index.html#styled-git-status">
+            
+                
+                    <a href="./index.html#styled-git-status">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         Styled Git Status
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="index.html#styled-git-log">
+            
+                
+                    <a href="./index.html#styled-git-log">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         Styled Git Log
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.7" data-path="index.html#git-query">
+            
+                
+                    <a href="./index.html#git-query">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                         Git Query
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.8" data-path="index.html#merged-branches">
+            
+                
+                    <a href="./index.html#merged-branches">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                         Merged Branches
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.9" data-path="index.html#web-server-for-browsing-local-repositories">
+            
+                
+                    <a href="./index.html#web-server-for-browsing-local-repositories">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                         Web Server for Browsing Local Repositories
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10" data-path="index.html#git-configurations">
+            
+                
+                    <a href="./index.html#git-configurations">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                         Git Configurations
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.10.1" data-path="index.html#aliases">
+            
+                
+                    <a href="./index.html#aliases">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.1.</b>
+                        
+                         Aliases
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10.2" data-path="index.html#auto-correct">
+            
+                
+                    <a href="./index.html#auto-correct">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.2.</b>
+                        
+                         Auto-Correct
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10.3" data-path="index.html#color">
+            
+                
+                    <a href="./index.html#color">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.3.</b>
+                        
+                         Color
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.11" data-path="index.html#git-resources">
+            
+                
+                    <a href="./index.html#git-resources">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                         Git Resources
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.11.1" data-path="index.html#git-books">
+            
+                
+                    <a href="./index.html#git-books">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.1.</b>
+                        
+                         Git Books
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 0%;min-width: 0%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="./index.html#github" title="GitHub" class="chapter  new-chapter" data-progress="1" style="left: 1.8518518518518519%;"></a>
+    
+        <a href="./index.html#ignore-whitespace" title="Ignore Whitespace" class="chapter  " data-progress="1.1" style="left: 3.7037037037037037%;"></a>
+    
+        <a href="./index.html#adjust-tab-space" title="Adjust Tab Space" class="chapter  " data-progress="1.2" style="left: 5.555555555555555%;"></a>
+    
+        <a href="./index.html#commit-history-by-author" title="Commit History by Author" class="chapter  " data-progress="1.3" style="left: 7.407407407407407%;"></a>
+    
+        <a href="./index.html#cloning-a-repository" title="Cloning a Repository" class="chapter  " data-progress="1.4" style="left: 9.25925925925926%;"></a>
+    
+        <a href="./index.html#compare-all-branches-to-another-branch" title="Compare all Branches to Another Branch" class="chapter  " data-progress="1.5" style="left: 11.11111111111111%;"></a>
+    
+        <a href="./index.html#comparing-branches" title="Comparing Branches" class="chapter  " data-progress="1.6" style="left: 12.962962962962964%;"></a>
+    
+        <a href="./index.html#compare-branches-across-forked-repositories" title="Compare Branches across Forked Repositories" class="chapter  " data-progress="1.7" style="left: 14.814814814814815%;"></a>
+    
+        <a href="./index.html#gists" title="Gists" class="chapter  " data-progress="1.8" style="left: 16.666666666666668%;"></a>
+    
+        <a href="./index.html#gitio" title="Git.io" class="chapter  " data-progress="1.9" style="left: 18.51851851851852%;"></a>
+    
+        <a href="./index.html#keyboard-shortcuts" title="Keyboard Shortcuts" class="chapter  " data-progress="1.10" style="left: 20.37037037037037%;"></a>
+    
+        <a href="./index.html#line-highlighting-in-repositories" title="Line Highlighting in Repositories" class="chapter  " data-progress="1.11" style="left: 22.22222222222222%;"></a>
+    
+        <a href="./index.html#closing-issues-via-commit-messages" title="Closing Issues via Commit Messages" class="chapter  " data-progress="1.12" style="left: 24.074074074074073%;"></a>
+    
+        <a href="./index.html#cross-link-issues" title="Cross-Link Issues" class="chapter  " data-progress="1.13" style="left: 25.925925925925927%;"></a>
+    
+        <a href="./index.html#ci-status-on-pull-requests" title="CI Status on Pull Requests" class="chapter  " data-progress="1.14" style="left: 27.77777777777778%;"></a>
+    
+        <a href="./index.html#syntax-highlighting-in-markdown-files" title="Syntax Highlighting in Markdown Files" class="chapter  " data-progress="1.15" style="left: 29.62962962962963%;"></a>
+    
+        <a href="./index.html#emojis" title="Emojis" class="chapter  " data-progress="1.16" style="left: 31.48148148148148%;"></a>
+    
+        <a href="./index.html#imagesgifs" title="Images/GIFs" class="chapter  " data-progress="1.17" style="left: 33.333333333333336%;"></a>
+    
+        <a href="./index.html#embedding-images-in-github-wiki" title="Embedding Images in GitHub Wiki" class="chapter  " data-progress="1.17.1" style="left: 35.18518518518518%;"></a>
+    
+        <a href="./index.html#quick-quoting" title="Quick Quoting" class="chapter  " data-progress="1.18" style="left: 37.03703703703704%;"></a>
+    
+        <a href="./index.html#quick-licensing" title="Quick Licensing" class="chapter  " data-progress="1.19" style="left: 38.888888888888886%;"></a>
+    
+        <a href="./index.html#task-lists" title="Task Lists" class="chapter  " data-progress="1.20" style="left: 40.74074074074074%;"></a>
+    
+        <a href="./index.html#task-lists-in-markdown-documents" title="Task Lists in Markdown Documents" class="chapter  " data-progress="1.20.1" style="left: 42.592592592592595%;"></a>
+    
+        <a href="./index.html#relative-links" title="Relative Links" class="chapter  " data-progress="1.21" style="left: 44.44444444444444%;"></a>
+    
+        <a href="./index.html#metadata-and-plugin-support-for-github-pages" title="Metadata and Plugin Support for GitHub Pages" class="chapter  " data-progress="1.22" style="left: 46.2962962962963%;"></a>
+    
+        <a href="./index.html#viewing-yaml-metadata-in-your-documents" title="Viewing YAML Metadata in your Documents" class="chapter  " data-progress="1.23" style="left: 48.148148148148145%;"></a>
+    
+        <a href="./index.html#rendering-tabular-data" title="Rendering Tabular Data" class="chapter  " data-progress="1.24" style="left: 50%;"></a>
+    
+        <a href="./index.html#diffs" title="Diffs" class="chapter  " data-progress="1.25" style="left: 51.851851851851855%;"></a>
+    
+        <a href="./index.html#rendered-prose-diffs" title="Rendered prose Diffs" class="chapter  " data-progress="1.25.1" style="left: 53.7037037037037%;"></a>
+    
+        <a href="./index.html#diffable-maps" title="Diffable Maps" class="chapter  " data-progress="1.25.2" style="left: 55.55555555555556%;"></a>
+    
+        <a href="./index.html#expanding-context-in-diffs" title="Expanding Context in Diffs" class="chapter  " data-progress="1.25.3" style="left: 57.407407407407405%;"></a>
+    
+        <a href="./index.html#diff-or-patch-of-pull-request" title="Diff or Patch of Pull Request" class="chapter  " data-progress="1.25.4" style="left: 59.25925925925926%;"></a>
+    
+        <a href="./index.html#rendering-and-diffing-images" title="Rendering and diffing images" class="chapter  " data-progress="1.25.5" style="left: 61.111111111111114%;"></a>
+    
+        <a href="./index.html#hub" title="Hub" class="chapter  " data-progress="1.26" style="left: 62.96296296296296%;"></a>
+    
+        <a href="./index.html#decreasing-contributor-friction" title="Decreasing Contributor Friction" class="chapter  " data-progress="1.27" style="left: 64.81481481481481%;"></a>
+    
+        <a href="./index.html#contributing-guidelines" title="Contributing Guidelines" class="chapter  " data-progress="1.28" style="left: 66.66666666666667%;"></a>
+    
+        <a href="./index.html#github-resources" title="GitHub Resources" class="chapter  " data-progress="1.29" style="left: 68.51851851851852%;"></a>
+    
+        <a href="./index.html#github-talks" title="GitHub Talks" class="chapter  " data-progress="1.29.1" style="left: 70.37037037037037%;"></a>
+    
+        <a href="./index.html#git" title="Git" class="chapter  new-chapter" data-progress="2" style="left: 72.22222222222223%;"></a>
+    
+        <a href="./index.html#previous-branch" title="Previous Branch" class="chapter  " data-progress="2.1" style="left: 74.07407407407408%;"></a>
+    
+        <a href="./index.html#stripspace" title="Stripspace" class="chapter  " data-progress="2.2" style="left: 75.92592592592592%;"></a>
+    
+        <a href="./index.html#checking-out-pull-requests" title="Checking out Pull Requests" class="chapter  " data-progress="2.3" style="left: 77.77777777777777%;"></a>
+    
+        <a href="./index.html#empty-commits-trollface" title="Empty Commits :trollface:" class="chapter  " data-progress="2.4" style="left: 79.62962962962963%;"></a>
+    
+        <a href="./index.html#styled-git-status" title="Styled Git Status" class="chapter  " data-progress="2.5" style="left: 81.48148148148148%;"></a>
+    
+        <a href="./index.html#styled-git-log" title="Styled Git Log" class="chapter  " data-progress="2.6" style="left: 83.33333333333333%;"></a>
+    
+        <a href="./index.html#git-query" title="Git Query" class="chapter  " data-progress="2.7" style="left: 85.18518518518519%;"></a>
+    
+        <a href="./index.html#merged-branches" title="Merged Branches" class="chapter  " data-progress="2.8" style="left: 87.03703703703704%;"></a>
+    
+        <a href="./index.html#web-server-for-browsing-local-repositories" title="Web Server for Browsing Local Repositories" class="chapter  " data-progress="2.9" style="left: 88.88888888888889%;"></a>
+    
+        <a href="./index.html#git-configurations" title="Git Configurations" class="chapter  " data-progress="2.10" style="left: 90.74074074074075%;"></a>
+    
+        <a href="./index.html#aliases" title="Aliases" class="chapter  " data-progress="2.10.1" style="left: 92.5925925925926%;"></a>
+    
+        <a href="./index.html#auto-correct" title="Auto-Correct" class="chapter  " data-progress="2.10.2" style="left: 94.44444444444444%;"></a>
+    
+        <a href="./index.html#color" title="Color" class="chapter  " data-progress="2.10.3" style="left: 96.29629629629629%;"></a>
+    
+        <a href="./index.html#git-resources" title="Git Resources" class="chapter  " data-progress="2.11" style="left: 98.14814814814815%;"></a>
+    
+        <a href="./index.html#git-books" title="Git Books" class="chapter  " data-progress="2.11.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_4">
+                    
+                        <h1 id="-">깃허브 치트 시트</h1>
+<p>A collection of cool hidden and not so hidden features of Git and GitHub. This cheat sheet was inspired by <a href="https://github.com/holman" target="_blank">Zach Holman</a>&#39;s <a href="http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets" target="_blank">Git and GitHub Secrets</a> talk at Aloha Ruby Conference 2012 (<a href="https://speakerdeck.com/holman/git-and-github-secrets" target="_blank">slides</a>) and his <a href="https://vimeo.com/72955426" target="_blank">More Git and GitHub Secrets</a> talk at WDCNZ 2013 (<a href="https://speakerdeck.com/holman/more-git-and-github-secrets" target="_blank">slides</a>).</p>
+<p><em>Shortlink: <a href="http://git.io/sheet" target="_blank"><code>http://git.io/sheet</code></a></em></p>
+<p><em>Read this in other languages: <a href="README.html">English</a>, <a href="README.ko.html">한국어</a>, <a href="README.ja.html">日本語</a>, <a href="README.zh-cn.html">简体中文</a>.</em></p>
+<h1 id="-">목록</h1>
+<ul>
+<li><a href="#github">GitHub</a><ul>
+<li><a href="#ignore-whitespace">Ignore Whitespace</a></li>
+<li><a href="#adjust-tab-space">Adjust Tab Space</a></li>
+<li><a href="#commit-history-by-author">Commit History by Author</a></li>
+<li><a href="#cloning-a-repository">Cloning a Repository</a></li>
+<li><a href="#compare-all-branches-to-another-branch">Compare all Branches to Another Branch</a></li>
+<li><a href="#comparing-branches">Comparing Branches</a></li>
+<li><a href="#compare-branches-across-forked-repositories">Compare Branches across Forked Repositories</a></li>
+<li><a href="#gists">Gists</a></li>
+<li><a href="#gitio">Git.io</a></li>
+<li><a href="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+<li><a href="#line-highlighting-in-repositories">Line Highlighting in Repositories</a></li>
+<li><a href="#closing-issues-via-commit-messages">Closing Issues via Commit Messages</a></li>
+<li><a href="#cross-link-issues">Cross-Link Issues</a></li>
+<li><a href="#ci-status-on-pull-requests">CI Status on Pull Requests</a></li>
+<li><a href="#syntax-highlighting-in-markdown-files">Syntax Highlighting in Markdown Files</a></li>
+<li><a href="#emojis">Emojis</a></li>
+<li><a href="#imagesgifs">Images/GIFs</a><ul>
+<li><a href="#embedding-images-in-github-wiki">Embedding Images in GitHub Wiki</a></li>
+</ul>
+</li>
+<li><a href="#quick-quoting">Quick Quoting</a></li>
+<li><a href="#quick-licensing">Quick Licensing</a></li>
+<li><a href="#task-lists">Task Lists</a><ul>
+<li><a href="#task-lists-in-markdown-documents">Task Lists in Markdown Documents</a></li>
+</ul>
+</li>
+<li><a href="#relative-links">Relative Links</a></li>
+<li><a href="#metadata-and-plugin-support-for-github-pages">Metadata and Plugin Support for GitHub Pages</a></li>
+<li><a href="#viewing-yaml-metadata-in-your-documents">Viewing YAML Metadata in your Documents</a></li>
+<li><a href="#rendering-tabular-data">Rendering Tabular Data</a></li>
+<li><a href="#diffs">Diffs</a><ul>
+<li><a href="#rendered-prose-diffs">Rendered prose Diffs</a></li>
+<li><a href="#diffable-maps">Diffable Maps</a></li>
+<li><a href="#expanding-context-in-diffs">Expanding Context in Diffs</a></li>
+<li><a href="#diff-or-patch-of-pull-request">Diff or Patch of Pull Request</a></li>
+<li><a href="#rendering-and-diffing-images">Rendering and diffing images</a></li>
+</ul>
+</li>
+<li><a href="#hub">Hub</a></li>
+<li><a href="#decreasing-contributor-friction">Decreasing Contributor Friction</a></li>
+<li><a href="#contributing-guidelines">Contributing Guidelines</a></li>
+<li><a href="#github-resources">GitHub Resources</a><ul>
+<li><a href="#github-talks">GitHub Talks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#git">Git</a><ul>
+<li><a href="#previous-branch">Previous Branch</a></li>
+<li><a href="#stripspace">Stripspace</a></li>
+<li><a href="#checking-out-pull-requests">Checking out Pull Requests</a></li>
+<li><a href="#empty-commits-trollface">Empty Commits :trollface:</a></li>
+<li><a href="#styled-git-status">Styled Git Status</a></li>
+<li><a href="#styled-git-log">Styled Git Log</a></li>
+<li><a href="#git-query">Git Query</a></li>
+<li><a href="#merged-branches">Merged Branches</a></li>
+<li><a href="#web-server-for-browsing-local-repositories">Web Server for Browsing Local Repositories</a></li>
+<li><a href="#git-configurations">Git Configurations</a><ul>
+<li><a href="#aliases">Aliases</a></li>
+<li><a href="#auto-correct">Auto-Correct</a></li>
+<li><a href="#color">Color</a></li>
+</ul>
+</li>
+<li><a href="#git-resources">Git Resources</a><ul>
+<li><a href="#git-books">Git Books</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="github">GitHub</h2>
+<h3 id="ignore-whitespace">Ignore Whitespace</h3>
+<p><code>?w=1</code>를 diff URL에 추가하면 변경된 코드만 볼 수 있도록, 공백만 바뀐 수정을 제거할 수 있습니다.</p>
+<p><img src="https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67" alt="Diff without whitespace"></p>
+<p><a href="https://github.com/blog/967-github-secrets" target="_blank"><em>깃허브의 비밀을 더 읽어 보세요.</em></a></p>
+<h3 id="adjust-tab-space">Adjust Tab Space</h3>
+<p>diff나 파일 URL에 <code>?ts=4</code>를 덧붙이면 텝 문자의 크기를 기본값인 8대신 4공백으로 보여줍니다. <code>ts</code>뒤의 숫자는 설정에 맞게 변경 하실 수 있습니다. gist나 raw파일에는 적용 되지 않습니다.</p>
+<p>여기에 있는 Go 소스 파일은 <code>?ts=4</code>를 붙이기 <a href="https://github.com/pengwynn/flint/blob/master/flint/flint.go" target="_blank">전에는</a> 이렇습니다.</p>
+<p><img src="http://i.imgur.com/GIT1Fr0.png" alt="Before, tab space example"></p>
+<p>그리고 <code>?ts=4</code>를 붙인 <a href="https://github.com/pengwynn/flint/blob/master/flint/flint.go?ts=4" target="_blank">다음에는</a> 이렇게 됩니다.
+ --allow-empty
+<img src="http://i.imgur.com/70FL4H9.png" alt="After, tab space example"></p>
+<h3 id="commit-history-by-author">Commit History by Author</h3>
+<p>특정 커미터가 한 모든 커밋을 보고 싶다면 URL에 <code>?author=username</code>를 추가하세요.</p>
+<pre><code>https://github.com/rails/rails/commits/master?author=dhh
+</code></pre><p><img src="http://i.imgur.com/mDWwuaY.png" alt="DHH commit history"></p>
+<p><a href="https://help.github.com/articles/differences-between-commit-views" target="_blank"><em>커밋 뷰간의 차이에 대해 더 읽어보세요.</em></a></p>
+<h3 id="cloning-a-repository">Cloning a Repository</h3>
+<p>저장소를 클론할 때, 맨 뒤의 <code>.git</code>은 생략할 수 있습니다.</p>
+<pre><code class="lang-bash">$ git clone https://github.com/tiimgreen/github-cheat-sheet
+</code></pre>
+<p><a href="http://git-scm.com/docs/git-clone" target="_blank"><em>깃 <code>clone</code> 커맨드에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="compare-all-branches-to-another-branch">Compare all Branches to Another Branch</h3>
+<p>저장소의 <a href="https://github.com/tiimgreen/github-cheat-sheet/branches" target="_blank">브랜치</a> 페이지는, 커밋 버튼의 뒤에 있습니다.</p>
+<pre><code>https://github.com/{user}/{repo}/branches
+</code></pre><p>... 메인 브랜치에 머지되지 않은 모든 브랜치의 리스트를 볼 수 있습니다.</p>
+<p>여기에서 버튼 클릭으로 비교 페이지나 브랜치 삭제를 하실 수 있습니다.</p>
+<p><img src="http://i.imgur.com/gKWPe8a.png" alt="Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches"></p>
+<p>하지만, 보통 <code>master</code>보다는 다른브랜치(예를 들어 <code>development</code>)를 더 자주 비교 합니다. 이렇게 하려면 URL에 브랜치 이름을 붙여줄 필요가 있습니다.</p>
+<pre><code>https://github.com/{user}/{repo}/branches/{branch}
+</code></pre><p><img src="http://i.imgur.com/jpc6Urb.png" alt="Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master"></p>
+<p>머지된 브랜치들을 보려면 URL에 <code>?merged=1</code>를 붙이세요.</p>
+<p><img src="http://i.imgur.com/KmYyCVh.png" alt="Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1"></p>
+<p>이 것을 확인함으로써 커맨드 라인을 사용하지 않은 페이지에서의 브랜치 삭제가 더 쉬워집니다.</p>
+<h3 id="comparing-branches">Comparing Branches</h3>
+<p>깃허브에서 브랜치 비교를 하시려면, URL을 이런 식으로 바꾸세요.</p>
+<pre><code>https://github.com/user/repo/compare/{range}
+</code></pre><p><code>{range}</code>는 <code>master...4-1-stable</code>식으로 적습니다.</p>
+<p>예를 들어</p>
+<pre><code>https://github.com/rails/rails/compare/master...4-1-stable
+</code></pre><p><img src="http://i.imgur.com/0Z52X5Y.png" alt="Rails branch compare example"></p>
+<p><code>{range}</code> 는 이렇게 적을 수도 있습니다.</p>
+<pre><code>https://github.com/rails/rails/compare/master@{1.day.ago}...master
+https://github.com/rails/rails/compare/master@{2014-10-04}...master
+</code></pre><p><em>날짜는 <code>YYYY-DD-MM</code>형식으로 적습니다</em></p>
+<p><img src="http://i.imgur.com/5dtzESz.png" alt="Another compare example"></p>
+<p>이렇게 하면 특정 날짜나 한 시간 전의 마스터 브랜치의 차이를 확인할 수 있습니다.</p>
+<p><a href="https://help.github.com/articles/comparing-commits-across-time" target="_blank"><em>시간으로 커밋을 비교하는 법에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="compare-branches-across-forked-repositories">Compare branches across forked repositories</h3>
+<p>포크된 저장소간의 브랜치를 비교하려면 URL을 이렇게 변경하세요.</p>
+<pre><code>https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
+</code></pre><p>예를 들면</p>
+<pre><code>https://github.com/rails/rails/compare/byroot:idempotent-counter-caches...master
+</code></pre><p><img src="http://i.imgur.com/Q1W6qcB.png" alt="Forked branch compare"></p>
+<h3 id="gists">Gists</h3>
+<p><a href="https://gist.github.com/" target="_blank">Gists</a>는 본격적인 저장소를 만들지 않고, 작은 코드 조각과 일할 수 있는 쉬운 방법입니다.</p>
+<p><img src="http://i.imgur.com/VkKI1LC.png?1" alt="Gist"></p>
+<p><a href="https://gist.github.com/tiimgreen/10545817.pibb" target="_blank">이렇게</a> Gist URL뒤에 <code>.pibb</code>를 넣으면 다른 사이트에 넣을수 있는 <em>HTML 온리</em> 버전을 만들 수 있습니다.</p>
+<p>Gists는 본격적인 저장소처럼 취급할 수 있고 클론도 됩니다.</p>
+<pre><code class="lang-bash">$ git clone https://gist.github.com/tiimgreen/<span class="hljs-number">10545817</span>
+</code></pre>
+<p><img src="http://i.imgur.com/dULZXXo.png" alt="Gists"></p>
+<p><a href="https://help.github.com/articles/creating-gists" target="_blank"><em>gist를 만드는 법에 대해 더 읽어보세요.</em></a></p>
+<h3 id="git-io">Git.io</h3>
+<p><a href="http://git.io" target="_blank">Git.io</a>는 깃허브를 위한 간단한 URL 단축기입니다.</p>
+<p><img src="http://i.imgur.com/6JUfbcG.png?1" alt="Git.io"></p>
+<p>순수 HTTP에서 Curl으로 사용하실 수도 있습니다.</p>
+<pre><code class="lang-bash">$ curl -i http://git.io -F <span class="hljs-string">"url=https://github.com/..."</span>
+HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">201</span> Created
+Location: http://git.io/abc123
+
+$ curl -i http://git.io/abc123
+HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">302</span> Found
+Location: https://github.com/...
+</code></pre>
+<p><a href="https://github.com/blog/985-git-io-github-url-shortener" target="_blank"><em>Git.io에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3>
+<p>저장소 페이지에서 단축키를 사용하면 쉽게 이동할 수 있습니다.</p>
+<ul>
+<li><code>t</code>를 누르면 파일 탐색 페이지로 이동합니다.</li>
+<li><code>w</code>를 누르면 브렌치 선택 페이지로 이동합니다.</li>
+<li><code>s</code>를 누르면 커맨드 창으로 이동합니다.</li>
+<li><code>l</code>를 누르면 있는 이슈의 라벨을 수정할 수 있습니다.</li>
+<li><strong>파일을 보고 있을 때</strong> (예를 들어 <code>https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md</code>) <code>y</code>를 누르면 URL을 지금 보고 있는 페이지를 사실상 고정하도록 합니다. 코드가 바뀐다고 해도 이번에 본 내용을 다시 볼 수 있습니다.</li>
+</ul>
+<p>지금 페이지에서 쓸 수 있는 모든 단축키를 보시려면 <code>?</code>를 누르세요.</p>
+<p><img src="http://i.imgur.com/y5ZfNEm.png" alt="Keyboard shortcuts"></p>
+<p><a href="https://help.github.com/articles/using-the-command-bar" target="_blank"><em>커맨드 바의 사용법을 더 읽어 보세요.</em></a></p>
+<h3 id="line-highlighting-in-repos">Line Highlighting in Repos</h3>
+<p>코드 파일 URL의 끝에 <code>#L52</code>를 추가하거나 줄 번호를 클릭하면 그 줄 번호를 하이라이트합니다.</p>
+<p><code>#L53-L60</code>처럼 범위지정도 가능합니다. 범위를 지정하려면 <code>shift</code>키를 누른 채 두 라인을 클릭하면 됩니다.</p>
+<pre><code>https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L60
+</code></pre><p><img src="http://i.imgur.com/8AhjrCz.png" alt="Line Highlighting"></p>
+<h3 id="closing-issues-with-commits">Closing Issues with Commits</h3>
+<p>어떤 커밋이 이슈를 고쳤다면, <code>fix/fixes/fixed</code>, <code>close/closes/closed</code>, <code>resolve/resolves/resolved</code>를 키워드로 해당 이슈가 마스터 브랜치에 커밋 될 때 닫을 수 있습니다.</p>
+<pre><code class="lang-bash">$ git commit -m <span class="hljs-string">"Fix screwup, fixes #12"</span>
+</code></pre>
+<p>이렇게 하면 이슈를 닫고 클로징 커맨트로 참조하게 합니다.</p>
+<p><img src="http://i.imgur.com/Uh1gZdx.png" alt="Closing Repo"></p>
+<p><a href="https://help.github.com/articles/closing-issues-via-commit-messages" target="_blank"><em>커밋 메세지로 이슈 닫기에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="cross-link-issues">Cross-Link Issues</h3>
+<p>같은 저장소의 다른 이슈를 링크하기 원한다면, <code>#</code>뒤에 이슈 번호만 입력하시면 자동으로 링크됩니다.</p>
+<p>다른 저장소의 이슈를 링크하고 싶다면 <code>사람_이름/저장소_이름#이슈_번호</code>로 할 수 있습니다. (예 <code>tiimgreen/toc#12</code>)</p>
+<p><img src="https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67" alt="Cross-Link Issues"></p>
+<h3 id="ci-status-on-pull-requests">CI Status on Pull Requests</h3>
+<p>정확히 설정되었다면, 풀 리퀘스트를 받거나 풀 리퀘스트에 새로운 커밋을 할 때 마다, <a href="https://travis-ci.org/" target="_blank">Travis CI</a>가 풀 리퀘스트를 빌드 할 것입니다. <a href="http://docs.travis-ci.com/user/getting-started/" target="_blank">Travis CI 시작하기</a>를 좀 더 읽어보세요.</p>
+<p><a href="https://github.com/octokit/octokit.rb/pull/452" target="_blank"><img src="https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png" alt="Travis CI status"></a></p>
+<p><a href="https://github.com/blog/1227-commit-status-api" target="_blank"><em>커밋 상태 API에 대해 좀 더 읽어보세요.</em></a></p>
+<h3 id="syntax-highlighting-in-markdown-files">Syntax Highlighting in Markdown Files</h3>
+<p>마크다운에서 예를 들어, 루비 코드를 신텍스 하이라이트 하려면 이렇게 합니다.</p>
+<pre><code>```ruby
+require &#39;tabbit&#39;
+table = Tabbit.new(&#39;Name&#39;, &#39;Email&#39;)
+table.add_row(&#39;Tim Green&#39;, &#39;tiimgreen@gmail.com&#39;)
+puts table.to_s
+```
+</code></pre><p>이렇게 보입니다.</p>
+<pre><code class="lang-ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">'tabbit'</span>
+table = <span class="hljs-constant">Tabbit</span>.new(<span class="hljs-string">'Name'</span>, <span class="hljs-string">'Email'</span>)
+table.add_row(<span class="hljs-string">'Tim Green'</span>, <span class="hljs-string">'tiimgreen@gmail.com'</span>)
+puts table.to_s
+</code></pre>
+<p>깃허브는 <a href="https://github.com/github/linguist" target="_blank">Linguist</a>를 사용해 언어를 감지하고 신텍스를 하이라이트합니다. <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">언어 YAML 파일</a>을 정독하시면 어떤 키워드가 유효한지 확인하실 수 있습니다.</p>
+<p><a href="https://help.github.com/articles/github-flavored-markdown" target="_blank"><em>깃허브 Flavored 마크다운에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="emojis">Emojis</h3>
+<p>에모지는 풀 리퀘스트, 이슈, 커밋 메세지, README등등에서 <code>:에모지의_이름:</code>으로 만들 수 있습니다.</p>
+<pre><code>:smile:
+:poop:
+:shipit:
+:+1:
+</code></pre><p>:smile:
+:poop:
+:shipit:
+:+1:</p>
+<p>깃허브에서 사용 가능한 에모지의 전 목록은 <a href="http://www.emoji-cheat-sheet.com/" target="_blank">emoji-cheat-sheet.com</a> 나 <a href="https://github.com/scotch-io/All-Github-Emoji-Icons" target="_blank">scotch-io/All-Github-Emoji-Icons</a>에서 확인하실 수 있습니다.</p>
+<p>깃허브에서 많이 사용하는 에모지 탑 5위는 이렇습니다.</p>
+<ol>
+<li>:shipit: - <code>:shipit:</code></li>
+<li>:sparkles: - <code>:sparkles:</code></li>
+<li>:-1: - <code>:-1:</code></li>
+<li>:+1: - <code>:+1:</code></li>
+<li>:clap: - <code>:clap:</code></li>
+</ol>
+<h3 id="images-gifs">Images/GIFs</h3>
+<p>커맨트나 README등등에 이미지와 GIF를 넣을 수 있습니다.</p>
+<pre><code>![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
+</code></pre><p><img src="http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif" alt="Peter don&#39;t care"></p>
+<p>모든 이미지는 GitHub에서 케쉬합니다. 그래서 호스트가 죽어도 이미지는 여전히 남습니다.</p>
+<h4 id="embedding-images-in-github-wiki">Embedding Images in GitHub Wiki</h4>
+<p>이미지를 위키 페이지에넣는 방법은 여럿 있습니다. 위에 보이는 일반 마크다운 문법도 있지만, 이미지에 높이와 넓이를 지정할 수 있는 문법도 있습니다.</p>
+<pre><code class="lang-markdown">[[ http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif | height = 100px ]]
+</code></pre>
+<p>이렇게 보입니다.</p>
+<p><img src="http://i.imgur.com/J5bMf7S.png" alt="Just a screenshot"></p>
+<h3 id="quick-quoting">Quick Quoting</h3>
+<p>스레드에 답글들 때 전에 누가 말한 어떤 내용을 인용하고 싶다면, 텍스트를 하이라이트하고 <code>r</code>을 누르세요. 이렇게 하면 내용을 텍스트 박스에 인용 포맷으로 복사해 줍니다.</p>
+<p><img src="https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif" alt="Quick Quote"></p>
+<p><a href="https://github.com/blog/1399-quick-quotes" target="_blank"><em>빠른 인용에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="quick-licensing">Quick Licensing</h3>
+<p>저장소를 만들 때, 깃허브는 만들어진 저작권을 추가할 수 있는 옵션을 제공합니다.</p>
+<p><img src="http://i.imgur.com/Chqj4Fg.png" alt="License"></p>
+<p>이미 있는 저장소에도 웹 인터페이스에서 새 파일을 만들어 추가할 수 있습니다.
+이름에 <code>LICENSE</code>를 입력하면 옵션으로 템플릿을 사용할 수 있습니다.</p>
+<p><img src="http://i.imgur.com/fTjQict.png" alt="License"></p>
+<p><code>.gitignore</code>에도 똑같이 적용됩니다.</p>
+<p><a href="https://help.github.com/articles/open-source-licensing" target="_blank"><em>오픈 소스 저작권에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="task-lists">Task Lists</h3>
+<p>이슈와 풀 리퀘스트에서 밑의 문법으로 체크박스를 넣을 수 있습니다.(스페이스에 주의하세요.)</p>
+<pre><code>- [ ] Be awesome
+- [ ] Prepare dinner
+  - [ ] Research recipe
+  - [ ] Buy ingredients
+  - [ ] Cook recipe
+- [ ] Sleep
+</code></pre><p><img src="http://i.imgur.com/jJBXhsY.png" alt="Task List"></p>
+<p>체크박스가 클릭 되면, 순수 마크다운에서 갱신이 이루어집니다.</p>
+<pre><code>- [x] Be awesome
+- [ ] Prepare dinner
+  - [x] Research recipe
+  - [x] Buy ingredients
+  - [ ] Cook recipe
+- [ ] Sleep
+</code></pre><p><a href="https://help.github.com/articles/writing-on-github#task-lists" target="_blank"><em>테스크 리스트에 대해 더 읽어 보세요.</em></a></p>
+<h4 id="task-lists-in-markdown-documents">Task Lists in Markdown Documents</h4>
+<p>이제 마크다운 문서에서 <strong>읽기 전용</strong> 체크리스트를 넣을 수 있습니다.</p>
+<pre><code>- [ ] Mercury
+- [x] Venus
+- [x] Earth
+- [x] Mars
+- [ ] Jupiter
+</code></pre><ul>
+<li><input name='quiz-row-3-0-0' id='quiz-row-3-0-0' type='checkbox'/><label class="quiz-label" for="quiz-row-3-0-0"> Mercury</label></li>
+<li><input name='quiz-row-3-0-1' id='quiz-row-3-0-1' type='checkbox' checked/><label class="quiz-label" for="quiz-row-3-0-1"> Venus</label></li>
+<li><input name='quiz-row-3-0-2' id='quiz-row-3-0-2' type='checkbox' checked/><label class="quiz-label" for="quiz-row-3-0-2"> Earth</label></li>
+<li><input name='quiz-row-3-0-3' id='quiz-row-3-0-3' type='checkbox' checked/><label class="quiz-label" for="quiz-row-3-0-3"> Mars</label></li>
+<li><input name='quiz-row-3-0-4' id='quiz-row-3-0-4' type='checkbox'/><label class="quiz-label" for="quiz-row-3-0-4"> Jupiter</label></li>
+</ul>
+<p><a href="https://github.com/blog/1825-task-lists-in-all-markdown-documents" target="_blank"><em>마크다운 문서에서의 테스크 리스트에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="relative-links">Relative Links</h3>
+<p>상대 경로 링크는 마크다운 파일이 내부 컨텐츠로 링크될 때 추천합니다.</p>
+<pre><code class="lang-markdown">[<span class="hljs-link_label">Link to a header</span>](<span class="hljs-link_url">#awesome-section</span>)
+
+[<span class="hljs-link_label">Link to a file</span>](<span class="hljs-link_url">docs/readme</span>)
+</code></pre>
+<p>절대 경로 링크는 URL이 변경 될 때 마다 변경해야 합니다. (예를 들어 저장소 이름 변경, 유저이름 변경, 프로젝트 포크)
+상대 경로 링크를 사용하면 문서를 쉽게 스스로 독립적으로 만들 수 있습니다.</p>
+<p><a href="https://help.github.com/articles/relative-links-in-readmes" target="_blank"><em>상대 경로 링크에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="metadata-and-plugin-support-for-github-pages">Metadata and Plugin Support for GitHub Pages</h3>
+<p>지킬로 작성된 페이지와 포스트에서, 저장소 정보는 예를 들어 <code>{{ site.github.project_title }}</code>처럼 <code>site.github</code> 이름 공간으로 사용하고 표시할 수 있습니다.</p>
+<p>Jemoji와 jekyll-mentions플러그인은 GitHub.com에서 처럼 <a href="#emojis">emoji</a>와 <a href="https://github.com/blog/821" target="_blank">@mentions</a>을 지킬 포스트와 페이지에서 사용하게 합니다.</p>
+<p><a href="https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages" target="_blank"><em>저장소 메타 데이타와 깃허브 페이지의 플러그인 지원에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="viewing-yaml-metadata-in-your-documents">Viewing YAML Metadata in your Documents</h3>
+<p><a href="http://jekyllrb.com/" target="_blank">Jekyll</a>이나 <a href="http://pages.github.com/" target="_blank">GitHub Pages</a>같은 많은 블로그에서 포스트의 처음에 YAML 포멧의 메타데이터를 필요로 합니다. 깃허브는 이 메타 정보를 읽기 편하게 테이블로 표시해 줍니다.</p>
+<p><img src="https://camo.githubusercontent.com/47245aa16728e242f74a9a324ce0d24c0b916075/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36343035302f313232383236372f65303439643063362d323761302d313165332d396464382d6131636432323539393334342e706e67" alt="YAML metadata"></p>
+<p><a href="https://github.com/blog/1647-viewing-yaml-metadata-in-your-documents" target="_blank"><em>문서에서 YAML 메타데이터 보기에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="rendering-tabular-data">Rendering Tabular Data</h3>
+<p>깃허브는 <code>.csv</code> (comma-separated) 와 <code>.tsv</code> (tab-separated)파일에 대해 표(tabular) 데이터 보기를 지원합니다.</p>
+<p><img src="https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67" alt="Tabular data"></p>
+<p><a href="https://github.com/blog/1601-see-your-csvs" target="_blank"><em>표 데이타 표시에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="diffs">Diffs</h3>
+<h4 id="rendered-prose-diffs">Rendered Prose Diffs</h4>
+<p>산문(prose) 파일이 있는 커밋과 풀 리퀘스트는 <em>source</em>와 <em>rendered</em> 뷰 기능을 사용할 수 있습니다.</p>
+<p><img src="https://github-images.s3.amazonaws.com/help/repository/rendered_prose_diff.png" alt="Source / Rendered view"></p>
+<p>&quot;rendered&quot; 버튼을 클릭하시면 렌더된 문서에서 변경을 확인하실 수 있습니다. 렌더된 산문(prose) 뷰는 문장을 추가, 삭제, 변경했을때 유용합니다.</p>
+<p><img src="https://f.cloud.github.com/assets/17715/2003056/3997edb4-862b-11e3-90be-5e9586edecd7.png" alt="Rendered Prose Diffs"></p>
+<p><a href="https://github.com/blog/1784-rendered-prose-diffs" target="_blank"><em>렌더된 산문(prose) diff에 대해 더 읽어 보세요.</em></a></p>
+<h4 id="diffable-maps">Diffable Maps</h4>
+<p>지오데이타가 포함된 커밋이나 풀 리퀘스트를 볼 때마다 깃허브는 무엇이 변경 되었는지 시각적으로 보여줍니다.</p>
+<p><a href="https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5" target="_blank"><img src="https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif" alt="Diffable Maps"></a></p>
+<p><a href="https://github.com/blog/1772-diffable-more-customizable-maps" target="_blank"><em>diff 가능한 맵에 대해 더 읽어 보세요.</em></a></p>
+<h4 id="expanding-context-in-diffs">Expanding Context in Diffs</h4>
+<p>diff의 닫아둔 곳의 <em>펼침</em> 버튼을 클릭하면, 문맥을 더 볼 수 있습니다. 전채 파일을 표시할때까지 계속 <em>펼칠</em> 수 있으며, 깃허브에서 diff가 표시되는 장소라면 어디서든 사용가능합니다.</p>
+<p><img src="https://f.cloud.github.com/assets/22635/1610539/863c1f64-5584-11e3-82bf-151b406a272f.gif" alt="Expanding Context in Diffs"></p>
+<p><a href="https://github.com/blog/1705-expanding-context-in-diffs" target="_blank"><em>diff에서의 문맥 확장에 대해 더 읽어 보세요.</em></a></p>
+<h4 id="diff-or-patch-of-pull-request">Diff or Patch of Pull Request</h4>
+<p>URL뒤에 <code>.diff</code> 나 <code>.patch</code>를 붙이면 풀 리퀘스트의 diff를 얻을 수 있습니다.
+예를 들면</p>
+<pre><code>https://github.com/tiimgreen/github-cheat-sheet/pull/15
+https://github.com/tiimgreen/github-cheat-sheet/pull/15.diff
+https://github.com/tiimgreen/github-cheat-sheet/pull/15.patch
+</code></pre><p><code>.diff</code> 확장자는 이런 내용의 평범한(plain) 텍스트를 줍니다.</p>
+<pre><code>diff --git a/README.md b/README.md
+index 88fcf69..8614873 100644
+--- a/README.md
++++ b/README.md
+@@ -28,6 +28,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
+ - [Merged Branches](#merged-branches)
+ - [Quick Licensing](#quick-licensing)
+ - [TODO Lists](#todo-lists)
++- [Relative Links](#relative-links)
+ - [.gitconfig Recommendations](#gitconfig-recommendations)
+     - [Aliases](#aliases)
+     - [Auto-correct](#auto-correct)
+@@ -381,6 +382,19 @@ When they are clicked, they will be updated in the pure Markdown:
+ - [ ] Sleep
+
+(...)
+</code></pre><h4 id="rendering-and-diffing-images">Rendering and diffing images</h4>
+<p>깃허브는 PNG, JPG, GIF, PSD를 포함한 여러 일반 적인 이미지 형식을 표시할 수 있습니다. 추가적으로 이미지 형식의 diff를 표시하는 여러 방법을 제공합니다.</p>
+<p>[<img src="https://cloud.githubusercontent.com/assets/2546/3165594/55f2798a-eb56-11e3-92e7-b79ad791a697.gif" alt="Diffable PSD">](<a href="https://github.com/blog/1845-psd-viewing-diffing" target="_blank">https://github.com/blog/1845-psd-viewing-diffing</a></p>
+<p><a href="https://help.github.com/articles/rendering-and-diffing-images" target="_blank"><em>이미지 diff에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="hub">Hub</h3>
+<p><a href="https://github.com/github/hub" target="_blank">Hub</a>는 깃허브를 좀 더 쉽게 사용할 수 있도록 추가 기능 및 명령을 제공하는 커맨드 라인 깃 래퍼입니다.</p>
+<p>이렇게 할 수 있습니다.</p>
+<pre><code class="lang-bash">$ hub clone tiimgreen/toc
+</code></pre>
+<p><a href="https://github.com/github/hub#commands" target="_blank"><em>Hub가 제공하는 더 멋진 기능들을 확인해 보세요.</em></a></p>
+<h3 id="decreasing-contributor-friction">Decreasing Contributor Friction</h3>
+<p>사람들이 사용하고 기여할 수 있는 프로젝트를 만드려면, 가장 기본적인 질문에 대답할 수 있어야합니다. 이 프로젝트는 무엇입니까? 어떻게 사용합니까? 어디까지 허용됩니까? 어떻게 기여합니까? 어떻게 개발하고 실행해야 합니까? 어떻게 새로운 기능이 이전 기능을 손상되지 않았는지 확인해야 합니까?</p>
+<p><a href="https://github.com/rafalchmiel/friction" target="_blank">Friction</a>은 이러한 일반적인 <a href="https://github.com/rafalchmiel/friction/wiki" target="_blank">질문들의 답</a>이 프로젝트 안에 있는지 확인하는 커맨드 라인 스크립트 입니다. 다음은 샘플 출력 입니다.</p>
+<p><a href="https://github.com/rafalchmiel/friction" target="_blank"><img src="http://i.imgur.com/4EgpWo4.png" alt="Friction output"></a></p>
+<p><em>Friction 은 MRI 2.1.0, MRI 2.0.0, MRI 1.9.3을 지원합니다.</em></p>
+<h3 id="contributing-guidelines">Contributing Guidelines</h3>
+<p>저장소의 제일 위에 <code>CONTRIBUTING</code> 파일을 넣어두면 기여자가 이슈를 만들거나 풀 리퀘스트를 만들 때 링크로 보여줍니다.</p>
+<p><img src="https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067" alt="Contributing Guidelines"></p>
+<p><a href="https://github.com/blog/1184-contributing-guidelines" target="_blank"><em>기여하기에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="github-resources">GitHub Resources</h3>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub Explore</td>
+<td><a href="https://github.com/explore" target="_blank">https://github.com/explore</a></td>
+</tr>
+<tr>
+<td>GitHub Blog</td>
+<td><a href="https://github.com/blog" target="_blank">https://github.com/blog</a></td>
+</tr>
+<tr>
+<td>GitHub Help</td>
+<td><a href="https://help.github.com/" target="_blank">https://help.github.com/</a></td>
+</tr>
+<tr>
+<td>GitHub Training</td>
+<td><a href="http://training.github.com/" target="_blank">http://training.github.com/</a></td>
+</tr>
+<tr>
+<td>GitHub Developer</td>
+<td><a href="https://developer.github.com/" target="_blank">https://developer.github.com/</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="github-talks">GitHub Talks</h4>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>How GitHub Uses GitHub to Build GitHub</td>
+<td><a href="https://www.youtube.com/watch?v=qyz3jkOBbQY" target="_blank">https://www.youtube.com/watch?v=qyz3jkOBbQY</a></td>
+</tr>
+<tr>
+<td>Introduction to Git with Scott Chacon of GitHub</td>
+<td><a href="https://www.youtube.com/watch?v=ZDR433b0HJY" target="_blank">https://www.youtube.com/watch?v=ZDR433b0HJY</a></td>
+</tr>
+<tr>
+<td>How GitHub No Longer Works</td>
+<td><a href="https://www.youtube.com/watch?v=gXD1ITW7iZI" target="_blank">https://www.youtube.com/watch?v=gXD1ITW7iZI</a></td>
+</tr>
+<tr>
+<td>Git and GitHub Secrets</td>
+<td><a href="https://www.youtube.com/watch?v=Foz9yvMkvlA" target="_blank">https://www.youtube.com/watch?v=Foz9yvMkvlA</a></td>
+</tr>
+<tr>
+<td>More Git and GitHub Secrets</td>
+<td><a href="https://www.youtube.com/watch?v=p50xsL-iVgU" target="_blank">https://www.youtube.com/watch?v=p50xsL-iVgU</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="git">Git</h2>
+<h3 id="previous-branch">Previous Branch</h3>
+<p>커맨드 라인에서 이전 디렉터리로 이동하려면 이렇게 합니다.</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> -
+</code></pre>
+<p>비슷하게, 깃에서 마지막 브랜치로 돌아가는 건 이렇게 할 수 있습니다.</p>
+<pre><code class="lang-bash">$ git checkout -
+<span class="hljs-comment"># Switched to branch 'master'</span>
+
+$ git checkout -
+<span class="hljs-comment"># Switched to branch 'next'</span>
+
+$ git checkout -
+<span class="hljs-comment"># Switched to branch 'master'</span>
+</code></pre>
+<p><a href="http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging" target="_blank"><em>깃 브랜치에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="stripspace">Stripspace</h3>
+<p>깃 Stripspace는 이런 일을 합니다.</p>
+<ul>
+<li>줄 끝의 공백을 제거</li>
+<li>빈줄을 줄임</li>
+<li>파일 끝에 빈 줄을 추가</li>
+</ul>
+<p>커맨드를 실행 할 때 파일을 반드시 이런식으로 넘겨줘야 합니다.</p>
+<pre><code class="lang-bash">$ git stripspace &lt; README.md
+</code></pre>
+<p><a href="http://git-scm.com/docs/git-stripspace" target="_blank"><em>깃 <code>stripspace</code> 커맨드에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="checking-out-pull-requests">Checking out Pull Requests</h3>
+<p>풀 리퀘스트는 깃허브 저장소에서 사용하는 특별한 브랜치로 여러 방법으로 로컬로
+가져 올수 있습니다.</p>
+<p>빠르게 <code>diff</code>나 <code>merge</code>를 하기위해 특정 풀 리퀘스트를 임시로 <code>FETCH_HEAD</code>로
+가져오려면 이렇게 합니다.</p>
+<pre><code class="lang-bash">$ git fetch origin refs/pull/[PR-Number]/head
+</code></pre>
+<p>모든 풀 리퀘스트 브랜치를 refspec에 의한 로컬 리모트 브랜치로 받을 수도
+있습니다.</p>
+<pre><code class="lang-bash">$ git fetch origin <span class="hljs-string">'+refs/pull/*/head:refs/remotes/origin/pr/*'</span>
+</code></pre>
+<p>밑의 줄들을 저장소의 <code>.git/config</code>에 추가하여, 리모트의 풀 리퀘스트를 자동으로
+가져오게도 할 수 있습니다.</p>
+<pre><code>[remote &quot;origin&quot;]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    url = git@github.com:tiimgreen/github-cheat-sheet.git
+</code></pre><pre><code>[remote &quot;origin&quot;]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    url = git@github.com:tiimgreen/github-cheat-sheet.git
+    fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+</code></pre><p>포크 기반의 풀 리퀘스트 기여를 위해, 풀 리퀘스트의 리모트 브랜치를 <code>checkout</code>해
+로컬 브랜치를 만드는 것은 유용합니다.</p>
+<pre><code class="lang-bash">$ git checkout pr/<span class="hljs-number">42</span> pr-<span class="hljs-number">42</span>
+</code></pre>
+<p><a href="https://help.github.com/articles/checking-out-pull-requests-locally" target="_blank"><em>풀 리퀘스트를 로컬로 체크아웃 하는 방법에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="empty-commits-trollface-">Empty Commits :trollface:</h3>
+<p><code>--allow-empty</code>를 추가하시면 코드의 변경 없이 커밋을 넣을 수 있습니다.</p>
+<pre><code class="lang-bash">$ git commit -m <span class="hljs-string">"Big-ass commit"</span> --allow-empty
+</code></pre>
+<p>있을 법한 사용법에는 이런 것들이 있습니다.</p>
+<ul>
+<li>한 뭉치의 일을 시작하기 전에 주석으로 사용</li>
+<li>코드와 관련없는 프로젝트 수정을 할때 주석으로 사용</li>
+<li>저장소를 사용하는 사람과의 대화</li>
+<li>나중에 리베이스하지 않을 저장소의 첫 커밋으로 사용 <code>git commit -m &quot;init repo&quot; --allow-empty</code>.</li>
+</ul>
+<h3 id="styled-git-status">Styled Git Status</h3>
+<pre><code class="lang-bash">$ git status
+</code></pre>
+<p><img src="http://i.imgur.com/o3PEHAA.png" alt="git status"></p>
+<p>이렇게 바뀝니다.</p>
+<pre><code class="lang-bash">$ git status -sb
+</code></pre>
+<p><img src="http://i.imgur.com/xNI1bT0.png" alt="git status -sb"></p>
+<p><a href="http://git-scm.com/docs/git-status" target="_blank"><em>깃 <code>status</code> 커맨드에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="styled-git-log">Styled Git Log</h3>
+<p>이 명령을 실행하면</p>
+<pre><code class="lang-bash">$ git log --all --graph --pretty=format:<span class="hljs-string">'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset'</span> --abbrev-commit --date=relative
+</code></pre>
+<p>이렇게 보입니다.</p>
+<p><img src="http://i.imgur.com/EARRQyJ.png" alt="git log --all --graph --pretty=format:&#39;%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --date=relative"></p>
+<p><a href="http://stackoverflow.com/users/88355/palesz" target="_blank">Palesz</a>님 고맙습니다.</p>
+<p>NOTE: 이 명령을 알리아스 (단축 명령)으로 넣을 수 있습니다. <a href="#aliases">여기</a>의 소개를 보세요.</p>
+<p><a href="http://git-scm.com/docs/git-log" target="_blank"><em>깃 <code>log</code> 커맨드에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="git-query">Git Query</h3>
+<p>깃 쿼리는 모든 이전 커밋 메시지에서 검색해 가장 최근의 쿼리에 맞는 커밋을 찾아줍니다.</p>
+<pre><code class="lang-bash">$ git show :/query
+</code></pre>
+<p><code>query</code>에는 검색하고 싶은 말을 (대소문자를 구분해) 넣으세요. 주어진 검색어가 있는 가장 마지막 커밋을 표시하고 변경된 라인을 보여줍니다.</p>
+<pre><code class="lang-bash">$ git show :/typo
+</code></pre>
+<p><img src="http://i.imgur.com/icaGiNt.png" alt="git show :/query"></p>
+<p>NOTE: 나오려면 <code>q</code>를 누르세요.</p>
+<h3 id="merged-branches">Merged Branches</h3>
+<pre><code class="lang-bash">$ git branch --merged
+</code></pre>
+<p>이 명령어는 현재 브랜치에 머지된 모든 브랜치의 목록을 보여줍니다.</p>
+<p>거꾸로</p>
+<pre><code class="lang-bash">$ git branch --no-merged
+</code></pre>
+<p>이 명령어는 현재 브랜치에 머지되지 않은 브랜치의 목록을 보여줍니다.</p>
+<p><a href="http://git-scm.com/docs/git-branch" target="_blank"><em>깃 <code>branch</code> 커맨드에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="web-server-for-browsing-local-repositories">Web Server for Browsing Local Repositories</h3>
+<p>깃 <code>instaweb</code> 커맨드을 사용하면, 즉석에서 <code>gitweb</code>안에서 작업중인 저장소를 둘러 볼
+수 있습니다. 이 커맨드는 <code>gitweb</code>과 로컬 저장소를 브라우징 하기 위한 웹 서버를 설정하는 스크립트입니다.</p>
+<pre><code class="lang-bash">$ git instaweb
+</code></pre>
+<p>Opens:</p>
+<p><img src="http://i.imgur.com/Dxekmqc.png" alt="Git instaweb"></p>
+<p><a href="http://git-scm.com/docs/git-instaweb" target="_blank"><em>깃 <code>instaweb</code> 커맨드에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="git-configurations">Git Configurations</h3>
+<p><code>.gitconfig</code>는 모든 설정이 들어있는 파일입니다.</p>
+<h4 id="aliases">Aliases</h4>
+<p>알리아스는 커스텀 깃 명령어를 등록할 수 있는 핼퍼입니다. 예를 들어 <code>git a</code>로 <code>git add --all</code>를 실행하게 할 수 있습니다.</p>
+<p>알리아스를 추가하려면 <code>~/.gitconfig</code>를 찾아 다음 포멧으로 입력하거나</p>
+<pre><code>[alias]
+    co = checkout
+    cm = commit
+    p = push
+    # Show verbose output about tags, branches or remotes
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+</code></pre><p>커맨드 라인에서 다음 명령을 입력합니다.</p>
+<pre><code class="lang-bash">$ git config --global alias.new_alias git_function
+</code></pre>
+<p>예를들면</p>
+<pre><code class="lang-bash">$ git config --global alias.cm commit
+</code></pre>
+<p>NOTE: 여러 함수를 알리아스하려면 따옴표를 이용하세요.</p>
+<pre><code class="lang-bash">$ git config --global alias.ac <span class="hljs-string">'add -A . &amp;&amp; commit'</span>
+</code></pre>
+<p>여기 몇 가지 권장 알리아스가 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>Alias</th>
+<th>Current Command</th>
+<th>What to Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git cm</code></td>
+<td><code>git commit</code></td>
+<td><code>git config --global alias.cm commit</code></td>
+</tr>
+<tr>
+<td><code>git co</code></td>
+<td><code>git checkout</code></td>
+<td><code>git config --global alias.co checkout</code></td>
+</tr>
+<tr>
+<td><code>git ac</code></td>
+<td><code>git add . -A</code> <code>git commit</code></td>
+<td><code>git config --global alias.ac &#39;!git add -A &amp;&amp; git commit&#39;</code></td>
+</tr>
+<tr>
+<td><code>git st</code></td>
+<td><code>git status -sb</code></td>
+<td><code>git config --global alias.st &#39;status -sb&#39;</code></td>
+</tr>
+<tr>
+<td><code>git tags</code></td>
+<td><code>git tag -l</code></td>
+<td><code>git config --global alias.tags &#39;tag -l&#39;</code></td>
+</tr>
+<tr>
+<td><code>git branches</code></td>
+<td><code>git branch -a</code></td>
+<td><code>git config --global alias.branches &#39;branch -a&#39;</code></td>
+</tr>
+<tr>
+<td><code>git remotes</code></td>
+<td><code>git remote -v</code></td>
+<td><code>git config --global alias.remotes &#39;remote -v&#39;</code></td>
+</tr>
+<tr>
+<td><code>git lg</code></td>
+<td><code>git log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --</code></td>
+<td><code>git config --global alias.lg &quot;log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<p><em>일부 알리아스는 <a href="https://github.com/mathiasbynens" target="_blank">@mathiasbynens</a>님의 dotfiles에서 가져왔습니다.(<a href="https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig" target="_blank">https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig</a>)</em></p>
+<h4 id="auto-correct">Auto-correct</h4>
+<p>현재 <code>git comit</code>를 치면 이런 결과를 보실 수 있습니다.</p>
+<pre><code class="lang-bash">$ git comit -m <span class="hljs-string">"Message"</span>
+<span class="hljs-comment"># git: 'comit' is not a git command. See 'git --help'.</span>
+
+<span class="hljs-comment"># Did you mean this?</span>
+<span class="hljs-comment">#     commit</span>
+</code></pre>
+<p><code>comit</code>을 쳤을 때 <code>commit</code>을 부르려면, 자동 교정을 켜두세요.</p>
+<pre><code class="lang-bash">$ git config --global help.autocorrect <span class="hljs-number">1</span>
+</code></pre>
+<p>이제 이런 결과를 보실 수 있습니다.</p>
+<pre><code class="lang-bash">$ git comit -m <span class="hljs-string">"Message"</span>
+<span class="hljs-comment"># WARNING: You called a Git command named 'comit', which does not exist.</span>
+<span class="hljs-comment"># Continuing under the assumption that you meant 'commit'</span>
+<span class="hljs-comment"># in 0.1 seconds automatically...</span>
+</code></pre>
+<h4 id="color">Color</h4>
+<p>깃 커맨드 라인에 색을 넣으려면 이렇게 하세요.</p>
+<pre><code class="lang-bash">$ git config --global color.ui <span class="hljs-number">1</span>
+</code></pre>
+<p><a href="http://git-scm.com/docs/git-config" target="_blank"><em>깃 <code>config</code> 커맨드에 대해 더 읽어 보세요.</em></a></p>
+<h3 id="git-resources">Git Resources</h3>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Official Git Site</td>
+<td><a href="http://git-scm.com/" target="_blank">http://git-scm.com/</a></td>
+</tr>
+<tr>
+<td>Official Git Video Tutorials</td>
+<td><a href="http://git-scm.com/videos" target="_blank">http://git-scm.com/videos</a></td>
+</tr>
+<tr>
+<td>Code School Try Git</td>
+<td><a href="http://try.github.com/" target="_blank">http://try.github.com/</a></td>
+</tr>
+<tr>
+<td>Introductory Reference &amp; Tutorial for Git</td>
+<td><a href="http://gitref.org/" target="_blank">http://gitref.org/</a></td>
+</tr>
+<tr>
+<td>Official Git Tutorial</td>
+<td><a href="http://git-scm.com/docs/gittutorial" target="_blank">http://git-scm.com/docs/gittutorial</a></td>
+</tr>
+<tr>
+<td>Everyday Git</td>
+<td><a href="http://git-scm.com/docs/everyday" target="_blank">http://git-scm.com/docs/everyday</a></td>
+</tr>
+<tr>
+<td>Git Immersion</td>
+<td><a href="http://gitimmersion.com/" target="_blank">http://gitimmersion.com/</a></td>
+</tr>
+<tr>
+<td>Ry&#39;s Git Tutorial</td>
+<td><a href="http://rypress.com/tutorials/git/index.html" target="_blank">http://rypress.com/tutorials/git/index.html</a></td>
+</tr>
+<tr>
+<td>Git for Designer</td>
+<td><a href="http://hoth.entp.com/output/git_for_designers.html" target="_blank">http://hoth.entp.com/output/git_for_designers.html</a></td>
+</tr>
+<tr>
+<td>Git for Computer Scientists</td>
+<td><a href="http://eagain.net/articles/git-for-computer-scientists/" target="_blank">http://eagain.net/articles/git-for-computer-scientists/</a></td>
+</tr>
+<tr>
+<td>Git Magic</td>
+<td><a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/" target="_blank">http://www-cs-students.stanford.edu/~blynn/gitmagic/</a></td>
+</tr>
+<tr>
+<td>GitHub Training Kit</td>
+<td><a href="http://training.github.com/kit" target="_blank">http://training.github.com/kit</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="git-books">Git Books</h4>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pragmatic Version Control Using Git</td>
+<td><a href="http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git" target="_blank">http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git</a></td>
+</tr>
+<tr>
+<td>Pro Git</td>
+<td><a href="http://git-scm.com/book" target="_blank">http://git-scm.com/book</a></td>
+</tr>
+<tr>
+<td>Git Internals Peepcode</td>
+<td><a href="http://peepcode.com/products/git-internals-pdf" target="_blank">http://peepcode.com/products/git-internals-pdf</a></td>
+</tr>
+<tr>
+<td>Git in the Trenches</td>
+<td><a href="http://cbx33.github.com/gitt/" target="_blank">http://cbx33.github.com/gitt/</a></td>
+</tr>
+<tr>
+<td>Version Control with Git</td>
+<td><a href="http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387" target="_blank">http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387</a></td>
+</tr>
+<tr>
+<td>Pragmatic Guide to Git</td>
+<td><a href="http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git" target="_blank">http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git</a></td>
+</tr>
+<tr>
+<td>Git: Version Control for Everyone</td>
+<td><a href="http://www.packtpub.com/git-version-control-for-everyone/book" target="_blank">http://www.packtpub.com/git-version-control-for-everyone/book</a></td>
+</tr>
+</tbody>
+</table>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <a href="./index.html#github" class="navigation navigation-next navigation-unique" aria-label="Next page: GitHub"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

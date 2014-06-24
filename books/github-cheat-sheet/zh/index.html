@@ -1,0 +1,1933 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="./manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Introduction | GitHub Cheat Sheet</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="A collection of cool hidden and not so hidden features of Git and GitHub. This cheat sheet was inspired by Zach Holman&#39;s Git and GitHub Secrets talk at Aloha Ruby Conference 2012 (slides) and his More Git and GitHub Secrets talk at WDCNZ 2013 (slides).">
+        <meta name="generator" content="GitBook 0.5.6">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="snowdream">
+    
+    
+    <link rel="next" href="./index.html#github" />
+    
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-github="snowdream/android-books" data-level="0" data-basepath="." data-revision="1403630191001">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/snowdream/android-books" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/snowdream/android-books/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/snowdream/android-books/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="./" >GitHub Cheat Sheet</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/snowdream" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/edit/master/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="index.html#github">
+            
+                
+                    <a href="./index.html#github">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         GitHub
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="index.html#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0">
+            
+                
+                    <a href="./index.html#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         忽略空白字符变化
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="index.html#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0">
+            
+                
+                    <a href="./index.html#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         调整Tab字符所代表的空格数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="index.html#%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%94%A8%E6%88%B7%E7%9A%84commit%E5%8E%86%E5%8F%B2">
+            
+                
+                    <a href="./index.html#%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%94%A8%E6%88%B7%E7%9A%84commit%E5%8E%86%E5%8F%B2">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         查看某个用户的Commit历史
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="index.html#%E5%85%8B%E9%9A%86%E6%9F%90%E4%B8%AA%E4%BB%93%E5%BA%93">
+            
+                
+                    <a href="./index.html#%E5%85%8B%E9%9A%86%E6%9F%90%E4%B8%AA%E4%BB%93%E5%BA%93">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         克隆某个仓库
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="index.html#%E5%B0%86%E6%9F%90%E4%B8%AA%E5%88%86%E6%94%AF%E4%B8%8E%E5%85%B6%E4%BB%96%E6%89%80%E6%9C%89%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%AF%B9%E6%AF%94">
+            
+                
+                    <a href="./index.html#%E5%B0%86%E6%9F%90%E4%B8%AA%E5%88%86%E6%94%AF%E4%B8%8E%E5%85%B6%E4%BB%96%E6%89%80%E6%9C%89%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%AF%B9%E6%AF%94">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         将某个分支与其他所有分支进行对比
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="index.html#%E6%AF%94%E8%BE%83%E5%88%86%E6%94%AF">
+            
+                
+                    <a href="./index.html#%E6%AF%94%E8%BE%83%E5%88%86%E6%94%AF">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         比较分支
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="index.html#%E6%AF%94%E8%BE%83%E4%B8%8D%E5%90%8C%E6%B4%BE%E7%94%9F%E5%BA%93%E7%9A%84%E5%88%86%E6%94%AF">
+            
+                
+                    <a href="./index.html#%E6%AF%94%E8%BE%83%E4%B8%8D%E5%90%8C%E6%B4%BE%E7%94%9F%E5%BA%93%E7%9A%84%E5%88%86%E6%94%AF">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         比较不同派生库的分支
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="index.html#gists">
+            
+                
+                    <a href="./index.html#gists">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                         Gists
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="index.html#gitio">
+            
+                
+                    <a href="./index.html#gitio">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                         Git.io
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="index.html#%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE">
+            
+                
+                    <a href="./index.html#%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                         键盘快捷键
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.11" data-path="index.html#%E6%95%B4%E8%A1%8C%E9%AB%98%E4%BA%AE">
+            
+                
+                    <a href="./index.html#%E6%95%B4%E8%A1%8C%E9%AB%98%E4%BA%AE">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                         整行高亮
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.12" data-path="index.html#%E7%94%A8commit%E4%BF%A1%E6%81%AF%E5%85%B3%E9%97%ADissue">
+            
+                
+                    <a href="./index.html#%E7%94%A8commit%E4%BF%A1%E6%81%AF%E5%85%B3%E9%97%ADissue">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                         用commit信息关闭Issue
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.13" data-path="index.html#%E9%93%BE%E6%8E%A5%E5%85%B6%E4%BB%96%E4%BB%93%E5%BA%93%E7%9A%84issue">
+            
+                
+                    <a href="./index.html#%E9%93%BE%E6%8E%A5%E5%85%B6%E4%BB%96%E4%BB%93%E5%BA%93%E7%9A%84issue">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.13.</b>
+                        
+                         链接其他仓库的Issue
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.14" data-path="index.html#%E8%AE%BE%E7%BD%AEci%E5%AF%B9%E6%AF%8F%E6%9D%A1pull-request%E9%83%BD%E8%BF%9B%E8%A1%8C%E6%9E%84%E5%BB%BA">
+            
+                
+                    <a href="./index.html#%E8%AE%BE%E7%BD%AEci%E5%AF%B9%E6%AF%8F%E6%9D%A1pull-request%E9%83%BD%E8%BF%9B%E8%A1%8C%E6%9E%84%E5%BB%BA">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.14.</b>
+                        
+                         设置CI对每条Pull Request都进行构建
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.15" data-path="index.html#markdown%E6%96%87%E4%BB%B6%E9%AB%98%E4%BA%AE%E8%AF%AD%E6%B3%95">
+            
+                
+                    <a href="./index.html#markdown%E6%96%87%E4%BB%B6%E9%AB%98%E4%BA%AE%E8%AF%AD%E6%B3%95">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.15.</b>
+                        
+                         Markdown文件高亮语法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.16" data-path="index.html#%E8%A1%A8%E6%83%85%E7%AC%A6">
+            
+                
+                    <a href="./index.html#%E8%A1%A8%E6%83%85%E7%AC%A6">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.16.</b>
+                        
+                         表情符
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.17" data-path="index.html#%E9%9D%99%E6%80%81%E4%B8%8E%E5%8A%A8%E6%80%81%E5%9B%BE%E7%89%87">
+            
+                
+                    <a href="./index.html#%E9%9D%99%E6%80%81%E4%B8%8E%E5%8A%A8%E6%80%81%E5%9B%BE%E7%89%87">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.17.</b>
+                        
+                         静态与动态图片
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.17.1" data-path="index.html#%E5%9C%A8github-wiki%E4%B8%AD%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87">
+            
+                
+                    <a href="./index.html#%E5%9C%A8github-wiki%E4%B8%AD%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.17.1.</b>
+                        
+                         在GitHub Wiki中嵌入图片
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.18" data-path="index.html#%E5%BF%AB%E9%80%9F%E5%BC%95%E7%94%A8">
+            
+                
+                    <a href="./index.html#%E5%BF%AB%E9%80%9F%E5%BC%95%E7%94%A8">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.18.</b>
+                        
+                         快速引用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.19" data-path="index.html#%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E8%AE%B8%E5%8F%AF%E8%AF%81">
+            
+                
+                    <a href="./index.html#%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E8%AE%B8%E5%8F%AF%E8%AF%81">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.19.</b>
+                        
+                         快速添加许可证
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.20" data-path="index.html#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8">
+            
+                
+                    <a href="./index.html#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.20.</b>
+                        
+                         任务列表
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.20.1" data-path="index.html#markdown%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8">
+            
+                
+                    <a href="./index.html#markdown%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.20.1.</b>
+                        
+                         Markdown文件中的任务列表
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.21" data-path="index.html#%E7%9B%B8%E5%AF%B9%E9%93%BE%E6%8E%A5">
+            
+                
+                    <a href="./index.html#%E7%9B%B8%E5%AF%B9%E9%93%BE%E6%8E%A5">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.21.</b>
+                        
+                         相对链接
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.22" data-path="index.html#github-pages%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E6%8F%92%E4%BB%B6%E6%94%AF%E6%8C%81">
+            
+                
+                    <a href="./index.html#github-pages%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E6%8F%92%E4%BB%B6%E6%94%AF%E6%8C%81">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.22.</b>
+                        
+                         GitHub Pages的元数据与插件支持
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.23" data-path="index.html#%E6%9F%A5%E7%9C%8Byaml%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE">
+            
+                
+                    <a href="./index.html#%E6%9F%A5%E7%9C%8Byaml%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.23.</b>
+                        
+                         查看YAML格式的元数据
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.24" data-path="index.html#%E6%B8%B2%E6%9F%93%E8%A1%A8%E6%A0%BC%E6%95%B0%E6%8D%AE">
+            
+                
+                    <a href="./index.html#%E6%B8%B2%E6%9F%93%E8%A1%A8%E6%A0%BC%E6%95%B0%E6%8D%AE">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.24.</b>
+                        
+                         渲染表格数据
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25" data-path="index.html#diffs">
+            
+                
+                    <a href="./index.html#diffs">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.</b>
+                        
+                         Diffs
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.25.1" data-path="index.html#%E5%8F%AF%E6%B8%B2%E6%9F%93%E6%96%87%E6%A1%A3%E7%9A%84diffs">
+            
+                
+                    <a href="./index.html#%E5%8F%AF%E6%B8%B2%E6%9F%93%E6%96%87%E6%A1%A3%E7%9A%84diffs">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.1.</b>
+                        
+                         可渲染文档的Diffs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.2" data-path="index.html#%E5%8F%AF%E5%8F%98%E5%8C%96%E5%9C%B0%E5%9B%BE">
+            
+                
+                    <a href="./index.html#%E5%8F%AF%E5%8F%98%E5%8C%96%E5%9C%B0%E5%9B%BE">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.2.</b>
+                        
+                         可变化地图
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.3" data-path="index.html#%E5%9C%A8diff%E4%B8%AD%E6%8A%98%E5%8F%A0%E4%B8%8E%E6%89%A9%E5%B1%95%E4%BB%A3%E7%A0%81">
+            
+                
+                    <a href="./index.html#%E5%9C%A8diff%E4%B8%AD%E6%8A%98%E5%8F%A0%E4%B8%8E%E6%89%A9%E5%B1%95%E4%BB%A3%E7%A0%81">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.3.</b>
+                        
+                         在diff中折叠与扩展代码
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.4" data-path="index.html#%E6%9F%A5%E7%9C%8Bpull-request%E7%9A%84diff%E5%92%8Cpatch">
+            
+                
+                    <a href="./index.html#%E6%9F%A5%E7%9C%8Bpull-request%E7%9A%84diff%E5%92%8Cpatch">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.4.</b>
+                        
+                         查看Pull Request的diff和patch
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.25.5" data-path="index.html#%E6%B8%B2%E6%9F%93%E5%9B%BE%E5%83%8F%E5%8F%91%E7%94%9F%E7%9A%84%E5%8F%98%E5%8A%A8">
+            
+                
+                    <a href="./index.html#%E6%B8%B2%E6%9F%93%E5%9B%BE%E5%83%8F%E5%8F%91%E7%94%9F%E7%9A%84%E5%8F%98%E5%8A%A8">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.25.5.</b>
+                        
+                         渲染图像发生的变动
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.26" data-path="index.html#hub">
+            
+                
+                    <a href="./index.html#hub">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.26.</b>
+                        
+                         Hub
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.27" data-path="index.html#%E8%B4%A1%E7%8C%AE%E5%86%85%E5%AE%B9%E7%9A%84%E8%87%AA%E5%8A%A8%E6%A3%80%E6%9F%A5">
+            
+                
+                    <a href="./index.html#%E8%B4%A1%E7%8C%AE%E5%86%85%E5%AE%B9%E7%9A%84%E8%87%AA%E5%8A%A8%E6%A3%80%E6%9F%A5">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.27.</b>
+                        
+                         贡献内容的自动检查
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.28" data-path="index.html#%E8%B4%A1%E7%8C%AE%E8%80%85%E6%8C%87%E5%8D%97">
+            
+                
+                    <a href="./index.html#%E8%B4%A1%E7%8C%AE%E8%80%85%E6%8C%87%E5%8D%97">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.28.</b>
+                        
+                         贡献者指南
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.29" data-path="index.html#github%E8%B5%84%E6%BA%90">
+            
+                
+                    <a href="./index.html#github%E8%B5%84%E6%BA%90">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.29.</b>
+                        
+                         GitHub资源
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.29.1" data-path="index.html#github%E8%AE%A8%E8%AE%BA">
+            
+                
+                    <a href="./index.html#github%E8%AE%A8%E8%AE%BA">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.29.1.</b>
+                        
+                         GitHub讨论
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="index.html#git">
+            
+                
+                    <a href="./index.html#git">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Git
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="index.html#%E5%89%8D%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF">
+            
+                
+                    <a href="./index.html#%E5%89%8D%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         前一个分支
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="index.html#stripspace%E5%91%BD%E4%BB%A4">
+            
+                
+                    <a href="./index.html#stripspace%E5%91%BD%E4%BB%A4">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Stripspace命令
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="index.html#%E6%A3%80%E5%87%BApull-requests">
+            
+                
+                    <a href="./index.html#%E6%A3%80%E5%87%BApull-requests">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         检出Pull Requests
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="index.html#%E6%8F%90%E4%BA%A4%E7%A9%BA%E6%94%B9%E5%8A%A8-trollface">
+            
+                
+                    <a href="./index.html#%E6%8F%90%E4%BA%A4%E7%A9%BA%E6%94%B9%E5%8A%A8-trollface">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         提交空改动 :trollface:
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="index.html#%E6%9B%B4%E7%9B%B4%E8%A7%82%E7%9A%84git-status">
+            
+                
+                    <a href="./index.html#%E6%9B%B4%E7%9B%B4%E8%A7%82%E7%9A%84git-status">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         更直观的Git Status
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="index.html#%E6%9B%B4%E7%9B%B4%E8%A7%82%E7%9A%84git-log">
+            
+                
+                    <a href="./index.html#%E6%9B%B4%E7%9B%B4%E8%A7%82%E7%9A%84git-log">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         更直观的Git Log
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.7" data-path="index.html#git%E6%9F%A5%E8%AF%A2">
+            
+                
+                    <a href="./index.html#git%E6%9F%A5%E8%AF%A2">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                         Git查询
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.8" data-path="index.html#%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF">
+            
+                
+                    <a href="./index.html#%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                         合并分支
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.9" data-path="index.html#%E4%BD%BF%E7%94%A8%E7%BD%91%E9%A1%B5%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93">
+            
+                
+                    <a href="./index.html#%E4%BD%BF%E7%94%A8%E7%BD%91%E9%A1%B5%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                         使用网页查看本地仓库
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10" data-path="index.html#git%E9%85%8D%E7%BD%AE">
+            
+                
+                    <a href="./index.html#git%E9%85%8D%E7%BD%AE">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                         Git配置
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.10.1" data-path="index.html#git%E5%91%BD%E4%BB%A4%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%AB%E5%90%8D">
+            
+                
+                    <a href="./index.html#git%E5%91%BD%E4%BB%A4%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%AB%E5%90%8D">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.1.</b>
+                        
+                         Git命令自定义别名
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10.2" data-path="index.html#%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%AD%A3">
+            
+                
+                    <a href="./index.html#%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%AD%A3">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.2.</b>
+                        
+                         自动更正
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10.3" data-path="index.html#%E5%B8%A6%E9%A2%9C%E8%89%B2%E8%BE%93%E5%87%BA">
+            
+                
+                    <a href="./index.html#%E5%B8%A6%E9%A2%9C%E8%89%B2%E8%BE%93%E5%87%BA">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.3.</b>
+                        
+                         带颜色输出
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.11" data-path="index.html#git%E8%B5%84%E6%BA%90">
+            
+                
+                    <a href="./index.html#git%E8%B5%84%E6%BA%90">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                         Git资源
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.11.1" data-path="index.html#git%E5%8F%82%E8%80%83%E4%B9%A6%E7%B1%8D">
+            
+                
+                    <a href="./index.html#git%E5%8F%82%E8%80%83%E4%B9%A6%E7%B1%8D">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.1.</b>
+                        
+                         Git参考书籍
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 0%;min-width: 0%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="./index.html#github" title="GitHub" class="chapter  new-chapter" data-progress="1" style="left: 1.8867924528301887%;"></a>
+    
+        <a href="./index.html#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0" title="调整Tab字符所代表的空格数" class="chapter  " data-progress="1.2" style="left: 3.7735849056603774%;"></a>
+    
+        <a href="./index.html#%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%94%A8%E6%88%B7%E7%9A%84commit%E5%8E%86%E5%8F%B2" title="查看某个用户的Commit历史" class="chapter  " data-progress="1.3" style="left: 5.660377358490566%;"></a>
+    
+        <a href="./index.html#%E5%85%8B%E9%9A%86%E6%9F%90%E4%B8%AA%E4%BB%93%E5%BA%93" title="克隆某个仓库" class="chapter  " data-progress="1.4" style="left: 7.547169811320755%;"></a>
+    
+        <a href="./index.html#%E5%B0%86%E6%9F%90%E4%B8%AA%E5%88%86%E6%94%AF%E4%B8%8E%E5%85%B6%E4%BB%96%E6%89%80%E6%9C%89%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%AF%B9%E6%AF%94" title="将某个分支与其他所有分支进行对比" class="chapter  " data-progress="1.5" style="left: 9.433962264150944%;"></a>
+    
+        <a href="./index.html#%E6%AF%94%E8%BE%83%E5%88%86%E6%94%AF" title="比较分支" class="chapter  " data-progress="1.6" style="left: 11.320754716981131%;"></a>
+    
+        <a href="./index.html#%E6%AF%94%E8%BE%83%E4%B8%8D%E5%90%8C%E6%B4%BE%E7%94%9F%E5%BA%93%E7%9A%84%E5%88%86%E6%94%AF" title="比较不同派生库的分支" class="chapter  " data-progress="1.7" style="left: 13.20754716981132%;"></a>
+    
+        <a href="./index.html#gists" title="Gists" class="chapter  " data-progress="1.8" style="left: 15.09433962264151%;"></a>
+    
+        <a href="./index.html#gitio" title="Git.io" class="chapter  " data-progress="1.9" style="left: 16.9811320754717%;"></a>
+    
+        <a href="./index.html#%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE" title="键盘快捷键" class="chapter  " data-progress="1.10" style="left: 18.867924528301888%;"></a>
+    
+        <a href="./index.html#%E6%95%B4%E8%A1%8C%E9%AB%98%E4%BA%AE" title="整行高亮" class="chapter  " data-progress="1.11" style="left: 20.754716981132077%;"></a>
+    
+        <a href="./index.html#%E7%94%A8commit%E4%BF%A1%E6%81%AF%E5%85%B3%E9%97%ADissue" title="用commit信息关闭Issue" class="chapter  " data-progress="1.12" style="left: 22.641509433962263%;"></a>
+    
+        <a href="./index.html#%E9%93%BE%E6%8E%A5%E5%85%B6%E4%BB%96%E4%BB%93%E5%BA%93%E7%9A%84issue" title="链接其他仓库的Issue" class="chapter  " data-progress="1.13" style="left: 24.528301886792452%;"></a>
+    
+        <a href="./index.html#%E8%AE%BE%E7%BD%AEci%E5%AF%B9%E6%AF%8F%E6%9D%A1pull-request%E9%83%BD%E8%BF%9B%E8%A1%8C%E6%9E%84%E5%BB%BA" title="设置CI对每条Pull Request都进行构建" class="chapter  " data-progress="1.14" style="left: 26.41509433962264%;"></a>
+    
+        <a href="./index.html#markdown%E6%96%87%E4%BB%B6%E9%AB%98%E4%BA%AE%E8%AF%AD%E6%B3%95" title="Markdown文件高亮语法" class="chapter  " data-progress="1.15" style="left: 28.30188679245283%;"></a>
+    
+        <a href="./index.html#%E8%A1%A8%E6%83%85%E7%AC%A6" title="表情符" class="chapter  " data-progress="1.16" style="left: 30.18867924528302%;"></a>
+    
+        <a href="./index.html#%E9%9D%99%E6%80%81%E4%B8%8E%E5%8A%A8%E6%80%81%E5%9B%BE%E7%89%87" title="静态与动态图片" class="chapter  " data-progress="1.17" style="left: 32.075471698113205%;"></a>
+    
+        <a href="./index.html#%E5%9C%A8github-wiki%E4%B8%AD%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87" title="在GitHub Wiki中嵌入图片" class="chapter  " data-progress="1.17.1" style="left: 33.9622641509434%;"></a>
+    
+        <a href="./index.html#%E5%BF%AB%E9%80%9F%E5%BC%95%E7%94%A8" title="快速引用" class="chapter  " data-progress="1.18" style="left: 35.84905660377358%;"></a>
+    
+        <a href="./index.html#%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E8%AE%B8%E5%8F%AF%E8%AF%81" title="快速添加许可证" class="chapter  " data-progress="1.19" style="left: 37.735849056603776%;"></a>
+    
+        <a href="./index.html#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8" title="任务列表" class="chapter  " data-progress="1.20" style="left: 39.62264150943396%;"></a>
+    
+        <a href="./index.html#markdown%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8" title="Markdown文件中的任务列表" class="chapter  " data-progress="1.20.1" style="left: 41.509433962264154%;"></a>
+    
+        <a href="./index.html#%E7%9B%B8%E5%AF%B9%E9%93%BE%E6%8E%A5" title="相对链接" class="chapter  " data-progress="1.21" style="left: 43.39622641509434%;"></a>
+    
+        <a href="./index.html#github-pages%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E6%8F%92%E4%BB%B6%E6%94%AF%E6%8C%81" title="GitHub Pages的元数据与插件支持" class="chapter  " data-progress="1.22" style="left: 45.283018867924525%;"></a>
+    
+        <a href="./index.html#%E6%9F%A5%E7%9C%8Byaml%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE" title="查看YAML格式的元数据" class="chapter  " data-progress="1.23" style="left: 47.16981132075472%;"></a>
+    
+        <a href="./index.html#%E6%B8%B2%E6%9F%93%E8%A1%A8%E6%A0%BC%E6%95%B0%E6%8D%AE" title="渲染表格数据" class="chapter  " data-progress="1.24" style="left: 49.056603773584904%;"></a>
+    
+        <a href="./index.html#diffs" title="Diffs" class="chapter  " data-progress="1.25" style="left: 50.943396226415096%;"></a>
+    
+        <a href="./index.html#%E5%8F%AF%E6%B8%B2%E6%9F%93%E6%96%87%E6%A1%A3%E7%9A%84diffs" title="可渲染文档的Diffs" class="chapter  " data-progress="1.25.1" style="left: 52.83018867924528%;"></a>
+    
+        <a href="./index.html#%E5%8F%AF%E5%8F%98%E5%8C%96%E5%9C%B0%E5%9B%BE" title="可变化地图" class="chapter  " data-progress="1.25.2" style="left: 54.716981132075475%;"></a>
+    
+        <a href="./index.html#%E5%9C%A8diff%E4%B8%AD%E6%8A%98%E5%8F%A0%E4%B8%8E%E6%89%A9%E5%B1%95%E4%BB%A3%E7%A0%81" title="在diff中折叠与扩展代码" class="chapter  " data-progress="1.25.3" style="left: 56.60377358490566%;"></a>
+    
+        <a href="./index.html#%E6%9F%A5%E7%9C%8Bpull-request%E7%9A%84diff%E5%92%8Cpatch" title="查看Pull Request的diff和patch" class="chapter  " data-progress="1.25.4" style="left: 58.490566037735846%;"></a>
+    
+        <a href="./index.html#%E6%B8%B2%E6%9F%93%E5%9B%BE%E5%83%8F%E5%8F%91%E7%94%9F%E7%9A%84%E5%8F%98%E5%8A%A8" title="渲染图像发生的变动" class="chapter  " data-progress="1.25.5" style="left: 60.37735849056604%;"></a>
+    
+        <a href="./index.html#hub" title="Hub" class="chapter  " data-progress="1.26" style="left: 62.264150943396224%;"></a>
+    
+        <a href="./index.html#%E8%B4%A1%E7%8C%AE%E5%86%85%E5%AE%B9%E7%9A%84%E8%87%AA%E5%8A%A8%E6%A3%80%E6%9F%A5" title="贡献内容的自动检查" class="chapter  " data-progress="1.27" style="left: 64.15094339622641%;"></a>
+    
+        <a href="./index.html#%E8%B4%A1%E7%8C%AE%E8%80%85%E6%8C%87%E5%8D%97" title="贡献者指南" class="chapter  " data-progress="1.28" style="left: 66.0377358490566%;"></a>
+    
+        <a href="./index.html#github%E8%B5%84%E6%BA%90" title="GitHub资源" class="chapter  " data-progress="1.29" style="left: 67.9245283018868%;"></a>
+    
+        <a href="./index.html#github%E8%AE%A8%E8%AE%BA" title="GitHub讨论" class="chapter  " data-progress="1.29.1" style="left: 69.81132075471699%;"></a>
+    
+        <a href="./index.html#git" title="Git" class="chapter  new-chapter" data-progress="2" style="left: 71.69811320754717%;"></a>
+    
+        <a href="./index.html#%E5%89%8D%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF" title="前一个分支" class="chapter  " data-progress="2.1" style="left: 73.58490566037736%;"></a>
+    
+        <a href="./index.html#stripspace%E5%91%BD%E4%BB%A4" title="Stripspace命令" class="chapter  " data-progress="2.2" style="left: 75.47169811320755%;"></a>
+    
+        <a href="./index.html#%E6%A3%80%E5%87%BApull-requests" title="检出Pull Requests" class="chapter  " data-progress="2.3" style="left: 77.35849056603773%;"></a>
+    
+        <a href="./index.html#%E6%8F%90%E4%BA%A4%E7%A9%BA%E6%94%B9%E5%8A%A8-trollface" title="提交空改动 :trollface:" class="chapter  " data-progress="2.4" style="left: 79.24528301886792%;"></a>
+    
+        <a href="./index.html#%E6%9B%B4%E7%9B%B4%E8%A7%82%E7%9A%84git-status" title="更直观的Git Status" class="chapter  " data-progress="2.5" style="left: 81.13207547169812%;"></a>
+    
+        <a href="./index.html#%E6%9B%B4%E7%9B%B4%E8%A7%82%E7%9A%84git-log" title="更直观的Git Log" class="chapter  " data-progress="2.6" style="left: 83.01886792452831%;"></a>
+    
+        <a href="./index.html#git%E6%9F%A5%E8%AF%A2" title="Git查询" class="chapter  " data-progress="2.7" style="left: 84.90566037735849%;"></a>
+    
+        <a href="./index.html#%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF" title="合并分支" class="chapter  " data-progress="2.8" style="left: 86.79245283018868%;"></a>
+    
+        <a href="./index.html#%E4%BD%BF%E7%94%A8%E7%BD%91%E9%A1%B5%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93" title="使用网页查看本地仓库" class="chapter  " data-progress="2.9" style="left: 88.67924528301887%;"></a>
+    
+        <a href="./index.html#git%E9%85%8D%E7%BD%AE" title="Git配置" class="chapter  " data-progress="2.10" style="left: 90.56603773584905%;"></a>
+    
+        <a href="./index.html#git%E5%91%BD%E4%BB%A4%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%AB%E5%90%8D" title="Git命令自定义别名" class="chapter  " data-progress="2.10.1" style="left: 92.45283018867924%;"></a>
+    
+        <a href="./index.html#%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%AD%A3" title="自动更正" class="chapter  " data-progress="2.10.2" style="left: 94.33962264150944%;"></a>
+    
+        <a href="./index.html#%E5%B8%A6%E9%A2%9C%E8%89%B2%E8%BE%93%E5%87%BA" title="带颜色输出" class="chapter  " data-progress="2.10.3" style="left: 96.22641509433963%;"></a>
+    
+        <a href="./index.html#git%E8%B5%84%E6%BA%90" title="Git资源" class="chapter  " data-progress="2.11" style="left: 98.11320754716981%;"></a>
+    
+        <a href="./index.html#git%E5%8F%82%E8%80%83%E4%B9%A6%E7%B1%8D" title="Git参考书籍" class="chapter  " data-progress="2.11.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_2">
+                    
+                        <h1 id="github-">GitHub秘籍</h1>
+<p>本秘籍收录了一些Git和Github非常酷同时又少有人知的功能。灵感来自于<a href="https://github.com/holman" target="_blank">Zach Holman</a>在2012年Aloha Ruby Conference和2013年WDCNZ上所做的演讲：<a href="http://www.confreaks.com/videos/1229-aloharuby2012-git-and-github-secrets" target="_blank">Git and GitHub Secrets</a>(<a href="https://speakerdeck.com/holman/git-and-github-secrets" target="_blank">slides</a>)和<a href="https://vimeo.com/72955426" target="_blank">More Git and GitHub Secrets</a>(<a href="https://speakerdeck.com/holman/more-git-and-github-secrets" target="_blank">slides</a>)。</p>
+<p><em>Read this in other languages: <a href="README.html">English</a>, <a href="README.ko.html">한국어</a>, <a href="README.ja.html">日本語</a>, <a href="README.zh-cn.html">简体中文</a>.</em></p>
+<h1 id="-">目录</h1>
+<ul>
+<li><a href="#github">GitHub</a><ul>
+<li><a href="#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0">忽略空白字符变化</a></li>
+<li><a href="#%E8%B0%83%E6%95%B4tab%E5%AD%97%E7%AC%A6%E6%89%80%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%A9%BA%E6%A0%BC%E6%95%B0">调整Tab字符所代表的空格数</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%94%A8%E6%88%B7%E7%9A%84commit%E5%8E%86%E5%8F%B2">查看某个用户的Commit历史</a></li>
+<li><a href="#%E5%85%8B%E9%9A%86%E6%9F%90%E4%B8%AA%E4%BB%93%E5%BA%93">克隆某个仓库</a></li>
+<li><a href="#%E5%B0%86%E6%9F%90%E4%B8%AA%E5%88%86%E6%94%AF%E4%B8%8E%E5%85%B6%E4%BB%96%E6%89%80%E6%9C%89%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%AF%B9%E6%AF%94">将某个分支与其他所有分支进行对比</a></li>
+<li><a href="#%E6%AF%94%E8%BE%83%E5%88%86%E6%94%AF">比较分支</a></li>
+<li><a href="#%E6%AF%94%E8%BE%83%E4%B8%8D%E5%90%8C%E6%B4%BE%E7%94%9F%E5%BA%93%E7%9A%84%E5%88%86%E6%94%AF">比较不同派生库的分支</a></li>
+<li><a href="#gists">Gists</a></li>
+<li><a href="#gitio">Git.io</a></li>
+<li><a href="#%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE">键盘快捷键</a></li>
+<li><a href="#%E6%95%B4%E8%A1%8C%E9%AB%98%E4%BA%AE">整行高亮</a></li>
+<li><a href="#%E7%94%A8commit%E4%BF%A1%E6%81%AF%E5%85%B3%E9%97%ADissue">用commit信息关闭Issue</a></li>
+<li><a href="#%E9%93%BE%E6%8E%A5%E5%85%B6%E4%BB%96%E4%BB%93%E5%BA%93%E7%9A%84issue">链接其他仓库的Issue</a></li>
+<li><a href="#%E8%AE%BE%E7%BD%AEci%E5%AF%B9%E6%AF%8F%E6%9D%A1pull-request%E9%83%BD%E8%BF%9B%E8%A1%8C%E6%9E%84%E5%BB%BA">设置CI对每条Pull Request都进行构建</a></li>
+<li><a href="#markdown%E6%96%87%E4%BB%B6%E9%AB%98%E4%BA%AE%E8%AF%AD%E6%B3%95">Markdown文件高亮语法</a></li>
+<li><a href="#%E8%A1%A8%E6%83%85%E7%AC%A6">表情符</a></li>
+<li><a href="#%E9%9D%99%E6%80%81%E4%B8%8E%E5%8A%A8%E6%80%81%E5%9B%BE%E7%89%87">静态与动态图片</a><ul>
+<li><a href="#%E5%9C%A8github-wiki%E4%B8%AD%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87">在GitHub Wiki中嵌入图片</a></li>
+</ul>
+</li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%95%E7%94%A8">快速引用</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E8%AE%B8%E5%8F%AF%E8%AF%81">快速添加许可证</a></li>
+<li><a href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8">任务列表</a><ul>
+<li><a href="#markdown%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8">Markdown文件中的任务列表</a></li>
+</ul>
+</li>
+<li><a href="#%E7%9B%B8%E5%AF%B9%E9%93%BE%E6%8E%A5">相对链接</a></li>
+<li><a href="#github-pages%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E6%8F%92%E4%BB%B6%E6%94%AF%E6%8C%81">GitHub Pages的元数据与插件支持</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8Byaml%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE">查看YAML格式的元数据</a></li>
+<li><a href="#%E6%B8%B2%E6%9F%93%E8%A1%A8%E6%A0%BC%E6%95%B0%E6%8D%AE">渲染表格数据</a></li>
+<li><a href="#diffs">Diffs</a><ul>
+<li><a href="#%E5%8F%AF%E6%B8%B2%E6%9F%93%E6%96%87%E6%A1%A3%E7%9A%84diffs">可渲染文档的Diffs</a></li>
+<li><a href="#%E5%8F%AF%E5%8F%98%E5%8C%96%E5%9C%B0%E5%9B%BE">可变化地图</a></li>
+<li><a href="#%E5%9C%A8diff%E4%B8%AD%E6%8A%98%E5%8F%A0%E4%B8%8E%E6%89%A9%E5%B1%95%E4%BB%A3%E7%A0%81">在diff中折叠与扩展代码</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8Bpull-request%E7%9A%84diff%E5%92%8Cpatch">查看Pull Request的diff和patch</a></li>
+<li><a href="#%E6%B8%B2%E6%9F%93%E5%9B%BE%E5%83%8F%E5%8F%91%E7%94%9F%E7%9A%84%E5%8F%98%E5%8A%A8">渲染图像发生的变动</a></li>
+</ul>
+</li>
+<li><a href="#hub">Hub</a></li>
+<li><a href="#%E8%B4%A1%E7%8C%AE%E5%86%85%E5%AE%B9%E7%9A%84%E8%87%AA%E5%8A%A8%E6%A3%80%E6%9F%A5">贡献内容的自动检查</a></li>
+<li><a href="#%E8%B4%A1%E7%8C%AE%E8%80%85%E6%8C%87%E5%8D%97">贡献者指南</a></li>
+<li><a href="#github%E8%B5%84%E6%BA%90">GitHub资源</a><ul>
+<li><a href="#github%E8%AE%A8%E8%AE%BA">GitHub讨论</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#git">Git</a><ul>
+<li><a href="#%E5%89%8D%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF">前一个分支</a></li>
+<li><a href="#stripspace%E5%91%BD%E4%BB%A4">Stripspace命令</a></li>
+<li><a href="#%E6%A3%80%E5%87%BApull-requests">检出Pull Requests</a></li>
+<li><a href="#%E6%8F%90%E4%BA%A4%E7%A9%BA%E6%94%B9%E5%8A%A8-trollface">提交空改动 :trollface:</a></li>
+<li><a href="#%E6%9B%B4%E7%9B%B4%E8%A7%82%E7%9A%84git-status">更直观的Git Status</a></li>
+<li><a href="#%E6%9B%B4%E7%9B%B4%E8%A7%82%E7%9A%84git-log">更直观的Git Log</a></li>
+<li><a href="#git%E6%9F%A5%E8%AF%A2">Git查询</a></li>
+<li><a href="#%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF">合并分支</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8%E7%BD%91%E9%A1%B5%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93">使用网页查看本地仓库</a></li>
+<li><a href="#git%E9%85%8D%E7%BD%AE">Git配置</a><ul>
+<li><a href="#git%E5%91%BD%E4%BB%A4%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%AB%E5%90%8D">Git命令自定义别名</a></li>
+<li><a href="#%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%AD%A3">自动更正</a></li>
+<li><a href="#%E5%B8%A6%E9%A2%9C%E8%89%B2%E8%BE%93%E5%87%BA">带颜色输出</a></li>
+</ul>
+</li>
+<li><a href="#git%E8%B5%84%E6%BA%90">Git资源</a><ul>
+<li><a href="#git%E5%8F%82%E8%80%83%E4%B9%A6%E7%B1%8D">Git参考书籍</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="github">GitHub</h2>
+<h3 id="-">忽略空白字符变化</h3>
+<p>在任意diff页面的URL后加上<code>?w=1</code>，可以去掉那些只是空白字符的变化，使你能更专注于代码的变化。</p>
+<p><img src="https://camo.githubusercontent.com/797184940defadec00393e6559b835358a863eeb/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f776869746573706163652e706e67" alt="Diff without whitespace"></p>
+<p><a href="https://github.com/blog/967-github-secrets" target="_blank"><em>详见 GitHub secrets.</em></a></p>
+<h3 id="-tab-">调整Tab字符所代表的空格数</h3>
+<p>在diff或者file页面的URL后面加上<code>?ts=4</code>，这样当显示tab字符的长度时就会是4个空格的长度，不再是默认的8个空格。<code>ts</code>后面的数字还可以根据你个人的偏好进行修改。不过，这个小诀窍在Gists页面和raw file页面不起作用。</p>
+<p>下面是我们在Go语言的source file页面URL后加<code>?ts=4</code><a href="https://github.com/pengwynn/flint/blob/master/flint/flint.go" target="_blank">前</a>的例子：</p>
+<p><img src="http://i.imgur.com/GIT1Fr0.png" alt="Before, tab space example"></p>
+<p>然后是我们添加<code>?ts=4</code><a href="https://github.com/pengwynn/flint/blob/master/flint/flint.go?ts=4" target="_blank">后</a>的例子：</p>
+<p><img src="http://i.imgur.com/70FL4H9.png" alt="After, tab space example"></p>
+<h3 id="-commit-">查看某个用户的Commit历史</h3>
+<p>查看某个用户的所有提交历史，只需在commits页面URL后加上<code>?author=username</code>。</p>
+<pre><code>https://github.com/rails/rails/commits/master?author=dhh
+</code></pre><p><img src="http://i.imgur.com/mDWwuaY.png" alt="DHH commit history"></p>
+<p><a href="https://help.github.com/articles/differences-between-commit-views" target="_blank"><em>深入了解提交视图之间的区别</em></a></p>
+<h3 id="-">克隆某个仓库</h3>
+<p>当我们克隆某一资源时，可以不要那个<code>.git</code>后缀。</p>
+<pre><code class="lang-bash">$ git clone https://github.com/tiimgreen/github-cheat-sheet
+</code></pre>
+<p><a href="http://git-scm.com/docs/git-clone" target="_blank"><em>更多对 Git <code>clone</code> 命令的介绍.</em></a></p>
+<h3 id="-">将某个分支与其他所有分支进行对比</h3>
+<p>当你点击某个仓库的分支（Branches）选项卡时</p>
+<pre><code>https://github.com/{user}/{repo}/branches
+</code></pre><p>你会看到一个包含所有未合并的分支的列表。</p>
+<p>你可以在这里查看比较（Compare）页面或点击删除某个分支。</p>
+<p><img src="http://i.imgur.com/gKWPe8a.png" alt="Compare branches not merged into master in jquery/jquery repo - https://github.com/jquery/jquery/branches"></p>
+<p>有的时候我们需要将多个分支与一个非主分支（master）进行对比，此时可以通过在URL后加入要比较的分支名来实现：</p>
+<pre><code>https://github.com/{user}/{repo}/branches/{branch}
+</code></pre><p><img src="http://i.imgur.com/jpc6Urb.png" alt="Compare branches not merged into `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master"></p>
+<p>可以在URL后加上<code>?merged=1</code>来查看已经合并了的分支。</p>
+<p><img src="http://i.imgur.com/KmYyCVh.png" alt="Compare branches merged in to `1.x-master` in jquery/jquery repo - https://github.com/jquery/jquery/branches/1.x-master?merged=1"></p>
+<p>你可以使用这个界面来替代命令行直接删除分支。</p>
+<h3 id="-">比较分支</h3>
+<p>如果我们想要比较两个分支，可以像下面一样修改URL：</p>
+<pre><code>https://github.com/user/repo/compare/{range}
+</code></pre><p>其中<code>{range} = master...4-1-stable</code></p>
+<p>例如：</p>
+<pre><code>https://github.com/rails/rails/compare/master...4-1-stable
+</code></pre><p><img src="http://i.imgur.com/0Z52X5Y.png" alt="Rails branch compare example"></p>
+<p><code>{range}</code>还可以使用下面的形式:</p>
+<pre><code>https://github.com/rails/rails/compare/master@{1.day.ago}...master
+https://github.com/rails/rails/compare/master@{2014-10-04}...master
+</code></pre><p><em>日期格式 <code>YYYY-DD-MM</code></em></p>
+<p><img src="http://i.imgur.com/5dtzESz.png" alt="Another compare example"></p>
+<p>...这样你就能查看master分支上一段时间或者指定日期内的改动。</p>
+<p><a href="https://help.github.com/articles/comparing-commits-across-time" target="_blank"><em>了解更多关于比较跨时间段的提交记录.</em></a></p>
+<h3 id="-">比较不同派生库的分支</h3>
+<p>想要对派生仓库（Forked Repository）之间的分支进行比较，可以像下面这样修改URL实现：</p>
+<pre><code>https://github.com/user/repo/compare/{foreign-user}:{branch}...{own-branch}
+</code></pre><p>例如：</p>
+<pre><code>https://github.com/rails/rails/compare/byroot:master...master
+</code></pre><p><img src="http://i.imgur.com/Q1W6qcB.png" alt="Forked branch compare"></p>
+<h3 id="gists">Gists</h3>
+<p><a href="https://gist.github.com/" target="_blank">Gists</a> 给我们提供了一种不需要创建一个完整的仓库，使小段代码也可以工作的简单方式。</p>
+<p><img src="http://i.imgur.com/VkKI1LC.png?1" alt="Gist"></p>
+<p>Gist的URL后加上<code>.pibb</code>，可以得到更适合嵌入到其他网站的HTML版本。</p>
+<p>Gists还可以像任何标准仓库一样被克隆。</p>
+<pre><code class="lang-bash">$ git clone https://gist.github.com/tiimgreen/<span class="hljs-number">10545817</span>
+</code></pre>
+<p><img src="http://i.imgur.com/dULZXXo.png" alt="Gists"></p>
+<p><a href="https://help.github.com/articles/creating-gists" target="_blank"><em>进一步了解如何创建 gists.</em></a></p>
+<h3 id="git-io">Git.io</h3>
+<p><a href="http://git.io" target="_blank">Git.io</a>是Github的短网址服务。</p>
+<p><img src="http://i.imgur.com/6JUfbcG.png?1" alt="Git.io"></p>
+<p>你可以通过Curl命令以普通HTTP协议使用它：</p>
+<pre><code class="lang-bash">$ curl -i http://git.io -F <span class="hljs-string">"url=https://github.com/..."</span>
+HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">201</span> Created
+Location: http://git.io/abc123
+
+$ curl -i http://git.io/abc123
+HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">302</span> Found
+Location: https://github.com/...
+</code></pre>
+<p><a href="https://github.com/blog/985-git-io-github-url-shortener" target="_blank"><em>进一步了解 Git.io.</em></a></p>
+<h3 id="-">键盘快捷键</h3>
+<p>在仓库主页上提供了快捷键方便快速导航。</p>
+<ul>
+<li>按 <code>t</code> 键会打开一个文件浏览器。</li>
+<li>按 <code>w</code> 键会打开分支选择菜单。</li>
+<li>按 <code>s</code> 键会激活顶端的命令栏  (Command Bar)。</li>
+<li>按 <code>l</code> 键编辑Issue列表页的标签。</li>
+<li><strong>查看文件内容时</strong>（如：<code>https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.md</code>），按 <code>y</code> 键将会冻结这个页面，这样就算代码被修改了也不会影响你当前看到的。</li>
+</ul>
+<p>按<code>?</code>查看当前页面支持的快捷键列表：</p>
+<p><img src="http://i.imgur.com/y5ZfNEm.png" alt="Keyboard shortcuts"></p>
+<p><a href="https://help.github.com/articles/using-the-command-bar" target="_blank"><em>进一步了解如何使用 Command Bar.</em></a></p>
+<h3 id="-">整行高亮</h3>
+<p>在代码文件地址后加上<code>#L52</code>或者单击行号52都会将第52行代码高亮显示。</p>
+<p>多行高亮也可以，比如用<code>#L53-L60</code>选择范围，或者按住 <code>shift</code>键，然后再点击选择的两行。</p>
+<pre><code>https://github.com/rails/rails/blob/master/activemodel/lib/active_model.rb#L53-L60
+</code></pre><p><img src="http://i.imgur.com/8AhjrCz.png" alt="整行高亮"></p>
+<h3 id="-commit-issue">用commit信息关闭Issue</h3>
+<p>如果某个提交修复了一个Issue，当提交到master分支时，提交信息里可以使用<code>fix/fixes/fixed</code>, <code>close/closes/closed</code> 或者 <code>resolve/resolves/resolved</code>等关键词，后面再跟上Issue号，这样就会关闭这个Issue。</p>
+<pre><code class="lang-bash">$ git commit -m <span class="hljs-string">"Fix screwup, fixes #12"</span>
+</code></pre>
+<p>这将会关闭Issue #12，并且在Issue讨论列表里关联引用这次提交。</p>
+<p><img src="http://i.imgur.com/Uh1gZdx.png" alt="Closing Repo"></p>
+<p><a href="https://help.github.com/articles/closing-issues-via-commit-messages" target="_blank"><em>进一步了解通过提交信息关闭Issue.</em></a></p>
+<h3 id="-issue">链接其他仓库的Issue</h3>
+<p>如果你想引用到同一个仓库中的一个Issue，只需使用井号 <code>#</code> 加上Issue号，这样就会自动创建到此Issue的链接。</p>
+<p>要链接到其他仓库的Issue，就使用<code>user_name/repo_name#ISSUE_NUMBER</code>的方式，例如<code>tiimgreen/toc#12</code>。</p>
+<p><img src="https://camo.githubusercontent.com/447e39ab8d96b553cadc8d31799100190df230a8/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f626c6f672f323031312f736563726574732f7265666572656e6365732e706e67" alt="Cross-Link Issues"></p>
+<h3 id="-ci-pull-request-">设置CI对每条Pull Request都进行构建</h3>
+<p>如果配置正确，<a href="https://travis-ci.org/" target="_blank">Travis CI</a>会为每个你收到的Pull Request执行构建，就像每次提交也会触发构建一样。想了解更多关于Travis CI的信息，请看 <a href="http://docs.travis-ci.com/user/getting-started/" target="_blank">Travis CI入门</a>。</p>
+<p><a href="https://github.com/octokit/octokit.rb/pull/452" target="_blank"><img src="https://cloud.githubusercontent.com/assets/1687642/2700187/3a88838c-c410-11e3-9a46-e65e2a0458cd.png" alt="Travis CI status"></a></p>
+<p><a href="https://github.com/blog/1227-commit-status-api" target="_blank"><em>进一步了解 Commit status API.</em></a></p>
+<h3 id="markdown-">Markdown文件高亮语法</h3>
+<p>例如，可以像下面这样在你的Markdown文件里为Ruby代码添加语法高亮：</p>
+<pre><code>```ruby
+require &#39;tabbit&#39;
+table = Tabbit.new(&#39;Name&#39;, &#39;Email&#39;)
+table.add_row(&#39;Tim Green&#39;, &#39;tiimgreen@gmail.com&#39;)
+puts table.to_s
+```
+</code></pre><p>效果像下面这样：</p>
+<pre><code class="lang-ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">'tabbit'</span>
+table = <span class="hljs-constant">Tabbit</span>.new(<span class="hljs-string">'Name'</span>, <span class="hljs-string">'Email'</span>)
+table.add_row(<span class="hljs-string">'Tim Green'</span>, <span class="hljs-string">'tiimgreen@gmail.com'</span>)
+puts table.to_s
+</code></pre>
+<p>Github使用 <a href="https://github.com/github/linguist" target="_blank">Linguist</a> 做语言识别和语法高亮。你可以仔细阅读 <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">languages YAML file</a>，了解有哪些可用的关键字。</p>
+<p><a href="https://help.github.com/articles/github-flavored-markdown" target="_blank"><em>进一步了解 GitHub Flavored Markdown.</em></a></p>
+<h3 id="-">表情符</h3>
+<p>可以在Pull Requests, Issues, 提交消息, Markdown文件里加入表情符。使用方法<code>:name_of_emoji:</code></p>
+<pre><code>:smile:
+</code></pre><p>将输出一个笑脸：</p>
+<p>:smile:</p>
+<p>Github支持的完整表情符号列表详见<a href="http://www.emoji-cheat-sheet.com/" target="_blank">emoji-cheat-sheet.com</a> 或 <a href="https://github.com/scotch-io/All-Github-Emoji-Icons" target="_blank">scotch-io/All-Github-Emoji-Icons</a>。</p>
+<p>Github上使用最多的5个表情符号是：</p>
+<ol>
+<li>:shipit: - <code>:shipit:</code></li>
+<li>:sparkles: - <code>:sparkles:</code></li>
+<li>:-1: - <code>:-1:</code></li>
+<li>:+1: - <code>:+1:</code></li>
+<li>:clap: - <code>:clap:</code></li>
+</ol>
+<h3 id="-">静态与动态图片</h3>
+<p>注释和README等文件里也可以使用图片和GIF动画：</p>
+<pre><code>![Alt Text](http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif)
+</code></pre><p><img src="http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif" alt="Peter don&#39;t care"></p>
+<p>所有图片都缓存在Gitub，不用担心你的站点不能访问时就看不到图片了。</p>
+<h4 id="-github-wiki-">在GitHub Wiki中嵌入图片</h4>
+<p>有多种方法可以在Wiki页面里嵌入图片。既可以像上一条里那样使用标准的Markdown语法，也可以像下面这样指定图片的高度或宽度：</p>
+<pre><code class="lang-markdown">[[ http://www.sheawong.com/wp-content/uploads/2013/08/keephatin.gif | height = 100px ]]
+</code></pre>
+<p>结果：</p>
+<p><img src="http://i.imgur.com/J5bMf7S.png" alt="Just a screenshot"></p>
+<h3 id="-">快速引用</h3>
+<p>在注释话题里引用之前某个人所说的，只需选中文本，然后按 <code>r</code>键，想要的就会以引用的形式复制到你的输入框里。</p>
+<p><img src="https://f.cloud.github.com/assets/296432/124483/b0fa6204-6ef0-11e2-83c3-256c37fa7abc.gif" alt="Quick Quote"></p>
+<p><a href="https://github.com/blog/1399-quick-quotes" target="_blank"><em>进一步了解快速引用.</em></a></p>
+<h3 id="-">快速添加许可证</h3>
+<p>创建一个仓库时，Github会为你提供一个预置的软件许可列表：</p>
+<p><img src="http://i.imgur.com/Chqj4Fg.png" alt="License"></p>
+<p>对于已有的仓库，可以通过web界面创建文件来添加软件许可。输入<code>LICENSE</code>作为文件名后，同样可以从预置的列表中选择一个作为模板。</p>
+<p><img src="http://i.imgur.com/fTjQict.png" alt="License"></p>
+<p>这个技巧也适用于 <code>.gitignore</code> 文件。</p>
+<p><a href="https://help.github.com/articles/open-source-licensing" target="_blank"><em>进一步了解 open source licensing.</em></a></p>
+<h3 id="-">任务列表</h3>
+<p>Issues和Pull requests里可以添加复选框，语法如下（注意空白符）：</p>
+<pre><code>- [ ] Be awesome
+- [ ] Prepare dinner
+  - [ ] Research recipe
+  - [ ] Buy ingredients
+  - [ ] Cook recipe
+- [ ] Sleep
+</code></pre><p><img src="http://i.imgur.com/jJBXhsY.png" alt="Task List"></p>
+<p>当项目被选中时，它对应的Markdown源码也被更新了：</p>
+<pre><code>- [x] Be awesome
+- [ ] Prepare dinner
+  - [x] Research recipe
+  - [x] Buy ingredients
+  - [ ] Cook recipe
+- [ ] Sleep
+</code></pre><p><a href="https://help.github.com/articles/writing-on-github#task-lists" target="_blank"><em>进一步了解任务列表.</em></a></p>
+<h4 id="markdown-">Markdown文件中的任务列表</h4>
+<p>在完全适配Markdown语法的文件中可以使用以下语法加入一个<strong>只读</strong>的任务列表</p>
+<pre><code>- [ ] Mercury
+- [x] Venus
+- [x] Earth
+  - [x] Moon
+- [x] Mars
+  - [ ] Deimos
+  - [ ] Phobos
+</code></pre><ul>
+<li><input name='quiz-row-1-0-0' id='quiz-row-1-0-0' type='checkbox'/><label class="quiz-label" for="quiz-row-1-0-0"> Mercury</label></li>
+<li><input name='quiz-row-1-0-1' id='quiz-row-1-0-1' type='checkbox' checked/><label class="quiz-label" for="quiz-row-1-0-1"> Venus</label></li>
+<li><input name='quiz-row-1-0-3' id='quiz-row-1-0-3' type='checkbox' checked/><label class="quiz-label" for="quiz-row-1-0-3"> Earth<ul>
+<li><input name='quiz-row-1-0-2' id='quiz-row-1-0-2' type='checkbox' checked/><label class="quiz-label" for="quiz-row-1-0-2"> Moon</label></li>
+</ul>
+</label></li>
+<li><input name='quiz-row-1-0-6' id='quiz-row-1-0-6' type='checkbox' checked/><label class="quiz-label" for="quiz-row-1-0-6"> Mars<ul>
+<li><input name='quiz-row-1-0-4' id='quiz-row-1-0-4' type='checkbox'/><label class="quiz-label" for="quiz-row-1-0-4"> Deimos</label></li>
+<li><input name='quiz-row-1-0-5' id='quiz-row-1-0-5' type='checkbox'/><label class="quiz-label" for="quiz-row-1-0-5"> Phobos</label></li>
+</ul>
+</label></li>
+</ul>
+<p><a href="https://github.com/blog/1825-task-lists-in-all-markdown-documents" target="_blank"><em>进一步了解Markdown文件中的任务列表</em></a></p>
+<h3 id="-">相对链接</h3>
+<p>Markdown文件里链接到内部内容时推荐使用相对链接。</p>
+<pre><code class="lang-markdown">[<span class="hljs-link_label">Link to a header</span>](<span class="hljs-link_url">#awesome-section</span>)
+[<span class="hljs-link_label">Link to a file</span>](<span class="hljs-link_url">docs/readme</span>)
+</code></pre>
+<p>绝对链接会在URL改变时（例如重命名仓库、用户名改变，建立分支项目）被更新。使用相对链接能够保证你的文档不受此影响。</p>
+<p><a href="https://help.github.com/articles/relative-links-in-readmes" target="_blank"><em>进一步了解相对链接.</em></a></p>
+<h3 id="github-pages-">GitHub Pages的元数据与插件支持</h3>
+<p>在Jekyll页面和文章里，仓库信息可在 <code>site.github</code> 命名空间下找到，也可以显示出来，例如，使用 <code>{{ site.github.project_title }}</code>显示项目标题。</p>
+<p>Jemoji和jekyll-mentions插件为你的Jekyll文章和页面增加了<a href="#emojis">emoji</a>和<a href="https://github.com/blog/821" target="_blank">@mentions</a>功能。</p>
+<p><a href="https://github.com/blog/1797-repository-metadata-and-plugin-support-for-github-pages" target="_blank"><em>了解更多 GitHub Pages的元数据和插件支持.</em></a></p>
+<h3 id="-yaml-">查看YAML格式的元数据</h3>
+<p>许多博客站点，比如基于<a href="http://jekyllrb.com/" target="_blank">Jekyll</a>的<a href="http://pages.github.com/" target="_blank">GitHub Pages</a>，都依赖于一些文章头部的YAML格式的元数据。Github会将其渲染成一个水平表格，方便阅读。</p>
+<p><img src="https://camo.githubusercontent.com/47245aa16728e242f74a9a324ce0d24c0b916075/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f36343035302f313232383236372f65303439643063362d323761302d313165332d396464382d6131636432323539393334342e706e67" alt="YAML metadata"></p>
+<p><a href="https://github.com/blog/1647-viewing-yaml-metadata-in-your-documents" target="_blank"><em>进一步了解 在文档里查看YAML元数据.</em></a></p>
+<h3 id="-">渲染表格数据</h3>
+<p>GitHub支持将 <code>.csv</code> (comma分隔)和<code>.tsv</code> (tab分隔)格式的文件渲染成表格数据。</p>
+<p><img src="https://camo.githubusercontent.com/1b6dd0157ffb45d9939abf14233a0cb13b3b4dfe/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3238323735392f3937363436322f33323038336463652d303638642d313165332d393262322d3566323863313061353035392e706e67" alt="Tabular data"></p>
+<p><a href="https://github.com/blog/1601-see-your-csvs" target="_blank"><em>进一步了解渲染表格数据.</em></a></p>
+<h3 id="diffs">Diffs</h3>
+<h4 id="-diffs">可渲染文档的Diffs</h4>
+<p>提交和Pull Requests里包含有Github支持的可渲染文档（比如Markdown）会提供<em>source</em> 和 <em>rendered</em> 两个视图功能。</p>
+<p><img src="https://github-images.s3.amazonaws.com/help/repository/rendered_prose_diff.png" alt="Source / Rendered view"></p>
+<p>点击 &quot;rendered&quot; 按钮，看看改动在渲染后的显示效果。当你添加、删除或修改文本时，渲染纯文本视图非常方便。</p>
+<p><img src="https://f.cloud.github.com/assets/17715/2003056/3997edb4-862b-11e3-90be-5e9586edecd7.png" alt="Rendered Prose Diffs"></p>
+<p><a href="https://github.com/blog/1784-rendered-prose-diffs" target="_blank"><em>进一步了解渲染纯文本视图Diffs.</em></a></p>
+<h4 id="-">可变化地图</h4>
+<p>当你在GitHub上查看一个包含地理数据的提交或pull request时，Github可以显示数据变动的视觉表示。</p>
+<p><a href="https://github.com/benbalter/congressional-districts/commit/2233c76ca5bb059582d796f053775d8859198ec5" target="_blank"><img src="https://f.cloud.github.com/assets/282759/2090660/63f2e45a-8e97-11e3-9d8b-d4c8078b004e.gif" alt="Diffable Maps"></a></p>
+<p><a href="https://github.com/blog/1772-diffable-more-customizable-maps" target="_blank"><em>进一步了解可比较地图.</em></a></p>
+<h4 id="-diff-">在diff中折叠与扩展代码</h4>
+<p>你可以通过点击diff边栏里的 <em>unfold</em> 按钮来多显示几行上下文。你可以一直点击 <em>unfold</em> 按钮直到显示了文件的全部内容。这个功能在所有GitHub产生的diff界面都可以使用。</p>
+<p><img src="https://f.cloud.github.com/assets/22635/1610539/863c1f64-5584-11e3-82bf-151b406a272f.gif" alt="Expanding Context in Diffs"></p>
+<p><a href="https://github.com/blog/1705-expanding-context-in-diffs" target="_blank"><em>进一步了解扩展Diff上下文.</em></a></p>
+<h4 id="-pull-request-diff-patch">查看Pull Request的diff和patch</h4>
+<p>在Pull Request的URL后面加上 <code>.diff</code> 或 <code>.patch</code> 的扩展名就可以得到它的diff或patch文件，例如：</p>
+<pre><code>https://github.com/tiimgreen/github-cheat-sheet/pull/15
+https://github.com/tiimgreen/github-cheat-sheet/pull/15.diff
+https://github.com/tiimgreen/github-cheat-sheet/pull/15.patch
+</code></pre><p><code>.diff</code> 扩展会使用普通文本格式显示如下内容：</p>
+<pre><code>diff --git a/README.md b/README.md
+index 88fcf69..8614873 100644
+--- a/README.md
++++ b/README.md
+@@ -28,6 +28,7 @@ All the hidden and not hidden features of Git and GitHub. This cheat sheet was i
+ - [Merged Branches](#merged-branches)
+ - [Quick Licensing](#quick-licensing)
+ - [TODO Lists](#todo-lists)
++- [Relative Links](#relative-links)
+ - [.gitconfig Recommendations](#gitconfig-recommendations)
+     - [Aliases](#aliases)
+     - [Auto-correct](#auto-correct)
+@@ -381,6 +382,19 @@ When they are clicked, they will be updated in the pure Markdown:
+ - [ ] Sleep
+
+(...)
+</code></pre><h4 id="-">渲染图像发生的变动</h4>
+<p>GitHub可以显示包括PNG、JPG、GIF、PSD在内的多种图片格式并提供了几种方式来比较这些格式的图片文件版本间的不同。</p>
+<p><a href="https://github.com/blog/1845-psd-viewing-diffing" target="_blank"><img src="https://cloud.githubusercontent.com/assets/2546/3165594/55f2798a-eb56-11e3-92e7-b79ad791a697.gif" alt="Diffable PSD"></a></p>
+<p><a href="https://help.github.com/articles/rendering-and-diffing-images" target="_blank"><em>查看更多关于渲染图像变动的内容</em></a></p>
+<h3 id="hub">Hub</h3>
+<p><a href="https://github.com/github/hub" target="_blank">Hub</a>是一个对Git进行了封装的命令行工具，可以帮助你更方便的使用Github。</p>
+<p>这使得你可以像下面这样进行克隆：</p>
+<pre><code class="lang-bash">$ hub clone tiimgreen/toc
+</code></pre>
+<p><a href="https://github.com/github/hub#commands" target="_blank"><em>查看更多Hub提供的超酷命令.</em></a></p>
+<h3 id="-">贡献内容的自动检查</h3>
+<p>假设你想人们使用你的项目并给你的项目做出贡献，你往往需要回答他们常见问题。这个项目是干什么用的？我如何使用它？允许我怎样使用？我如何为项目出力？我怎样配置开发环境？我怎么能保证新功能不会破坏已有的功能？</p>
+<p><a href="https://github.com/rafalchmiel/friction" target="_blank">Friction</a>是一个命令行脚本，用来检查你的项目是否<a href="https://github.com/rafalchmiel/friction/wiki" target="_blank">回答了这些问题</a>。下面是示例输出：</p>
+<p><a href="https://github.com/rafalchmiel/friction" target="_blank"><img src="http://i.imgur.com/4EgpWo4.png" alt="Friction output"></a></p>
+<p><em>Friction 支持 MRI 2.1.0, MRI 2.0.0 和 MRI 1.9.3.</em></p>
+<h3 id="-">贡献者指南</h3>
+<p>在你的仓库的根目录添加一个名为 <code>CONTRIBUTING</code> 的文件后，贡献者在新建Issue或Pull Request时会看到这个文件的链接。</p>
+<p><img src="https://camo.githubusercontent.com/71995d6b0e620a9ef1ded00a04498241c69dd1bf/68747470733a2f2f6769746875622d696d616765732e73332e616d617a6f6e6177732e636f6d2f736b697463682f6973737565732d32303132303931332d3136323533392e6a7067" alt="Contributing Guidelines"></p>
+<p><a href="https://github.com/blog/1184-contributing-guidelines" target="_blank"><em>进一步了解贡献者指南.</em></a></p>
+<h3 id="github-">GitHub资源</h3>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub Explore</td>
+<td><a href="https://github.com/explore" target="_blank">https://github.com/explore</a></td>
+</tr>
+<tr>
+<td>GitHub Blog</td>
+<td><a href="https://github.com/blog" target="_blank">https://github.com/blog</a></td>
+</tr>
+<tr>
+<td>GitHub Help</td>
+<td><a href="https://help.github.com/" target="_blank">https://help.github.com/</a></td>
+</tr>
+<tr>
+<td>GitHub Training</td>
+<td><a href="http://training.github.com/" target="_blank">http://training.github.com/</a></td>
+</tr>
+<tr>
+<td>GitHub Developer</td>
+<td><a href="https://developer.github.com/" target="_blank">https://developer.github.com/</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="github-">GitHub讨论</h4>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>How GitHub Uses GitHub to Build GitHub</td>
+<td><a href="https://www.youtube.com/watch?v=qyz3jkOBbQY" target="_blank">https://www.youtube.com/watch?v=qyz3jkOBbQY</a></td>
+</tr>
+<tr>
+<td>Introduction to Git with Scott Chacon of GitHub</td>
+<td><a href="https://www.youtube.com/watch?v=ZDR433b0HJY" target="_blank">https://www.youtube.com/watch?v=ZDR433b0HJY</a></td>
+</tr>
+<tr>
+<td>How GitHub No Longer Works</td>
+<td><a href="https://www.youtube.com/watch?v=gXD1ITW7iZI" target="_blank">https://www.youtube.com/watch?v=gXD1ITW7iZI</a></td>
+</tr>
+<tr>
+<td>Git and GitHub Secrets</td>
+<td><a href="https://www.youtube.com/watch?v=Foz9yvMkvlA" target="_blank">https://www.youtube.com/watch?v=Foz9yvMkvlA</a></td>
+</tr>
+<tr>
+<td>More Git and GitHub Secrets</td>
+<td><a href="https://www.youtube.com/watch?v=p50xsL-iVgU" target="_blank">https://www.youtube.com/watch?v=p50xsL-iVgU</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="git">Git</h2>
+<h3 id="-">前一个分支</h3>
+<p>快速检出上一个分支：</p>
+<pre><code class="lang-bash">$ git checkout -
+<span class="hljs-comment"># Switched to branch 'master'</span>
+
+$ git checkout -
+<span class="hljs-comment"># Switched to branch 'next'</span>
+
+$ git checkout -
+<span class="hljs-comment"># Switched to branch 'master'</span>
+</code></pre>
+<p><a href="http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging" target="_blank"><em>进一步了解 Git 分支.</em></a></p>
+<h3 id="stripspace-">Stripspace命令</h3>
+<p>Git Stripspace命令可以:</p>
+<ul>
+<li>去掉行尾空白符</li>
+<li>多个空行压缩成一行</li>
+<li>必要时在文件末尾增加一个空行</li>
+</ul>
+<p>使用此命令时必须传入一个文件，像这样：</p>
+<pre><code class="lang-bash">$ git stripspace &lt; README.md
+</code></pre>
+<p><a href="http://git-scm.com/docs/git-stripspace" target="_blank"><em>进一步了解 Git <code>stripspace</code> 命令.</em></a></p>
+<h3 id="-pull-requests">检出Pull Requests</h3>
+<p>Pull Request是一种GitHub上可以通过以下多种方式在本地被检索的特别分支：</p>
+<p>检索某个分支并临时储存在本地的<code>FETCH_HEAD</code>中以便快速查看更改(diff)以及合并(merge)：</p>
+<pre><code class="lang-bash">$ git fetch origin refs/pull/[PR-Number]/head
+</code></pre>
+<p>通过refspec获取所有的Pull Request为本地分支：</p>
+<pre><code class="lang-bash">$ git fetch origin <span class="hljs-string">'+refs/pull/*/head:refs/remotes/origin/pr/*'</span>
+</code></pre>
+<p>或在仓库的<code>.git/config</code>中加入下列设置来自动获取远程仓库中的Pull Request</p>
+<pre><code>[remote &quot;origin&quot;]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    url = git@github.com:tiimgreen/github-cheat-sheet.git
+</code></pre><pre><code>[remote &quot;origin&quot;]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    url = git@github.com:tiimgreen/github-cheat-sheet.git
+    fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+</code></pre><p>对基于派生库的Pull Request，可以通过先<code>checkout</code>代表此Pull Request的远端分支再由此分支建立一个本地分支：</p>
+<pre><code class="lang-bash">$ git checkout pr/<span class="hljs-number">42</span> pr-<span class="hljs-number">42</span>
+</code></pre>
+<p><a href="https://help.github.com/articles/checking-out-pull-requests-locally" target="_blank"><em>进一步了解如何检出pull request到本地.</em></a></p>
+<h3 id="-trollface-">提交空改动 :trollface:</h3>
+<p>可以使用<code>--allow-empty</code>选项强制创建一个没有任何改动的提交：</p>
+<pre><code class="lang-bash">$ git commit -m <span class="hljs-string">"Big-ass commit"</span> --allow-empty
+</code></pre>
+<p>这样做在如下几种情况下是有意义的：</p>
+<ul>
+<li>标记一批工作或一个新功能的开始。</li>
+<li>记录你对项目进行了跟代码无关的改动。</li>
+<li>跟使用你仓库的其他人交流。</li>
+<li>作为仓库的第一次提交，因为第一次提交日后是不能被rebase的： <code>git commit -m &quot;init repo&quot; --allow-empty</code>.</li>
+</ul>
+<h3 id="-git-status">更直观的Git Status</h3>
+<p>在命令行输入如下命令:</p>
+<pre><code class="lang-bash">$ git status
+</code></pre>
+<p>可以看到:</p>
+<p><img src="http://i.imgur.com/o3PEHAA.png" alt="git status"></p>
+<p>加上<code>-sb</code>选项:</p>
+<pre><code class="lang-bash">$ git status -sb
+</code></pre>
+<p>这回得到:</p>
+<p><img src="http://i.imgur.com/xNI1bT0.png" alt="git status -sb"></p>
+<p><a href="http://git-scm.com/docs/git-status" target="_blank"><em>进一步了解 Git <code>status</code> 命令.</em></a></p>
+<h3 id="-git-log">更直观的Git Log</h3>
+<p>输入如下命令:</p>
+<pre><code class="lang-bash">$ git log --all --graph --pretty=format:<span class="hljs-string">'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset'</span> --abbrev-commit --date=relative
+</code></pre>
+<p>可以看到:</p>
+<p><img src="http://i.imgur.com/R2z8l7c.png" alt="git log --all --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --date=relative"></p>
+<p>这要归功于<a href="http://stackoverflow.com/users/88355/palesz" target="_blank">Palesz</a>在stackoverflow的回答。</p>
+<p><em>这个命令可以被用作别名，详细做法见<a href="https://github.com/tiimgreen/github-cheat-sheet#aliases" target="_blank">这里</a>。</em></p>
+<p><a href="http://git-scm.com/docs/git-log" target="_blank"><em>进一步了解 Git <code>log</code> 命令.</em></a></p>
+<h3 id="git-">Git查询</h3>
+<p>Git查询运行你在之前的所有提交信息里进行搜索，找到其中和搜索条件相匹配的最近的一条。</p>
+<pre><code class="lang-bash">$ git show :/query
+</code></pre>
+<p>这里 <code>query</code> （区别大小写）是你想要搜索的词语， 这条命令会找到包含这个词语的最后那个提交并显示变动详情。</p>
+<pre><code class="lang-bash">$ git show :/typo
+</code></pre>
+<p><img src="http://i.imgur.com/icaGiNt.png" alt="git show :/query"></p>
+<ul>
+<li>按 <code>q</code> 键退出命令。*</li>
+</ul>
+<h3 id="-">合并分支</h3>
+<p>输入命令:</p>
+<pre><code class="lang-bash">$ git branch --merged
+</code></pre>
+<p>这会显示所有已经合并到你当前分支的分支列表。 </p>
+<p>相反地：</p>
+<pre><code class="lang-bash">$ git branch --no-merged
+</code></pre>
+<p>会显示所有还没有合并到你当前分支的分支列表。</p>
+<p><a href="http://git-scm.com/docs/git-branch" target="_blank"><em>进一步了解 Git <code>branch</code> 命令.</em></a></p>
+<h3 id="-">使用网页查看本地仓库</h3>
+<p>使用Git的 <code>instaweb</code> 可以立即在 <code>gitweb</code>中浏览你的工作仓库。这个命令是个简单的脚步，配置了<code>gitweb</code>和用来浏览本地仓库的Web服务器。<em>（译者注：默认需要lighttpd支持）</em></p>
+<pre><code class="lang-bash">$ git instaweb
+</code></pre>
+<p>执行后打开：</p>
+<p><img src="http://i.imgur.com/Dxekmqc.png" alt="Git instaweb"></p>
+<p><a href="http://git-scm.com/docs/git-instaweb" target="_blank"><em>进一步了解 Git <code>instaweb</code> 命令.</em></a></p>
+<h3 id="git-">Git配置</h3>
+<p>所有Git配置都保存在你的<code>.gitconfig</code> 文件中。</p>
+<h4 id="git-">Git命令自定义别名</h4>
+<p>别名用来帮助你定义自己的git命令。比如你可以定义 <code>git a</code> 来运行 <code>git add --all</code>。</p>
+<p>要添加一个别名， 一种方法是打开 <code>~/.gitconfig</code> 文件并添加如下内容：</p>
+<pre><code>[alias]
+  co = checkout
+  cm = commit
+  p = push
+  # Show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+</code></pre><p>...或者在命令行里键入：</p>
+<pre><code class="lang-bash">$ git config --global alias.new_alias git_function
+</code></pre>
+<p>例如：</p>
+<pre><code class="lang-bash">$ git config --global alias.cm commit
+</code></pre>
+<p>指向多个命令的别名可以用引号来定义：</p>
+<pre><code class="lang-bash">$ git config --global alias.ac <span class="hljs-string">'add -A . &amp;&amp; commit'</span>
+</code></pre>
+<p>下面列出了一些有用的别名：</p>
+<table>
+<thead>
+<tr>
+<th>别名 Alias</th>
+<th>命令 Command</th>
+<th>如何设置 What to Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git cm</code></td>
+<td><code>git commit</code></td>
+<td><code>git config --global alias.cm commit</code></td>
+</tr>
+<tr>
+<td><code>git co</code></td>
+<td><code>git checkout</code></td>
+<td><code>git config --global alias.co checkout</code></td>
+</tr>
+<tr>
+<td><code>git ac</code></td>
+<td><code>git add . -A</code> <code>git commit</code></td>
+<td><code>git config --global alias.ac &#39;!git add -A &amp;&amp; git commit&#39;</code></td>
+</tr>
+<tr>
+<td><code>git st</code></td>
+<td><code>git status -sb</code></td>
+<td><code>git config --global alias.st &#39;status -sb&#39;</code></td>
+</tr>
+<tr>
+<td><code>git tags</code></td>
+<td><code>git tag -l</code></td>
+<td><code>git config --global alias.tags &#39;tag -l&#39;</code></td>
+</tr>
+<tr>
+<td><code>git branches</code></td>
+<td><code>git branch -a</code></td>
+<td><code>git config --global alias.branches &#39;branch -a&#39;</code></td>
+</tr>
+<tr>
+<td><code>git remotes</code></td>
+<td><code>git remote -v</code></td>
+<td><code>git config --global alias.remotes &#39;remote -v&#39;</code></td>
+</tr>
+<tr>
+<td><code>git lg</code></td>
+<td><code>git log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --</code></td>
+<td><code>git config --global alias.lg &quot;log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="-">自动更正</h4>
+<p>如果键入 <code>git comit</code> 你会看到如下输出：</p>
+<pre><code class="lang-bash">$ git comit -m <span class="hljs-string">"Message"</span>
+<span class="hljs-comment"># git: 'comit' is not a git command. See 'git --help'.</span>
+
+<span class="hljs-comment"># Did you mean this?</span>
+<span class="hljs-comment">#   commit</span>
+</code></pre>
+<p>为了在键入 <code>comit</code> 调用 <code>commit</code>命令，只需启用自动纠错功能：</p>
+<pre><code class="lang-bash">$ git config --global help.autocorrect <span class="hljs-number">1</span>
+</code></pre>
+<p>现在你就会看到：</p>
+<pre><code class="lang-bash">$ git comit -m <span class="hljs-string">"Message"</span>
+<span class="hljs-comment"># WARNING: You called a Git command named 'comit', which does not exist.</span>
+<span class="hljs-comment"># Continuing under the assumption that you meant 'commit'</span>
+<span class="hljs-comment"># in 0.1 seconds automatically...</span>
+</code></pre>
+<h4 id="-">带颜色输出</h4>
+<p>要在你的Git命令输出里加上颜色的话，可以用如下命令：</p>
+<pre><code class="lang-bash">$ git config --global color.ui <span class="hljs-number">1</span>
+</code></pre>
+<p><a href="http://git-scm.com/docs/git-config" target="_blank"><em>进一步了解 Git <code>config</code> 命令.</em></a></p>
+<h3 id="git-">Git资源</h3>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Official Git Site</td>
+<td><a href="http://git-scm.com/" target="_blank">http://git-scm.com/</a></td>
+</tr>
+<tr>
+<td>Official Git Video Tutorials</td>
+<td><a href="http://git-scm.com/videos" target="_blank">http://git-scm.com/videos</a></td>
+</tr>
+<tr>
+<td>Code School Try Git</td>
+<td><a href="http://try.github.com/" target="_blank">http://try.github.com/</a></td>
+</tr>
+<tr>
+<td>Introductory Reference &amp; Tutorial for Git</td>
+<td><a href="http://gitref.org/" target="_blank">http://gitref.org/</a></td>
+</tr>
+<tr>
+<td>Official Git Tutorial</td>
+<td><a href="http://git-scm.com/docs/gittutorial" target="_blank">http://git-scm.com/docs/gittutorial</a></td>
+</tr>
+<tr>
+<td>Everyday Git</td>
+<td><a href="http://git-scm.com/docs/everyday" target="_blank">http://git-scm.com/docs/everyday</a></td>
+</tr>
+<tr>
+<td>Git Immersion</td>
+<td><a href="http://gitimmersion.com/" target="_blank">http://gitimmersion.com/</a></td>
+</tr>
+<tr>
+<td>Ry&#39;s Git Tutorial</td>
+<td><a href="http://rypress.com/tutorials/git/index.html" target="_blank">http://rypress.com/tutorials/git/index.html</a></td>
+</tr>
+<tr>
+<td>Git for Designer</td>
+<td><a href="http://hoth.entp.com/output/git_for_designers.html" target="_blank">http://hoth.entp.com/output/git_for_designers.html</a></td>
+</tr>
+<tr>
+<td>Git for Computer Scientists</td>
+<td><a href="http://eagain.net/articles/git-for-computer-scientists/" target="_blank">http://eagain.net/articles/git-for-computer-scientists/</a></td>
+</tr>
+<tr>
+<td>Git Magic</td>
+<td><a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/" target="_blank">http://www-cs-students.stanford.edu/~blynn/gitmagic/</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="git-">Git参考书籍</h4>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pragmatic Version Control Using Git</td>
+<td><a href="http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git" target="_blank">http://www.pragprog.com/titles/tsgit/pragmatic-version-control-using-git</a></td>
+</tr>
+<tr>
+<td>Pro Git</td>
+<td><a href="http://git-scm.com/book" target="_blank">http://git-scm.com/book</a></td>
+</tr>
+<tr>
+<td>Git Internals Peepcode</td>
+<td><a href="http://peepcode.com/products/git-internals-pdf" target="_blank">http://peepcode.com/products/git-internals-pdf</a></td>
+</tr>
+<tr>
+<td>Git in the Trenches</td>
+<td><a href="http://cbx33.github.com/gitt/" target="_blank">http://cbx33.github.com/gitt/</a></td>
+</tr>
+<tr>
+<td>Version Control with Git</td>
+<td><a href="http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387" target="_blank">http://www.amazon.com/Version-Control-Git-collaborative-development/dp/1449316387</a></td>
+</tr>
+<tr>
+<td>Pragmatic Guide to Git</td>
+<td><a href="http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git" target="_blank">http://www.pragprog.com/titles/pg_git/pragmatic-guide-to-git</a></td>
+</tr>
+<tr>
+<td>Git: Version Control for Everyone</td>
+<td><a href="http://www.packtpub.com/git-version-control-for-everyone/book" target="_blank">http://www.packtpub.com/git-version-control-for-everyone/book</a></td>
+</tr>
+</tbody>
+</table>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <a href="./index.html#github" class="navigation navigation-next navigation-unique" aria-label="Next page: GitHub"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
