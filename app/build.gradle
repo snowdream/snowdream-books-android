@@ -140,16 +140,16 @@ android {
             packageName "com.github.snowdream.android.app.books.gittutorial"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/lvwzhen/git-tutorial\""
         }
-        
-        Devise_젬_파헤치기{
-            packageName "com.github.snowdream.android.app.books.devisebook"
-            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/luciuschoi/exploring_devise\""
-        }
-        
-        Les_règles_YSlow{
-            packageName "com.github.snowdream.android.app.books.lesyslow"
-            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/olivjan/yslow\""
-        }
+//
+//        Devise_젬_파헤치기{
+//            packageName "com.github.snowdream.android.app.books.devisebook"
+//            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/luciuschoi/exploring_devise\""
+//        }
+//
+//        Les_règles_YSlow{
+//            packageName "com.github.snowdream.android.app.books.lesyslow"
+//            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/olivjan/yslow\""
+//        }
 
         The_Guide_To_Cuba{
             packageName "com.github.snowdream.android.app.books.theguidetocuba"
@@ -185,16 +185,16 @@ android {
             packageName "com.github.snowdream.android.app.books.makescapeadagegitbook"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/capbri/makescape-adage-gitbook\""
         }
-
-        초보자를_위한_레일스_가이드북{
-            packageName "com.github.snowdream.android.app.books.railsguidebook"
-            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/rorlab/railsguidebook\""
-        }
-
-        RORLa_오픈소스_프로젝트_매뉴얼{
-            packageName "com.github.snowdream.android.app.books.RORLa"
-            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/rorlab/rorla\""
-        }
+//
+//        초보자를_위한_레일스_가이드북{
+//            packageName "com.github.snowdream.android.app.books.railsguidebook"
+//            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/rorlab/railsguidebook\""
+//        }
+//
+//        RORLa_오픈소스_프로젝트_매뉴얼{
+//            packageName "com.github.snowdream.android.app.books.RORLa"
+//            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/rorlab/rorla\""
+//        }
 
         Dog_Of_Science{
             packageName "com.github.snowdream.android.app.books.DogofScience"
