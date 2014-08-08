@@ -20,6 +20,7 @@ apply from: '../config/android-library.gradle'
 apply from: '../config/maven_push.gradle'
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.android.support:appcompat-v7:19.1.0'
+    compile 'com.android.support:support-v4:19.1.0'
 }
 

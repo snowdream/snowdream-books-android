@@ -19,7 +19,8 @@ apply plugin: 'idea'
 apply from: '../config/android.gradle'
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.android.support:appcompat-v7:19.1.0'
+    compile 'com.android.support:support-v4:19.1.0'
     compile 'com.github.castorflex.smoothprogressbar:library:0.4.0'
     compile 'com.google.android.gms:play-services:4.3.23'
 }
@@ -241,6 +242,10 @@ android {
             buildConfigField "String", "BOOK_URL", "\"http://anotheruiguy.gitbooks.io/nodeexpreslibsass_from-scratch/\""
         }
 
+        github_cheat_sheet{
+            packageName "com.github.snowdream.android.app.books.githubchecatsheet"
+            buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/github-cheat-sheet/\""
+        }
         github_cheat_sheet{
             packageName "com.github.snowdream.android.app.books.githubchecatsheet"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/github-cheat-sheet/\""
