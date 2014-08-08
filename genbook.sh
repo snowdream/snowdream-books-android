@@ -1,3 +1,14 @@
 #!/bin/bash
-
-gitbook build ./books-sources/github-cheat-sheet --output=./books/github-cheat-sheet
+cd books-sources
+for file in *
+do
+  if [ -d $file ]
+  then 
+    echo build book:  $file
+    gitbook build $file --output=../books/$file
+    echo 
+   elif [ -f $file ]
+   then
+      echo $file
+   fi
+done
