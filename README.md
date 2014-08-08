@@ -50,8 +50,8 @@ Android 2.2+
 40.[THE GUIDE TO CORTEX](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.theguidetocortex)           
 41.[THE GUIDE TO CUBA ](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.theguidetocuba)           
 42.[THE SWIFT PROGRAMMING LANGUAGE](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.theswiftprogramminglanguageinchinese)           
-43.[초보자를 위한 레일스 가이드북](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.railsguidebook)
-44.[GITHUB CHEAT SHEET](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.githubchecatsheet)
+43.[초보자를 위한 레일스 가이드북](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.railsguidebook)  
+44.[GITHUB CHEAT SHEET](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.githubchecatsheet)  
 45.[Markdown Syntax Guide](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.markdownsyntax)
 
 ##License
