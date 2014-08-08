@@ -246,9 +246,9 @@ android {
             packageName "com.github.snowdream.android.app.books.githubchecatsheet"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/github-cheat-sheet/\""
         }
-        github_cheat_sheet{
-            packageName "com.github.snowdream.android.app.books.githubchecatsheet"
-            buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/github-cheat-sheet/\""
+        markdown_syntax{
+            packageName "com.github.snowdream.android.app.books.markdownsyntax"
+            buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/markdown-syntax/\""
         }
     }
 }
