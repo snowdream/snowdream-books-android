@@ -250,5 +250,10 @@ android {
             packageName "com.github.snowdream.android.app.books.markdownsyntax"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/markdown-syntax/\""
         }
+
+        material_design{
+            packageName "com.github.snowdream.android.app.books.materialdesign"
+            buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/material-design/\""
+        }
     }
 }
