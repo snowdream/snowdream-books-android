@@ -255,5 +255,10 @@ android {
             packageName "com.github.snowdream.android.app.books.materialdesign"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/material-design/\""
         }
+
+        chinese_docker{
+            packageName "com.github.snowdream.android.app.books.chinesedocker"
+            buildConfigField "String", "BOOK_URL", "\"http://www.widuu.com/chinese_docker/index.html\""
+        }
     }
 }
