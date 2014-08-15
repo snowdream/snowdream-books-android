@@ -1,0 +1,2204 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="./manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Develop ORM based on beedb | 《Go Web 编程》</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.7.1">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="astaxie">
+    
+    
+    <link rel="next" href="./05.6.html" />
+    
+    
+    <link rel="prev" href="./05.4.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-github="astaxie/build-web-application-with-golang" data-level="5.5" data-basepath="." data-revision="1408128443944">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/astaxie/build-web-application-with-golang" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="./" >《Go Web 编程》</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/astaxie" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/astaxie/build-web-application-with-golang/issues" target="blank" class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/astaxie/build-web-application-with-golang/edit/master/05.5.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+	
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="01.0.html">
+            
+                
+                    <a href="./01.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Go environment configuration
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="01.1.html">
+            
+                
+                    <a href="./01.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Installation
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="01.2.html">
+            
+                
+                    <a href="./01.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         $GOPATH and workspace
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="01.3.html">
+            
+                
+                    <a href="./01.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Go commands
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="01.4.html">
+            
+                
+                    <a href="./01.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Go development tools
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="01.5.html">
+            
+                
+                    <a href="./01.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="02.0.html">
+            
+                
+                    <a href="./02.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Go basic knowledge
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="02.1.html">
+            
+                
+                    <a href="./02.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         &quot;Hello, Go&quot;
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="02.2.html">
+            
+                
+                    <a href="./02.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Go foundation
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="02.3.html">
+            
+                
+                    <a href="./02.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Control statements and functions
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="02.4.html">
+            
+                
+                    <a href="./02.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         struct
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="02.5.html">
+            
+                
+                    <a href="./02.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         Object-oriented
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="02.6.html">
+            
+                
+                    <a href="./02.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         interface
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.7" data-path="02.7.html">
+            
+                
+                    <a href="./02.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                         Concurrency
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.8" data-path="02.8.html">
+            
+                
+                    <a href="./02.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="03.0.html">
+            
+                
+                    <a href="./03.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Web foundation
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="03.1.html">
+            
+                
+                    <a href="./03.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         Web working principles
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="03.2.html">
+            
+                
+                    <a href="./03.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         Build a simple web server
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="03.3.html">
+            
+                
+                    <a href="./03.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         How Go works with web
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="03.4.html">
+            
+                
+                    <a href="./03.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         Get into http package
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.5" data-path="03.5.html">
+            
+                
+                    <a href="./03.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="04.0.html">
+            
+                
+                    <a href="./04.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         User form
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="04.1.html">
+            
+                
+                    <a href="./04.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Process form inputs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="04.2.html">
+            
+                
+                    <a href="./04.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Verification of inputs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="04.3.html">
+            
+                
+                    <a href="./04.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Cross site scripting
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="04.4.html">
+            
+                
+                    <a href="./04.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Duplicate submissions
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="04.5.html">
+            
+                
+                    <a href="./04.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         File upload
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="04.6.html">
+            
+                
+                    <a href="./04.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="05.0.html">
+            
+                
+                    <a href="./05.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Database
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="05.1.html">
+            
+                
+                    <a href="./05.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         database/sql interface
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="05.2.html">
+            
+                
+                    <a href="./05.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         MySQL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="05.3.html">
+            
+                
+                    <a href="./05.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         SQLite
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="05.4.html">
+            
+                
+                    <a href="./05.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         PostgreSQL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="5.5" data-path="05.5.html">
+            
+                
+                    <a href="./05.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         Develop ORM based on beedb
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="05.6.html">
+            
+                
+                    <a href="./05.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         NoSQL database
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="05.7.html">
+            
+                
+                    <a href="./05.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="06.0.html">
+            
+                
+                    <a href="./06.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Data storage and session
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="06.1.html">
+            
+                
+                    <a href="./06.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         Session and cookies
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2" data-path="06.2.html">
+            
+                
+                    <a href="./06.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         How to use session in Go
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.3" data-path="06.3.html">
+            
+                
+                    <a href="./06.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                         Session storage
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4" data-path="06.4.html">
+            
+                
+                    <a href="./06.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                         Prevent hijack of session
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.5" data-path="06.5.html">
+            
+                
+                    <a href="./06.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="07.0.html">
+            
+                
+                    <a href="./07.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Text files
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="07.1.html">
+            
+                
+                    <a href="./07.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         XML
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.2" data-path="07.2.html">
+            
+                
+                    <a href="./07.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                         JSON
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.3" data-path="07.3.html">
+            
+                
+                    <a href="./07.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                         Regexp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.4" data-path="07.4.html">
+            
+                
+                    <a href="./07.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                         Templates
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.5" data-path="07.5.html">
+            
+                
+                    <a href="./07.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                         Files
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.6" data-path="07.6.html">
+            
+                
+                    <a href="./07.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                         Strings
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.7" data-path="07.7.html">
+            
+                
+                    <a href="./07.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="08.0.html">
+            
+                
+                    <a href="./08.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Web services
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="08.1.html">
+            
+                
+                    <a href="./08.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         Sockets
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="08.2.html">
+            
+                
+                    <a href="./08.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         WebSocket
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="08.3.html">
+            
+                
+                    <a href="./08.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         REST
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.4" data-path="08.4.html">
+            
+                
+                    <a href="./08.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                         RPC
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.5" data-path="08.5.html">
+            
+                
+                    <a href="./08.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="09.0.html">
+            
+                
+                    <a href="./09.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Security and encryption
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="9.1" data-path="09.1.html">
+            
+                
+                    <a href="./09.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                         CSRF attacks
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.2" data-path="09.2.html">
+            
+                
+                    <a href="./09.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                         Filter inputs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.3" data-path="09.3.html">
+            
+                
+                    <a href="./09.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                         XSS attacks
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.4" data-path="09.4.html">
+            
+                
+                    <a href="./09.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                         SQL injection
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.5" data-path="09.5.html">
+            
+                
+                    <a href="./09.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                         Password storage
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.6" data-path="09.6.html">
+            
+                
+                    <a href="./09.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                         Encrypt and decrypt data
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.7" data-path="09.7.html">
+            
+                
+                    <a href="./09.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="10.0.html">
+            
+                
+                    <a href="./10.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         Internationalization and localization
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="10.1" data-path="10.1.html">
+            
+                
+                    <a href="./10.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                         Time zone
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.2" data-path="10.2.html">
+            
+                
+                    <a href="./10.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                         Localized resources
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.3" data-path="10.3.html">
+            
+                
+                    <a href="./10.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                         International sites
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.4" data-path="10.4.html">
+            
+                
+                    <a href="./10.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="11.0.html">
+            
+                
+                    <a href="./11.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         Error handling, debugging and testing
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="11.1" data-path="11.1.html">
+            
+                
+                    <a href="./11.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                         Error handling
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.2" data-path="11.2.html">
+            
+                
+                    <a href="./11.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                         Debugging by using GDB
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.3" data-path="11.3.html">
+            
+                
+                    <a href="./11.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                         Write test cases
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.4" data-path="11.4.html">
+            
+                
+                    <a href="./11.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="12.0.html">
+            
+                
+                    <a href="./12.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Deployment and maintenance
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="12.1" data-path="12.1.html">
+            
+                
+                    <a href="./12.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                         Logs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.2" data-path="12.2.html">
+            
+                
+                    <a href="./12.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                         Errors and crashes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.3" data-path="12.3.html">
+            
+                
+                    <a href="./12.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                         Deployment
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.4" data-path="12.4.html">
+            
+                
+                    <a href="./12.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.4.</b>
+                        
+                         Backup and recovery
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.5" data-path="12.5.html">
+            
+                
+                    <a href="./12.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.5.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="13.0.html">
+            
+                
+                    <a href="./13.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Build a web framework
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="13.1" data-path="13.1.html">
+            
+                
+                    <a href="./13.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.1.</b>
+                        
+                         Project program
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.2" data-path="13.2.html">
+            
+                
+                    <a href="./13.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.2.</b>
+                        
+                         Customized routers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.3" data-path="13.3.html">
+            
+                
+                    <a href="./13.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.3.</b>
+                        
+                         Design controllers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.4" data-path="13.4.html">
+            
+                
+                    <a href="./13.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.4.</b>
+                        
+                         Logs and configurations
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.5" data-path="13.5.html">
+            
+                
+                    <a href="./13.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.5.</b>
+                        
+                         Add, delete and update blogs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.6" data-path="13.6.html">
+            
+                
+                    <a href="./13.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.6.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="14.0.html">
+            
+                
+                    <a href="./14.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         Develop web framework
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="14.1" data-path="14.1.html">
+            
+                
+                    <a href="./14.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.1.</b>
+                        
+                         Static files
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.2" data-path="14.2.html">
+            
+                
+                    <a href="./14.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.2.</b>
+                        
+                         Session
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.3" data-path="14.3.html">
+            
+                
+                    <a href="./14.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.3.</b>
+                        
+                         Form
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.4" data-path="14.4.html">
+            
+                
+                    <a href="./14.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.4.</b>
+                        
+                         User validation
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.5" data-path="14.5.html">
+            
+                
+                    <a href="./14.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.5.</b>
+                        
+                         Multi-language support
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.6" data-path="14.6.html">
+            
+                
+                    <a href="./14.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.6.</b>
+                        
+                         pprof
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.7" data-path="14.7.html">
+            
+                
+                    <a href="./14.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.7.</b>
+                        
+                         Summary
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="ref.html">
+            
+                
+                    <a href="./ref.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         References
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 35.416666666666664%;min-width: 34.375%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="./01.0.html" title="Go environment configuration" class="chapter done new-chapter" data-progress="1" style="left: 1.0416666666666667%;"></a>
+    
+        <a href="./01.1.html" title="Installation" class="chapter done " data-progress="1.1" style="left: 2.0833333333333335%;"></a>
+    
+        <a href="./01.2.html" title="$GOPATH and workspace" class="chapter done " data-progress="1.2" style="left: 3.125%;"></a>
+    
+        <a href="./01.3.html" title="Go commands" class="chapter done " data-progress="1.3" style="left: 4.166666666666667%;"></a>
+    
+        <a href="./01.4.html" title="Go development tools" class="chapter done " data-progress="1.4" style="left: 5.208333333333333%;"></a>
+    
+        <a href="./01.5.html" title="Summary" class="chapter done " data-progress="1.5" style="left: 6.25%;"></a>
+    
+        <a href="./02.0.html" title="Go basic knowledge" class="chapter done new-chapter" data-progress="2" style="left: 7.291666666666667%;"></a>
+    
+        <a href="./02.1.html" title="&quot;Hello, Go&quot;" class="chapter done " data-progress="2.1" style="left: 8.333333333333334%;"></a>
+    
+        <a href="./02.2.html" title="Go foundation" class="chapter done " data-progress="2.2" style="left: 9.375%;"></a>
+    
+        <a href="./02.3.html" title="Control statements and functions" class="chapter done " data-progress="2.3" style="left: 10.416666666666666%;"></a>
+    
+        <a href="./02.4.html" title="struct" class="chapter done " data-progress="2.4" style="left: 11.458333333333334%;"></a>
+    
+        <a href="./02.5.html" title="Object-oriented" class="chapter done " data-progress="2.5" style="left: 12.5%;"></a>
+    
+        <a href="./02.6.html" title="interface" class="chapter done " data-progress="2.6" style="left: 13.541666666666666%;"></a>
+    
+        <a href="./02.7.html" title="Concurrency" class="chapter done " data-progress="2.7" style="left: 14.583333333333334%;"></a>
+    
+        <a href="./02.8.html" title="Summary" class="chapter done " data-progress="2.8" style="left: 15.625%;"></a>
+    
+        <a href="./03.0.html" title="Web foundation" class="chapter done new-chapter" data-progress="3" style="left: 16.666666666666668%;"></a>
+    
+        <a href="./03.1.html" title="Web working principles" class="chapter done " data-progress="3.1" style="left: 17.708333333333332%;"></a>
+    
+        <a href="./03.2.html" title="Build a simple web server" class="chapter done " data-progress="3.2" style="left: 18.75%;"></a>
+    
+        <a href="./03.3.html" title="How Go works with web" class="chapter done " data-progress="3.3" style="left: 19.791666666666668%;"></a>
+    
+        <a href="./03.4.html" title="Get into http package" class="chapter done " data-progress="3.4" style="left: 20.833333333333332%;"></a>
+    
+        <a href="./03.5.html" title="Summary" class="chapter done " data-progress="3.5" style="left: 21.875%;"></a>
+    
+        <a href="./04.0.html" title="User form" class="chapter done new-chapter" data-progress="4" style="left: 22.916666666666668%;"></a>
+    
+        <a href="./04.1.html" title="Process form inputs" class="chapter done " data-progress="4.1" style="left: 23.958333333333332%;"></a>
+    
+        <a href="./04.2.html" title="Verification of inputs" class="chapter done " data-progress="4.2" style="left: 25%;"></a>
+    
+        <a href="./04.3.html" title="Cross site scripting" class="chapter done " data-progress="4.3" style="left: 26.041666666666668%;"></a>
+    
+        <a href="./04.4.html" title="Duplicate submissions" class="chapter done " data-progress="4.4" style="left: 27.083333333333332%;"></a>
+    
+        <a href="./04.5.html" title="File upload" class="chapter done " data-progress="4.5" style="left: 28.125%;"></a>
+    
+        <a href="./04.6.html" title="Summary" class="chapter done " data-progress="4.6" style="left: 29.166666666666668%;"></a>
+    
+        <a href="./05.0.html" title="Database" class="chapter done new-chapter" data-progress="5" style="left: 30.208333333333332%;"></a>
+    
+        <a href="./05.1.html" title="database/sql interface" class="chapter done " data-progress="5.1" style="left: 31.25%;"></a>
+    
+        <a href="./05.2.html" title="MySQL" class="chapter done " data-progress="5.2" style="left: 32.291666666666664%;"></a>
+    
+        <a href="./05.3.html" title="SQLite" class="chapter done " data-progress="5.3" style="left: 33.333333333333336%;"></a>
+    
+        <a href="./05.4.html" title="PostgreSQL" class="chapter done " data-progress="5.4" style="left: 34.375%;"></a>
+    
+        <a href="./05.5.html" title="Develop ORM based on beedb" class="chapter done " data-progress="5.5" style="left: 35.416666666666664%;"></a>
+    
+        <a href="./05.6.html" title="NoSQL database" class="chapter  " data-progress="5.6" style="left: 36.458333333333336%;"></a>
+    
+        <a href="./05.7.html" title="Summary" class="chapter  " data-progress="5.7" style="left: 37.5%;"></a>
+    
+        <a href="./06.0.html" title="Data storage and session" class="chapter  new-chapter" data-progress="6" style="left: 38.541666666666664%;"></a>
+    
+        <a href="./06.1.html" title="Session and cookies" class="chapter  " data-progress="6.1" style="left: 39.583333333333336%;"></a>
+    
+        <a href="./06.2.html" title="How to use session in Go" class="chapter  " data-progress="6.2" style="left: 40.625%;"></a>
+    
+        <a href="./06.3.html" title="Session storage" class="chapter  " data-progress="6.3" style="left: 41.666666666666664%;"></a>
+    
+        <a href="./06.4.html" title="Prevent hijack of session" class="chapter  " data-progress="6.4" style="left: 42.708333333333336%;"></a>
+    
+        <a href="./06.5.html" title="Summary" class="chapter  " data-progress="6.5" style="left: 43.75%;"></a>
+    
+        <a href="./07.0.html" title="Text files" class="chapter  new-chapter" data-progress="7" style="left: 44.791666666666664%;"></a>
+    
+        <a href="./07.1.html" title="XML" class="chapter  " data-progress="7.1" style="left: 45.833333333333336%;"></a>
+    
+        <a href="./07.2.html" title="JSON" class="chapter  " data-progress="7.2" style="left: 46.875%;"></a>
+    
+        <a href="./07.3.html" title="Regexp" class="chapter  " data-progress="7.3" style="left: 47.916666666666664%;"></a>
+    
+        <a href="./07.4.html" title="Templates" class="chapter  " data-progress="7.4" style="left: 48.958333333333336%;"></a>
+    
+        <a href="./07.5.html" title="Files" class="chapter  " data-progress="7.5" style="left: 50%;"></a>
+    
+        <a href="./07.6.html" title="Strings" class="chapter  " data-progress="7.6" style="left: 51.041666666666664%;"></a>
+    
+        <a href="./07.7.html" title="Summary" class="chapter  " data-progress="7.7" style="left: 52.083333333333336%;"></a>
+    
+        <a href="./08.0.html" title="Web services" class="chapter  new-chapter" data-progress="8" style="left: 53.125%;"></a>
+    
+        <a href="./08.1.html" title="Sockets" class="chapter  " data-progress="8.1" style="left: 54.166666666666664%;"></a>
+    
+        <a href="./08.2.html" title="WebSocket" class="chapter  " data-progress="8.2" style="left: 55.208333333333336%;"></a>
+    
+        <a href="./08.3.html" title="REST" class="chapter  " data-progress="8.3" style="left: 56.25%;"></a>
+    
+        <a href="./08.4.html" title="RPC" class="chapter  " data-progress="8.4" style="left: 57.291666666666664%;"></a>
+    
+        <a href="./08.5.html" title="Summary" class="chapter  " data-progress="8.5" style="left: 58.333333333333336%;"></a>
+    
+        <a href="./09.0.html" title="Security and encryption" class="chapter  new-chapter" data-progress="9" style="left: 59.375%;"></a>
+    
+        <a href="./09.1.html" title="CSRF attacks" class="chapter  " data-progress="9.1" style="left: 60.416666666666664%;"></a>
+    
+        <a href="./09.2.html" title="Filter inputs" class="chapter  " data-progress="9.2" style="left: 61.458333333333336%;"></a>
+    
+        <a href="./09.3.html" title="XSS attacks" class="chapter  " data-progress="9.3" style="left: 62.5%;"></a>
+    
+        <a href="./09.4.html" title="SQL injection" class="chapter  " data-progress="9.4" style="left: 63.541666666666664%;"></a>
+    
+        <a href="./09.5.html" title="Password storage" class="chapter  " data-progress="9.5" style="left: 64.58333333333333%;"></a>
+    
+        <a href="./09.6.html" title="Encrypt and decrypt data" class="chapter  " data-progress="9.6" style="left: 65.625%;"></a>
+    
+        <a href="./09.7.html" title="Summary" class="chapter  " data-progress="9.7" style="left: 66.66666666666667%;"></a>
+    
+        <a href="./10.0.html" title="Internationalization and localization" class="chapter  " data-progress="10" style="left: 67.70833333333333%;"></a>
+    
+        <a href="./10.1.html" title="Time zone" class="chapter  " data-progress="10.1" style="left: 68.75%;"></a>
+    
+        <a href="./10.2.html" title="Localized resources" class="chapter  " data-progress="10.2" style="left: 69.79166666666667%;"></a>
+    
+        <a href="./10.3.html" title="International sites" class="chapter  " data-progress="10.3" style="left: 70.83333333333333%;"></a>
+    
+        <a href="./10.4.html" title="Summary" class="chapter  " data-progress="10.4" style="left: 71.875%;"></a>
+    
+        <a href="./11.0.html" title="Error handling, debugging and testing" class="chapter  " data-progress="11" style="left: 72.91666666666667%;"></a>
+    
+        <a href="./11.1.html" title="Error handling" class="chapter  " data-progress="11.1" style="left: 73.95833333333333%;"></a>
+    
+        <a href="./11.2.html" title="Debugging by using GDB" class="chapter  " data-progress="11.2" style="left: 75%;"></a>
+    
+        <a href="./11.3.html" title="Write test cases" class="chapter  " data-progress="11.3" style="left: 76.04166666666667%;"></a>
+    
+        <a href="./11.4.html" title="Summary" class="chapter  " data-progress="11.4" style="left: 77.08333333333333%;"></a>
+    
+        <a href="./12.0.html" title="Deployment and maintenance" class="chapter  " data-progress="12" style="left: 78.125%;"></a>
+    
+        <a href="./12.1.html" title="Logs" class="chapter  " data-progress="12.1" style="left: 79.16666666666667%;"></a>
+    
+        <a href="./12.2.html" title="Errors and crashes" class="chapter  " data-progress="12.2" style="left: 80.20833333333333%;"></a>
+    
+        <a href="./12.3.html" title="Deployment" class="chapter  " data-progress="12.3" style="left: 81.25%;"></a>
+    
+        <a href="./12.4.html" title="Backup and recovery" class="chapter  " data-progress="12.4" style="left: 82.29166666666667%;"></a>
+    
+        <a href="./12.5.html" title="Summary" class="chapter  " data-progress="12.5" style="left: 83.33333333333333%;"></a>
+    
+        <a href="./13.0.html" title="Build a web framework" class="chapter  " data-progress="13" style="left: 84.375%;"></a>
+    
+        <a href="./13.1.html" title="Project program" class="chapter  " data-progress="13.1" style="left: 85.41666666666667%;"></a>
+    
+        <a href="./13.2.html" title="Customized routers" class="chapter  " data-progress="13.2" style="left: 86.45833333333333%;"></a>
+    
+        <a href="./13.3.html" title="Design controllers" class="chapter  " data-progress="13.3" style="left: 87.5%;"></a>
+    
+        <a href="./13.4.html" title="Logs and configurations" class="chapter  " data-progress="13.4" style="left: 88.54166666666667%;"></a>
+    
+        <a href="./13.5.html" title="Add, delete and update blogs" class="chapter  " data-progress="13.5" style="left: 89.58333333333333%;"></a>
+    
+        <a href="./13.6.html" title="Summary" class="chapter  " data-progress="13.6" style="left: 90.625%;"></a>
+    
+        <a href="./14.0.html" title="Develop web framework" class="chapter  " data-progress="14" style="left: 91.66666666666667%;"></a>
+    
+        <a href="./14.1.html" title="Static files" class="chapter  " data-progress="14.1" style="left: 92.70833333333333%;"></a>
+    
+        <a href="./14.2.html" title="Session" class="chapter  " data-progress="14.2" style="left: 93.75%;"></a>
+    
+        <a href="./14.3.html" title="Form" class="chapter  " data-progress="14.3" style="left: 94.79166666666667%;"></a>
+    
+        <a href="./14.4.html" title="User validation" class="chapter  " data-progress="14.4" style="left: 95.83333333333333%;"></a>
+    
+        <a href="./14.5.html" title="Multi-language support" class="chapter  " data-progress="14.5" style="left: 96.875%;"></a>
+    
+        <a href="./14.6.html" title="pprof" class="chapter  " data-progress="14.6" style="left: 97.91666666666667%;"></a>
+    
+        <a href="./14.7.html" title="Summary" class="chapter  " data-progress="14.7" style="left: 98.95833333333333%;"></a>
+    
+        <a href="./ref.html" title="References" class="chapter  " data-progress="15" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_35">
+                    
+                        <h1 id="55-develop-orm-based-on-beedb">5.5 Develop ORM based on beedb</h1>
+<p>( <strong><em>Project beedb is no longer maintained, but code still there</em></strong> )</p>
+<p>beedb is a ORM, &quot;Object/Relational Mapping&quot;, that developed in Go by me.
+It uses Go style to operate database, implemented mapping struct to database records. It&#39;s a lightweight Go ORM framework, the purpose of developing this ORM is to help people learn how to write ORM, and finds a good balance between functions and performance. </p>
+<p>beedb is an open source project, and supports basic functions of ORM, but doesn&#39;t support associated query.</p>
+<p>Because beedb support <code>database/sql</code> interface standards, so any driver that supports this interface can be used in beedb, I&#39;ve tested following drivers:</p>
+<p>Mysql: <a href="github.com/ziutek/mymysql/godrv">github.com/ziutek/mymysql/godrv</a></p>
+<p>Mysql: <a href="code.google.com/p/go-mysql-driver">code.google.com/p/go-mysql-driver</a></p>
+<p>PostgreSQL: <a href="github.com/bmizerany/pq">github.com/bmizerany/pq</a></p>
+<p>SQLite: <a href="github.com/mattn/go-sqlite3">github.com/mattn/go-sqlite3</a></p>
+<p>MS ADODB: <a href="github.com/mattn/go-adodb">github.com/mattn/go-adodb</a></p>
+<p>ODBC: <a href="bitbucket.org/miquella/mgodbc">bitbucket.org/miquella/mgodbc</a></p>
+<h2 id="installation">Installation</h2>
+<p>You can use <code>go get</code> to install beedb in your computer.</p>
+<pre><code>go get github.com/astaxie/beedb
+</code></pre><h2 id="initialization">Initialization</h2>
+<p>First, you have to import all corresponding packages as follows:</p>
+<pre><code>import (
+    &quot;database/sql&quot;
+    &quot;github.com/astaxie/beedb&quot;
+    _ &quot;github.com/ziutek/mymysql/godrv&quot;
+)
+</code></pre><p>Then you need to open a database connection and create a beedb object(MySQL in this example):</p>
+<pre><code>db, err := sql.Open(&quot;mymysql&quot;, &quot;test/xiemengjun/123456&quot;)
+if err != nil {
+    panic(err)
+}
+orm := beedb.New(db)
+</code></pre><p><code>beedb.New()</code> actually has two arguments, the first one is for standard requirement, and the second one is for indicating database engine, but if you are using MySQL/SQLite, you can just skip the second one.</p>
+<p>Otherwise, you have to initialize, like SQLServer:</p>
+<pre><code>orm = beedb.New(db, &quot;mssql&quot;)
+</code></pre><p>PostgreSQL:</p>
+<pre><code>orm = beedb.New(db, &quot;pg&quot;)
+</code></pre><p>beedb supports debug, and use following code to enable:</p>
+<pre><code>beedb.OnDebug=true
+</code></pre><p>Now we have a struct for the database table <code>Userinfo</code> that we used in previous sections.</p>
+<pre><code>type Userinfo struct {
+    Uid     int `PK` // if the primary key is not id, you need to add tag `PK` for your customized primary key.
+    Username    string
+    Departname  string
+    Created     time.Time
+}
+</code></pre><p>Be aware that beedb auto-convert your camel style name to underline and lower case letter. For example, we have <code>UserInfo</code> as the struct name, and it will be <code>user_info</code> in database, same rule for field name.
+Camel</p>
+<h2 id="insert-data">Insert data</h2>
+<p>The following example shows you how to use beedb to save a struct instead of SQL command, and use Save method to apply change.</p>
+<pre><code>var saveone Userinfo
+saveone.Username = &quot;Test Add User&quot;
+saveone.Departname = &quot;Test Add Departname&quot;
+saveone.Created = time.Now()
+orm.Save(&amp;saveone)
+</code></pre><p>And you can check <code>saveone.Uid</code> after inserted, its value is self-increase ID, Save method did this job for you.</p>
+<p>beedb provides another way to insert data, which is using map.</p>
+<pre><code>add := make(map[string]interface{})
+add[&quot;username&quot;] = &quot;astaxie&quot;
+add[&quot;departname&quot;] = &quot;cloud develop&quot;
+add[&quot;created&quot;] = &quot;2012-12-02&quot;
+orm.SetTable(&quot;userinfo&quot;).Insert(add)
+</code></pre><p>Insert multiple data:</p>
+<pre><code>addslice := make([]map[string]interface{}, 10)
+add:=make(map[string]interface{})
+add2:=make(map[string]interface{})
+add[&quot;username&quot;] = &quot;astaxie&quot;
+add[&quot;departname&quot;] = &quot;cloud develop&quot;
+add[&quot;created&quot;] = &quot;2012-12-02&quot;
+add2[&quot;username&quot;] = &quot;astaxie2&quot;
+add2[&quot;departname&quot;] = &quot;cloud develop2&quot;
+add2[&quot;created&quot;] = &quot;2012-12-02&quot;
+addslice =append(addslice, add, add2)
+orm.SetTable(&quot;userinfo&quot;).InsertBatch(addslice)
+</code></pre><p>The way I showed you above is like chain query, you should be familiar if you know jquery. It returns original ORM object after calls, and continue to do other jobs.</p>
+<p>The method <code>SetTable</code> tells ORM we want to insert our data to table <code>userinfo</code>.</p>
+<h2 id="update-data">Update data</h2>
+<p>Continue above example to show how to update data. Now we have primary key value of saveone(Uid), so beedb executes update operation instead of inserting new record.</p>
+<pre><code>saveone.Username = &quot;Update Username&quot;
+saveone.Departname = &quot;Update Departname&quot;
+saveone.Created = time.Now()
+orm.Save(&amp;saveone)  // update
+</code></pre><p>You can use map for updating data also:</p>
+<pre><code>t := make(map[string]interface{})
+t[&quot;username&quot;] = &quot;astaxie&quot;
+orm.SetTable(&quot;userinfo&quot;).SetPK(&quot;uid&quot;).Where(2).Update(t)
+</code></pre><p>Let me explain some methods we used above:</p>
+<ul>
+<li><code>.SetPK()</code> tells ORM <code>uid</code> is the primary key of table <code>userinfo</code>.</li>
+<li><code>.Where()</code> sets conditions, supports multiple arguments, if the first argument is a integer, it&#39;s a short form of <code>Where(&quot;&lt;primary key&gt;=?&quot;, &lt;value&gt;)</code>. </li>
+<li><code>.Update()</code> method accepts map and update to database.</li>
+</ul>
+<h2 id="query-data">Query data</h2>
+<p>beedb query interface is very flexible, let&#39;s see some examples:</p>
+<p>Example 1, query by primary key:</p>
+<pre><code>var user Userinfo
+// Where accepts two arguments, supports integers
+orm.Where(&quot;uid=?&quot;, 27).Find(&amp;user)
+</code></pre><p>Example 2:</p>
+<pre><code>var user2 Userinfo
+orm.Where(3).Find(&amp;user2) // short form that omits primary key
+</code></pre><p>Example 3, other query conditions:</p>
+<pre><code>var user3 Userinfo
+// Where accepts two arguments, supports char type.
+orm.Where(&quot;name = ?&quot;, &quot;john&quot;).Find(&amp;user3)
+</code></pre><p>Example 4, more complex conditions:</p>
+<pre><code>var user4 Userinfo
+// Where accepts three arguments
+orm.Where(&quot;name = ? and age &lt; ?&quot;, &quot;john&quot;, 88).Find(&amp;user4)
+</code></pre><p>Examples to get multiple records:</p>
+<p>Example 1, gets 10 records that <code>id&gt;3</code> and starts with position 20:</p>
+<pre><code>var allusers []Userinfo
+err := orm.Where(&quot;id &gt; ?&quot;, &quot;3&quot;).Limit(10,20).FindAll(&amp;allusers)
+</code></pre><p>Example 2, omits the second argument of limit, so it starts with 0 and gets 10 records:</p>
+<pre><code>var tenusers []Userinfo
+err := orm.Where(&quot;id &gt; ?&quot;, &quot;3&quot;).Limit(10).FindAll(&amp;tenusers)
+</code></pre><p>Example 3, gets all records:</p>
+<pre><code>var everyone []Userinfo
+err := orm.OrderBy(&quot;uid desc,username asc&quot;).FindAll(&amp;everyone)
+</code></pre><p>As you can see, the Limit method is for limiting number of results.</p>
+<ul>
+<li><code>.Limit()</code> supports two arguments, which are number of results and start position. 0 is the default value of start position.</li>
+<li><code>.OrderBy()</code> is for ordering results, the arguments is the order condition.</li>
+</ul>
+<p>All examples that you see is mapping records to structs, and you can also just put data into map as follows:</p>
+<pre><code>a, _ := orm.SetTable(&quot;userinfo&quot;).SetPK(&quot;uid&quot;).Where(2).Select(&quot;uid,username&quot;).FindMap()
+</code></pre><ul>
+<li><code>.Select()</code> tells beedb how many fields you want to get from database table, returns all fields as default.</li>
+<li><code>.FindMap()</code> returns type <code>[]map[string][]byte</code>, so you need to convert to other types by yourself. </li>
+</ul>
+<h2 id="delete-data">Delete data</h2>
+<p>beedb provides rich methods to delete data.</p>
+<p>Example 1, delete a single record:</p>
+<pre><code>// saveone is the one in above example.
+orm.Delete(&amp;saveone)
+</code></pre><p>Example 2, delete multiple records:</p>
+<pre><code>// alluser is the slice which gets multiple records.
+orm.DeleteAll(&amp;alluser)
+</code></pre><p>Example 3, delete records by SQL:</p>
+<pre><code>orm.SetTable(&quot;userinfo&quot;).Where(&quot;uid&gt;?&quot;, 3).DeleteRow()
+</code></pre><h2 id="associated-query">Associated query</h2>
+<p>beedb doesn&#39;t support joining between structs.
+However since some applications need this feature, here is a  implementation:</p>
+<pre><code>a, _ := orm.SetTable(&quot;userinfo&quot;).Join(&quot;LEFT&quot;, &quot;userdetail&quot;, &quot;userinfo.uid=userdetail.uid&quot;)
+    .Where(&quot;userinfo.uid=?&quot;, 1).Select(&quot;userinfo.uid,userinfo.username,userdetail.profile&quot;).FindMap()
+</code></pre><p>We see a new method called <code>.Join()</code>, it has three arguments:</p>
+<ul>
+<li>The first argument: Type of Join; INNER, LEFT, OUTER, CROSS, etc.</li>
+<li>The second argument: the table you want to join with.</li>
+<li>The third argument: join condition.</li>
+</ul>
+<h2 id="group-by-and-having">Group By and Having</h2>
+<p>beedb also has a implementation of <code>group by</code> and <code>having</code>. </p>
+<pre><code>a, _ := orm.SetTable(&quot;userinfo&quot;).GroupBy(&quot;username&quot;).Having(&quot;username=&#39;astaxie&#39;&quot;).FindMap()
+</code></pre><ul>
+<li><code>.GroupBy()</code> indicates field that is for group by.</li>
+<li><code>.Having()</code> indicates conditions of having.</li>
+</ul>
+<h2 id="future">Future</h2>
+<p>I have received many feedback from many people from all around world, and I&#39;m thinking about reconfiguration in following aspects:</p>
+<ul>
+<li>Implement interface design like <code>database/sql/driver</code> in order to implement corresponding CRUD operations.</li>
+<li><p>Implement relational database design, one to one, one to many, many to many, here are some samples:</p>
+<pre><code>          type Profile struct {
+              Nickname string
+              Mobile   string
+          }
+          type Userinfo struct {
+              Uid         int
+              PK_Username string
+              Departname  string
+              Created     time.Time
+              Profile     HasOne
+          }
+</code></pre></li>
+<li><p>Auto-create table and index.</p>
+</li>
+<li>Implement connection pool through goroutine.</li>
+</ul>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="preface.html">Directory</a></li>
+<li>Previous section: <a href="05.4.html">PostgreSQL</a></li>
+<li>Next section: <a href="05.6.html">NoSQL database</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./05.4.html" class="navigation navigation-prev " aria-label="Previous page: PostgreSQL"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./05.6.html" class="navigation navigation-next " aria-label="Next page: NoSQL database"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

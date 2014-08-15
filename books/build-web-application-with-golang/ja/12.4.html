@@ -1,0 +1,2168 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="./manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>バックアップとリストア | 《Go Web 编程》</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.7.1">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="astaxie">
+    
+    
+    <link rel="next" href="./12.5.html" />
+    
+    
+    <link rel="prev" href="./12.3.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-github="astaxie/build-web-application-with-golang" data-level="12.4" data-basepath="." data-revision="1408128449405">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/astaxie/build-web-application-with-golang" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="./" >《Go Web 编程》</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/astaxie" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/astaxie/build-web-application-with-golang/issues" target="blank" class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/astaxie/build-web-application-with-golang/edit/master/12.4.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+	
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="01.0.html">
+            
+                
+                    <a href="./01.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Goの環境設定
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="01.1.html">
+            
+                
+                    <a href="./01.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Goのインストール
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="01.2.html">
+            
+                
+                    <a href="./01.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         GOPATHとワーキングディレクトリ
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="01.3.html">
+            
+                
+                    <a href="./01.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Goのコマンド
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="01.4.html">
+            
+                
+                    <a href="./01.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Goの開発ツール
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="01.5.html">
+            
+                
+                    <a href="./01.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="02.0.html">
+            
+                
+                    <a href="./02.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Go言語の基礎
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="02.1.html">
+            
+                
+                    <a href="./02.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         こんにちは、Go
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="02.2.html">
+            
+                
+                    <a href="./02.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Goの基礎
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="02.3.html">
+            
+                
+                    <a href="./02.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         フローと関数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="02.4.html">
+            
+                
+                    <a href="./02.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         struct型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="02.5.html">
+            
+                
+                    <a href="./02.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         オブジェクト指向
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="02.6.html">
+            
+                
+                    <a href="./02.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         interface
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.7" data-path="02.7.html">
+            
+                
+                    <a href="./02.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                         マルチスレッド
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.8" data-path="02.8.html">
+            
+                
+                    <a href="./02.8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="03.0.html">
+            
+                
+                    <a href="./03.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Webの基礎
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="03.1.html">
+            
+                
+                    <a href="./03.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         webでの作業方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="03.2.html">
+            
+                
+                    <a href="./03.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         Goで簡単なwebサーバを立てる
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="03.3.html">
+            
+                
+                    <a href="./03.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         Goはどのようにしてweb作業を行うか
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="03.4.html">
+            
+                
+                    <a href="./03.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         Goのhttpパッケージ詳細
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.5" data-path="03.5.html">
+            
+                
+                    <a href="./03.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="04.0.html">
+            
+                
+                    <a href="./04.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         フォーム
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="04.1.html">
+            
+                
+                    <a href="./04.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         フォームの入力を処理する
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="04.2.html">
+            
+                
+                    <a href="./04.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         フォームに入力された内容の検証
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="04.3.html">
+            
+                
+                    <a href="./04.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         クロスサイトスクリプティングの予防
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="04.4.html">
+            
+                
+                    <a href="./04.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         フォームの複数回送信の防止
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="04.5.html">
+            
+                
+                    <a href="./04.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         ファイルのアップロード処理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="04.6.html">
+            
+                
+                    <a href="./04.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="05.0.html">
+            
+                
+                    <a href="./05.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         データベースへのアクセス
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="05.1.html">
+            
+                
+                    <a href="./05.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         database/sqlインターフェース
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="05.2.html">
+            
+                
+                    <a href="./05.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         MySQL データベースの使用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="05.3.html">
+            
+                
+                    <a href="./05.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         SQLiteデータベースの使用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="05.4.html">
+            
+                
+                    <a href="./05.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         PostgreSQLデータベースの使用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="05.5.html">
+            
+                
+                    <a href="./05.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         beedbライブラリを使用してORM開発を行う
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="05.6.html">
+            
+                
+                    <a href="./05.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         NOSQLデータベースの操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="05.7.html">
+            
+                
+                    <a href="./05.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="06.0.html">
+            
+                
+                    <a href="./06.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         sessionとデータの保存
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="06.1.html">
+            
+                
+                    <a href="./06.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         sessionとcookie
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2" data-path="06.2.html">
+            
+                
+                    <a href="./06.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         Goはどのようにしてsessionを使用するか
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.3" data-path="06.3.html">
+            
+                
+                    <a href="./06.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                         sessionストレージ
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4" data-path="06.4.html">
+            
+                
+                    <a href="./06.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                         sessionハイジャックの予防
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.5" data-path="06.5.html">
+            
+                
+                    <a href="./06.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="07.0.html">
+            
+                
+                    <a href="./07.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         テキスト処理
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="07.1.html">
+            
+                
+                    <a href="./07.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         XMLの処理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.2" data-path="07.2.html">
+            
+                
+                    <a href="./07.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                         JSONの処理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.3" data-path="07.3.html">
+            
+                
+                    <a href="./07.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                         正規表現の処理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.4" data-path="07.4.html">
+            
+                
+                    <a href="./07.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                         テンプレートの処理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.5" data-path="07.5.html">
+            
+                
+                    <a href="./07.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                         ファイルの操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.6" data-path="07.6.html">
+            
+                
+                    <a href="./07.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                         文字列の処理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.7" data-path="07.7.html">
+            
+                
+                    <a href="./07.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="08.0.html">
+            
+                
+                    <a href="./08.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Webサービス
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="08.1.html">
+            
+                
+                    <a href="./08.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         Socketプログラミング
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="08.2.html">
+            
+                
+                    <a href="./08.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         WebSocket
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="08.3.html">
+            
+                
+                    <a href="./08.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         REST
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.4" data-path="08.4.html">
+            
+                
+                    <a href="./08.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                         RPC
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.5" data-path="08.5.html">
+            
+                
+                    <a href="./08.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="09.0.html">
+            
+                
+                    <a href="./09.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         セキュリティと暗号化
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="9.1" data-path="09.1.html">
+            
+                
+                    <a href="./09.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                         CSRF攻撃の予防
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.2" data-path="09.2.html">
+            
+                
+                    <a href="./09.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                         入力フィルタリングの確保
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.3" data-path="09.3.html">
+            
+                
+                    <a href="./09.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                         XSS攻撃の回避
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.4" data-path="09.4.html">
+            
+                
+                    <a href="./09.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                         SQLインジェクションの回避
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.5" data-path="09.5.html">
+            
+                
+                    <a href="./09.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                         パスワードの保存
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.6" data-path="09.6.html">
+            
+                
+                    <a href="./09.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                         データを暗号化/復元する
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.7" data-path="09.7.html">
+            
+                
+                    <a href="./09.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="10.0.html">
+            
+                
+                    <a href="./10.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         国際化とローカライズ
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="10.1" data-path="10.1.html">
+            
+                
+                    <a href="./10.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                         デフォルトロケールの設定
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.2" data-path="10.2.html">
+            
+                
+                    <a href="./10.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                         ローカライズリソース
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.3" data-path="10.3.html">
+            
+                
+                    <a href="./10.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                         国際化サイト
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.4" data-path="10.4.html">
+            
+                
+                    <a href="./10.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="11.0.html">
+            
+                
+                    <a href="./11.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         エラー処理、デバッグとテスト
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="11.1" data-path="11.1.html">
+            
+                
+                    <a href="./11.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                         エラー処理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.2" data-path="11.2.html">
+            
+                
+                    <a href="./11.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                         GDBを使用したデバッグ
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.3" data-path="11.3.html">
+            
+                
+                    <a href="./11.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                         Goによるテスト例
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.4" data-path="11.4.html">
+            
+                
+                    <a href="./11.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="12.0.html">
+            
+                
+                    <a href="./12.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         デプロイとメンテナンス
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="12.1" data-path="12.1.html">
+            
+                
+                    <a href="./12.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                         アプリケーションログ
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.2" data-path="12.2.html">
+            
+                
+                    <a href="./12.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                         サイトのエラー処理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.3" data-path="12.3.html">
+            
+                
+                    <a href="./12.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                         アプリケーションのデプロイ
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="12.4" data-path="12.4.html">
+            
+                
+                    <a href="./12.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.4.</b>
+                        
+                         バックアップとリストア
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.5" data-path="12.5.html">
+            
+                
+                    <a href="./12.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.5.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="13.0.html">
+            
+                
+                    <a href="./13.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         どのようにしてWebフレームワークを設計するか
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="13.1" data-path="13.1.html">
+            
+                
+                    <a href="./13.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.1.</b>
+                        
+                         プロジェクトプラン
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.2" data-path="13.2.html">
+            
+                
+                    <a href="./13.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.2.</b>
+                        
+                         カスタムルータの設計
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.3" data-path="13.3.html">
+            
+                
+                    <a href="./13.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.3.</b>
+                        
+                         controllerの設計
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.4" data-path="13.4.html">
+            
+                
+                    <a href="./13.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.4.</b>
+                        
+                         ログとデプロイ設計
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.5" data-path="13.5.html">
+            
+                
+                    <a href="./13.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.5.</b>
+                        
+                         ブログの追加/削除/修正の実装
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.6" data-path="13.6.html">
+            
+                
+                    <a href="./13.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.6.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="14.0.html">
+            
+                
+                    <a href="./14.0.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         Webフレームワークの拡張
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="14.1" data-path="14.1.html">
+            
+                
+                    <a href="./14.1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.1.</b>
+                        
+                         静的ファイルのサポート
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.2" data-path="14.2.html">
+            
+                
+                    <a href="./14.2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.2.</b>
+                        
+                         Sessionのサポート
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.3" data-path="14.3.html">
+            
+                
+                    <a href="./14.3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.3.</b>
+                        
+                         フォームのサポート
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.4" data-path="14.4.html">
+            
+                
+                    <a href="./14.4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.4.</b>
+                        
+                         ユーザ認証
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.5" data-path="14.5.html">
+            
+                
+                    <a href="./14.5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.5.</b>
+                        
+                         多言語サポート
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.6" data-path="14.6.html">
+            
+                
+                    <a href="./14.6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.6.</b>
+                        
+                         pprofのサポート
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.7" data-path="14.7.html">
+            
+                
+                    <a href="./14.7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.7.</b>
+                        
+                         概要
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="ref.html">
+            
+                
+                    <a href="./ref.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         参考資料
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 82.29166666666667%;min-width: 81.25%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="./01.0.html" title="Goの環境設定" class="chapter done new-chapter" data-progress="1" style="left: 1.0416666666666667%;"></a>
+    
+        <a href="./01.1.html" title="Goのインストール" class="chapter done " data-progress="1.1" style="left: 2.0833333333333335%;"></a>
+    
+        <a href="./01.2.html" title="GOPATHとワーキングディレクトリ" class="chapter done " data-progress="1.2" style="left: 3.125%;"></a>
+    
+        <a href="./01.3.html" title="Goのコマンド" class="chapter done " data-progress="1.3" style="left: 4.166666666666667%;"></a>
+    
+        <a href="./01.4.html" title="Goの開発ツール" class="chapter done " data-progress="1.4" style="left: 5.208333333333333%;"></a>
+    
+        <a href="./01.5.html" title="概要" class="chapter done " data-progress="1.5" style="left: 6.25%;"></a>
+    
+        <a href="./02.0.html" title="Go言語の基礎" class="chapter done new-chapter" data-progress="2" style="left: 7.291666666666667%;"></a>
+    
+        <a href="./02.1.html" title="こんにちは、Go" class="chapter done " data-progress="2.1" style="left: 8.333333333333334%;"></a>
+    
+        <a href="./02.2.html" title="Goの基礎" class="chapter done " data-progress="2.2" style="left: 9.375%;"></a>
+    
+        <a href="./02.3.html" title="フローと関数" class="chapter done " data-progress="2.3" style="left: 10.416666666666666%;"></a>
+    
+        <a href="./02.4.html" title="struct型" class="chapter done " data-progress="2.4" style="left: 11.458333333333334%;"></a>
+    
+        <a href="./02.5.html" title="オブジェクト指向" class="chapter done " data-progress="2.5" style="left: 12.5%;"></a>
+    
+        <a href="./02.6.html" title="interface" class="chapter done " data-progress="2.6" style="left: 13.541666666666666%;"></a>
+    
+        <a href="./02.7.html" title="マルチスレッド" class="chapter done " data-progress="2.7" style="left: 14.583333333333334%;"></a>
+    
+        <a href="./02.8.html" title="概要" class="chapter done " data-progress="2.8" style="left: 15.625%;"></a>
+    
+        <a href="./03.0.html" title="Webの基礎" class="chapter done new-chapter" data-progress="3" style="left: 16.666666666666668%;"></a>
+    
+        <a href="./03.1.html" title="webでの作業方法" class="chapter done " data-progress="3.1" style="left: 17.708333333333332%;"></a>
+    
+        <a href="./03.2.html" title="Goで簡単なwebサーバを立てる" class="chapter done " data-progress="3.2" style="left: 18.75%;"></a>
+    
+        <a href="./03.3.html" title="Goはどのようにしてweb作業を行うか" class="chapter done " data-progress="3.3" style="left: 19.791666666666668%;"></a>
+    
+        <a href="./03.4.html" title="Goのhttpパッケージ詳細" class="chapter done " data-progress="3.4" style="left: 20.833333333333332%;"></a>
+    
+        <a href="./03.5.html" title="概要" class="chapter done " data-progress="3.5" style="left: 21.875%;"></a>
+    
+        <a href="./04.0.html" title="フォーム" class="chapter done new-chapter" data-progress="4" style="left: 22.916666666666668%;"></a>
+    
+        <a href="./04.1.html" title="フォームの入力を処理する" class="chapter done " data-progress="4.1" style="left: 23.958333333333332%;"></a>
+    
+        <a href="./04.2.html" title="フォームに入力された内容の検証" class="chapter done " data-progress="4.2" style="left: 25%;"></a>
+    
+        <a href="./04.3.html" title="クロスサイトスクリプティングの予防" class="chapter done " data-progress="4.3" style="left: 26.041666666666668%;"></a>
+    
+        <a href="./04.4.html" title="フォームの複数回送信の防止" class="chapter done " data-progress="4.4" style="left: 27.083333333333332%;"></a>
+    
+        <a href="./04.5.html" title="ファイルのアップロード処理" class="chapter done " data-progress="4.5" style="left: 28.125%;"></a>
+    
+        <a href="./04.6.html" title="概要" class="chapter done " data-progress="4.6" style="left: 29.166666666666668%;"></a>
+    
+        <a href="./05.0.html" title="データベースへのアクセス" class="chapter done new-chapter" data-progress="5" style="left: 30.208333333333332%;"></a>
+    
+        <a href="./05.1.html" title="database/sqlインターフェース" class="chapter done " data-progress="5.1" style="left: 31.25%;"></a>
+    
+        <a href="./05.2.html" title="MySQL データベースの使用" class="chapter done " data-progress="5.2" style="left: 32.291666666666664%;"></a>
+    
+        <a href="./05.3.html" title="SQLiteデータベースの使用" class="chapter done " data-progress="5.3" style="left: 33.333333333333336%;"></a>
+    
+        <a href="./05.4.html" title="PostgreSQLデータベースの使用" class="chapter done " data-progress="5.4" style="left: 34.375%;"></a>
+    
+        <a href="./05.5.html" title="beedbライブラリを使用してORM開発を行う" class="chapter done " data-progress="5.5" style="left: 35.416666666666664%;"></a>
+    
+        <a href="./05.6.html" title="NOSQLデータベースの操作" class="chapter done " data-progress="5.6" style="left: 36.458333333333336%;"></a>
+    
+        <a href="./05.7.html" title="概要" class="chapter done " data-progress="5.7" style="left: 37.5%;"></a>
+    
+        <a href="./06.0.html" title="sessionとデータの保存" class="chapter done new-chapter" data-progress="6" style="left: 38.541666666666664%;"></a>
+    
+        <a href="./06.1.html" title="sessionとcookie" class="chapter done " data-progress="6.1" style="left: 39.583333333333336%;"></a>
+    
+        <a href="./06.2.html" title="Goはどのようにしてsessionを使用するか" class="chapter done " data-progress="6.2" style="left: 40.625%;"></a>
+    
+        <a href="./06.3.html" title="sessionストレージ" class="chapter done " data-progress="6.3" style="left: 41.666666666666664%;"></a>
+    
+        <a href="./06.4.html" title="sessionハイジャックの予防" class="chapter done " data-progress="6.4" style="left: 42.708333333333336%;"></a>
+    
+        <a href="./06.5.html" title="概要" class="chapter done " data-progress="6.5" style="left: 43.75%;"></a>
+    
+        <a href="./07.0.html" title="テキスト処理" class="chapter done new-chapter" data-progress="7" style="left: 44.791666666666664%;"></a>
+    
+        <a href="./07.1.html" title="XMLの処理" class="chapter done " data-progress="7.1" style="left: 45.833333333333336%;"></a>
+    
+        <a href="./07.2.html" title="JSONの処理" class="chapter done " data-progress="7.2" style="left: 46.875%;"></a>
+    
+        <a href="./07.3.html" title="正規表現の処理" class="chapter done " data-progress="7.3" style="left: 47.916666666666664%;"></a>
+    
+        <a href="./07.4.html" title="テンプレートの処理" class="chapter done " data-progress="7.4" style="left: 48.958333333333336%;"></a>
+    
+        <a href="./07.5.html" title="ファイルの操作" class="chapter done " data-progress="7.5" style="left: 50%;"></a>
+    
+        <a href="./07.6.html" title="文字列の処理" class="chapter done " data-progress="7.6" style="left: 51.041666666666664%;"></a>
+    
+        <a href="./07.7.html" title="概要" class="chapter done " data-progress="7.7" style="left: 52.083333333333336%;"></a>
+    
+        <a href="./08.0.html" title="Webサービス" class="chapter done new-chapter" data-progress="8" style="left: 53.125%;"></a>
+    
+        <a href="./08.1.html" title="Socketプログラミング" class="chapter done " data-progress="8.1" style="left: 54.166666666666664%;"></a>
+    
+        <a href="./08.2.html" title="WebSocket" class="chapter done " data-progress="8.2" style="left: 55.208333333333336%;"></a>
+    
+        <a href="./08.3.html" title="REST" class="chapter done " data-progress="8.3" style="left: 56.25%;"></a>
+    
+        <a href="./08.4.html" title="RPC" class="chapter done " data-progress="8.4" style="left: 57.291666666666664%;"></a>
+    
+        <a href="./08.5.html" title="概要" class="chapter done " data-progress="8.5" style="left: 58.333333333333336%;"></a>
+    
+        <a href="./09.0.html" title="セキュリティと暗号化" class="chapter done new-chapter" data-progress="9" style="left: 59.375%;"></a>
+    
+        <a href="./09.1.html" title="CSRF攻撃の予防" class="chapter done " data-progress="9.1" style="left: 60.416666666666664%;"></a>
+    
+        <a href="./09.2.html" title="入力フィルタリングの確保" class="chapter done " data-progress="9.2" style="left: 61.458333333333336%;"></a>
+    
+        <a href="./09.3.html" title="XSS攻撃の回避" class="chapter done " data-progress="9.3" style="left: 62.5%;"></a>
+    
+        <a href="./09.4.html" title="SQLインジェクションの回避" class="chapter done " data-progress="9.4" style="left: 63.541666666666664%;"></a>
+    
+        <a href="./09.5.html" title="パスワードの保存" class="chapter done " data-progress="9.5" style="left: 64.58333333333333%;"></a>
+    
+        <a href="./09.6.html" title="データを暗号化/復元する" class="chapter done " data-progress="9.6" style="left: 65.625%;"></a>
+    
+        <a href="./09.7.html" title="概要" class="chapter done " data-progress="9.7" style="left: 66.66666666666667%;"></a>
+    
+        <a href="./10.0.html" title="国際化とローカライズ" class="chapter done " data-progress="10" style="left: 67.70833333333333%;"></a>
+    
+        <a href="./10.1.html" title="デフォルトロケールの設定" class="chapter done " data-progress="10.1" style="left: 68.75%;"></a>
+    
+        <a href="./10.2.html" title="ローカライズリソース" class="chapter done " data-progress="10.2" style="left: 69.79166666666667%;"></a>
+    
+        <a href="./10.3.html" title="国際化サイト" class="chapter done " data-progress="10.3" style="left: 70.83333333333333%;"></a>
+    
+        <a href="./10.4.html" title="概要" class="chapter done " data-progress="10.4" style="left: 71.875%;"></a>
+    
+        <a href="./11.0.html" title="エラー処理、デバッグとテスト" class="chapter done " data-progress="11" style="left: 72.91666666666667%;"></a>
+    
+        <a href="./11.1.html" title="エラー処理" class="chapter done " data-progress="11.1" style="left: 73.95833333333333%;"></a>
+    
+        <a href="./11.2.html" title="GDBを使用したデバッグ" class="chapter done " data-progress="11.2" style="left: 75%;"></a>
+    
+        <a href="./11.3.html" title="Goによるテスト例" class="chapter done " data-progress="11.3" style="left: 76.04166666666667%;"></a>
+    
+        <a href="./11.4.html" title="概要" class="chapter done " data-progress="11.4" style="left: 77.08333333333333%;"></a>
+    
+        <a href="./12.0.html" title="デプロイとメンテナンス" class="chapter done " data-progress="12" style="left: 78.125%;"></a>
+    
+        <a href="./12.1.html" title="アプリケーションログ" class="chapter done " data-progress="12.1" style="left: 79.16666666666667%;"></a>
+    
+        <a href="./12.2.html" title="サイトのエラー処理" class="chapter done " data-progress="12.2" style="left: 80.20833333333333%;"></a>
+    
+        <a href="./12.3.html" title="アプリケーションのデプロイ" class="chapter done " data-progress="12.3" style="left: 81.25%;"></a>
+    
+        <a href="./12.4.html" title="バックアップとリストア" class="chapter done " data-progress="12.4" style="left: 82.29166666666667%;"></a>
+    
+        <a href="./12.5.html" title="概要" class="chapter  " data-progress="12.5" style="left: 83.33333333333333%;"></a>
+    
+        <a href="./13.0.html" title="どのようにしてWebフレームワークを設計するか" class="chapter  " data-progress="13" style="left: 84.375%;"></a>
+    
+        <a href="./13.1.html" title="プロジェクトプラン" class="chapter  " data-progress="13.1" style="left: 85.41666666666667%;"></a>
+    
+        <a href="./13.2.html" title="カスタムルータの設計" class="chapter  " data-progress="13.2" style="left: 86.45833333333333%;"></a>
+    
+        <a href="./13.3.html" title="controllerの設計" class="chapter  " data-progress="13.3" style="left: 87.5%;"></a>
+    
+        <a href="./13.4.html" title="ログとデプロイ設計" class="chapter  " data-progress="13.4" style="left: 88.54166666666667%;"></a>
+    
+        <a href="./13.5.html" title="ブログの追加/削除/修正の実装" class="chapter  " data-progress="13.5" style="left: 89.58333333333333%;"></a>
+    
+        <a href="./13.6.html" title="概要" class="chapter  " data-progress="13.6" style="left: 90.625%;"></a>
+    
+        <a href="./14.0.html" title="Webフレームワークの拡張" class="chapter  " data-progress="14" style="left: 91.66666666666667%;"></a>
+    
+        <a href="./14.1.html" title="静的ファイルのサポート" class="chapter  " data-progress="14.1" style="left: 92.70833333333333%;"></a>
+    
+        <a href="./14.2.html" title="Sessionのサポート" class="chapter  " data-progress="14.2" style="left: 93.75%;"></a>
+    
+        <a href="./14.3.html" title="フォームのサポート" class="chapter  " data-progress="14.3" style="left: 94.79166666666667%;"></a>
+    
+        <a href="./14.4.html" title="ユーザ認証" class="chapter  " data-progress="14.4" style="left: 95.83333333333333%;"></a>
+    
+        <a href="./14.5.html" title="多言語サポート" class="chapter  " data-progress="14.5" style="left: 96.875%;"></a>
+    
+        <a href="./14.6.html" title="pprofのサポート" class="chapter  " data-progress="14.6" style="left: 97.91666666666667%;"></a>
+    
+        <a href="./14.7.html" title="概要" class="chapter  " data-progress="14.7" style="left: 98.95833333333333%;"></a>
+    
+        <a href="./ref.html" title="参考資料" class="chapter  " data-progress="15" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_275">
+                    
+                        <h1 id="124-">12.4 バックアップとリストア</h1>
+<p>この節ではアプリケーションプログラムを管理するもうひとつの側面について討論したいとおもいます：サーバ上で生成されたデータのバックアップとリストアについてです。サーバのネットワークが切断されたり、ハードディスクが壊れたり、OSが崩壊したり、データベースが使用できなくなったりという各種以上な状態はよく発生します。そのため、メンテナはサーバ上で発生したアプリケーションとデータに対しリモート障害時のリカバリ、コールドスタンドバイやホットスタンドバイといった準備をする必要があります。以下のご紹介において、どのようにアプリケーションのバックアップを行うか、Mysqlデータベースおよびredisデータベースのバックアップ/リストアについてご説明します。</p>
+<h2 id="">アプリケーションのバックアップ</h2>
+<p>多くのクラスタ環境において、Webアプリケーションプログラムは基本的にバックアップをとる必要はありません。なぜならこれは単なるコードのコピーでしかないからです。ローカルの開発環境またはバージョンコントロールシステムにおいてすでにこれらのコードを保持しています。しかし多くの場合、いくつかの開発サイトにおいてはユーザがファイルをアップロードする必要があり、これらのユーザがアップロードしたファイルに対してバックアップを行う必要があります。現在理にかなった方法はウェブサイトに関係する保存されるべきファイルをクラウドストレージ上に保存するというものです。このようにすることでシステムが崩壊しても、クラウドストレージ上にありさえすれば、データが失われることはありません。</p>
+<p>もしクラウドストレージを採用していなかった場合、どのようにしてウェブサイトのバックアップを行うのでしょうか？ここではファイルの同期ツールであるrsyncをご紹介します：rsyncはウェブサイトのコピーを行うことができ、異なるシステムのファイルを同期することができます。もしwindowsであれば、windows版のcwrsyncが必要です。</p>
+<h3 id="rsync">rsyncのインストール</h3>
+<p>rsyncのオフィシャルサイト：<a href="http://rsync.samba.org/" target="_blank">http://rsync.samba.org/</a> において最新版のソースコードを取得できます。当然、rsyncはとても使い勝手のよいソフトウェアですので、多くのLinuxのディストリビューションにおいてその中に収録されています。</p>
+<p>ソフトウェアパッケージのインストール</p>
+<pre><code># sudo apt-get  install  rsync  注：debian、ubuntu 等のライブインストール方法；
+# yum install rsync    注：Fedora、Redhat、CentOS 等のライブインストール方法；
+# rpm -ivh rsync       注：Fedora、Redhat、CentOS 等rpmパッケージによるインストール方法；
+</code></pre><p>その他のLinuxディストリビューションでは、対応するソフトウェアパッケージ管理方法によってインストールしてください。ソースコードパッケージのインストールは</p>
+<pre><code>tar xvf  rsync-xxx.tar.gz
+cd rsync-xxx
+./configure --prefix=/usr  ;make ;make install   注：ソースコードパッケージをコンパイルしてインストールする前にgccといったコンパイルツールをインストールしておく必要があります；
+</code></pre><h3 id="rsync">rsyncの設定</h3>
+<p>rsyncは主に以下の3つの設定ファイルrsyncd.conf(メインの設定ファイル)、rsyncd.secrets(パスワードファイル)、rsyncd.motd(rsyncサーバの情報)があります。</p>
+<p>これらのファイルの設定に関してはみなさんはオフィシャルサイトやその他のrsyncを紹介しているサイトを参考にしていただけます。以下ではサーバサイドとクライアントサイドがどのようにして起動するかご紹介します。</p>
+<ul>
+<li><p>サーバサイドの起動：</p>
+<pre><code>  #/usr/bin/rsync --daemon  --config=/etc/rsyncd.conf
+</code></pre><p>  --daemonオプション方式は、rsyncをサーバモードで実行します。rsyncを起動時に起動するには</p>
+<pre><code>  echo &#39;rsync --daemon&#39; &gt;&gt; /etc/rc.d/rc.local
+</code></pre><p>  rsyncのパスワードを設定</p>
+<pre><code>  echo &#39;ユーザ名:パスワード&#39; &gt; /etc/rsyncd.secrets
+  chmod 600 /etc/rsyncd.secrets
+</code></pre></li>
+</ul>
+<ul>
+<li><p>クライアントサイドの同期：</p>
+<p>  クライアントサイドは以下のコマンドによってサーバ上のファイルと同期することができます：</p>
+<pre><code>  rsync -avzP  --delete  --password-file=rsyncd.secrets   ユーザ名@192.168.145.5::www /var/rsync/backup
+</code></pre><p>  このコマンドの幾つかの要点を以下に簡単に説明します：</p>
+<ol>
+<li>-avzPとは何か、読者は--helpを使って調べることができます。</li>
+<li>--delete はAにおいてファイルを削除すると、同期の際にBは自動的に対応するファイルを削除します。</li>
+<li>--password-file クライアントサイドの/etc/rsyncd.secretsで設定されたパスワードで、サーバサイドの /etc/rsyncd.secrets の中のパスワードと一致させる必要があります。このようにcronを実行した場合、パスワードを入力する必要がありません。</li>
+<li>このコマンドの中の&quot;ユーザ名&quot;はサーバサイドの /etc/rsyncd.secretsの中のユーザ名です。</li>
+<li>このコマンドの中の 192.168.145.5 はサーバのIPアドレスです。</li>
+<li><p>::www、二つのコロンマークに注意してください。wwwはサーバの設定ファイル /etc/rsyncd.conf にある[www]です。意味はサーバ上の/etc/rsyncd.confに従ってその中の[www]フィールドの内容を同期します。一つのコロンマークの時は設定ファイルに従わず、直接指定したディレクトリを同期します。</p>
+<p>同期にリアルタイム性を持たせるため、crontabを設定しrsyncを分毎に同期させてもかまいません。当然ユーザはファイルの重要性によって異なる同期頻度を設定することもできます。</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="mysql">MySQLのバックアップ</h2>
+<p>アプリケーションのデータベースは現在やはりMySQLが主流です。現在MySQLのバックアップには二種類の方法があります：ホットスタンドバイとコールドスタンドバイです。ホットスタンドバイは現在主にmaster/slave方式をとっています(master/slave方式の同期は現在データベースの読み込みと書き込みを分離しています。ホットスタンドバイでも使用することができます)。どのようにこの方面の資料を設定するのかについては、いくつも検索することができます。コールドスタンドバイの場合、データベースには一定のち円が存在します。しかし、この時間の前のデータを完璧に保証することができます。例えば、誤操作がデータの喪失を引き起こしてしまったような場合、master/slaveモードでは失われたデータを取り戻すことはできません。しかし、コールドスタンドバイではデータの一部を復元することができます。</p>
+<p>コールドスタンドバイは一般的にshellスクリプトを使用して時間毎にデータベースのバックアップをとることになります。上で紹介したrsyncによってローカルでないデータセンターのサーバの一つに同期します。</p>
+<p>以下はmysqlのバックアップを定期的に行うスクリプトです。mysqldumpプログラムを使用しており、このコマンドはデータベースを一つのファイルにエクスポートします。</p>
+<pre><code>#!/bin/bash
+
+# 以下の設定情報はご自分で修正してください。
+mysql_user=&quot;USER&quot; #MySQLバックアップユーザ
+mysql_password=&quot;PASSWORD&quot; #MySQLバックアップユーザのパスワード
+mysql_host=&quot;localhost&quot;
+mysql_port=&quot;3306&quot;
+mysql_charset=&quot;utf8&quot; #MySQLの文字エンコード
+backup_db_arr=(&quot;db1&quot; &quot;db2&quot;) #バックアップするデータベースの名前、複数の場合は空白によって分けます。例えば(&quot;db1&quot; &quot;db2&quot; &quot;db3&quot;)
+backup_location=/var/www/mysql  #バックアップされたデータの保存場所、末尾に&quot;/&quot;を含めないようにしてください。この項目はデフォルトのままでもかまいません。プログラムは自動的にディレクトリを作成します。
+expire_backup_delete=&quot;ON&quot; #期限の切れたバックアップの削除するかどうか。ONで起動、OFFで停止
+expire_days=3 #期限の日数。デフォルトは3日、この項目はexpire_backup_deleteを起動した時のみ有効です。
+
+# この行以降は修正する必要はありません。
+backup_time=`date +%Y%m%d%H%M`  #バックアップの詳細な時間を定義
+backup_Ymd=`date +%Y-%m-%d` #バックアップのディレクトリの年月日を定義
+backup_3ago=`date -d &#39;3 days ago&#39; +%Y-%m-%d` #3日前の日時
+backup_dir=$backup_location/$backup_Ymd  #バックアップディレクトリの絶対パス
+welcome_msg=&quot;Welcome to use MySQL backup tools!&quot; #ウェルカムメッセージ
+
+# MYSQLが起動しているか判断します。mysqlが起動していなければバックアップから抜けます。
+mysql_ps=`ps -ef |grep mysql |wc -l`
+mysql_listen=`netstat -an |grep LISTEN |grep $mysql_port|wc -l`
+if [ [$mysql_ps == 0] -o [$mysql_listen == 0] ]; then
+        echo &quot;ERROR:MySQL is not running! backup stop!&quot;
+        exit
+else
+        echo $welcome_msg
+fi
+
+# mysqlデータベースに接続します。接続できなければバックアップから抜けます。
+mysql -h$mysql_host -P$mysql_port -u$mysql_user -p$mysql_password &lt;&lt;end
+use mysql;
+select host,user from user where user=&#39;root&#39; and host=&#39;localhost&#39;;
+exit
+end
+
+flag=`echo $?`
+if [ $flag != &quot;0&quot; ]; then
+        echo &quot;ERROR:Can&#39;t connect mysql server! backup stop!&quot;
+        exit
+else
+        echo &quot;MySQL connect ok! Please wait......&quot;
+        # バックアップのデータベースが定義されているか判断します。定義されていればバックアップを開始し、そうでなければバックアップから抜けます。
+        if [ &quot;$backup_db_arr&quot; != &quot;&quot; ];then
+                #dbnames=$(cut -d &#39;,&#39; -f1-5 $backup_database)
+                #echo &quot;arr is (${backup_db_arr[@]})&quot;
+                for dbname in ${backup_db_arr[@]}
+                do
+                        echo &quot;database $dbname backup start...&quot;
+                        `mkdir -p $backup_dir`
+                        `mysqldump -h$mysql_host -P$mysql_port -u$mysql_user -p$mysql_password $dbname --default-character-set=$mysql_charset | gzip &gt; $backup_dir/$dbname-$backup_time.sql.gz`
+                        flag=`echo $?`
+                        if [ $flag == &quot;0&quot; ];then
+                                echo &quot;database $dbname success backup to $backup_dir/$dbname-$backup_time.sql.gz&quot;
+                        else
+                                echo &quot;database $dbname backup fail!&quot;
+                        fi
+
+                done
+        else
+                echo &quot;ERROR:No database to backup! backup stop&quot;
+                exit
+        fi
+        # 期限切れのバックアップを削除するよう設定されていれば、削除操作を実行します。
+        if [ &quot;$expire_backup_delete&quot; == &quot;ON&quot; -a  &quot;$backup_location&quot; != &quot;&quot; ];then
+                 #`find $backup_location/ -type d -o -type f -ctime +$expire_days -exec rm -rf {} \;`
+                 `find $backup_location/ -type d -mtime +$expire_days | xargs rm -rf`
+                 echo &quot;Expired backup data delete complete!&quot;
+        fi
+        echo &quot;All database backup success! Thank you!&quot;
+        exit
+fi
+</code></pre><p>shellスクリプトの属性を修正します：</p>
+<pre><code>chmod 600 /root/mysql_backup.sh
+chmod +x /root/mysql_backup.sh
+</code></pre><p>属性を設定すると、コマンドをcrontabに追加します。私達は毎日00:00に定時で自動バックアップを行うよう設定しましたので、バックアップスクリプトのディレクトリ/var/www/mysqlをrsyncの同期ディレクトリに設定します。</p>
+<pre><code>00 00 * * * /root/mysql_backup.sh
+</code></pre><h2 id="mysql">MySQLのリストア</h2>
+<p>MySQLのバックアップにはホットスタンドバイとコールドスタンドバイがあるとご説明しました。ホットスタンドバイは主にリアルタイムのリストあを実現するために用いられます。例えば、アプリケーションサーバにおいてハードディスクの故障が発生した場合、設定ファイルを修正することでデータベースの読み込みと書き込みをslaveに移すことでサービスの中断をなるべく少ない時間に抑えることができます。</p>
+<p>しかし時にはコールドスタンドバイによるバックアップのSQLからデータを復元する必要があります。データベースのバックアップがあるので、コマンドによってインポートすることができます。</p>
+<pre><code>mysql -u username -p databse &lt; backup.sql
+</code></pre><p>データベースのデータをエクスポートまたはインポートするのはかなり簡単でしょう。しかしパーミッションや、文字エンコードの設定も管理する必要がある場合、すこし複雑になるかもしれません。しかしこれらはどれもコマンドによって完了することができます。</p>
+<h2 id="redis">redisのバックアップ</h2>
+<p>redisは現在我々が最もよく使っているNoSQLです。このバックアップにも二種類があります：ホットスタンドバイとコールドスタンドバイです。redisもmaster/slaveモードをサポートしています。ですので、我々のホットバックアップはこの方法によって実現することができます。対応する設定についてはみなさんオフィシャルのドキュメントにある設定をご参考ください。とても簡単です。ここではコールドスタンドバイについてご紹介します。redisは実はメモリ内のキャッシュデータをデータベースファイルの中に定期的に書き込んでいます。我々のバックアップではただ対応するファイルをコピーするだけで十分です。つまり、前にご紹介したrsyncによってローカルでないデータセンターにコピーを行うだけで実現します。</p>
+<h2 id="redis">redisのリストア</h2>
+<p>redisのリストアはホットバックアップとコールドバックアップに分けられます。ホットバックアップの目的と方法はMySQLのリストアと同じです。アプリケーションで対応するデータベースに接続するだけでかまいません。</p>
+<p>しかし時にはコールドバックアップによってデータをリストアする必要もあります。redisのコールドバックアップは実は保存されたデータベースファイルをredisのワーキングディレクトリにコピーするだけです。その後redisを起動すればOKです。redisは起動している間自動的にデータベースファイルをメモリにロードします。起動の速度はデータベースのファイルの大小によって決定します。</p>
+<h2 id="">概要</h2>
+<p>この節ではアプリケーションのバックアップとリストアについてご紹介しました。ファイルのバックアップからデータベースのバックアップまで、どのように災害に対応するかです。また、rsyncを使った異なるシステムでのファイルの同期についてもご紹介しました。MySQLデータベースとredisデータベースのバックアップとリストアです。この節の紹介を通して開発された本番プロダクトの障害に対するひとつの参考になれば幸いです。</p>
+<h2 id="links">links</h2>
+<ul>
+<li><a href="preface.html">目次</a></li>
+<li>前へ: <a href="12.3.html">アプリケーションのデプロイ</a></li>
+<li>次へ: <a href="12.5.html">概要</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./12.3.html" class="navigation navigation-prev " aria-label="Previous page: アプリケーションのデプロイ"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./12.5.html" class="navigation navigation-next " aria-label="Next page: 概要"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
