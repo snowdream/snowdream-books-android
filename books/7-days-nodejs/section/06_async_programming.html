@@ -1,0 +1,678 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>异步编程 | 七天学会NodeJS</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.7.1">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="snowdream">
+    
+    
+    <link rel="next" href="../section/07_example.html" />
+    
+    
+    <link rel="prev" href="../section/05_process.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-github="snowdream/android-books" data-level="6" data-basepath=".." data-revision="1408614029861">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/snowdream/android-books" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >七天学会NodeJS</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/snowdream" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/issues" target="blank" class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/edit/master/section/06_async_programming.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+	
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="section/01_getting_started.html">
+            
+                
+                    <a href="../section/01_getting_started.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         NodeJS基础
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="section/02_code_management_and_deployment.html">
+            
+                
+                    <a href="../section/02_code_management_and_deployment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         代码的组织和部署
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="section/03_file.html">
+            
+                
+                    <a href="../section/03_file.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         文件操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="section/04_network.html">
+            
+                
+                    <a href="../section/04_network.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         网络操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="section/05_process.html">
+            
+                
+                    <a href="../section/05_process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         进程管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="6" data-path="section/06_async_programming.html">
+            
+                
+                    <a href="../section/06_async_programming.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         异步编程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="section/07_example.html">
+            
+                
+                    <a href="../section/07_example.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         大示例
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="section/08_job.html">
+            
+                
+                    <a href="../section/08_job.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         关于我们
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 75%;min-width: 62.5%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../section/01_getting_started.html" title="NodeJS基础" class="chapter done new-chapter" data-progress="1" style="left: 12.5%;"></a>
+    
+        <a href="../section/02_code_management_and_deployment.html" title="代码的组织和部署" class="chapter done new-chapter" data-progress="2" style="left: 25%;"></a>
+    
+        <a href="../section/03_file.html" title="文件操作" class="chapter done new-chapter" data-progress="3" style="left: 37.5%;"></a>
+    
+        <a href="../section/04_network.html" title="网络操作" class="chapter done new-chapter" data-progress="4" style="left: 50%;"></a>
+    
+        <a href="../section/05_process.html" title="进程管理" class="chapter done new-chapter" data-progress="5" style="left: 62.5%;"></a>
+    
+        <a href="../section/06_async_programming.html" title="异步编程" class="chapter done new-chapter" data-progress="6" style="left: 75%;"></a>
+    
+        <a href="../section/07_example.html" title="大示例" class="chapter  new-chapter" data-progress="7" style="left: 87.5%;"></a>
+    
+        <a href="../section/08_job.html" title="关于我们" class="chapter  new-chapter" data-progress="8" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_8">
+                    
+                        <h2 id="">异步编程</h2>
+<p>NodeJS最大的卖点——事件机制和异步IO，对开发者并不是透明的。开发者需要按异步方式编写代码才用得上这个卖点，而这一点也遭到了一些NodeJS反对者的抨击。但不管怎样，异步编程确实是NodeJS最大的特点，没有掌握异步编程就不能说是真正学会了NodeJS。本章将介绍与异步编程相关的各种知识。</p>
+<h3 id="">回调</h3>
+<p>在代码中，异步编程的直接体现就是回调。异步编程依托于回调来实现，但不能说使用了回调后程序就异步化了。我们首先可以看看以下代码。</p>
+<pre><code>function heavyCompute(n, callback) {
+    var count = 0,
+        i, j;
+
+    for (i = n; i &gt; 0; --i) {
+        for (j = n; j &gt; 0; --j) {
+            count += 1;
+        }
+    }
+
+    callback(count);
+}
+
+heavyCompute(10000, function (count) {
+    console.log(count);
+});
+
+console.log(&#39;hello&#39;);
+
+-- Console ------------------------------
+100000000
+hello
+</code></pre><p>可以看到，以上代码中的回调函数仍然先于后续代码执行。JS本身是单线程运行的，不可能在一段代码还未结束运行时去运行别的代码，因此也就不存在异步执行的概念。</p>
+<p>但是，如果某个函数做的事情是创建一个别的线程或进程，并与JS主线程并行地做一些事情，并在事情做完后通知JS主线程，那情况又不一样了。我们接着看看以下代码。</p>
+<pre><code>setTimeout(function () {
+    console.log(&#39;world&#39;);
+}, 1000);
+
+console.log(&#39;hello&#39;);
+
+-- Console ------------------------------
+hello
+world
+</code></pre><p>这次可以看到，回调函数后于后续代码执行了。如同上边所说，JS本身是单线程的，无法异步执行，因此我们可以认为<code>setTimeout</code>这类JS规范之外的由运行环境提供的特殊函数做的事情是创建一个平行线程后立即返回，让JS主进程可以接着执行后续代码，并在收到平行进程的通知后再执行回调函数。除了<code>setTimeout</code>、<code>setInterval</code>这些常见的，这类函数还包括NodeJS提供的诸如<code>fs.readFile</code>之类的异步API。</p>
+<p>另外，我们仍然回到JS是单线程运行的这个事实上，这决定了JS在执行完一段代码之前无法执行包括回调函数在内的别的代码。也就是说，即使平行线程完成工作了，通知JS主线程执行回调函数了，回调函数也要等到JS主线程空闲时才能开始执行。以下就是这么一个例子。</p>
+<pre><code>function heavyCompute(n) {
+    var count = 0,
+        i, j;
+
+    for (i = n; i &gt; 0; --i) {
+        for (j = n; j &gt; 0; --j) {
+            count += 1;
+        }
+    }
+}
+
+var t = new Date();
+
+setTimeout(function () {
+    console.log(new Date() - t);
+}, 1000);
+
+heavyCompute(50000);
+
+-- Console ------------------------------
+8520
+</code></pre><p>可以看到，本来应该在1秒后被调用的回调函数因为JS主线程忙于运行其它代码，实际执行时间被大幅延迟。</p>
+<h3 id="">代码设计模式</h3>
+<p>异步编程有很多特有的代码设计模式，为了实现同样的功能，使用同步方式和异步方式编写的代码会有很大差异。以下分别介绍一些常见的模式。</p>
+<h4 id="">函数返回值</h4>
+<p>使用一个函数的输出作为另一个函数的输入是很常见的需求，在同步方式下一般按以下方式编写代码：</p>
+<pre><code>var output = fn1(fn2(&#39;input&#39;));
+// Do something.
+</code></pre><p>而在异步方式下，由于函数执行结果不是通过返回值，而是通过回调函数传递，因此一般按以下方式编写代码：</p>
+<pre><code>fn2(&#39;input&#39;, function (output2) {
+    fn1(output2, function (output1) {
+        // Do something.
+    });
+});
+</code></pre><p>可以看到，这种方式就是一个回调函数套一个回调函多，套得太多了很容易写出<code>&gt;</code>形状的代码。</p>
+<h4 id="">遍历数组</h4>
+<p>在遍历数组时，使用某个函数依次对数据成员做一些处理也是常见的需求。如果函数是同步执行的，一般就会写出以下代码：</p>
+<pre><code>var len = arr.length,
+    i = 0;
+
+for (; i &lt; len; ++i) {
+    arr[i] = sync(arr[i]);
+}
+
+// All array items have processed.
+</code></pre><p>如果函数是异步执行的，以上代码就无法保证循环结束后所有数组成员都处理完毕了。如果数组成员必须一个接一个串行处理，则一般按照以下方式编写异步代码：</p>
+<pre><code>(function next(i, len, callback) {
+    if (i &lt; len) {
+        async(arr[i], function (value) {
+            arr[i] = value;
+            next(i + 1, len, callback);
+        });
+    } else {
+        callback();
+    }
+}(0, arr.length, function () {
+    // All array items have processed.
+}));
+</code></pre><p>可以看到，以上代码在异步函数执行一次并返回执行结果后才传入下一个数组成员并开始下一轮执行，直到所有数组成员处理完毕后，通过回调的方式触发后续代码的执行。</p>
+<p>如果数组成员可以并行处理，但后续代码仍然需要所有数组成员处理完毕后才能执行的话，则异步代码会调整成以下形式：</p>
+<pre><code>(function (i, len, count, callback) {
+    for (; i &lt; len; ++i) {
+        (function (i) {
+            async(arr[i], function (value) {
+                arr[i] = value;
+                if (++count === len) {
+                    callback();
+                }
+            });
+        }(i));
+    }
+}(0, arr.length, 0, function () {
+    // All array items have processed.
+}));
+</code></pre><p>可以看到，与异步串行遍历的版本相比，以上代码并行处理所有数组成员，并通过计数器变量来判断什么时候所有数组成员都处理完毕了。</p>
+<h4 id="">异常处理</h4>
+<p>JS自身提供的异常捕获和处理机制——<code>try..catch..</code>，只能用于同步执行的代码。以下是一个例子。</p>
+<pre><code>function sync(fn) {
+    return fn();
+}
+
+try {
+    sync(null);
+    // Do something.
+} catch (err) {
+    console.log(&#39;Error: %s&#39;, err.message);
+}
+
+-- Console ------------------------------
+Error: object is not a function
+</code></pre><p>可以看到，异常会沿着代码执行路径一直冒泡，直到遇到第一个<code>try</code>语句时被捕获住。但由于异步函数会打断代码执行路径，异步函数执行过程中以及执行之后产生的异常冒泡到执行路径被打断的位置时，如果一直没有遇到<code>try</code>语句，就作为一个全局异常抛出。以下是一个例子。</p>
+<pre><code>function async(fn, callback) {
+    // Code execution path breaks here.
+    setTimeout(function ()　{
+        callback(fn());
+    }, 0);
+}
+
+try {
+    async(null, function (data) {
+        // Do something.
+    });
+} catch (err) {
+    console.log(&#39;Error: %s&#39;, err.message);
+}
+
+-- Console ------------------------------
+/home/user/test.js:4
+        callback(fn());
+                 ^
+TypeError: object is not a function
+    at null._onTimeout (/home/user/test.js:4:13)
+    at Timer.listOnTimeout [as ontimeout] (timers.js:110:15)
+</code></pre><p>因为代码执行路径被打断了，我们就需要在异常冒泡到断点之前用<code>try</code>语句把异常捕获住，并通过回调函数传递被捕获的异常。于是我们可以像下边这样改造上边的例子。</p>
+<pre><code>function async(fn, callback) {
+    // Code execution path breaks here.
+    setTimeout(function ()　{
+        try {
+            callback(null, fn());
+        } catch (err) {
+            callback(err);
+        }
+    }, 0);
+}
+
+async(null, function (err, data) {
+    if (err) {
+        console.log(&#39;Error: %s&#39;, err.message);
+    } else {
+        // Do something.
+    }
+});
+
+-- Console ------------------------------
+Error: object is not a function
+</code></pre><p>可以看到，异常再次被捕获住了。在NodeJS中，几乎所有异步API都按照以上方式设计，回调函数中第一个参数都是<code>err</code>。因此我们在编写自己的异步函数时，也可以按照这种方式来处理异常，与NodeJS的设计风格保持一致。</p>
+<p>有了异常处理方式后，我们接着可以想一想一般我们是怎么写代码的。基本上，我们的代码都是做一些事情，然后调用一个函数，然后再做一些事情，然后再调用一个函数，如此循环。如果我们写的是同步代码，只需要在代码入口点写一个<code>try</code>语句就能捕获所有冒泡上来的异常，示例如下。</p>
+<pre><code>function main() {
+    // Do something.
+    syncA();
+    // Do something.
+    syncB();
+    // Do something.
+    syncC();
+}
+
+try {
+    main();
+} catch (err) {
+    // Deal with exception.
+}
+</code></pre><p>但是，如果我们写的是异步代码，就只有呵呵了。由于每次异步函数调用都会打断代码执行路径，只能通过回调函数来传递异常，于是我们就需要在每个回调函数里判断是否有异常发生，于是只用三次异步函数调用，就会产生下边这种代码。</p>
+<pre><code>function main(callback) {
+    // Do something.
+    asyncA(function (err, data) {
+        if (err) {
+            callback(err);
+        } else {
+            // Do something
+            asyncB(function (err, data) {
+                if (err) {
+                    callback(err);
+                } else {
+                    // Do something
+                    asyncC(function (err, data) {
+                        if (err) {
+                            callback(err);
+                        } else {
+                            // Do something
+                            callback(null);
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+main(function (err) {
+    if (err) {
+        // Deal with exception.
+    }
+});
+</code></pre><p>可以看到，回调函数已经让代码变得复杂了，而异步方式下对异常的处理更加剧了代码的复杂度。如果NodeJS的最大卖点最后变成这个样子，那就没人愿意用NodeJS了，因此接下来会介绍NodeJS提供的一些解决方案。</p>
+<h3 id="domain">域（Domain）</h3>
+<blockquote>
+<p>   <strong>官方文档： </strong> <a href="http://nodejs.org/api/domain.html" target="_blank">http://nodejs.org/api/domain.html</a></p>
+</blockquote>
+<p>NodeJS提供了<code>domain</code>模块，可以简化异步代码的异常处理。在介绍该模块之前，我们需要首先理解“域”的概念。简单的讲，一个域就是一个JS运行环境，在一个运行环境中，如果一个异常没有被捕获，将作为一个全局异常被抛出。NodeJS通过<code>process</code>对象提供了捕获全局异常的方法，示例代码如下</p>
+<pre><code>process.on(&#39;uncaughtException&#39;, function (err) {
+    console.log(&#39;Error: %s&#39;, err.message);
+});
+
+setTimeout(function (fn) {
+    fn();
+});
+
+-- Console ------------------------------
+Error: undefined is not a function
+</code></pre><p>虽然全局异常有个地方可以捕获了，但是对于大多数异常，我们希望尽早捕获，并根据结果决定代码的执行路径。我们用以下HTTP服务器代码作为例子：</p>
+<pre><code>function async(request, callback) {
+    // Do something.
+    asyncA(request, function (err, data) {
+        if (err) {
+            callback(err);
+        } else {
+            // Do something
+            asyncB(request, function (err, data) {
+                if (err) {
+                    callback(err);
+                } else {
+                    // Do something
+                    asyncC(request, function (err, data) {
+                        if (err) {
+                            callback(err);
+                        } else {
+                            // Do something
+                            callback(null, data);
+                        }
+                    });
+                }
+            });
+        }
+    });
+}
+
+http.createServer(function (request, response) {
+    async(request, function (err, data) {
+        if (err) {
+            response.writeHead(500);
+            response.end();
+        } else {
+            response.writeHead(200);
+            response.end(data);
+        }
+    });
+});
+</code></pre><p>以上代码将请求对象交给异步函数处理后，再根据处理结果返回响应。这里采用了使用回调函数传递异常的方案，因此<code>async</code>函数内部如果再多几个异步函数调用的话，代码就变成上边这副鬼样子了。为了让代码好看点，我们可以在每处理一个请求时，使用<code>domain</code>模块创建一个子域（JS子运行环境）。在子域内运行的代码可以随意抛出异常，而这些异常可以通过子域对象的<code>error</code>事件统一捕获。于是以上代码可以做如下改造：</p>
+<pre><code>function async(request, callback) {
+    // Do something.
+    asyncA(request, function (data) {
+        // Do something
+        asyncB(request, function (data) {
+            // Do something
+            asyncC(request, function (data) {
+                // Do something
+                callback(data);
+            });
+        });
+    });
+}
+
+http.createServer(function (request, response) {
+    var d = domain.create();
+
+    d.on(&#39;error&#39;, function () {
+        response.writeHead(500);
+        response.end();
+    });
+
+    d.run(function () {
+        async(request, function (data) {
+            response.writeHead(200);
+            response.end(data);
+        });
+    });
+});
+</code></pre><p>可以看到，我们使用<code>.create</code>方法创建了一个子域对象，并通过<code>.run</code>方法进入需要在子域中运行的代码的入口点。而位于子域中的异步函数回调函数由于不再需要捕获异常，代码一下子瘦身很多。</p>
+<h4 id="">陷阱</h4>
+<p>无论是通过<code>process</code>对象的<code>uncaughtException</code>事件捕获到全局异常，还是通过子域对象的<code>error</code>事件捕获到了子域异常，在NodeJS官方文档里都强烈建议处理完异常后立即重启程序，而不是让程序继续运行。按照官方文档的说法，发生异常后的程序处于一个不确定的运行状态，如果不立即退出的话，程序可能会发生严重内存泄漏，也可能表现得很奇怪。</p>
+<p>但这里需要澄清一些事实。JS本身的<code>throw..try..catch</code>异常处理机制并不会导致内存泄漏，也不会让程序的执行结果出乎意料，但NodeJS并不是存粹的JS。NodeJS里大量的API内部是用C/C++实现的，因此NodeJS程序的运行过程中，代码执行路径穿梭于JS引擎内部和外部，而JS的异常抛出机制可能会打断正常的代码执行流程，导致C/C++部分的代码表现异常，进而导致内存泄漏等问题。</p>
+<p>因此，使用<code>uncaughtException</code>或<code>domain</code>捕获异常，代码执行路径里涉及到了C/C++部分的代码时，如果不能确定是否会导致内存泄漏等问题，最好在处理完异常后重启程序比较妥当。而使用<code>try</code>语句捕获异常时一般捕获到的都是JS本身的异常，不用担心上诉问题。</p>
+<h3 id="">小结</h3>
+<p>本章介绍了JS异步编程相关的知识，总结起来有以下几点：</p>
+<ul>
+<li><p>不掌握异步编程就不算学会NodeJS。</p>
+</li>
+<li><p>异步编程依托于回调来实现，而使用回调不一定就是异步编程。</p>
+</li>
+<li><p>异步编程下的函数间数据传递、数组遍历和异常处理与同步编程有很大差别。</p>
+</li>
+<li><p>使用<code>domain</code>模块简化异步代码的异常处理，并小心陷阱。</p>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../section/05_process.html" class="navigation navigation-prev " aria-label="Previous page: 进程管理"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../section/07_example.html" class="navigation navigation-next " aria-label="Next page: 大示例"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

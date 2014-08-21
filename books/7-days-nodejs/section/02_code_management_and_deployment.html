@@ -1,0 +1,587 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>代码的组织和部署 | 七天学会NodeJS</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.7.1">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="snowdream">
+    
+    
+    <link rel="next" href="../section/03_file.html" />
+    
+    
+    <link rel="prev" href="../section/01_getting_started.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-github="snowdream/android-books" data-level="2" data-basepath=".." data-revision="1408614029861">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/snowdream/android-books" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >七天学会NodeJS</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/snowdream" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/issues" target="blank" class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/edit/master/section/02_code_management_and_deployment.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+	
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="section/01_getting_started.html">
+            
+                
+                    <a href="../section/01_getting_started.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         NodeJS基础
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="2" data-path="section/02_code_management_and_deployment.html">
+            
+                
+                    <a href="../section/02_code_management_and_deployment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         代码的组织和部署
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="section/03_file.html">
+            
+                
+                    <a href="../section/03_file.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         文件操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="section/04_network.html">
+            
+                
+                    <a href="../section/04_network.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         网络操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="section/05_process.html">
+            
+                
+                    <a href="../section/05_process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         进程管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="section/06_async_programming.html">
+            
+                
+                    <a href="../section/06_async_programming.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         异步编程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="section/07_example.html">
+            
+                
+                    <a href="../section/07_example.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         大示例
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="section/08_job.html">
+            
+                
+                    <a href="../section/08_job.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         关于我们
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 25%;min-width: 12.5%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../section/01_getting_started.html" title="NodeJS基础" class="chapter done new-chapter" data-progress="1" style="left: 12.5%;"></a>
+    
+        <a href="../section/02_code_management_and_deployment.html" title="代码的组织和部署" class="chapter done new-chapter" data-progress="2" style="left: 25%;"></a>
+    
+        <a href="../section/03_file.html" title="文件操作" class="chapter  new-chapter" data-progress="3" style="left: 37.5%;"></a>
+    
+        <a href="../section/04_network.html" title="网络操作" class="chapter  new-chapter" data-progress="4" style="left: 50%;"></a>
+    
+        <a href="../section/05_process.html" title="进程管理" class="chapter  new-chapter" data-progress="5" style="left: 62.5%;"></a>
+    
+        <a href="../section/06_async_programming.html" title="异步编程" class="chapter  new-chapter" data-progress="6" style="left: 75%;"></a>
+    
+        <a href="../section/07_example.html" title="大示例" class="chapter  new-chapter" data-progress="7" style="left: 87.5%;"></a>
+    
+        <a href="../section/08_job.html" title="关于我们" class="chapter  new-chapter" data-progress="8" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_3">
+                    
+                        <h2 id="">代码的组织和部署</h2>
+<p>有经验的C程序员在编写一个新程序时首先从make文件写起。同样的，使用NodeJS编写程序前，为了有个良好的开端，首先需要准备好代码的目录结构和部署方式，就如同修房子要先搭脚手架。本章将介绍与之相关的各种知识。</p>
+<h3 id="">模块路径解析规则</h3>
+<p>我们已经知道，<code>require</code>函数支持斜杠（<code>/</code>）或盘符（<code>C:</code>）开头的绝对路径，也支持<code>./</code>开头的相对路径。但这两种路径在模块之间建立了强耦合关系，一旦某个模块文件的存放位置需要变更，使用该模块的其它模块的代码也需要跟着调整，变得牵一发动全身。因此，<code>require</code>函数支持第三种形式的路径，写法类似于<code>foo/bar</code>，并依次按照以下规则解析路径，直到找到模块位置。</p>
+<ol>
+<li><p>内置模块</p>
+<p> 如果传递给<code>require</code>函数的是NodeJS内置模块名称，不做路径解析，直接返回内部模块的导出对象，例如<code>require(&#39;fs&#39;)</code>。</p>
+</li>
+<li><p>node_modules目录</p>
+<p> NodeJS定义了一个特殊的<code>node_modules</code>目录用于存放模块。例如某个模块的绝对路径是<code>/home/user/hello.js</code>，在该模块中使用<code>require(&#39;foo/bar&#39;)</code>方式加载模块时，则NodeJS依次尝试使用以下路径。</p>
+<pre><code> /home/user/node_modules/foo/bar
+ /home/node_modules/foo/bar
+ /node_modules/foo/bar
+</code></pre></li>
+<li><p>NODE_PATH环境变量</p>
+<p> 与PATH环境变量类似，NodeJS允许通过NODE_PATH环境变量来指定额外的模块搜索路径。NODE_PATH环境变量中包含一到多个目录路径，路径之间在Linux下使用<code>:</code>分隔，在Windows下使用<code>;</code>分隔。例如定义了以下NODE_PATH环境变量：</p>
+<pre><code> NODE_PATH=/home/user/lib:/home/lib
+</code></pre><p> 当使用<code>require(&#39;foo/bar&#39;)</code>的方式加载模块时，则NodeJS依次尝试以下路径。</p>
+<pre><code> /home/user/lib/foo/bar
+ /home/lib/foo/bar
+</code></pre></li>
+</ol>
+<h3 id="package">包（package）</h3>
+<p>我们已经知道了JS模块的基本单位是单个JS文件，但复杂些的模块往往由多个子模块组成。为了便于管理和使用，我们可以把由多个子模块组成的大模块称做<code>包</code>，并把所有子模块放在同一个目录里。</p>
+<p>在组成一个包的所有子模块中，需要有一个入口模块，入口模块的导出对象被作为包的导出对象。例如有以下目录结构。</p>
+<pre><code>- /home/user/lib/
+    - cat/
+        head.js
+        body.js
+        main.js
+</code></pre><p>其中<code>cat</code>目录定义了一个包，其中包含了3个子模块。<code>main.js</code>作为入口模块，其内容如下：</p>
+<pre><code>var head = require(&#39;./head&#39;);
+var body = require(&#39;./body&#39;);
+
+exports.create = function (name) {
+    return {
+        name: name,
+        head: head.create(),
+        body: body.create()
+    };
+};
+</code></pre><p>在其它模块里使用包的时候，需要加载包的入口模块。接着上例，使用<code>require(&#39;/home/user/lib/cat/main&#39;)</code>能达到目的，但是入口模块名称出现在路径里看上去不是个好主意。因此我们需要做点额外的工作，让包使用起来更像是单个模块。</p>
+<h4 id="indexjs">index.js</h4>
+<p>当模块的文件名是<code>index.js</code>，加载模块时可以使用模块所在目录的路径代替模块文件路径，因此接着上例，以下两条语句等价。</p>
+<pre><code>var cat = require(&#39;/home/user/lib/cat&#39;);
+var cat = require(&#39;/home/user/lib/cat/index&#39;);
+</code></pre><p>这样处理后，就只需要把包目录路径传递给<code>require</code>函数，感觉上整个目录被当作单个模块使用，更有整体感。</p>
+<h4 id="packagejson">package.json</h4>
+<p>如果想自定义入口模块的文件名和存放位置，就需要在包目录下包含一个<code>package.json</code>文件，并在其中指定入口模块的路径。上例中的<code>cat</code>模块可以重构如下。</p>
+<pre><code>- /home/user/lib/
+    - cat/
+        + doc/
+        - lib/
+            head.js
+            body.js
+            main.js
+        + tests/
+        package.json
+</code></pre><p>其中<code>package.json</code>内容如下。</p>
+<pre><code>{
+    &quot;name&quot;: &quot;cat&quot;,
+    &quot;main&quot;: &quot;./lib/main.js&quot;
+}
+</code></pre><p>如此一来，就同样可以使用<code>require(&#39;/home/user/lib/cat&#39;)</code>的方式加载模块。NodeJS会根据包目录下的<code>package.json</code>找到入口模块所在位置。</p>
+<h3 id="">命令行程序</h3>
+<p>使用NodeJS编写的东西，要么是一个包，要么是一个命令行程序，而前者最终也会用于开发后者。因此我们在部署代码时需要一些技巧，让用户觉得自己是在使用一个命令行程序。</p>
+<p>例如我们用NodeJS写了个程序，可以把命令行参数原样打印出来。该程序很简单，在主模块内实现了所有功能。并且写好后，我们把该程序部署在<code>/home/user/bin/node-echo.js</code>这个位置。为了在任何目录下都能运行该程序，我们需要使用以下终端命令。</p>
+<pre><code>$ node /home/user/bin/node-echo.js Hello World
+Hello World
+</code></pre><p>这种使用方式看起来不怎么像是一个命令行程序，下边的才是我们期望的方式。</p>
+<pre><code>$ node-echo Hello World
+</code></pre><h4 id="linux">Linux</h4>
+<p>在Linux系统下，我们可以把JS文件当作shell脚本来运行，从而达到上述目的，具体步骤如下：</p>
+<ol>
+<li><p>在shell脚本中，可以通过<code>#!</code>注释来指定当前脚本使用的解析器。所以我们首先在<code>node-echo.js</code>文件顶部增加以下一行注释，表明当前脚本使用NodeJS解析。</p>
+<pre><code> #! /usr/bin/env node
+</code></pre><p> NodeJS会忽略掉位于JS模块首行的<code>#!</code>注释，不必担心这行注释是非法语句。</p>
+</li>
+<li><p>然后，我们使用以下命令赋予<code>node-echo.js</code>文件执行权限。</p>
+<pre><code> $ chmod +x /home/user/bin/node-echo.js
+</code></pre></li>
+<li><p>最后，我们在PATH环境变量中指定的某个目录下，例如在<code>/usr/local/bin</code>下边创建一个软链文件，文件名与我们希望使用的终端命令同名，命令如下：</p>
+<pre><code> $ sudo ln -s /home/user/bin/node-echo.js /usr/local/bin/node-echo
+</code></pre></li>
+</ol>
+<p>这样处理后，我们就可以在任何目录下使用<code>node-echo</code>命令了。</p>
+<h4 id="windows">Windows</h4>
+<p>在Windows系统下的做法完全不同，我们得靠<code>.cmd</code>文件来解决问题。假设<code>node-echo.js</code>存放在<code>C:\Users\user\bin</code>目录，并且该目录已经添加到PATH环境变量里了。接下来需要在该目录下新建一个名为<code>node-echo.cmd</code>的文件，文件内容如下：</p>
+<pre><code>@node &quot;C:\User\user\bin\node-echo.js&quot; %*
+</code></pre><p>这样处理后，我们就可以在任何目录下使用<code>node-echo</code>命令了。</p>
+<h3 id="">工程目录</h3>
+<p>了解了以上知识后，现在我们可以来完整地规划一个工程目录了。以编写一个命令行程序为例，一般我们会同时提供命令行模式和API模式两种使用方式，并且我们会借助三方包来编写代码。除了代码外，一个完整的程序也应该有自己的文档和测试用例。因此，一个标准的工程目录都看起来像下边这样。</p>
+<pre><code>- /home/user/workspace/node-echo/   # 工程目录
+    - bin/                          # 存放命令行相关代码
+        node-echo
+    + doc/                          # 存放文档
+    - lib/                          # 存放API相关代码
+        echo.js
+    - node_modules/                 # 存放三方包
+        + argv/
+    + tests/                        # 存放测试用例
+    package.json                    # 元数据文件
+    README.md                       # 说明文件
+</code></pre><p>其中部分文件内容如下：</p>
+<pre><code>/* bin/node-echo */
+var argv = require(&#39;argv&#39;),
+    echo = require(&#39;../lib/echo&#39;);
+console.log(echo(argv.join(&#39; &#39;)));
+
+/* lib/echo.js */
+module.exports = function (message) {
+    return message;
+};
+
+/* package.json */
+{
+    &quot;name&quot;: &quot;node-echo&quot;,
+    &quot;main&quot;: &quot;./lib/echo.js&quot;
+}
+</code></pre><p>以上例子中分类存放了不同类型的文件，并通过<code>node_moudles</code>目录直接使用三方包名加载模块。此外，定义了<code>package.json</code>之后，<code>node-echo</code>目录也可被当作一个包来使用。</p>
+<h3 id="npm">NPM</h3>
+<p>NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上的很多问题，常见的使用场景有以下几种：</p>
+<ul>
+<li><p>允许用户从NPM服务器下载别人编写的三方包到本地使用。</p>
+</li>
+<li><p>允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。</p>
+</li>
+<li><p>允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。</p>
+</li>
+</ul>
+<p>可以看到，NPM建立了一个NodeJS生态圈，NodeJS开发者和用户可以在里边互通有无。以下分别介绍这三种场景下怎样使用NPM。</p>
+<h4 id="">下载三方包</h4>
+<p>需要使用三方包时，首先得知道有哪些包可用。虽然<a href="https://npmjs.org/" target="_blank">npmjs.org</a>提供了个搜索框可以根据包名来搜索，但如果连想使用的三方包的名字都不确定的话，就请百度一下吧。知道了包名后，比如上边例子中的<code>argv</code>，就可以在工程目录下打开终端，使用以下命令来下载三方包。</p>
+<pre><code>$ npm install argv
+...
+argv@0.0.2 node_modules\argv
+</code></pre><p>下载好之后，<code>argv</code>包就放在了工程目录下的<code>node_modules</code>目录中，因此在代码中只需要通过<code>require(&#39;argv&#39;)</code>的方式就好，无需指定三方包路径。</p>
+<p>以上命令默认下载最新版三方包，如果想要下载指定版本的话，可以在包名后边加上<code>@&lt;version&gt;</code>，例如通过以下命令可下载0.0.1版的<code>argv</code>。</p>
+<pre><code>$ npm install argv@0.0.1
+...
+argv@0.0.1 node_modules\argv
+</code></pre><p>如果使用到的三方包比较多，在终端下一个包一条命令地安装未免太人肉了。因此NPM对<code>package.json</code>的字段做了扩展，允许在其中申明三方包依赖。因此，上边例子中的<code>package.json</code>可以改写如下：</p>
+<pre><code>{
+    &quot;name&quot;: &quot;node-echo&quot;,
+    &quot;main&quot;: &quot;./lib/echo.js&quot;,
+    &quot;dependencies&quot;: {
+        &quot;argv&quot;: &quot;0.0.2&quot;
+    }
+}
+</code></pre><p>这样处理后，在工程目录下就可以使用<code>npm install</code>命令批量安装三方包了。更重要的是，当以后<code>node-echo</code>也上传到了NPM服务器，别人下载这个包时，NPM会根据包中申明的三方包依赖自动下载进一步依赖的三方包。例如，使用<code>npm install node-echo</code>命令时，NPM会自动创建以下目录结构。</p>
+<pre><code>- project/
+    - node_modules/
+        - node-echo/
+            - node_modules/
+                + argv/
+            ...
+    ...
+</code></pre><p>如此一来，用户只需关心自己直接使用的三方包，不需要自己去解决所有包的依赖关系。</p>
+<h4 id="">安装命令行程序</h4>
+<p>从NPM服务上下载安装一个命令行程序的方法与三方包类似。例如上例中的<code>node-echo</code>提供了命令行使用方式，只要<code>node-echo</code>自己配置好了相关的<code>package.json</code>字段，对于用户而言，只需要使用以下命令安装程序。</p>
+<pre><code>$ npm install node-echo -g
+</code></pre><p>参数中的<code>-g</code>表示全局安装，因此<code>node-echo</code>会默认安装到以下位置，并且NPM会自动创建好Linux系统下需要的软链文件或Windows系统下需要的<code>.cmd</code>文件。</p>
+<pre><code>- /usr/local/               # Linux系统下
+    - lib/node_modules/
+        + node-echo/
+        ...
+    - bin/
+        node-echo
+        ...
+    ...
+
+- %APPDATA%\npm\            # Windows系统下
+    - node_modules\
+        + node-echo\
+        ...
+    node-echo.cmd
+    ...
+</code></pre><h4 id="">发布代码</h4>
+<p>第一次使用NPM发布代码前需要注册一个账号。终端下运行<code>npm adduser</code>，之后按照提示做即可。账号搞定后，接着我们需要编辑<code>package.json</code>文件，加入NPM必需的字段。接着上边<code>node-echo</code>的例子，<code>package.json</code>里必要的字段如下。</p>
+<pre><code>{
+    &quot;name&quot;: &quot;node-echo&quot;,           # 包名，在NPM服务器上须要保持唯一
+    &quot;version&quot;: &quot;1.0.0&quot;,            # 当前版本号
+    &quot;dependencies&quot;: {              # 三方包依赖，需要指定包名和版本号
+        &quot;argv&quot;: &quot;0.0.2&quot;
+      },
+    &quot;main&quot;: &quot;./lib/echo.js&quot;,       # 入口模块位置
+    &quot;bin&quot; : {
+        &quot;node-echo&quot;: &quot;./bin/node-echo&quot;      # 命令行程序名和主模块位置
+    }
+}
+</code></pre><p>之后，我们就可以在<code>package.json</code>所在目录下运行<code>npm publish</code>发布代码了。</p>
+<h4 id="">版本号</h4>
+<p>使用NPM下载和发布代码时都会接触到版本号。NPM使用语义版本号来管理代码，这里简单介绍一下。</p>
+<p>语义版本号分为<code>X.Y.Z</code>三位，分别代表主版本号、次版本号和补丁版本号。当代码变更时，版本号按以下原则更新。</p>
+<pre><code>+ 如果只是修复bug，需要更新Z位。
+
++ 如果是新增了功能，但是向下兼容，需要更新Y位。
+
++ 如果有大变动，向下不兼容，需要更新X位。
+</code></pre><p>版本号有了这个保证后，在申明三方包依赖时，除了可依赖于一个固定版本号外，还可依赖于某个范围的版本号。例如<code>&quot;argv&quot;: &quot;0.0.x&quot;</code>表示依赖于<code>0.0.x</code>系列的最新版<code>argv</code>。NPM支持的所有版本号范围指定方式可以查看<a href="https://npmjs.org/doc/files/package.json.html#dependencies" target="_blank">官方文档</a>。</p>
+<h4 id="">灵机一点</h4>
+<p>除了本章介绍的部分外，NPM还提供了很多功能，<code>package.json</code>里也有很多其它有用的字段。除了可以在<a href="https://npmjs.org/doc/" target="_blank">npmjs.org/doc/</a>查看官方文档外，这里再介绍一些NPM常用命令。</p>
+<ul>
+<li><p>NPM提供了很多命令，例如<code>install</code>和<code>publish</code>，使用<code>npm help</code>可查看所有命令。</p>
+</li>
+<li><p>使用<code>npm help &lt;command&gt;</code>可查看某条命令的详细帮助，例如<code>npm help install</code>。</p>
+</li>
+<li><p>在<code>package.json</code>所在目录下使用<code>npm install . -g</code>可先在本地安装当前命令行程序，可用于发布前的本地测试。</p>
+</li>
+<li><p>使用<code>npm update &lt;package&gt;</code>可以把当前目录下<code>node_modules</code>子目录里边的对应模块更新至最新版本。</p>
+</li>
+<li><p>使用<code>npm update &lt;package&gt; -g</code>可以把全局安装的对应命令行程序更新至最新版。</p>
+</li>
+<li><p>使用<code>npm cache clear</code>可以清空NPM本地缓存，用于对付使用相同版本号发布新版本代码的人。</p>
+</li>
+<li><p>使用<code>npm unpublish &lt;package&gt;@&lt;version&gt;</code>可以撤销发布自己发布过的某个版本代码。</p>
+</li>
+</ul>
+<h3 id="">小结</h3>
+<p>本章介绍了使用NodeJS编写代码前需要做的准备工作，总结起来有以下几点：</p>
+<ul>
+<li><p>编写代码前先规划好目录结构，才能做到有条不紊。</p>
+</li>
+<li><p>稍大些的程序可以将代码拆分为多个模块管理，更大些的程序可以使用包来组织模块。</p>
+</li>
+<li><p>合理使用<code>node_modules</code>和<code>NODE_PATH</code>来解耦包的使用方式和物理路径。</p>
+</li>
+<li><p>使用NPM加入NodeJS生态圈互通有无。</p>
+</li>
+<li><p>想到了心仪的包名时请提前在NPM上抢注。</p>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../section/01_getting_started.html" class="navigation navigation-prev " aria-label="Previous page: NodeJS基础"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../section/03_file.html" class="navigation navigation-next " aria-label="Next page: 文件操作"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

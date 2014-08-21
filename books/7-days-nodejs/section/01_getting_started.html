@@ -1,0 +1,473 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>NodeJS基础 | 七天学会NodeJS</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.7.1">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="snowdream">
+    
+    
+    <link rel="next" href="../section/02_code_management_and_deployment.html" />
+    
+    
+    <link rel="prev" href="../index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-github="snowdream/android-books" data-level="1" data-basepath=".." data-revision="1408614029861">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/snowdream/android-books" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >七天学会NodeJS</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/snowdream" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/issues" target="blank" class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/snowdream/android-books/edit/master/section/01_getting_started.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+	
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1" data-path="section/01_getting_started.html">
+            
+                
+                    <a href="../section/01_getting_started.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         NodeJS基础
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="section/02_code_management_and_deployment.html">
+            
+                
+                    <a href="../section/02_code_management_and_deployment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         代码的组织和部署
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="section/03_file.html">
+            
+                
+                    <a href="../section/03_file.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         文件操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="section/04_network.html">
+            
+                
+                    <a href="../section/04_network.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         网络操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="section/05_process.html">
+            
+                
+                    <a href="../section/05_process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         进程管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="section/06_async_programming.html">
+            
+                
+                    <a href="../section/06_async_programming.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         异步编程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="section/07_example.html">
+            
+                
+                    <a href="../section/07_example.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         大示例
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="section/08_job.html">
+            
+                
+                    <a href="../section/08_job.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         关于我们
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 12.5%;min-width: 0%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../section/01_getting_started.html" title="NodeJS基础" class="chapter done new-chapter" data-progress="1" style="left: 12.5%;"></a>
+    
+        <a href="../section/02_code_management_and_deployment.html" title="代码的组织和部署" class="chapter  new-chapter" data-progress="2" style="left: 25%;"></a>
+    
+        <a href="../section/03_file.html" title="文件操作" class="chapter  new-chapter" data-progress="3" style="left: 37.5%;"></a>
+    
+        <a href="../section/04_network.html" title="网络操作" class="chapter  new-chapter" data-progress="4" style="left: 50%;"></a>
+    
+        <a href="../section/05_process.html" title="进程管理" class="chapter  new-chapter" data-progress="5" style="left: 62.5%;"></a>
+    
+        <a href="../section/06_async_programming.html" title="异步编程" class="chapter  new-chapter" data-progress="6" style="left: 75%;"></a>
+    
+        <a href="../section/07_example.html" title="大示例" class="chapter  new-chapter" data-progress="7" style="left: 87.5%;"></a>
+    
+        <a href="../section/08_job.html" title="关于我们" class="chapter  new-chapter" data-progress="8" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_2">
+                    
+                        <h2 id="nodejs">NodeJS基础</h2>
+<h3 id="nodejs">什么是NodeJS</h3>
+<p>JS是脚本语言，脚本语言都需要一个解析器才能运行。对于写在HTML页面里的JS，浏览器充当了解析器的角色。而对于需要独立运行的JS，NodeJS就是一个解析器。</p>
+<p>每一种解析器都是一个运行环境，不但允许JS定义各种数据结构，进行各种计算，还允许JS使用运行环境提供的内置对象和方法做一些事情。例如运行在浏览器中的JS的用途是操作DOM，浏览器就提供了<code>document</code>之类的内置对象。而运行在NodeJS中的JS的用途是操作磁盘文件或搭建HTTP服务器，NodeJS就相应提供了<code>fs</code>、<code>http</code>等内置对象。</p>
+<h3 id="">有啥用处</h3>
+<p>尽管存在一听说可以直接运行JS文件就觉得很酷的同学，但大多数同学在接触新东西时首先关心的是有啥用处，以及能带来啥价值。</p>
+<p>NodeJS的作者说，他创造NodeJS的目的是为了实现高性能Web服务器，他首先看重的是事件机制和异步IO模型的优越性，而不是JS。但是他需要选择一种编程语言实现他的想法，这种编程语言不能自带IO功能，并且需要能良好支持事件机制。JS没有自带IO功能，天生就用于处理浏览器中的DOM事件，并且拥有一大群程序员，因此就成为了天然的选择。</p>
+<p>如他所愿，NodeJS在服务端活跃起来，出现了大批基于NodeJS的Web服务。而另一方面，NodeJS让前端众如获神器，终于可以让自己的能力覆盖范围跳出浏览器窗口，更大批的前端工具如雨后春笋。</p>
+<p>因此，对于前端而言，虽然不是人人都要拿NodeJS写一个服务器程序，但简单可至使用命令交互模式调试JS代码片段，复杂可至编写工具提升工作效率。</p>
+<p>NodeJS生态圈正欣欣向荣。</p>
+<h3 id="">如何安装</h3>
+<h4 id="">安装程序</h4>
+<p>NodeJS提供了一些安装程序，都可以在<a href="http://nodejs.org/download/" target="_blank">nodejs.org</a>这里下载并安装。</p>
+<p>Windows系统下，选择和系统版本匹配的<code>.msi</code>后缀的安装文件。Mac OS X系统下，选择<code>.pkg</code>后缀的安装文件。</p>
+<h4 id="">编译安装</h4>
+<p>Linux系统下没有现成的安装程序可用，虽然一些发行版可以使用<code>apt-get</code>之类的方式安装，但不一定能安装到最新版。因此Linux系统下一般使用以下方式编译方式安装NodeJS。</p>
+<ol>
+<li><p>确保系统下g++版本在4.6以上，python版本在2.6以上。</p>
+</li>
+<li><p>从<a href="http://nodejs.org/download/" target="_blank">nodejs.org</a>下载<code>tar.gz</code>后缀的NodeJS最新版源代码包并解压到某个位置。</p>
+</li>
+<li><p>进入解压到的目录，使用以下命令编译和安装。</p>
+<pre><code> $ ./configure
+ $ make
+ $ sudo make install
+</code></pre></li>
+</ol>
+<h3 id="">如何运行</h3>
+<p>打开终端，键入<code>node</code>进入命令交互模式，可以输入一条代码语句后立即执行并显示结果，例如：</p>
+<pre><code>$ node
+&gt; console.log(&#39;Hello World!&#39;);
+Hello World!
+</code></pre><p>如果要运行一大段代码的话，可以先写一个JS文件再运行。例如有以下<code>hello.js</code>。</p>
+<pre><code>function hello() {
+    console.log(&#39;Hello World!&#39;);
+}
+hello();
+</code></pre><p>写好后在终端下键入<code>node hello.js</code>运行，结果如下：</p>
+<pre><code>$ node hello.js
+Hello World!
+</code></pre><h4 id="">权限问题</h4>
+<p>在Linux系统下，使用NodeJS监听80或443端口提供HTTP(S)服务时需要root权限，有两种方式可以做到。</p>
+<p>一种方式是使用<code>sudo</code>命令运行NodeJS。例如通过以下命令运行的<code>server.js</code>中有权限使用80和443端口。一般推荐这种方式，可以保证仅为有需要的JS脚本提供root权限。</p>
+<pre><code>$ sudo node server.js
+</code></pre><p>另一种方式是使用<code>chmod +s</code>命令让NodeJS总是以root权限运行，具体做法如下。因为这种方式让任何JS脚本都有了root权限，不太安全，因此在需要很考虑安全的系统下不推荐使用。</p>
+<pre><code>$ sudo chown root /usr/local/bin/node
+$ sudo chmod +s /usr/local/bin/node
+</code></pre><h3 id="">模块</h3>
+<p>编写稍大一点的程序时一般都会将代码模块化。在NodeJS中，一般将代码合理拆分到不同的JS文件中，每一个文件就是一个模块，而文件路径就是模块名。</p>
+<p>在编写每个模块时，都有<code>require</code>、<code>exports</code>、<code>module</code>三个预先定义好的变量可供使用。</p>
+<h4 id="require">require</h4>
+<p><code>require</code>函数用于在当前模块中加载和使用别的模块，传入一个模块名，返回一个模块导出对象。模块名可使用相对路径（以<code>./</code>开头），或者是绝对路径（以<code>/</code>或<code>C:</code>之类的盘符开头）。另外，模块名中的<code>.js</code>扩展名可以省略。以下是一个例子。</p>
+<pre><code>var foo1 = require(&#39;./foo&#39;);
+var foo2 = require(&#39;./foo.js&#39;);
+var foo3 = require(&#39;/home/user/foo&#39;);
+var foo4 = require(&#39;/home/user/foo.js&#39;);
+
+// foo1至foo4中保存的是同一个模块的导出对象。
+</code></pre><p>另外，可以使用以下方式加载和使用一个JSON文件。</p>
+<pre><code>var data = require(&#39;./data.json&#39;);
+</code></pre><h4 id="exports">exports</h4>
+<p><code>exports</code>对象是当前模块的导出对象，用于导出模块公有方法和属性。别的模块通过<code>require</code>函数使用当前模块时得到的就是当前模块的<code>exports</code>对象。以下例子中导出了一个公有方法。</p>
+<pre><code>exports.hello = function () {
+    console.log(&#39;Hello World!&#39;);
+};
+</code></pre><h4 id="module">module</h4>
+<p>通过<code>module</code>对象可以访问到当前模块的一些相关信息，但最多的用途是替换当前模块的导出对象。例如模块导出对象默认是一个普通对象，如果想改成一个函数的话，可以使用以下方式。</p>
+<pre><code>module.exports = function () {
+    console.log(&#39;Hello World!&#39;);
+};
+</code></pre><p>以上代码中，模块默认导出对象被替换为一个函数。</p>
+<h4 id="">模块初始化</h4>
+<p>一个模块中的JS代码仅在模块第一次被使用时执行一次，并在执行过程中初始化模块的导出对象。之后，缓存起来的导出对象被重复利用。</p>
+<h4 id="">主模块</h4>
+<p>通过命令行参数传递给NodeJS以启动程序的模块被称为主模块。主模块负责调度组成整个程序的其它模块完成工作。例如通过以下命令启动程序时，<code>main.js</code>就是主模块。</p>
+<pre><code>$ node main.js
+</code></pre><h4 id="">完整示例</h4>
+<p>例如有以下目录。</p>
+<pre><code>- /home/user/hello/
+    - util/
+        counter.js
+    main.js
+</code></pre><p>其中<code>counter.js</code>内容如下：</p>
+<pre><code>var i = 0;
+
+function count() {
+    return ++i;
+}
+
+exports.count = count;
+</code></pre><p>该模块内部定义了一个私有变量<code>i</code>，并在<code>exports</code>对象导出了一个公有方法<code>count</code>。</p>
+<p>主模块<code>main.js</code>内容如下：</p>
+<pre><code>var counter1 = require(&#39;./util/counter&#39;);
+var    counter2 = require(&#39;./util/counter&#39;);
+
+console.log(counter1.count());
+console.log(counter2.count());
+console.log(counter2.count());
+</code></pre><p>运行该程序的结果如下：</p>
+<pre><code>$ node main.js
+1
+2
+3
+</code></pre><p>可以看到，<code>counter.js</code>并没有因为被require了两次而初始化两次。</p>
+<h3 id="">二进制模块</h3>
+<p>虽然一般我们使用JS编写模块，但NodeJS也支持使用C/C++编写二进制模块。编译好的二进制模块除了文件扩展名是<code>.node</code>外，和JS模块的使用方式相同。虽然二进制模块能使用操作系统提供的所有功能，拥有无限的潜能，但对于前端同学而言编写过于困难，并且难以跨平台使用，因此不在本教程的覆盖范围内。</p>
+<h3 id="">小结</h3>
+<p>本章介绍了有关NodeJS的基本概念和使用方法，总结起来有以下知识点：</p>
+<ul>
+<li><p>NodeJS是一个JS脚本解析器，任何操作系统下安装NodeJS本质上做的事情都是把NodeJS执行程序复制到一个目录，然后保证这个目录在系统PATH环境变量下，以便终端下可以使用<code>node</code>命令。</p>
+</li>
+<li><p>终端下直接输入<code>node</code>命令可进入命令交互模式，很适合用来测试一些JS代码片段，比如正则表达式。</p>
+</li>
+<li><p>NodeJS使用<a href="http://wiki.commonjs.org/" target="_blank">CMD</a>模块系统，主模块作为程序入口点，所有模块在执行过程中只初始化一次。</p>
+</li>
+<li><p>除非JS模块不能满足需求，否则不要轻易使用二进制模块，否则你的用户会叫苦连天。</p>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../section/02_code_management_and_deployment.html" class="navigation navigation-next " aria-label="Next page: 代码的组织和部署"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
