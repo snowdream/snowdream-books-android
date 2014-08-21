@@ -265,5 +265,10 @@ android {
             packageName "com.github.snowdream.android.app.books.buildwebapplicationwithgolang"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/build-web-application-with-golang/\""
         }
+
+        seven_days_nodejs{
+            packageName "com.github.snowdream.android.app.books.servendaysnodejs"
+            buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/7-days-nodejs/\""
+        }
     }
 }
