@@ -24,7 +24,7 @@ Android 2.2+
 14.[Erle Robot the educational drone](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.erlerobottheeducationaldrone)            
 15.[R Package for Gitbook and R Markdown](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.rpackageforgitbookandrmarkdown)            
 16.[Hard Rock CoffeeScript](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.hardrockcoffeescript)            
-17.[Gradschool Survival Manual](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.gradleschoolsurvival) 
+17.[Gradschool Survival Manual](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.gradleschoolsurvival)        
 18.[ANDROID TRAINING COURSE](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.androidtraininginchinese)           
 19.[DATAVIZ](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.dataviz)           
 20.[DEVISE 젬 파헤치기 ](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.devisebook)           
@@ -51,9 +51,13 @@ Android 2.2+
 41.[THE GUIDE TO CUBA ](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.theguidetocuba)           
 42.[THE SWIFT PROGRAMMING LANGUAGE](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.theswiftprogramminglanguageinchinese)           
 43.[초보자를 위한 레일스 가이드북](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.railsguidebook)  
-44.[GITHUB CHEAT SHEET](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.githubchecatsheet)  
-45.[Markdown Syntax Guide](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.markdownsyntax)  
-46.[Material Design](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.materialdesign)
+44.[GITHUB CHEAT SHEET](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.githubchecatsheet)     
+45.[Markdown Syntax Guide](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.markdownsyntax)      
+46.[Material Design](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.materialdesign)     
+47.[Docker中文指南](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.chinesedocker)    
+48.[Build Web Application with Golang](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.buildwebapplicationwithgolang)    
+49.[七天学会NodeJS](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.servendaysnodejs)    
+50.[javascript-style-guide](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.javascriptstyleguide)    
 
 ##License
 ```
