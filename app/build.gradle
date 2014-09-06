@@ -275,5 +275,10 @@ android {
             packageName "com.github.snowdream.android.app.books.javascriptstyleguide"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/javascript-style-guide/javascript-style-guide/\""
         }
+
+        java_Interview_Questions_and_Answers{
+            packageName "com.github.snowdream.android.app.books.JavaInterviewQuestionsandAnswers"
+            buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/115-Java-Interview-Questions-and-Answers/115-Java-Interview-Questions-and-Answers/\""
+        }
     }
 }
