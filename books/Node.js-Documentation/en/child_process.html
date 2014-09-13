@@ -1,0 +1,1278 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Child Processes | Node.js-Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./cluster.html" />
+    
+    
+    <link rel="prev" href="./addons.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="6" data-basepath="." data-revision="1410629928884">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="documentation.html">
+            
+                
+                    <a href="./documentation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         About these Docs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="synopsis.html">
+            
+                
+                    <a href="./synopsis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Synopsis
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="assert.html">
+            
+                
+                    <a href="./assert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Assertion Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="buffer.html">
+            
+                
+                    <a href="./buffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Buffer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="addons.html">
+            
+                
+                    <a href="./addons.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         C/C++ Addons
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="6" data-path="child_process.html">
+            
+                
+                    <a href="./child_process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Child Processes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="cluster.html">
+            
+                
+                    <a href="./cluster.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Cluster
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="console.html">
+            
+                
+                    <a href="./console.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="crypto.html">
+            
+                
+                    <a href="./crypto.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Crypto
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="debugger.html">
+            
+                
+                    <a href="./debugger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         Debugger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="dns.html">
+            
+                
+                    <a href="./dns.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         DNS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="domain.html">
+            
+                
+                    <a href="./domain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Domain
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="fs.html">
+            
+                
+                    <a href="./fs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         File System
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="globals.html">
+            
+                
+                    <a href="./globals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         Globals
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="http.html">
+            
+                
+                    <a href="./http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         HTTP
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="https.html">
+            
+                
+                    <a href="./https.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         HTTPS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="modules.html">
+            
+                
+                    <a href="./modules.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         Modules
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="net.html">
+            
+                
+                    <a href="./net.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         Net
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="os.html">
+            
+                
+                    <a href="./os.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         OS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="path.html">
+            
+                
+                    <a href="./path.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         Path
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="22" data-path="process.html">
+            
+                
+                    <a href="./process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>22.</b>
+                        
+                         Process
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="23" data-path="punycode.html">
+            
+                
+                    <a href="./punycode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>23.</b>
+                        
+                         Punycode
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="24" data-path="querystring.html">
+            
+                
+                    <a href="./querystring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>24.</b>
+                        
+                         Query Strings
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="25" data-path="readline.html">
+            
+                
+                    <a href="./readline.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>25.</b>
+                        
+                         Readline
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="26" data-path="repl.html">
+            
+                
+                    <a href="./repl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>26.</b>
+                        
+                         REPL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="27" data-path="stream.html">
+            
+                
+                    <a href="./stream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>27.</b>
+                        
+                         Stream
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="28" data-path="string_decoder.html">
+            
+                
+                    <a href="./string_decoder.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>28.</b>
+                        
+                         String Decoder
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="29" data-path="timers.html">
+            
+                
+                    <a href="./timers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>29.</b>
+                        
+                         Timers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="30" data-path="tls.html">
+            
+                
+                    <a href="./tls.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>30.</b>
+                        
+                         TLS/SSL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="31" data-path="tty.html">
+            
+                
+                    <a href="./tty.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>31.</b>
+                        
+                         TTY
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="32" data-path="dgram.html">
+            
+                
+                    <a href="./dgram.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>32.</b>
+                        
+                         UDP/Datagram
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="33" data-path="url.html">
+            
+                
+                    <a href="./url.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>33.</b>
+                        
+                         URL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="34" data-path="util.html">
+            
+                
+                    <a href="./util.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>34.</b>
+                        
+                         Utilities
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="35" data-path="vm.html">
+            
+                
+                    <a href="./vm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>35.</b>
+                        
+                         VM
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="36" data-path="zlib.html">
+            
+                
+                    <a href="./zlib.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>36.</b>
+                        
+                         ZLIB
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Node.js-Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_5">
+                    
+                        <h1 id="child-process">Child Process</h1>
+<pre><code>Stability: 3 - Stable
+</code></pre><p>Node provides a tri-directional <code>popen(3)</code> facility through the
+<code>child_process</code> module.</p>
+<p>It is possible to stream data through a child&#39;s <code>stdin</code>, <code>stdout</code>, and
+<code>stderr</code> in a fully non-blocking way.  (Note that some programs use
+line-buffered I/O internally.  That doesn&#39;t affect node.js but it means
+data you send to the child process is not immediately consumed.)</p>
+<p>To create a child process use <code>require(&#39;child_process&#39;).spawn()</code> or
+<code>require(&#39;child_process&#39;).fork()</code>.  The semantics of each are slightly
+different, and explained below.</p>
+<h2 id="class-childprocess">Class: ChildProcess</h2>
+<p><code>ChildProcess</code> is an <a href="events.html#events_class_events_eventemitter">EventEmitter</a>.</p>
+<p>Child processes always have three streams associated with them. <code>child.stdin</code>,
+<code>child.stdout</code>, and <code>child.stderr</code>.  These may be shared with the stdio
+streams of the parent process, or they may be separate stream objects
+which can be piped to and from.</p>
+<p>The ChildProcess class is not intended to be used directly.  Use the
+<code>spawn()</code> or <code>fork()</code> methods to create a Child Process instance.</p>
+<h3 id="event--error">Event:  &#39;error&#39;</h3>
+<ul>
+<li><code>err</code> {Error Object} the error.</li>
+</ul>
+<p>Emitted when:</p>
+<ol>
+<li>The process could not be spawned, or</li>
+<li>The process could not be killed, or</li>
+<li>Sending a message to the child process failed for whatever reason.</li>
+</ol>
+<p>Note that the <code>exit</code>-event may or may not fire after an error has occured. If
+you are listening on both events to fire a function, remember to guard against
+calling your function twice.</p>
+<p>See also <a href="#child_process_child_kill_signal"><code>ChildProcess#kill()</code></a> and
+<a href="#child_process_child_send_message_sendhandle"><code>ChildProcess#send()</code></a>.</p>
+<h3 id="event--exit">Event:  &#39;exit&#39;</h3>
+<ul>
+<li><code>code</code> {Number} the exit code, if it exited normally.</li>
+<li><code>signal</code> {String} the signal passed to kill the child process, if it
+was killed by the parent.</li>
+</ul>
+<p>This event is emitted after the child process ends. If the process terminated
+normally, <code>code</code> is the final exit code of the process, otherwise <code>null</code>. If
+the process terminated due to receipt of a signal, <code>signal</code> is the string name
+of the signal, otherwise <code>null</code>.</p>
+<p>Note that the child process stdio streams might still be open.</p>
+<p>Also, note that node establishes signal handlers for <code>&#39;SIGINT&#39;</code> and <code>&#39;SIGTERM</code>&#39;,
+so it will not terminate due to receipt of those signals, it will exit.</p>
+<p>See <code>waitpid(2)</code>.</p>
+<h3 id="event-close">Event: &#39;close&#39;</h3>
+<ul>
+<li><code>code</code> {Number} the exit code, if it exited normally.</li>
+<li><code>signal</code> {String} the signal passed to kill the child process, if it
+was killed by the parent.</li>
+</ul>
+<p>This event is emitted when the stdio streams of a child process have all
+terminated.  This is distinct from &#39;exit&#39;, since multiple processes
+might share the same stdio streams.</p>
+<h3 id="event-disconnect">Event: &#39;disconnect&#39;</h3>
+<p>This event is emitted after calling the <code>.disconnect()</code> method in the parent
+or in the child. After disconnecting it is no longer possible to send messages,
+and the <code>.connected</code> property is false.</p>
+<h3 id="event-message">Event: &#39;message&#39;</h3>
+<ul>
+<li><code>message</code> {Object} a parsed JSON object or primitive value</li>
+<li><code>sendHandle</code> {Handle object} a Socket or Server object</li>
+</ul>
+<p>Messages send by <code>.send(message, [sendHandle])</code> are obtained using the
+<code>message</code> event.</p>
+<h3 id="childstdin">child.stdin</h3>
+<ul>
+<li>{Stream object}</li>
+</ul>
+<p>A <code>Writable Stream</code> that represents the child process&#39;s <code>stdin</code>.
+Closing this stream via <code>end()</code> often causes the child process to terminate.</p>
+<p>If the child stdio streams are shared with the parent, then this will
+not be set.</p>
+<h3 id="childstdout">child.stdout</h3>
+<ul>
+<li>{Stream object}</li>
+</ul>
+<p>A <code>Readable Stream</code> that represents the child process&#39;s <code>stdout</code>.</p>
+<p>If the child stdio streams are shared with the parent, then this will
+not be set.</p>
+<h3 id="childstderr">child.stderr</h3>
+<ul>
+<li>{Stream object}</li>
+</ul>
+<p>A <code>Readable Stream</code> that represents the child process&#39;s <code>stderr</code>.</p>
+<p>If the child stdio streams are shared with the parent, then this will
+not be set.</p>
+<h3 id="childpid">child.pid</h3>
+<ul>
+<li>{Integer}</li>
+</ul>
+<p>The PID of the child process.</p>
+<p>Example:</p>
+<pre><code>var spawn = require(&#39;child_process&#39;).spawn,
+    grep  = spawn(&#39;grep&#39;, [&#39;ssh&#39;]);
+
+console.log(&#39;Spawned child pid: &#39; + grep.pid);
+grep.stdin.end();
+</code></pre><h3 id="childconnected">child.connected</h3>
+<ul>
+<li>{Boolean} Set to false after `.disconnect&#39; is called</li>
+</ul>
+<p>If <code>.connected</code> is false, it is no longer possible to send messages.</p>
+<h3 id="childkillsignal">child.kill([signal])</h3>
+<ul>
+<li><code>signal</code> {String}</li>
+</ul>
+<p>Send a signal to the child process. If no argument is given, the process will
+be sent <code>&#39;SIGTERM&#39;</code>. See <code>signal(7)</code> for a list of available signals.</p>
+<pre><code>var spawn = require(&#39;child_process&#39;).spawn,
+    grep  = spawn(&#39;grep&#39;, [&#39;ssh&#39;]);
+
+grep.on(&#39;close&#39;, function (code, signal) {
+  console.log(&#39;child process terminated due to receipt of signal &#39;+signal);
+});
+
+// send SIGHUP to process
+grep.kill(&#39;SIGHUP&#39;);
+</code></pre><p>May emit an <code>&#39;error&#39;</code> event when the signal cannot be delivered. Sending a
+signal to a child process that has already exited is not an error but may
+have unforeseen consequences: if the PID (the process ID) has been reassigned
+to another process, the signal will be delivered to that process instead.
+What happens next is anyone&#39;s guess.</p>
+<p>Note that while the function is called <code>kill</code>, the signal delivered to the
+child process may not actually kill it.  <code>kill</code> really just sends a signal
+to a process.</p>
+<p>See <code>kill(2)</code></p>
+<h3 id="childsendmessage-sendhandle">child.send(message, [sendHandle])</h3>
+<ul>
+<li><code>message</code> {Object}</li>
+<li><code>sendHandle</code> {Handle object}</li>
+</ul>
+<p>When using <code>child_process.fork()</code> you can write to the child using
+<code>child.send(message, [sendHandle])</code> and messages are received by
+a <code>&#39;message&#39;</code> event on the child.</p>
+<p>For example:</p>
+<pre><code>var cp = require(&#39;child_process&#39;);
+
+var n = cp.fork(__dirname + &#39;/sub.js&#39;);
+
+n.on(&#39;message&#39;, function(m) {
+  console.log(&#39;PARENT got message:&#39;, m);
+});
+
+n.send({ hello: &#39;world&#39; });
+</code></pre><p>And then the child script, <code>&#39;sub.js&#39;</code> might look like this:</p>
+<pre><code>process.on(&#39;message&#39;, function(m) {
+  console.log(&#39;CHILD got message:&#39;, m);
+});
+
+process.send({ foo: &#39;bar&#39; });
+</code></pre><p>In the child the <code>process</code> object will have a <code>send()</code> method, and <code>process</code>
+will emit objects each time it receives a message on its channel.</p>
+<p>Please note that the <code>send()</code> method on both the parent and child are
+synchronous - sending large chunks of data is not advised (pipes can be used
+instead, see
+<a href="#child_process_child_process_spawn_command_args_options"><code>child_process.spawn</code></a>).</p>
+<p>There is a special case when sending a <code>{cmd: &#39;NODE_foo&#39;}</code> message. All messages
+containing a <code>NODE_</code> prefix in its <code>cmd</code> property will not be emitted in
+the <code>message</code> event, since they are internal messages used by node core.
+Messages containing the prefix are emitted in the <code>internalMessage</code> event, you
+should by all means avoid using this feature, it is subject to change without notice.</p>
+<p>The <code>sendHandle</code> option to <code>child.send()</code> is for sending a TCP server or
+socket object to another process. The child will receive the object as its
+second argument to the <code>message</code> event.</p>
+<p>Emits an <code>&#39;error&#39;</code> event if the message cannot be sent, for example because
+the child process has already exited.</p>
+<h4 id="example-sending-server-object">Example: sending server object</h4>
+<p>Here is an example of sending a server:</p>
+<pre><code>var child = require(&#39;child_process&#39;).fork(&#39;child.js&#39;);
+
+// Open up the server object and send the handle.
+var server = require(&#39;net&#39;).createServer();
+server.on(&#39;connection&#39;, function (socket) {
+  socket.end(&#39;handled by parent&#39;);
+});
+server.listen(1337, function() {
+  child.send(&#39;server&#39;, server);
+});
+</code></pre><p>And the child would the receive the server object as:</p>
+<pre><code>process.on(&#39;message&#39;, function(m, server) {
+  if (m === &#39;server&#39;) {
+    server.on(&#39;connection&#39;, function (socket) {
+      socket.end(&#39;handled by child&#39;);
+    });
+  }
+});
+</code></pre><p>Note that the server is now shared between the parent and child, this means
+that some connections will be handled by the parent and some by the child.</p>
+<p>For <code>dgram</code> servers the workflow is exactly the same.  Here you listen on
+a <code>message</code> event instead of <code>connection</code> and use <code>server.bind</code> instead of
+<code>server.listen</code>.  (Currently only supported on UNIX platforms.)</p>
+<h4 id="example-sending-socket-object">Example: sending socket object</h4>
+<p>Here is an example of sending a socket. It will spawn two children and handle
+connections with the remote address <code>74.125.127.100</code> as VIP by sending the
+socket to a &quot;special&quot; child process. Other sockets will go to a &quot;normal&quot; process.</p>
+<pre><code>var normal = require(&#39;child_process&#39;).fork(&#39;child.js&#39;, [&#39;normal&#39;]);
+var special = require(&#39;child_process&#39;).fork(&#39;child.js&#39;, [&#39;special&#39;]);
+
+// Open up the server and send sockets to child
+var server = require(&#39;net&#39;).createServer();
+server.on(&#39;connection&#39;, function (socket) {
+
+  // if this is a VIP
+  if (socket.remoteAddress === &#39;74.125.127.100&#39;) {
+    special.send(&#39;socket&#39;, socket);
+    return;
+  }
+  // just the usual dudes
+  normal.send(&#39;socket&#39;, socket);
+});
+server.listen(1337);
+</code></pre><p>The <code>child.js</code> could look like this:</p>
+<pre><code>process.on(&#39;message&#39;, function(m, socket) {
+  if (m === &#39;socket&#39;) {
+    socket.end(&#39;You were handled as a &#39; + process.argv[2] + &#39; person&#39;);
+  }
+});
+</code></pre><p>Note that once a single socket has been sent to a child the parent can no
+longer keep track of when the socket is destroyed. To indicate this condition
+the <code>.connections</code> property becomes <code>null</code>.
+It is also recommended not to use <code>.maxConnections</code> in this condition.</p>
+<h3 id="childdisconnect">child.disconnect()</h3>
+<p>Close the IPC channel between parent and child, allowing the child to exit
+gracefully once there are no other connections keeping it alive. After calling
+this method the <code>.connected</code> flag will be set to <code>false</code> in both the parent and
+child, and it is no longer possible to send messages.</p>
+<p>The &#39;disconnect&#39; event will be emitted when there are no messages in the process
+of being received, most likely immediately.</p>
+<p>Note that you can also call <code>process.disconnect()</code> in the child process when the
+child process has any open IPC channels with the parent (i.e <code>fork()</code>).</p>
+<h2 id="child_processspawncommand-args-options">child_process.spawn(command, [args], [options])</h2>
+<ul>
+<li><code>command</code> {String} The command to run</li>
+<li><code>args</code> {Array} List of string arguments</li>
+<li><code>options</code> {Object}<ul>
+<li><code>cwd</code> {String} Current working directory of the child process</li>
+<li><code>stdio</code> {Array|String} Child&#39;s stdio configuration. (See below)</li>
+<li><code>customFds</code> {Array} <strong>Deprecated</strong> File descriptors for the child to use
+for stdio.  (See below)</li>
+<li><code>env</code> {Object} Environment key-value pairs</li>
+<li><code>detached</code> {Boolean} The child will be a process group leader.  (See below)</li>
+<li><code>uid</code> {Number} Sets the user identity of the process. (See setuid(2).)</li>
+<li><code>gid</code> {Number} Sets the group identity of the process. (See setgid(2).)</li>
+</ul>
+</li>
+<li>return: {ChildProcess object}</li>
+</ul>
+<p>Launches a new process with the given <code>command</code>, with  command line arguments in <code>args</code>.
+If omitted, <code>args</code> defaults to an empty Array.</p>
+<p>The third argument is used to specify additional options, which defaults to:</p>
+<pre><code>{ cwd: undefined,
+  env: process.env
+}
+</code></pre><p><code>cwd</code> allows you to specify the working directory from which the process is spawned.
+Use <code>env</code> to specify environment variables that will be visible to the new process.</p>
+<p>Example of running <code>ls -lh /usr</code>, capturing <code>stdout</code>, <code>stderr</code>, and the exit code:</p>
+<pre><code>var spawn = require(&#39;child_process&#39;).spawn,
+    ls    = spawn(&#39;ls&#39;, [&#39;-lh&#39;, &#39;/usr&#39;]);
+
+ls.stdout.on(&#39;data&#39;, function (data) {
+  console.log(&#39;stdout: &#39; + data);
+});
+
+ls.stderr.on(&#39;data&#39;, function (data) {
+  console.log(&#39;stderr: &#39; + data);
+});
+
+ls.on(&#39;close&#39;, function (code) {
+  console.log(&#39;child process exited with code &#39; + code);
+});
+</code></pre><p>Example: A very elaborate way to run &#39;ps ax | grep ssh&#39;</p>
+<pre><code>var spawn = require(&#39;child_process&#39;).spawn,
+    ps    = spawn(&#39;ps&#39;, [&#39;ax&#39;]),
+    grep  = spawn(&#39;grep&#39;, [&#39;ssh&#39;]);
+
+ps.stdout.on(&#39;data&#39;, function (data) {
+  grep.stdin.write(data);
+});
+
+ps.stderr.on(&#39;data&#39;, function (data) {
+  console.log(&#39;ps stderr: &#39; + data);
+});
+
+ps.on(&#39;close&#39;, function (code) {
+  if (code !== 0) {
+    console.log(&#39;ps process exited with code &#39; + code);
+  }
+  grep.stdin.end();
+});
+
+grep.stdout.on(&#39;data&#39;, function (data) {
+  console.log(&#39;&#39; + data);
+});
+
+grep.stderr.on(&#39;data&#39;, function (data) {
+  console.log(&#39;grep stderr: &#39; + data);
+});
+
+grep.on(&#39;close&#39;, function (code) {
+  if (code !== 0) {
+    console.log(&#39;grep process exited with code &#39; + code);
+  }
+});
+</code></pre><p>Example of checking for failed exec:</p>
+<pre><code>var spawn = require(&#39;child_process&#39;).spawn,
+    child = spawn(&#39;bad_command&#39;);
+
+child.stderr.setEncoding(&#39;utf8&#39;);
+child.stderr.on(&#39;data&#39;, function (data) {
+  if (/^execvp\(\)/.test(data)) {
+    console.log(&#39;Failed to start child process.&#39;);
+  }
+});
+</code></pre><p>Note that if spawn receives an empty options object, it will result in
+spawning the process with an empty environment rather than using
+<code>process.env</code>. This due to backwards compatibility issues with a deprecated
+API.</p>
+<p>The &#39;stdio&#39; option to <code>child_process.spawn()</code> is an array where each
+index corresponds to a fd in the child.  The value is one of the following:</p>
+<ol>
+<li><code>&#39;pipe&#39;</code> - Create a pipe between the child process and the parent process.
+The parent end of the pipe is exposed to the parent as a property on the
+<code>child_process</code> object as <code>ChildProcess.stdio[fd]</code>. Pipes created for
+fds 0 - 2 are also available as ChildProcess.stdin, ChildProcess.stdout
+and ChildProcess.stderr, respectively.</li>
+<li><code>&#39;ipc&#39;</code> - Create an IPC channel for passing messages/file descriptors
+between parent and child. A ChildProcess may have at most <em>one</em> IPC stdio
+file descriptor. Setting this option enables the ChildProcess.send() method.
+If the child writes JSON messages to this file descriptor, then this will
+trigger ChildProcess.on(&#39;message&#39;).  If the child is a Node.js program, then
+the presence of an IPC channel will enable process.send() and
+process.on(&#39;message&#39;).</li>
+<li><code>&#39;ignore&#39;</code> - Do not set this file descriptor in the child. Note that Node
+will always open fd 0 - 2 for the processes it spawns. When any of these is
+ignored node will open <code>/dev/null</code> and attach it to the child&#39;s fd.</li>
+<li><code>Stream</code> object - Share a readable or writable stream that refers to a tty,
+file, socket, or a pipe with the child process. The stream&#39;s underlying
+file descriptor is duplicated in the child process to the fd that 
+corresponds to the index in the <code>stdio</code> array. Note that the stream must
+have an underlying descriptor (file streams do not until the <code>&#39;open&#39;</code>
+event has occurred).</li>
+<li>Positive integer - The integer value is interpreted as a file descriptor 
+that is is currently open in the parent process. It is shared with the child
+process, similar to how <code>Stream</code> objects can be shared.</li>
+<li><code>null</code>, <code>undefined</code> - Use default value. For stdio fds 0, 1 and 2 (in other
+words, stdin, stdout, and stderr) a pipe is created. For fd 3 and up, the
+default is <code>&#39;ignore&#39;</code>.</li>
+</ol>
+<p>As a shorthand, the <code>stdio</code> argument may also be one of the following
+strings, rather than an array:</p>
+<ul>
+<li><code>ignore</code> - <code>[&#39;ignore&#39;, &#39;ignore&#39;, &#39;ignore&#39;]</code></li>
+<li><code>pipe</code> - <code>[&#39;pipe&#39;, &#39;pipe&#39;, &#39;pipe&#39;]</code></li>
+<li><code>inherit</code> - <code>[process.stdin, process.stdout, process.stderr]</code> or <code>[0,1,2]</code></li>
+</ul>
+<p>Example:</p>
+<pre><code>var spawn = require(&#39;child_process&#39;).spawn;
+
+// Child will use parent&#39;s stdios
+spawn(&#39;prg&#39;, [], { stdio: &#39;inherit&#39; });
+
+// Spawn child sharing only stderr
+spawn(&#39;prg&#39;, [], { stdio: [&#39;pipe&#39;, &#39;pipe&#39;, process.stderr] });
+
+// Open an extra fd=4, to interact with programs present a
+// startd-style interface.
+spawn(&#39;prg&#39;, [], { stdio: [&#39;pipe&#39;, null, null, null, &#39;pipe&#39;] });
+</code></pre><p>If the <code>detached</code> option is set, the child process will be made the leader of a
+new process group.  This makes it possible for the child to continue running 
+after the parent exits.</p>
+<p>By default, the parent will wait for the detached child to exit.  To prevent
+the parent from waiting for a given <code>child</code>, use the <code>child.unref()</code> method,
+and the parent&#39;s event loop will not include the child in its reference count.</p>
+<p>Example of detaching a long-running process and redirecting its output to a
+file:</p>
+<pre><code> var fs = require(&#39;fs&#39;),
+     spawn = require(&#39;child_process&#39;).spawn,
+     out = fs.openSync(&#39;./out.log&#39;, &#39;a&#39;),
+     err = fs.openSync(&#39;./out.log&#39;, &#39;a&#39;);
+
+ var child = spawn(&#39;prg&#39;, [], {
+   detached: true,
+   stdio: [ &#39;ignore&#39;, out, err ]
+ });
+
+ child.unref();
+</code></pre><p>When using the <code>detached</code> option to start a long-running process, the process
+will not stay running in the background unless it is provided with a <code>stdio</code>
+configuration that is not connected to the parent.  If the parent&#39;s <code>stdio</code> is
+inherited, the child will remain attached to the controlling terminal.</p>
+<p>There is a deprecated option called <code>customFds</code> which allows one to specify
+specific file descriptors for the stdio of the child process. This API was
+not portable to all platforms and therefore removed.
+With <code>customFds</code> it was possible to hook up the new process&#39; <code>[stdin, stdout,
+stderr]</code> to existing streams; <code>-1</code> meant that a new stream should be created.
+Use at your own risk.</p>
+<p>See also: <code>child_process.exec()</code> and <code>child_process.fork()</code></p>
+<h2 id="child_processexeccommand-options-callback">child_process.exec(command, [options], callback)</h2>
+<ul>
+<li><code>command</code> {String} The command to run, with space-separated arguments</li>
+<li><code>options</code> {Object}<ul>
+<li><code>cwd</code> {String} Current working directory of the child process</li>
+<li><code>env</code> {Object} Environment key-value pairs</li>
+<li><code>encoding</code> {String} (Default: &#39;utf8&#39;)</li>
+<li><code>timeout</code> {Number} (Default: 0)</li>
+<li><code>maxBuffer</code> {Number} (Default: <code>200*1024</code>)</li>
+<li><code>killSignal</code> {String} (Default: &#39;SIGTERM&#39;)</li>
+</ul>
+</li>
+<li><code>callback</code> {Function} called with the output when process terminates<ul>
+<li><code>error</code> {Error}</li>
+<li><code>stdout</code> {Buffer}</li>
+<li><code>stderr</code> {Buffer}</li>
+</ul>
+</li>
+<li>Return: ChildProcess object</li>
+</ul>
+<p>Runs a command in a shell and buffers the output.</p>
+<pre><code>var exec = require(&#39;child_process&#39;).exec,
+    child;
+
+child = exec(&#39;cat *.js bad_file | wc -l&#39;,
+  function (error, stdout, stderr) {
+    console.log(&#39;stdout: &#39; + stdout);
+    console.log(&#39;stderr: &#39; + stderr);
+    if (error !== null) {
+      console.log(&#39;exec error: &#39; + error);
+    }
+});
+</code></pre><p>The callback gets the arguments <code>(error, stdout, stderr)</code>. On success, <code>error</code>
+will be <code>null</code>.  On error, <code>error</code> will be an instance of <code>Error</code> and <code>error.code</code>
+will be the exit code of the child process, and <code>error.signal</code> will be set to the
+signal that terminated the process.</p>
+<p>There is a second optional argument to specify several options. The
+default options are</p>
+<pre><code>{ encoding: &#39;utf8&#39;,
+  timeout: 0,
+  maxBuffer: 200*1024,
+  killSignal: &#39;SIGTERM&#39;,
+  cwd: null,
+  env: null }
+</code></pre><p>If <code>timeout</code> is greater than 0, then it will kill the child process
+if it runs longer than <code>timeout</code> milliseconds. The child process is killed with
+<code>killSignal</code> (default: <code>&#39;SIGTERM&#39;</code>). <code>maxBuffer</code> specifies the largest
+amount of data allowed on stdout or stderr - if this value is exceeded then
+the child process is killed.</p>
+<h2 id="child_processexecfilefile-args-options-callback">child_process.execFile(file, [args], [options], [callback])</h2>
+<ul>
+<li><code>file</code> {String} The filename of the program to run</li>
+<li><code>args</code> {Array} List of string arguments</li>
+<li><code>options</code> {Object}<ul>
+<li><code>cwd</code> {String} Current working directory of the child process</li>
+<li><code>env</code> {Object} Environment key-value pairs</li>
+<li><code>encoding</code> {String} (Default: &#39;utf8&#39;)</li>
+<li><code>timeout</code> {Number} (Default: 0)</li>
+<li><code>maxBuffer</code> {Number} (Default: 200*1024)</li>
+<li><code>killSignal</code> {String} (Default: &#39;SIGTERM&#39;)</li>
+</ul>
+</li>
+<li><code>callback</code> {Function} called with the output when process terminates<ul>
+<li><code>error</code> {Error}</li>
+<li><code>stdout</code> {Buffer}</li>
+<li><code>stderr</code> {Buffer}</li>
+</ul>
+</li>
+<li>Return: ChildProcess object</li>
+</ul>
+<p>This is similar to <code>child_process.exec()</code> except it does not execute a
+subshell but rather the specified file directly. This makes it slightly
+leaner than <code>child_process.exec</code>. It has the same options.</p>
+<h2 id="child_processforkmodulepath-args-options">child_process.fork(modulePath, [args], [options])</h2>
+<ul>
+<li><code>modulePath</code> {String} The module to run in the child</li>
+<li><code>args</code> {Array} List of string arguments</li>
+<li><code>options</code> {Object}<ul>
+<li><code>cwd</code> {String} Current working directory of the child process</li>
+<li><code>env</code> {Object} Environment key-value pairs</li>
+<li><code>encoding</code> {String} (Default: &#39;utf8&#39;)</li>
+<li><code>execPath</code> {String} Executable used to create the child process</li>
+<li><code>execArgv</code> {Array} List of string arguments passed to the executable
+(Default: <code>process.execArgv</code>)</li>
+<li><code>silent</code> {Boolean} If true, stdin, stdout, and stderr of the child will be
+piped to the parent, otherwise they will be inherited from the parent, see
+the &quot;pipe&quot; and &quot;inherit&quot; options for <code>spawn()</code>&#39;s <code>stdio</code> for more details
+(default is false)</li>
+</ul>
+</li>
+<li>Return: ChildProcess object</li>
+</ul>
+<p>This is a special case of the <code>spawn()</code> functionality for spawning Node
+processes. In addition to having all the methods in a normal ChildProcess
+instance, the returned object has a communication channel built-in. See
+<code>child.send(message, [sendHandle])</code> for details.</p>
+<p>These child Nodes are still whole new instances of V8. Assume at least 30ms
+startup and 10mb memory for each new Node. That is, you cannot create many
+thousands of them.</p>
+<p>The <code>execPath</code> property in the <code>options</code> object allows for a process to be
+created for the child rather than the current <code>node</code> executable. This should be
+done with care and by default will talk over the fd represented an
+environmental variable <code>NODE_CHANNEL_FD</code> on the child process. The input and
+output on this fd is expected to be line delimited JSON objects.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./addons.html" class="navigation navigation-prev " aria-label="Previous page: C/C++ Addons"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./cluster.html" class="navigation navigation-next " aria-label="Next page: Cluster"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,900 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Globals | Node.js-Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./http.html" />
+    
+    
+    <link rel="prev" href="./fs.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="15" data-basepath="." data-revision="1410629928884">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="documentation.html">
+            
+                
+                    <a href="./documentation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         About these Docs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="synopsis.html">
+            
+                
+                    <a href="./synopsis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Synopsis
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="assert.html">
+            
+                
+                    <a href="./assert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Assertion Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="buffer.html">
+            
+                
+                    <a href="./buffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Buffer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="addons.html">
+            
+                
+                    <a href="./addons.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         C/C++ Addons
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="child_process.html">
+            
+                
+                    <a href="./child_process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Child Processes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="cluster.html">
+            
+                
+                    <a href="./cluster.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Cluster
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="console.html">
+            
+                
+                    <a href="./console.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="crypto.html">
+            
+                
+                    <a href="./crypto.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Crypto
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="debugger.html">
+            
+                
+                    <a href="./debugger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         Debugger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="dns.html">
+            
+                
+                    <a href="./dns.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         DNS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="domain.html">
+            
+                
+                    <a href="./domain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Domain
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="fs.html">
+            
+                
+                    <a href="./fs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         File System
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="15" data-path="globals.html">
+            
+                
+                    <a href="./globals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         Globals
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="http.html">
+            
+                
+                    <a href="./http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         HTTP
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="https.html">
+            
+                
+                    <a href="./https.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         HTTPS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="modules.html">
+            
+                
+                    <a href="./modules.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         Modules
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="net.html">
+            
+                
+                    <a href="./net.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         Net
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="os.html">
+            
+                
+                    <a href="./os.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         OS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="path.html">
+            
+                
+                    <a href="./path.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         Path
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="22" data-path="process.html">
+            
+                
+                    <a href="./process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>22.</b>
+                        
+                         Process
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="23" data-path="punycode.html">
+            
+                
+                    <a href="./punycode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>23.</b>
+                        
+                         Punycode
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="24" data-path="querystring.html">
+            
+                
+                    <a href="./querystring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>24.</b>
+                        
+                         Query Strings
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="25" data-path="readline.html">
+            
+                
+                    <a href="./readline.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>25.</b>
+                        
+                         Readline
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="26" data-path="repl.html">
+            
+                
+                    <a href="./repl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>26.</b>
+                        
+                         REPL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="27" data-path="stream.html">
+            
+                
+                    <a href="./stream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>27.</b>
+                        
+                         Stream
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="28" data-path="string_decoder.html">
+            
+                
+                    <a href="./string_decoder.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>28.</b>
+                        
+                         String Decoder
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="29" data-path="timers.html">
+            
+                
+                    <a href="./timers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>29.</b>
+                        
+                         Timers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="30" data-path="tls.html">
+            
+                
+                    <a href="./tls.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>30.</b>
+                        
+                         TLS/SSL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="31" data-path="tty.html">
+            
+                
+                    <a href="./tty.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>31.</b>
+                        
+                         TTY
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="32" data-path="dgram.html">
+            
+                
+                    <a href="./dgram.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>32.</b>
+                        
+                         UDP/Datagram
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="33" data-path="url.html">
+            
+                
+                    <a href="./url.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>33.</b>
+                        
+                         URL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="34" data-path="util.html">
+            
+                
+                    <a href="./util.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>34.</b>
+                        
+                         Utilities
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="35" data-path="vm.html">
+            
+                
+                    <a href="./vm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>35.</b>
+                        
+                         VM
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="36" data-path="zlib.html">
+            
+                
+                    <a href="./zlib.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>36.</b>
+                        
+                         ZLIB
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Node.js-Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_16">
+                    
+                        <h1 id="global-objects">Global Objects</h1>
+<!-- type=misc -->
+<p>These objects are available in all modules. Some of these objects aren&#39;t
+actually in the global scope but in the module scope - this will be noted.</p>
+<h2 id="global">global</h2>
+<!-- type=global -->
+<ul>
+<li>{Object} The global namespace object.</li>
+</ul>
+<p>In browsers, the top-level scope is the global scope. That means that in
+browsers if you&#39;re in the global scope <code>var something</code> will define a global
+variable. In Node this is different. The top-level scope is not the global
+scope; <code>var something</code> inside a Node module will be local to that module.</p>
+<h2 id="process">process</h2>
+<!-- type=global -->
+<ul>
+<li>{Object}</li>
+</ul>
+<p>The process object. See the <a href="process.html#process_process">process object</a> section.</p>
+<h2 id="console">console</h2>
+<!-- type=global -->
+<ul>
+<li>{Object}</li>
+</ul>
+<p>Used to print to stdout and stderr. See the <a href="console.html">console</a> section.</p>
+<h2 id="class-buffer">Class: Buffer</h2>
+<!-- type=global -->
+<ul>
+<li>{Function}</li>
+</ul>
+<p>Used to handle binary data. See the <a href="buffer.html">buffer section</a></p>
+<h2 id="require">require()</h2>
+<!-- type=var -->
+<ul>
+<li>{Function}</li>
+</ul>
+<p>To require modules. See the <a href="modules.html#modules_modules">Modules</a> section.  <code>require</code> isn&#39;t actually a
+global but rather local to each module.</p>
+<h3 id="requireresolve">require.resolve()</h3>
+<p>Use the internal <code>require()</code> machinery to look up the location of a module,
+but rather than loading the module, just return the resolved filename.</p>
+<h3 id="requirecache">require.cache</h3>
+<ul>
+<li>{Object}</li>
+</ul>
+<p>Modules are cached in this object when they are required. By deleting a key
+value from this object, the next <code>require</code> will reload the module.</p>
+<h3 id="requireextensions">require.extensions</h3>
+<pre><code>Stability: 0 - Deprecated
+</code></pre><ul>
+<li>{Object}</li>
+</ul>
+<p>Instruct <code>require</code> on how to handle certain file extensions.</p>
+<p>Process files with the extension <code>.sjs</code> as <code>.js</code>:</p>
+<pre><code>require.extensions[&#39;.sjs&#39;] = require.extensions[&#39;.js&#39;];
+</code></pre><p><strong>Deprecated</strong>  In the past, this list has been used to load
+non-JavaScript modules into Node by compiling them on-demand.
+However, in practice, there are much better ways to do this, such as
+loading modules via some other Node program, or compiling them to
+JavaScript ahead of time.</p>
+<p>Since the Module system is locked, this feature will probably never go
+away.  However, it may have subtle bugs and complexities that are best
+left untouched.</p>
+<h2 id="__filename">__filename</h2>
+<!-- type=var -->
+<ul>
+<li>{String}</li>
+</ul>
+<p>The filename of the code being executed.  This is the resolved absolute path
+of this code file.  For a main program this is not necessarily the same
+filename used in the command line.  The value inside a module is the path
+to that module file.</p>
+<p>Example: running <code>node example.js</code> from <code>/Users/mjr</code></p>
+<pre><code>console.log(__filename);
+// /Users/mjr/example.js
+</code></pre><p><code>__filename</code> isn&#39;t actually a global but rather local to each module.</p>
+<h2 id="__dirname">__dirname</h2>
+<!-- type=var -->
+<ul>
+<li>{String}</li>
+</ul>
+<p>The name of the directory that the currently executing script resides in.</p>
+<p>Example: running <code>node example.js</code> from <code>/Users/mjr</code></p>
+<pre><code>console.log(__dirname);
+// /Users/mjr
+</code></pre><p><code>__dirname</code> isn&#39;t actually a global but rather local to each module.</p>
+<h2 id="module">module</h2>
+<!-- type=var -->
+<ul>
+<li>{Object}</li>
+</ul>
+<p>A reference to the current module. In particular
+<code>module.exports</code> is used for defining what a module exports and makes
+available through <code>require()</code>.</p>
+<p><code>module</code> isn&#39;t actually a global but rather local to each module.</p>
+<p>See the <a href="modules.html">module system documentation</a> for more information.</p>
+<h2 id="exports">exports</h2>
+<!-- type=var -->
+<p>A reference to the <code>module.exports</code> that is shorter to type.
+See <a href="modules.html">module system documentation</a> for details on when to use <code>exports</code> and
+when to use <code>module.exports</code>.</p>
+<p><code>exports</code> isn&#39;t actually a global but rather local to each module.</p>
+<p>See the <a href="modules.html">module system documentation</a> for more information.</p>
+<p>See the <a href="modules.html">module section</a> for more information.</p>
+<h2 id="settimeoutcb-ms">setTimeout(cb, ms)</h2>
+<p>Run callback <code>cb</code> after <em>at least</em> <code>ms</code> milliseconds. The actual delay depends
+on external factors like OS timer granularity and system load.</p>
+<p>The timeout must be in the range of 1-2,147,483,647 inclusive. If the value is
+outside that range, it&#39;s changed to 1 millisecond. Broadly speaking, a timer
+cannot span more than 24.8 days.</p>
+<p>Returns an opaque value that represents the timer.</p>
+<h2 id="cleartimeoutt">clearTimeout(t)</h2>
+<p>Stop a timer that was previously created with <code>setTimeout()</code>. The callback will
+not execute.</p>
+<h2 id="setintervalcb-ms">setInterval(cb, ms)</h2>
+<p>Run callback <code>cb</code> repeatedly every <code>ms</code> milliseconds. Note that the actual
+interval may vary, depending on external factors like OS timer granularity and
+system load. It&#39;s never less than <code>ms</code> but it may be longer.</p>
+<p>The interval must be in the range of 1-2,147,483,647 inclusive. If the value is
+outside that range, it&#39;s changed to 1 millisecond. Broadly speaking, a timer
+cannot span more than 24.8 days.</p>
+<p>Returns an opaque value that represents the timer.</p>
+<h2 id="clearintervalt">clearInterval(t)</h2>
+<p>Stop a timer that was previously created with <code>setInterval()</code>. The callback
+will not execute.</p>
+<!--type=global-->
+<p>The timer functions are global variables. See the <a href="timers.html">timers</a> section.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./fs.html" class="navigation navigation-prev " aria-label="Previous page: File System"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./http.html" class="navigation navigation-next " aria-label="Next page: HTTP"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

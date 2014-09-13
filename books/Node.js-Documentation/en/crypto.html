@@ -1,0 +1,1142 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Crypto | Node.js-Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./debugger.html" />
+    
+    
+    <link rel="prev" href="./console.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="9" data-basepath="." data-revision="1410629928884">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="documentation.html">
+            
+                
+                    <a href="./documentation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         About these Docs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="synopsis.html">
+            
+                
+                    <a href="./synopsis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Synopsis
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="assert.html">
+            
+                
+                    <a href="./assert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Assertion Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="buffer.html">
+            
+                
+                    <a href="./buffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Buffer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="addons.html">
+            
+                
+                    <a href="./addons.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         C/C++ Addons
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="child_process.html">
+            
+                
+                    <a href="./child_process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Child Processes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="cluster.html">
+            
+                
+                    <a href="./cluster.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Cluster
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="console.html">
+            
+                
+                    <a href="./console.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="9" data-path="crypto.html">
+            
+                
+                    <a href="./crypto.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Crypto
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="debugger.html">
+            
+                
+                    <a href="./debugger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         Debugger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="dns.html">
+            
+                
+                    <a href="./dns.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         DNS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="domain.html">
+            
+                
+                    <a href="./domain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Domain
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="fs.html">
+            
+                
+                    <a href="./fs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         File System
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="globals.html">
+            
+                
+                    <a href="./globals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         Globals
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="http.html">
+            
+                
+                    <a href="./http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         HTTP
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="https.html">
+            
+                
+                    <a href="./https.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         HTTPS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="modules.html">
+            
+                
+                    <a href="./modules.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         Modules
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="net.html">
+            
+                
+                    <a href="./net.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         Net
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="os.html">
+            
+                
+                    <a href="./os.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         OS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="path.html">
+            
+                
+                    <a href="./path.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         Path
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="22" data-path="process.html">
+            
+                
+                    <a href="./process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>22.</b>
+                        
+                         Process
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="23" data-path="punycode.html">
+            
+                
+                    <a href="./punycode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>23.</b>
+                        
+                         Punycode
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="24" data-path="querystring.html">
+            
+                
+                    <a href="./querystring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>24.</b>
+                        
+                         Query Strings
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="25" data-path="readline.html">
+            
+                
+                    <a href="./readline.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>25.</b>
+                        
+                         Readline
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="26" data-path="repl.html">
+            
+                
+                    <a href="./repl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>26.</b>
+                        
+                         REPL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="27" data-path="stream.html">
+            
+                
+                    <a href="./stream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>27.</b>
+                        
+                         Stream
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="28" data-path="string_decoder.html">
+            
+                
+                    <a href="./string_decoder.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>28.</b>
+                        
+                         String Decoder
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="29" data-path="timers.html">
+            
+                
+                    <a href="./timers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>29.</b>
+                        
+                         Timers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="30" data-path="tls.html">
+            
+                
+                    <a href="./tls.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>30.</b>
+                        
+                         TLS/SSL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="31" data-path="tty.html">
+            
+                
+                    <a href="./tty.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>31.</b>
+                        
+                         TTY
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="32" data-path="dgram.html">
+            
+                
+                    <a href="./dgram.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>32.</b>
+                        
+                         UDP/Datagram
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="33" data-path="url.html">
+            
+                
+                    <a href="./url.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>33.</b>
+                        
+                         URL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="34" data-path="util.html">
+            
+                
+                    <a href="./util.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>34.</b>
+                        
+                         Utilities
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="35" data-path="vm.html">
+            
+                
+                    <a href="./vm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>35.</b>
+                        
+                         VM
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="36" data-path="zlib.html">
+            
+                
+                    <a href="./zlib.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>36.</b>
+                        
+                         ZLIB
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Node.js-Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_8">
+                    
+                        <h1 id="crypto">Crypto</h1>
+<pre><code>Stability: 2 - Unstable; API changes are being discussed for
+future versions.  Breaking changes will be minimized.  See below.
+</code></pre><p>Use <code>require(&#39;crypto&#39;)</code> to access this module.</p>
+<p>The crypto module offers a way of encapsulating secure credentials to be
+used as part of a secure HTTPS net or http connection.</p>
+<p>It also offers a set of wrappers for OpenSSL&#39;s hash, hmac, cipher,
+decipher, sign and verify methods.</p>
+<h2 id="cryptogetciphers">crypto.getCiphers()</h2>
+<p>Returns an array with the names of the supported ciphers.</p>
+<p>Example:</p>
+<pre><code>var ciphers = crypto.getCiphers();
+console.log(ciphers); // [&#39;AES-128-CBC&#39;, &#39;AES-128-CBC-HMAC-SHA1&#39;, ...]
+</code></pre><h2 id="cryptogethashes">crypto.getHashes()</h2>
+<p>Returns an array with the names of the supported hash algorithms.</p>
+<p>Example:</p>
+<pre><code>var hashes = crypto.getHashes();
+console.log(hashes); // [&#39;sha&#39;, &#39;sha1&#39;, &#39;sha1WithRSAEncryption&#39;, ...]
+</code></pre><h2 id="cryptocreatecredentialsdetails">crypto.createCredentials(details)</h2>
+<p>Creates a credentials object, with the optional details being a
+dictionary with keys:</p>
+<ul>
+<li><code>pfx</code> : A string or buffer holding the PFX or PKCS12 encoded private
+key, certificate and CA certificates</li>
+<li><code>key</code> : A string holding the PEM encoded private key</li>
+<li><code>passphrase</code> : A string of passphrase for the private key or pfx</li>
+<li><code>cert</code> : A string holding the PEM encoded certificate</li>
+<li><code>ca</code> : Either a string or list of strings of PEM encoded CA
+certificates to trust.</li>
+<li><code>crl</code> : Either a string or list of strings of PEM encoded CRLs
+(Certificate Revocation List)</li>
+<li><code>ciphers</code>: A string describing the ciphers to use or exclude.
+Consult
+<a href="http://www.openssl.org/docs/apps/ciphers.html#CIPHER_LIST_FORMAT" target="_blank">http://www.openssl.org/docs/apps/ciphers.html#CIPHER_LIST_FORMAT</a>
+for details on the format.</li>
+</ul>
+<p>If no &#39;ca&#39; details are given, then node.js will use the default
+publicly trusted list of CAs as given in
+<a href="http://mxr.mozilla.org/mozilla/source/security/nss/lib/ckfw/builtins/certdata.txt" target="_blank">http://mxr.mozilla.org/mozilla/source/security/nss/lib/ckfw/builtins/certdata.txt</a>.</p>
+<h2 id="cryptocreatehashalgorithm">crypto.createHash(algorithm)</h2>
+<p>Creates and returns a hash object, a cryptographic hash with the given
+algorithm which can be used to generate hash digests.</p>
+<p><code>algorithm</code> is dependent on the available algorithms supported by the
+version of OpenSSL on the platform. Examples are <code>&#39;sha1&#39;</code>, <code>&#39;md5&#39;</code>,
+<code>&#39;sha256&#39;</code>, <code>&#39;sha512&#39;</code>, etc.  On recent releases, <code>openssl
+list-message-digest-algorithms</code> will display the available digest
+algorithms.</p>
+<p>Example: this program that takes the sha1 sum of a file</p>
+<pre><code>var filename = process.argv[2];
+var crypto = require(&#39;crypto&#39;);
+var fs = require(&#39;fs&#39;);
+
+var shasum = crypto.createHash(&#39;sha1&#39;);
+
+var s = fs.ReadStream(filename);
+s.on(&#39;data&#39;, function(d) {
+  shasum.update(d);
+});
+
+s.on(&#39;end&#39;, function() {
+  var d = shasum.digest(&#39;hex&#39;);
+  console.log(d + &#39;  &#39; + filename);
+});
+</code></pre><h2 id="class-hash">Class: Hash</h2>
+<p>The class for creating hash digests of data.</p>
+<p>It is a <a href="stream.html">stream</a> that is both readable and writable.  The
+written data is used to compute the hash.  Once the writable side of
+the stream is ended, use the <code>read()</code> method to get the computed hash
+digest.  The legacy <code>update</code> and <code>digest</code> methods are also supported.</p>
+<p>Returned by <code>crypto.createHash</code>.</p>
+<h3 id="hashupdatedata-input_encoding">hash.update(data, [input_encoding])</h3>
+<p>Updates the hash content with the given <code>data</code>, the encoding of which
+is given in <code>input_encoding</code> and can be <code>&#39;utf8&#39;</code>, <code>&#39;ascii&#39;</code> or
+<code>&#39;binary&#39;</code>.  If no encoding is provided and the input is a string an
+encoding of <code>&#39;binary&#39;</code> is enforced. If <code>data</code> is a <code>Buffer</code> then
+<code>input_encoding</code> is ignored.</p>
+<p>This can be called many times with new data as it is streamed.</p>
+<h3 id="hashdigestencoding">hash.digest([encoding])</h3>
+<p>Calculates the digest of all of the passed data to be hashed.  The
+<code>encoding</code> can be <code>&#39;hex&#39;</code>, <code>&#39;binary&#39;</code> or <code>&#39;base64&#39;</code>.  If no encoding
+is provided, then a buffer is returned.</p>
+<p>Note: <code>hash</code> object can not be used after <code>digest()</code> method has been
+called.</p>
+<h2 id="cryptocreatehmacalgorithm-key">crypto.createHmac(algorithm, key)</h2>
+<p>Creates and returns a hmac object, a cryptographic hmac with the given
+algorithm and key.</p>
+<p>It is a <a href="stream.html">stream</a> that is both readable and writable.  The
+written data is used to compute the hmac.  Once the writable side of
+the stream is ended, use the <code>read()</code> method to get the computed
+digest.  The legacy <code>update</code> and <code>digest</code> methods are also supported.</p>
+<p><code>algorithm</code> is dependent on the available algorithms supported by
+OpenSSL - see createHash above.  <code>key</code> is the hmac key to be used.</p>
+<h2 id="class-hmac">Class: Hmac</h2>
+<p>Class for creating cryptographic hmac content.</p>
+<p>Returned by <code>crypto.createHmac</code>.</p>
+<h3 id="hmacupdatedata">hmac.update(data)</h3>
+<p>Update the hmac content with the given <code>data</code>.  This can be called
+many times with new data as it is streamed.</p>
+<h3 id="hmacdigestencoding">hmac.digest([encoding])</h3>
+<p>Calculates the digest of all of the passed data to the hmac.  The
+<code>encoding</code> can be <code>&#39;hex&#39;</code>, <code>&#39;binary&#39;</code> or <code>&#39;base64&#39;</code>.  If no encoding
+is provided, then a buffer is returned.</p>
+<p>Note: <code>hmac</code> object can not be used after <code>digest()</code> method has been
+called.</p>
+<h2 id="cryptocreatecipheralgorithm-password">crypto.createCipher(algorithm, password)</h2>
+<p>Creates and returns a cipher object, with the given algorithm and
+password.</p>
+<p><code>algorithm</code> is dependent on OpenSSL, examples are <code>&#39;aes192&#39;</code>, etc.  On
+recent releases, <code>openssl list-cipher-algorithms</code> will display the
+available cipher algorithms.  <code>password</code> is used to derive key and IV,
+which must be a <code>&#39;binary&#39;</code> encoded string or a <a href="buffer.html">buffer</a>.</p>
+<p>It is a <a href="stream.html">stream</a> that is both readable and writable.  The
+written data is used to compute the hash.  Once the writable side of
+the stream is ended, use the <code>read()</code> method to get the enciphered
+contents.  The legacy <code>update</code> and <code>final</code> methods are also supported.</p>
+<h2 id="cryptocreatecipherivalgorithm-key-iv">crypto.createCipheriv(algorithm, key, iv)</h2>
+<p>Creates and returns a cipher object, with the given algorithm, key and
+iv.</p>
+<p><code>algorithm</code> is the same as the argument to <code>createCipher()</code>.  <code>key</code> is
+the raw key used by the algorithm.  <code>iv</code> is an <a href="http://en.wikipedia.org/wiki/Initialization_vector" target="_blank">initialization
+vector</a>.</p>
+<p><code>key</code> and <code>iv</code> must be <code>&#39;binary&#39;</code> encoded strings or
+<a href="buffer.html">buffers</a>.</p>
+<h2 id="class-cipher">Class: Cipher</h2>
+<p>Class for encrypting data.</p>
+<p>Returned by <code>crypto.createCipher</code> and <code>crypto.createCipheriv</code>.</p>
+<p>Cipher objects are <a href="stream.html">streams</a> that are both readable and
+writable.  The written plain text data is used to produce the
+encrypted data on the readable side.  The legacy <code>update</code> and <code>final</code>
+methods are also supported.</p>
+<h3 id="cipherupdatedata-input_encoding-output_encoding">cipher.update(data, [input_encoding], [output_encoding])</h3>
+<p>Updates the cipher with <code>data</code>, the encoding of which is given in
+<code>input_encoding</code> and can be <code>&#39;utf8&#39;</code>, <code>&#39;ascii&#39;</code> or <code>&#39;binary&#39;</code>.  If no
+encoding is provided, then a buffer is expected.
+If <code>data</code> is a <code>Buffer</code> then <code>input_encoding</code> is ignored.</p>
+<p>The <code>output_encoding</code> specifies the output format of the enciphered
+data, and can be <code>&#39;binary&#39;</code>, <code>&#39;base64&#39;</code> or <code>&#39;hex&#39;</code>.  If no encoding is
+provided, then a buffer is returned.</p>
+<p>Returns the enciphered contents, and can be called many times with new
+data as it is streamed.</p>
+<h3 id="cipherfinaloutput_encoding">cipher.final([output_encoding])</h3>
+<p>Returns any remaining enciphered contents, with <code>output_encoding</code>
+being one of: <code>&#39;binary&#39;</code>, <code>&#39;base64&#39;</code> or <code>&#39;hex&#39;</code>.  If no encoding is
+provided, then a buffer is returned.</p>
+<p>Note: <code>cipher</code> object can not be used after <code>final()</code> method has been
+called.</p>
+<h3 id="ciphersetautopaddingauto_paddingtrue">cipher.setAutoPadding(auto_padding=true)</h3>
+<p>You can disable automatic padding of the input data to block size. If
+<code>auto_padding</code> is false, the length of the entire input data must be a
+multiple of the cipher&#39;s block size or <code>final</code> will fail.  Useful for
+non-standard padding, e.g. using <code>0x0</code> instead of PKCS padding. You
+must call this before <code>cipher.final</code>.</p>
+<h2 id="cryptocreatedecipheralgorithm-password">crypto.createDecipher(algorithm, password)</h2>
+<p>Creates and returns a decipher object, with the given algorithm and
+key.  This is the mirror of the <a href="#crypto_crypto_createcipher_algorithm_password">createCipher()</a> above.</p>
+<h2 id="cryptocreatedecipherivalgorithm-key-iv">crypto.createDecipheriv(algorithm, key, iv)</h2>
+<p>Creates and returns a decipher object, with the given algorithm, key
+and iv.  This is the mirror of the <a href="#crypto_crypto_createcipheriv_algorithm_key_iv">createCipheriv()</a> above.</p>
+<h2 id="class-decipher">Class: Decipher</h2>
+<p>Class for decrypting data.</p>
+<p>Returned by <code>crypto.createDecipher</code> and <code>crypto.createDecipheriv</code>.</p>
+<p>Decipher objects are <a href="stream.html">streams</a> that are both readable and
+writable.  The written enciphered data is used to produce the
+plain-text data on the the readable side.  The legacy <code>update</code> and
+<code>final</code> methods are also supported.</p>
+<h3 id="decipherupdatedata-input_encoding-output_encoding">decipher.update(data, [input_encoding], [output_encoding])</h3>
+<p>Updates the decipher with <code>data</code>, which is encoded in <code>&#39;binary&#39;</code>,
+<code>&#39;base64&#39;</code> or <code>&#39;hex&#39;</code>.  If no encoding is provided, then a buffer is
+expected.
+If <code>data</code> is a <code>Buffer</code> then <code>input_encoding</code> is ignored.</p>
+<p>The <code>output_decoding</code> specifies in what format to return the
+deciphered plaintext: <code>&#39;binary&#39;</code>, <code>&#39;ascii&#39;</code> or <code>&#39;utf8&#39;</code>.  If no
+encoding is provided, then a buffer is returned.</p>
+<h3 id="decipherfinaloutput_encoding">decipher.final([output_encoding])</h3>
+<p>Returns any remaining plaintext which is deciphered, with
+<code>output_encoding</code> being one of: <code>&#39;binary&#39;</code>, <code>&#39;ascii&#39;</code> or <code>&#39;utf8&#39;</code>.  If
+no encoding is provided, then a buffer is returned.</p>
+<p>Note: <code>decipher</code> object can not be used after <code>final()</code> method has been
+called.</p>
+<h3 id="deciphersetautopaddingauto_paddingtrue">decipher.setAutoPadding(auto_padding=true)</h3>
+<p>You can disable auto padding if the data has been encrypted without
+standard block padding to prevent <code>decipher.final</code> from checking and
+removing it. Can only work if the input data&#39;s length is a multiple of
+the ciphers block size. You must call this before streaming data to
+<code>decipher.update</code>.</p>
+<h2 id="cryptocreatesignalgorithm">crypto.createSign(algorithm)</h2>
+<p>Creates and returns a signing object, with the given algorithm.  On
+recent OpenSSL releases, <code>openssl list-public-key-algorithms</code> will
+display the available signing algorithms. Examples are <code>&#39;RSA-SHA256&#39;</code>.</p>
+<h2 id="class-sign">Class: Sign</h2>
+<p>Class for generating signatures.</p>
+<p>Returned by <code>crypto.createSign</code>.</p>
+<p>Sign objects are writable <a href="stream.html">streams</a>.  The written data is
+used to generate the signature.  Once all of the data has been
+written, the <code>sign</code> method will return the signature.  The legacy
+<code>update</code> method is also supported.</p>
+<h3 id="signupdatedata">sign.update(data)</h3>
+<p>Updates the sign object with data.  This can be called many times
+with new data as it is streamed.</p>
+<h3 id="signsignprivate_key-output_format">sign.sign(private_key, [output_format])</h3>
+<p>Calculates the signature on all the updated data passed through the
+sign.  <code>private_key</code> is a string containing the PEM encoded private
+key for signing.</p>
+<p>Returns the signature in <code>output_format</code> which can be <code>&#39;binary&#39;</code>,
+<code>&#39;hex&#39;</code> or <code>&#39;base64&#39;</code>. If no encoding is provided, then a buffer is
+returned.</p>
+<p>Note: <code>sign</code> object can not be used after <code>sign()</code> method has been
+called.</p>
+<h2 id="cryptocreateverifyalgorithm">crypto.createVerify(algorithm)</h2>
+<p>Creates and returns a verification object, with the given algorithm.
+This is the mirror of the signing object above.</p>
+<h2 id="class-verify">Class: Verify</h2>
+<p>Class for verifying signatures.</p>
+<p>Returned by <code>crypto.createVerify</code>.</p>
+<p>Verify objects are writable <a href="stream.html">streams</a>.  The written data
+is used to validate against the supplied signature.  Once all of the
+data has been written, the <code>verify</code> method will return true if the
+supplied signature is valid.  The legacy <code>update</code> method is also
+supported.</p>
+<h3 id="verifierupdatedata">verifier.update(data)</h3>
+<p>Updates the verifier object with data.  This can be called many times
+with new data as it is streamed.</p>
+<h3 id="verifierverifyobject-signature-signature_format">verifier.verify(object, signature, [signature_format])</h3>
+<p>Verifies the signed data by using the <code>object</code> and <code>signature</code>.
+<code>object</code> is  a string containing a PEM encoded object, which can be
+one of RSA public key, DSA public key, or X.509 certificate.
+<code>signature</code> is the previously calculated signature for the data, in
+the <code>signature_format</code> which can be <code>&#39;binary&#39;</code>, <code>&#39;hex&#39;</code> or <code>&#39;base64&#39;</code>.
+If no encoding is specified, then a buffer is expected.</p>
+<p>Returns true or false depending on the validity of the signature for
+the data and public key.</p>
+<p>Note: <code>verifier</code> object can not be used after <code>verify()</code> method has been
+called.</p>
+<h2 id="cryptocreatediffiehellmanprime_length">crypto.createDiffieHellman(prime_length)</h2>
+<p>Creates a Diffie-Hellman key exchange object and generates a prime of
+the given bit length. The generator used is <code>2</code>.</p>
+<h2 id="cryptocreatediffiehellmanprime-encoding">crypto.createDiffieHellman(prime, [encoding])</h2>
+<p>Creates a Diffie-Hellman key exchange object using the supplied prime.
+The generator used is <code>2</code>. Encoding can be <code>&#39;binary&#39;</code>, <code>&#39;hex&#39;</code>, or
+<code>&#39;base64&#39;</code>.  If no encoding is specified, then a buffer is expected.</p>
+<h2 id="class-diffiehellman">Class: DiffieHellman</h2>
+<p>The class for creating Diffie-Hellman key exchanges.</p>
+<p>Returned by <code>crypto.createDiffieHellman</code>.</p>
+<h3 id="diffiehellmangeneratekeysencoding">diffieHellman.generateKeys([encoding])</h3>
+<p>Generates private and public Diffie-Hellman key values, and returns
+the public key in the specified encoding. This key should be
+transferred to the other party. Encoding can be <code>&#39;binary&#39;</code>, <code>&#39;hex&#39;</code>,
+or <code>&#39;base64&#39;</code>.  If no encoding is provided, then a buffer is returned.</p>
+<h3 id="diffiehellmancomputesecretother_public_key-input_encoding-output_encoding">diffieHellman.computeSecret(other_public_key, [input_encoding], [output_encoding])</h3>
+<p>Computes the shared secret using <code>other_public_key</code> as the other
+party&#39;s public key and returns the computed shared secret. Supplied
+key is interpreted using specified <code>input_encoding</code>, and secret is
+encoded using specified <code>output_encoding</code>. Encodings can be
+<code>&#39;binary&#39;</code>, <code>&#39;hex&#39;</code>, or <code>&#39;base64&#39;</code>. If the input encoding is not
+provided, then a buffer is expected.</p>
+<p>If no output encoding is given, then a buffer is returned.</p>
+<h3 id="diffiehellmangetprimeencoding">diffieHellman.getPrime([encoding])</h3>
+<p>Returns the Diffie-Hellman prime in the specified encoding, which can
+be <code>&#39;binary&#39;</code>, <code>&#39;hex&#39;</code>, or <code>&#39;base64&#39;</code>. If no encoding is provided,
+then a buffer is returned.</p>
+<h3 id="diffiehellmangetgeneratorencoding">diffieHellman.getGenerator([encoding])</h3>
+<p>Returns the Diffie-Hellman generator in the specified encoding, which can
+be <code>&#39;binary&#39;</code>, <code>&#39;hex&#39;</code>, or <code>&#39;base64&#39;</code>. If no encoding is provided,
+then a buffer is returned.</p>
+<h3 id="diffiehellmangetpublickeyencoding">diffieHellman.getPublicKey([encoding])</h3>
+<p>Returns the Diffie-Hellman public key in the specified encoding, which
+can be <code>&#39;binary&#39;</code>, <code>&#39;hex&#39;</code>, or <code>&#39;base64&#39;</code>. If no encoding is provided,
+then a buffer is returned.</p>
+<h3 id="diffiehellmangetprivatekeyencoding">diffieHellman.getPrivateKey([encoding])</h3>
+<p>Returns the Diffie-Hellman private key in the specified encoding,
+which can be <code>&#39;binary&#39;</code>, <code>&#39;hex&#39;</code>, or <code>&#39;base64&#39;</code>. If no encoding is
+provided, then a buffer is returned.</p>
+<h3 id="diffiehellmansetpublickeypublic_key-encoding">diffieHellman.setPublicKey(public_key, [encoding])</h3>
+<p>Sets the Diffie-Hellman public key. Key encoding can be <code>&#39;binary&#39;</code>,
+<code>&#39;hex&#39;</code> or <code>&#39;base64&#39;</code>. If no encoding is provided, then a buffer is
+expected.</p>
+<h3 id="diffiehellmansetprivatekeyprivate_key-encoding">diffieHellman.setPrivateKey(private_key, [encoding])</h3>
+<p>Sets the Diffie-Hellman private key. Key encoding can be <code>&#39;binary&#39;</code>,
+<code>&#39;hex&#39;</code> or <code>&#39;base64&#39;</code>. If no encoding is provided, then a buffer is
+expected.</p>
+<h2 id="cryptogetdiffiehellmangroup_name">crypto.getDiffieHellman(group_name)</h2>
+<p>Creates a predefined Diffie-Hellman key exchange object.  The
+supported groups are: <code>&#39;modp1&#39;</code>, <code>&#39;modp2&#39;</code>, <code>&#39;modp5&#39;</code> (defined in <a href="http://www.rfc-editor.org/rfc/rfc2412.txt" target="_blank">RFC
+2412</a>) and <code>&#39;modp14&#39;</code>, <code>&#39;modp15&#39;</code>, <code>&#39;modp16&#39;</code>, <code>&#39;modp17&#39;</code>,
+<code>&#39;modp18&#39;</code> (defined in <a href="http://www.rfc-editor.org/rfc/rfc3526.txt" target="_blank">RFC 3526</a>).  The returned object mimics the
+interface of objects created by <a href="#crypto_crypto_creatediffiehellman_prime_encoding">crypto.createDiffieHellman()</a>
+above, but will not allow to change the keys (with
+<a href="#crypto_diffiehellman_setpublickey_public_key_encoding">diffieHellman.setPublicKey()</a> for example).  The advantage of using
+this routine is that the parties don&#39;t have to generate nor exchange
+group modulus beforehand, saving both processor and communication
+time.</p>
+<p>Example (obtaining a shared secret):</p>
+<pre><code>var crypto = require(&#39;crypto&#39;);
+var alice = crypto.getDiffieHellman(&#39;modp5&#39;);
+var bob = crypto.getDiffieHellman(&#39;modp5&#39;);
+
+alice.generateKeys();
+bob.generateKeys();
+
+var alice_secret = alice.computeSecret(bob.getPublicKey(), null, &#39;hex&#39;);
+var bob_secret = bob.computeSecret(alice.getPublicKey(), null, &#39;hex&#39;);
+
+/* alice_secret and bob_secret should be the same */
+console.log(alice_secret == bob_secret);
+</code></pre><h2 id="cryptopbkdf2password-salt-iterations-keylen-callback">crypto.pbkdf2(password, salt, iterations, keylen, callback)</h2>
+<p>Asynchronous PBKDF2 applies pseudorandom function HMAC-SHA1 to derive
+a key of given length from the given password, salt and iterations.
+The callback gets two arguments <code>(err, derivedKey)</code>.</p>
+<h2 id="cryptopbkdf2syncpassword-salt-iterations-keylen">crypto.pbkdf2Sync(password, salt, iterations, keylen)</h2>
+<p>Synchronous PBKDF2 function.  Returns derivedKey or throws error.</p>
+<h2 id="cryptorandombytessize-callback">crypto.randomBytes(size, [callback])</h2>
+<p>Generates cryptographically strong pseudo-random data. Usage:</p>
+<pre><code>// async
+crypto.randomBytes(256, function(ex, buf) {
+  if (ex) throw ex;
+  console.log(&#39;Have %d bytes of random data: %s&#39;, buf.length, buf);
+});
+
+// sync
+try {
+  var buf = crypto.randomBytes(256);
+  console.log(&#39;Have %d bytes of random data: %s&#39;, buf.length, buf);
+} catch (ex) {
+  // handle error
+  // most likely, entropy sources are drained
+}
+</code></pre><p>NOTE: Will throw error or invoke callback with error, if there is not enough
+accumulated entropy to generate cryptographically strong data. In other words,
+<code>crypto.randomBytes</code> without callback will not block even if all entropy sources
+are drained.</p>
+<h2 id="cryptopseudorandombytessize-callback">crypto.pseudoRandomBytes(size, [callback])</h2>
+<p>Generates <em>non</em>-cryptographically strong pseudo-random data. The data
+returned will be unique if it is sufficiently long, but is not
+necessarily unpredictable. For this reason, the output of this
+function should never be used where unpredictability is important,
+such as in the generation of encryption keys.</p>
+<p>Usage is otherwise identical to <code>crypto.randomBytes</code>.</p>
+<h2 id="cryptodefault_encoding">crypto.DEFAULT_ENCODING</h2>
+<p>The default encoding to use for functions that can take either strings
+or buffers.  The default value is <code>&#39;buffer&#39;</code>, which makes it default
+to using Buffer objects.  This is here to make the crypto module more
+easily compatible with legacy programs that expected <code>&#39;binary&#39;</code> to be
+the default encoding.</p>
+<p>Note that new programs will probably expect buffers, so only use this
+as a temporary measure.</p>
+<h2 id="recent-api-changes">Recent API Changes</h2>
+<p>The Crypto module was added to Node before there was the concept of a
+unified Stream API, and before there were Buffer objects for handling
+binary data.</p>
+<p>As such, the streaming classes don&#39;t have the typical methods found on
+other Node classes, and many methods accepted and returned
+Binary-encoded strings by default rather than Buffers.  This was
+changed to use Buffers by default instead.</p>
+<p>This is a breaking change for some use cases, but not all.</p>
+<p>For example, if you currently use the default arguments to the Sign
+class, and then pass the results to the Verify class, without ever
+inspecting the data, then it will continue to work as before.  Where
+you once got a binary string and then presented the binary string to
+the Verify object, you&#39;ll now get a Buffer, and present the Buffer to
+the Verify object.</p>
+<p>However, if you were doing things with the string data that will not
+work properly on Buffers (such as, concatenating them, storing in
+databases, etc.), or you are passing binary strings to the crypto
+functions without an encoding argument, then you will need to start
+providing encoding arguments to specify which encoding you&#39;d like to
+use.  To switch to the previous style of using binary strings by
+default, set the <code>crypto.DEFAULT_ENCODING</code> field to &#39;binary&#39;.  Note
+that new programs will probably expect buffers, so only use this as a
+temporary measure.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./console.html" class="navigation navigation-prev " aria-label="Previous page: Console"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./debugger.html" class="navigation navigation-next " aria-label="Next page: Debugger"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

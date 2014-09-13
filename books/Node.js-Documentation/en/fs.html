@@ -1,0 +1,1291 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>File System | Node.js-Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./globals.html" />
+    
+    
+    <link rel="prev" href="./events.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="14" data-basepath="." data-revision="1410629928884">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="documentation.html">
+            
+                
+                    <a href="./documentation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         About these Docs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="synopsis.html">
+            
+                
+                    <a href="./synopsis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Synopsis
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="assert.html">
+            
+                
+                    <a href="./assert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Assertion Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="buffer.html">
+            
+                
+                    <a href="./buffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Buffer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="addons.html">
+            
+                
+                    <a href="./addons.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         C/C++ Addons
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="child_process.html">
+            
+                
+                    <a href="./child_process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Child Processes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="cluster.html">
+            
+                
+                    <a href="./cluster.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Cluster
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="console.html">
+            
+                
+                    <a href="./console.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="crypto.html">
+            
+                
+                    <a href="./crypto.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Crypto
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="debugger.html">
+            
+                
+                    <a href="./debugger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         Debugger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="dns.html">
+            
+                
+                    <a href="./dns.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         DNS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="domain.html">
+            
+                
+                    <a href="./domain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Domain
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="14" data-path="fs.html">
+            
+                
+                    <a href="./fs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         File System
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="globals.html">
+            
+                
+                    <a href="./globals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         Globals
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="http.html">
+            
+                
+                    <a href="./http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         HTTP
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="https.html">
+            
+                
+                    <a href="./https.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         HTTPS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="modules.html">
+            
+                
+                    <a href="./modules.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         Modules
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="net.html">
+            
+                
+                    <a href="./net.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         Net
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="os.html">
+            
+                
+                    <a href="./os.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         OS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="path.html">
+            
+                
+                    <a href="./path.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         Path
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="22" data-path="process.html">
+            
+                
+                    <a href="./process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>22.</b>
+                        
+                         Process
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="23" data-path="punycode.html">
+            
+                
+                    <a href="./punycode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>23.</b>
+                        
+                         Punycode
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="24" data-path="querystring.html">
+            
+                
+                    <a href="./querystring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>24.</b>
+                        
+                         Query Strings
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="25" data-path="readline.html">
+            
+                
+                    <a href="./readline.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>25.</b>
+                        
+                         Readline
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="26" data-path="repl.html">
+            
+                
+                    <a href="./repl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>26.</b>
+                        
+                         REPL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="27" data-path="stream.html">
+            
+                
+                    <a href="./stream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>27.</b>
+                        
+                         Stream
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="28" data-path="string_decoder.html">
+            
+                
+                    <a href="./string_decoder.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>28.</b>
+                        
+                         String Decoder
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="29" data-path="timers.html">
+            
+                
+                    <a href="./timers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>29.</b>
+                        
+                         Timers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="30" data-path="tls.html">
+            
+                
+                    <a href="./tls.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>30.</b>
+                        
+                         TLS/SSL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="31" data-path="tty.html">
+            
+                
+                    <a href="./tty.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>31.</b>
+                        
+                         TTY
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="32" data-path="dgram.html">
+            
+                
+                    <a href="./dgram.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>32.</b>
+                        
+                         UDP/Datagram
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="33" data-path="url.html">
+            
+                
+                    <a href="./url.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>33.</b>
+                        
+                         URL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="34" data-path="util.html">
+            
+                
+                    <a href="./util.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>34.</b>
+                        
+                         Utilities
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="35" data-path="vm.html">
+            
+                
+                    <a href="./vm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>35.</b>
+                        
+                         VM
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="36" data-path="zlib.html">
+            
+                
+                    <a href="./zlib.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>36.</b>
+                        
+                         ZLIB
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Node.js-Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_15">
+                    
+                        <h1 id="file-system">File System</h1>
+<pre><code>Stability: 3 - Stable
+</code></pre><!--name=fs-->
+<p>File I/O is provided by simple wrappers around standard POSIX functions.  To
+use this module do <code>require(&#39;fs&#39;)</code>. All the methods have asynchronous and
+synchronous forms.</p>
+<p>The asynchronous form always take a completion callback as its last argument.
+The arguments passed to the completion callback depend on the method, but the
+first argument is always reserved for an exception. If the operation was
+completed successfully, then the first argument will be <code>null</code> or <code>undefined</code>.</p>
+<p>When using the synchronous form any exceptions are immediately thrown.
+You can use try/catch to handle exceptions or allow them to bubble up.</p>
+<p>Here is an example of the asynchronous version:</p>
+<pre><code>var fs = require(&#39;fs&#39;);
+
+fs.unlink(&#39;/tmp/hello&#39;, function (err) {
+  if (err) throw err;
+  console.log(&#39;successfully deleted /tmp/hello&#39;);
+});
+</code></pre><p>Here is the synchronous version:</p>
+<pre><code>var fs = require(&#39;fs&#39;);
+
+fs.unlinkSync(&#39;/tmp/hello&#39;)
+console.log(&#39;successfully deleted /tmp/hello&#39;);
+</code></pre><p>With the asynchronous methods there is no guaranteed ordering. So the
+following is prone to error:</p>
+<pre><code>fs.rename(&#39;/tmp/hello&#39;, &#39;/tmp/world&#39;, function (err) {
+  if (err) throw err;
+  console.log(&#39;renamed complete&#39;);
+});
+fs.stat(&#39;/tmp/world&#39;, function (err, stats) {
+  if (err) throw err;
+  console.log(&#39;stats: &#39; + JSON.stringify(stats));
+});
+</code></pre><p>It could be that <code>fs.stat</code> is executed before <code>fs.rename</code>.
+The correct way to do this is to chain the callbacks.</p>
+<pre><code>fs.rename(&#39;/tmp/hello&#39;, &#39;/tmp/world&#39;, function (err) {
+  if (err) throw err;
+  fs.stat(&#39;/tmp/world&#39;, function (err, stats) {
+    if (err) throw err;
+    console.log(&#39;stats: &#39; + JSON.stringify(stats));
+  });
+});
+</code></pre><p>In busy processes, the programmer is <em>strongly encouraged</em> to use the
+asynchronous versions of these calls. The synchronous versions will block
+the entire process until they complete--halting all connections.</p>
+<p>Relative path to filename can be used, remember however that this path will be
+relative to <code>process.cwd()</code>.</p>
+<p>Most fs functions let you omit the callback argument. If you do, a default
+callback is used that ignores errors, but prints a deprecation
+warning.</p>
+<p><strong>IMPORTANT</strong>: Omitting the callback is deprecated.  v0.12 will throw the
+errors as exceptions.</p>
+<h2 id="fsrenameoldpath-newpath-callback">fs.rename(oldPath, newPath, callback)</h2>
+<p>Asynchronous rename(2). No arguments other than a possible exception are given
+to the completion callback.</p>
+<h2 id="fsrenamesyncoldpath-newpath">fs.renameSync(oldPath, newPath)</h2>
+<p>Synchronous rename(2).</p>
+<h2 id="fsftruncatefd-len-callback">fs.ftruncate(fd, len, callback)</h2>
+<p>Asynchronous ftruncate(2). No arguments other than a possible exception are
+given to the completion callback.</p>
+<h2 id="fsftruncatesyncfd-len">fs.ftruncateSync(fd, len)</h2>
+<p>Synchronous ftruncate(2).</p>
+<h2 id="fstruncatepath-len-callback">fs.truncate(path, len, callback)</h2>
+<p>Asynchronous truncate(2). No arguments other than a possible exception are
+given to the completion callback.</p>
+<h2 id="fstruncatesyncpath-len">fs.truncateSync(path, len)</h2>
+<p>Synchronous truncate(2).</p>
+<h2 id="fschownpath-uid-gid-callback">fs.chown(path, uid, gid, callback)</h2>
+<p>Asynchronous chown(2). No arguments other than a possible exception are given
+to the completion callback.</p>
+<h2 id="fschownsyncpath-uid-gid">fs.chownSync(path, uid, gid)</h2>
+<p>Synchronous chown(2).</p>
+<h2 id="fsfchownfd-uid-gid-callback">fs.fchown(fd, uid, gid, callback)</h2>
+<p>Asynchronous fchown(2). No arguments other than a possible exception are given
+to the completion callback.</p>
+<h2 id="fsfchownsyncfd-uid-gid">fs.fchownSync(fd, uid, gid)</h2>
+<p>Synchronous fchown(2).</p>
+<h2 id="fslchownpath-uid-gid-callback">fs.lchown(path, uid, gid, callback)</h2>
+<p>Asynchronous lchown(2). No arguments other than a possible exception are given
+to the completion callback.</p>
+<h2 id="fslchownsyncpath-uid-gid">fs.lchownSync(path, uid, gid)</h2>
+<p>Synchronous lchown(2).</p>
+<h2 id="fschmodpath-mode-callback">fs.chmod(path, mode, callback)</h2>
+<p>Asynchronous chmod(2). No arguments other than a possible exception are given
+to the completion callback.</p>
+<h2 id="fschmodsyncpath-mode">fs.chmodSync(path, mode)</h2>
+<p>Synchronous chmod(2).</p>
+<h2 id="fsfchmodfd-mode-callback">fs.fchmod(fd, mode, callback)</h2>
+<p>Asynchronous fchmod(2). No arguments other than a possible exception
+are given to the completion callback.</p>
+<h2 id="fsfchmodsyncfd-mode">fs.fchmodSync(fd, mode)</h2>
+<p>Synchronous fchmod(2).</p>
+<h2 id="fslchmodpath-mode-callback">fs.lchmod(path, mode, callback)</h2>
+<p>Asynchronous lchmod(2). No arguments other than a possible exception
+are given to the completion callback.</p>
+<p>Only available on Mac OS X.</p>
+<h2 id="fslchmodsyncpath-mode">fs.lchmodSync(path, mode)</h2>
+<p>Synchronous lchmod(2).</p>
+<h2 id="fsstatpath-callback">fs.stat(path, callback)</h2>
+<p>Asynchronous stat(2). The callback gets two arguments <code>(err, stats)</code> where
+<code>stats</code> is a <a href="#fs_class_fs_stats">fs.Stats</a> object.  See the <a href="#fs_class_fs_stats">fs.Stats</a>
+section below for more information.</p>
+<h2 id="fslstatpath-callback">fs.lstat(path, callback)</h2>
+<p>Asynchronous lstat(2). The callback gets two arguments <code>(err, stats)</code> where
+<code>stats</code> is a <code>fs.Stats</code> object. <code>lstat()</code> is identical to <code>stat()</code>, except that if
+<code>path</code> is a symbolic link, then the link itself is stat-ed, not the file that it
+refers to.</p>
+<h2 id="fsfstatfd-callback">fs.fstat(fd, callback)</h2>
+<p>Asynchronous fstat(2). The callback gets two arguments <code>(err, stats)</code> where
+<code>stats</code> is a <code>fs.Stats</code> object. <code>fstat()</code> is identical to <code>stat()</code>, except that
+the file to be stat-ed is specified by the file descriptor <code>fd</code>.</p>
+<h2 id="fsstatsyncpath">fs.statSync(path)</h2>
+<p>Synchronous stat(2). Returns an instance of <code>fs.Stats</code>.</p>
+<h2 id="fslstatsyncpath">fs.lstatSync(path)</h2>
+<p>Synchronous lstat(2). Returns an instance of <code>fs.Stats</code>.</p>
+<h2 id="fsfstatsyncfd">fs.fstatSync(fd)</h2>
+<p>Synchronous fstat(2). Returns an instance of <code>fs.Stats</code>.</p>
+<h2 id="fslinksrcpath-dstpath-callback">fs.link(srcpath, dstpath, callback)</h2>
+<p>Asynchronous link(2). No arguments other than a possible exception are given to
+the completion callback.</p>
+<h2 id="fslinksyncsrcpath-dstpath">fs.linkSync(srcpath, dstpath)</h2>
+<p>Synchronous link(2).</p>
+<h2 id="fssymlinksrcpath-dstpath-type-callback">fs.symlink(srcpath, dstpath, [type], callback)</h2>
+<p>Asynchronous symlink(2). No arguments other than a possible exception are given
+to the completion callback.
+The <code>type</code> argument can be set to <code>&#39;dir&#39;</code>, <code>&#39;file&#39;</code>, or <code>&#39;junction&#39;</code> (default
+is <code>&#39;file&#39;</code>) and is only available on Windows (ignored on other platforms).
+Note that Windows junction points require the destination path to be absolute.  When using
+<code>&#39;junction&#39;</code>, the <code>destination</code> argument will automatically be normalized to absolute path.</p>
+<h2 id="fssymlinksyncsrcpath-dstpath-type">fs.symlinkSync(srcpath, dstpath, [type])</h2>
+<p>Synchronous symlink(2).</p>
+<h2 id="fsreadlinkpath-callback">fs.readlink(path, callback)</h2>
+<p>Asynchronous readlink(2). The callback gets two arguments <code>(err,
+linkString)</code>.</p>
+<h2 id="fsreadlinksyncpath">fs.readlinkSync(path)</h2>
+<p>Synchronous readlink(2). Returns the symbolic link&#39;s string value.</p>
+<h2 id="fsrealpathpath-cache-callback">fs.realpath(path, [cache], callback)</h2>
+<p>Asynchronous realpath(2). The <code>callback</code> gets two arguments <code>(err,
+resolvedPath)</code>. May use <code>process.cwd</code> to resolve relative paths. <code>cache</code> is an
+object literal of mapped paths that can be used to force a specific path
+resolution or avoid additional <code>fs.stat</code> calls for known real paths.</p>
+<p>Example:</p>
+<pre><code>var cache = {&#39;/etc&#39;:&#39;/private/etc&#39;};
+fs.realpath(&#39;/etc/passwd&#39;, cache, function (err, resolvedPath) {
+  if (err) throw err;
+  console.log(resolvedPath);
+});
+</code></pre><h2 id="fsrealpathsyncpath-cache">fs.realpathSync(path, [cache])</h2>
+<p>Synchronous realpath(2). Returns the resolved path.</p>
+<h2 id="fsunlinkpath-callback">fs.unlink(path, callback)</h2>
+<p>Asynchronous unlink(2). No arguments other than a possible exception are given
+to the completion callback.</p>
+<h2 id="fsunlinksyncpath">fs.unlinkSync(path)</h2>
+<p>Synchronous unlink(2).</p>
+<h2 id="fsrmdirpath-callback">fs.rmdir(path, callback)</h2>
+<p>Asynchronous rmdir(2). No arguments other than a possible exception are given
+to the completion callback.</p>
+<h2 id="fsrmdirsyncpath">fs.rmdirSync(path)</h2>
+<p>Synchronous rmdir(2).</p>
+<h2 id="fsmkdirpath-mode-callback">fs.mkdir(path, [mode], callback)</h2>
+<p>Asynchronous mkdir(2). No arguments other than a possible exception are given
+to the completion callback. <code>mode</code> defaults to <code>0777</code>.</p>
+<h2 id="fsmkdirsyncpath-mode">fs.mkdirSync(path, [mode])</h2>
+<p>Synchronous mkdir(2).</p>
+<h2 id="fsreaddirpath-callback">fs.readdir(path, callback)</h2>
+<p>Asynchronous readdir(3).  Reads the contents of a directory.
+The callback gets two arguments <code>(err, files)</code> where <code>files</code> is an array of
+the names of the files in the directory excluding <code>&#39;.&#39;</code> and <code>&#39;..&#39;</code>.</p>
+<h2 id="fsreaddirsyncpath">fs.readdirSync(path)</h2>
+<p>Synchronous readdir(3). Returns an array of filenames excluding <code>&#39;.&#39;</code> and
+<code>&#39;..&#39;</code>.</p>
+<h2 id="fsclosefd-callback">fs.close(fd, callback)</h2>
+<p>Asynchronous close(2).  No arguments other than a possible exception are given
+to the completion callback.</p>
+<h2 id="fsclosesyncfd">fs.closeSync(fd)</h2>
+<p>Synchronous close(2).</p>
+<h2 id="fsopenpath-flags-mode-callback">fs.open(path, flags, [mode], callback)</h2>
+<p>Asynchronous file open. See open(2). <code>flags</code> can be:</p>
+<ul>
+<li><p><code>&#39;r&#39;</code> - Open file for reading.
+An exception occurs if the file does not exist.</p>
+</li>
+<li><p><code>&#39;r+&#39;</code> - Open file for reading and writing.
+An exception occurs if the file does not exist.</p>
+</li>
+<li><p><code>&#39;rs&#39;</code> - Open file for reading in synchronous mode. Instructs the operating
+system to bypass the local file system cache.</p>
+<p>This is primarily useful for opening files on NFS mounts as it allows you to
+skip the potentially stale local cache. It has a very real impact on I/O
+performance so don&#39;t use this flag unless you need it.</p>
+<p>Note that this doesn&#39;t turn <code>fs.open()</code> into a synchronous blocking call.
+If that&#39;s what you want then you should be using <code>fs.openSync()</code></p>
+</li>
+<li><p><code>&#39;rs+&#39;</code> - Open file for reading and writing, telling the OS to open it
+synchronously. See notes for <code>&#39;rs&#39;</code> about using this with caution.</p>
+</li>
+<li><p><code>&#39;w&#39;</code> - Open file for writing.
+The file is created (if it does not exist) or truncated (if it exists).</p>
+</li>
+<li><p><code>&#39;wx&#39;</code> - Like <code>&#39;w&#39;</code> but fails if <code>path</code> exists.</p>
+</li>
+<li><p><code>&#39;w+&#39;</code> - Open file for reading and writing.
+The file is created (if it does not exist) or truncated (if it exists).</p>
+</li>
+<li><p><code>&#39;wx+&#39;</code> - Like <code>&#39;w+&#39;</code> but fails if <code>path</code> exists.</p>
+</li>
+<li><p><code>&#39;a&#39;</code> - Open file for appending.
+The file is created if it does not exist.</p>
+</li>
+<li><p><code>&#39;ax&#39;</code> - Like <code>&#39;a&#39;</code> but fails if <code>path</code> exists.</p>
+</li>
+<li><p><code>&#39;a+&#39;</code> - Open file for reading and appending.
+The file is created if it does not exist.</p>
+</li>
+<li><p><code>&#39;ax+&#39;</code> - Like <code>&#39;a+&#39;</code> but fails if <code>path</code> exists.</p>
+</li>
+</ul>
+<p><code>mode</code> sets the file mode (permission and sticky bits), but only if the file was
+created. It defaults to <code>0666</code>, readable and writeable.</p>
+<p>The callback gets two arguments <code>(err, fd)</code>.</p>
+<p>The exclusive flag <code>&#39;x&#39;</code> (<code>O_EXCL</code> flag in open(2)) ensures that <code>path</code> is newly
+created. On POSIX systems, <code>path</code> is considered to exist even if it is a symlink
+to a non-existent file. The exclusive flag may or may not work with network file
+systems.</p>
+<p>On Linux, positional writes don&#39;t work when the file is opened in append mode.
+The kernel ignores the position argument and always appends the data to
+the end of the file.</p>
+<h2 id="fsopensyncpath-flags-mode">fs.openSync(path, flags, [mode])</h2>
+<p>Synchronous version of <code>fs.open()</code>.</p>
+<h2 id="fsutimespath-atime-mtime-callback">fs.utimes(path, atime, mtime, callback)</h2>
+<h2 id="fsutimessyncpath-atime-mtime">fs.utimesSync(path, atime, mtime)</h2>
+<p>Change file timestamps of the file referenced by the supplied path.</p>
+<h2 id="fsfutimesfd-atime-mtime-callback">fs.futimes(fd, atime, mtime, callback)</h2>
+<h2 id="fsfutimessyncfd-atime-mtime">fs.futimesSync(fd, atime, mtime)</h2>
+<p>Change the file timestamps of a file referenced by the supplied file
+descriptor.</p>
+<h2 id="fsfsyncfd-callback">fs.fsync(fd, callback)</h2>
+<p>Asynchronous fsync(2). No arguments other than a possible exception are given
+to the completion callback.</p>
+<h2 id="fsfsyncsyncfd">fs.fsyncSync(fd)</h2>
+<p>Synchronous fsync(2).</p>
+<h2 id="fswritefd-buffer-offset-length-position-callback">fs.write(fd, buffer, offset, length, position, callback)</h2>
+<p>Write <code>buffer</code> to the file specified by <code>fd</code>.</p>
+<p><code>offset</code> and <code>length</code> determine the part of the buffer to be written.</p>
+<p><code>position</code> refers to the offset from the beginning of the file where this data
+should be written. If <code>position</code> is <code>null</code>, the data will be written at the
+current position.
+See pwrite(2).</p>
+<p>The callback will be given three arguments <code>(err, written, buffer)</code> where <code>written</code>
+specifies how many <em>bytes</em> were written from <code>buffer</code>.</p>
+<p>Note that it is unsafe to use <code>fs.write</code> multiple times on the same file
+without waiting for the callback. For this scenario,
+<code>fs.createWriteStream</code> is strongly recommended.</p>
+<p>On Linux, positional writes don&#39;t work when the file is opened in append mode.
+The kernel ignores the position argument and always appends the data to
+the end of the file.</p>
+<h2 id="fswritesyncfd-buffer-offset-length-position">fs.writeSync(fd, buffer, offset, length, position)</h2>
+<p>Synchronous version of <code>fs.write()</code>. Returns the number of bytes written.</p>
+<h2 id="fsreadfd-buffer-offset-length-position-callback">fs.read(fd, buffer, offset, length, position, callback)</h2>
+<p>Read data from the file specified by <code>fd</code>.</p>
+<p><code>buffer</code> is the buffer that the data will be written to.</p>
+<p><code>offset</code> is the offset in the buffer to start writing at.</p>
+<p><code>length</code> is an integer specifying the number of bytes to read.</p>
+<p><code>position</code> is an integer specifying where to begin reading from in the file.
+If <code>position</code> is <code>null</code>, data will be read from the current file position.</p>
+<p>The callback is given the three arguments, <code>(err, bytesRead, buffer)</code>.</p>
+<h2 id="fsreadsyncfd-buffer-offset-length-position">fs.readSync(fd, buffer, offset, length, position)</h2>
+<p>Synchronous version of <code>fs.read</code>. Returns the number of <code>bytesRead</code>.</p>
+<h2 id="fsreadfilefilename-options-callback">fs.readFile(filename, [options], callback)</h2>
+<ul>
+<li><code>filename</code> {String}</li>
+<li><code>options</code> {Object}<ul>
+<li><code>encoding</code> {String | Null} default = <code>null</code></li>
+<li><code>flag</code> {String} default = <code>&#39;r&#39;</code></li>
+</ul>
+</li>
+<li><code>callback</code> {Function}</li>
+</ul>
+<p>Asynchronously reads the entire contents of a file. Example:</p>
+<pre><code>fs.readFile(&#39;/etc/passwd&#39;, function (err, data) {
+  if (err) throw err;
+  console.log(data);
+});
+</code></pre><p>The callback is passed two arguments <code>(err, data)</code>, where <code>data</code> is the
+contents of the file.</p>
+<p>If no encoding is specified, then the raw buffer is returned.</p>
+<h2 id="fsreadfilesyncfilename-options">fs.readFileSync(filename, [options])</h2>
+<p>Synchronous version of <code>fs.readFile</code>. Returns the contents of the <code>filename</code>.</p>
+<p>If the <code>encoding</code> option is specified then this function returns a
+string. Otherwise it returns a buffer.</p>
+<h2 id="fswritefilefilename-data-options-callback">fs.writeFile(filename, data, [options], callback)</h2>
+<ul>
+<li><code>filename</code> {String}</li>
+<li><code>data</code> {String | Buffer}</li>
+<li><code>options</code> {Object}<ul>
+<li><code>encoding</code> {String | Null} default = <code>&#39;utf8&#39;</code></li>
+<li><code>mode</code> {Number} default = <code>438</code> (aka <code>0666</code> in Octal)</li>
+<li><code>flag</code> {String} default = <code>&#39;w&#39;</code></li>
+</ul>
+</li>
+<li><code>callback</code> {Function}</li>
+</ul>
+<p>Asynchronously writes data to a file, replacing the file if it already exists.
+<code>data</code> can be a string or a buffer.</p>
+<p>The <code>encoding</code> option is ignored if <code>data</code> is a buffer. It defaults
+to <code>&#39;utf8&#39;</code>.</p>
+<p>Example:</p>
+<pre><code>fs.writeFile(&#39;message.txt&#39;, &#39;Hello Node&#39;, function (err) {
+  if (err) throw err;
+  console.log(&#39;It\&#39;s saved!&#39;);
+});
+</code></pre><h2 id="fswritefilesyncfilename-data-options">fs.writeFileSync(filename, data, [options])</h2>
+<p>The synchronous version of <code>fs.writeFile</code>.</p>
+<h2 id="fsappendfilefilename-data-options-callback">fs.appendFile(filename, data, [options], callback)</h2>
+<ul>
+<li><code>filename</code> {String}</li>
+<li><code>data</code> {String | Buffer}</li>
+<li><code>options</code> {Object}<ul>
+<li><code>encoding</code> {String | Null} default = <code>&#39;utf8&#39;</code></li>
+<li><code>mode</code> {Number} default = <code>438</code> (aka <code>0666</code> in Octal)</li>
+<li><code>flag</code> {String} default = <code>&#39;a&#39;</code></li>
+</ul>
+</li>
+<li><code>callback</code> {Function}</li>
+</ul>
+<p>Asynchronously append data to a file, creating the file if it not yet exists.
+<code>data</code> can be a string or a buffer.</p>
+<p>Example:</p>
+<pre><code>fs.appendFile(&#39;message.txt&#39;, &#39;data to append&#39;, function (err) {
+  if (err) throw err;
+  console.log(&#39;The &quot;data to append&quot; was appended to file!&#39;);
+});
+</code></pre><h2 id="fsappendfilesyncfilename-data-options">fs.appendFileSync(filename, data, [options])</h2>
+<p>The synchronous version of <code>fs.appendFile</code>.</p>
+<h2 id="fswatchfilefilename-options-listener">fs.watchFile(filename, [options], listener)</h2>
+<pre><code>Stability: 2 - Unstable.  Use fs.watch instead, if possible.
+</code></pre><p>Watch for changes on <code>filename</code>. The callback <code>listener</code> will be called each
+time the file is accessed.</p>
+<p>The second argument is optional. The <code>options</code> if provided should be an object
+containing two members a boolean, <code>persistent</code>, and <code>interval</code>. <code>persistent</code>
+indicates whether the process should continue to run as long as files are
+being watched. <code>interval</code> indicates how often the target should be polled,
+in milliseconds. The default is <code>{ persistent: true, interval: 5007 }</code>.</p>
+<p>The <code>listener</code> gets two arguments the current stat object and the previous
+stat object:</p>
+<pre><code>fs.watchFile(&#39;message.text&#39;, function (curr, prev) {
+  console.log(&#39;the current mtime is: &#39; + curr.mtime);
+  console.log(&#39;the previous mtime was: &#39; + prev.mtime);
+});
+</code></pre><p>These stat objects are instances of <code>fs.Stat</code>.</p>
+<p>If you want to be notified when the file was modified, not just accessed
+you need to compare <code>curr.mtime</code> and <code>prev.mtime</code>.</p>
+<h2 id="fsunwatchfilefilename-listener">fs.unwatchFile(filename, [listener])</h2>
+<pre><code>Stability: 2 - Unstable.  Use fs.watch instead, if possible.
+</code></pre><p>Stop watching for changes on <code>filename</code>. If <code>listener</code> is specified, only that
+particular listener is removed. Otherwise, <em>all</em> listeners are removed and you
+have effectively stopped watching <code>filename</code>.</p>
+<p>Calling <code>fs.unwatchFile()</code> with a filename that is not being watched is a
+no-op, not an error.</p>
+<h2 id="fswatchfilename-options-listener">fs.watch(filename, [options], [listener])</h2>
+<pre><code>Stability: 2 - Unstable.
+</code></pre><p>Watch for changes on <code>filename</code>, where <code>filename</code> is either a file or a
+directory.  The returned object is a <a href="#fs_class_fs_fswatcher">fs.FSWatcher</a>.</p>
+<p>The second argument is optional. The <code>options</code> if provided should be an object
+containing a boolean member <code>persistent</code>, which indicates whether the process
+should continue to run as long as files are being watched. The default is
+<code>{ persistent: true }</code>.</p>
+<p>The listener callback gets two arguments <code>(event, filename)</code>.  <code>event</code> is either
+&#39;rename&#39; or &#39;change&#39;, and <code>filename</code> is the name of the file which triggered
+the event.</p>
+<h3 id="caveats">Caveats</h3>
+<!--type=misc-->
+<p>The <code>fs.watch</code> API is not 100% consistent across platforms, and is
+unavailable in some situations.</p>
+<h4 id="availability">Availability</h4>
+<!--type=misc-->
+<p>This feature depends on the underlying operating system providing a way
+to be notified of filesystem changes.</p>
+<ul>
+<li>On Linux systems, this uses <code>inotify</code>.</li>
+<li>On BSD systems (including OS X), this uses <code>kqueue</code>.</li>
+<li>On SunOS systems (including Solaris and SmartOS), this uses <code>event ports</code>.</li>
+<li>On Windows systems, this feature depends on <code>ReadDirectoryChangesW</code>.</li>
+</ul>
+<p>If the underlying functionality is not available for some reason, then
+<code>fs.watch</code> will not be able to function.  For example, watching files or
+directories on network file systems (NFS, SMB, etc.) often doesn&#39;t work
+reliably or at all.</p>
+<p>You can still use <code>fs.watchFile</code>, which uses stat polling, but it is slower and
+less reliable.</p>
+<h4 id="filename-argument">Filename Argument</h4>
+<!--type=misc-->
+<p>Providing <code>filename</code> argument in the callback is not supported
+on every platform (currently it&#39;s only supported on Linux and Windows).  Even
+on supported platforms <code>filename</code> is not always guaranteed to be provided.
+Therefore, don&#39;t assume that <code>filename</code> argument is always provided in the
+callback, and have some fallback logic if it is null.</p>
+<pre><code>fs.watch(&#39;somedir&#39;, function (event, filename) {
+  console.log(&#39;event is: &#39; + event);
+  if (filename) {
+    console.log(&#39;filename provided: &#39; + filename);
+  } else {
+    console.log(&#39;filename not provided&#39;);
+  }
+});
+</code></pre><h2 id="fsexistspath-callback">fs.exists(path, callback)</h2>
+<p>Test whether or not the given path exists by checking with the file system.
+Then call the <code>callback</code> argument with either true or false.  Example:</p>
+<pre><code>fs.exists(&#39;/etc/passwd&#39;, function (exists) {
+  util.debug(exists ? &quot;it&#39;s there&quot; : &quot;no passwd!&quot;);
+});
+</code></pre><p><code>fs.exists()</code> is an anachronism and exists only for historical reasons.
+There should almost never be a reason to use it in your own code.</p>
+<p>In particular, checking if a file exists before opening it is an anti-pattern
+that leaves you vulnerable to race conditions: another process may remove the
+file between the calls to <code>fs.exists()</code> and <code>fs.open()</code>.  Just open the file
+and handle the error when it&#39;s not there.</p>
+<h2 id="fsexistssyncpath">fs.existsSync(path)</h2>
+<p>Synchronous version of <code>fs.exists</code>.</p>
+<h2 id="class-fsstats">Class: fs.Stats</h2>
+<p>Objects returned from <code>fs.stat()</code>, <code>fs.lstat()</code> and <code>fs.fstat()</code> and their
+synchronous counterparts are of this type.</p>
+<ul>
+<li><code>stats.isFile()</code></li>
+<li><code>stats.isDirectory()</code></li>
+<li><code>stats.isBlockDevice()</code></li>
+<li><code>stats.isCharacterDevice()</code></li>
+<li><code>stats.isSymbolicLink()</code> (only valid with  <code>fs.lstat()</code>)</li>
+<li><code>stats.isFIFO()</code></li>
+<li><code>stats.isSocket()</code></li>
+</ul>
+<p>For a regular file <code>util.inspect(stats)</code> would return a string very
+similar to this:</p>
+<pre><code>{ dev: 2114,
+  ino: 48064969,
+  mode: 33188,
+  nlink: 1,
+  uid: 85,
+  gid: 100,
+  rdev: 0,
+  size: 527,
+  blksize: 4096,
+  blocks: 8,
+  atime: Mon, 10 Oct 2011 23:24:11 GMT,
+  mtime: Mon, 10 Oct 2011 23:24:11 GMT,
+  ctime: Mon, 10 Oct 2011 23:24:11 GMT }
+</code></pre><p>Please note that <code>atime</code>, <code>mtime</code> and <code>ctime</code> are instances
+of <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date" target="_blank">Date</a> object and to compare the values of
+these objects you should use appropriate methods. For most
+general uses <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getTime" target="_blank">getTime()</a> will return
+the number of milliseconds elapsed since <em>1 January 1970
+00:00:00 UTC</em> and this integer should be sufficient for
+any comparison, however there additional methods which can
+be used for displaying fuzzy information. More details can
+be found in the <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date" target="_blank">MDN JavaScript Reference</a> page.</p>
+<h2 id="fscreatereadstreampath-options">fs.createReadStream(path, [options])</h2>
+<p>Returns a new ReadStream object (See <code>Readable Stream</code>).</p>
+<p><code>options</code> is an object with the following defaults:</p>
+<pre><code>{ flags: &#39;r&#39;,
+  encoding: null,
+  fd: null,
+  mode: 0666,
+  autoClose: true
+}
+</code></pre><p><code>options</code> can include <code>start</code> and <code>end</code> values to read a range of bytes from
+the file instead of the entire file.  Both <code>start</code> and <code>end</code> are inclusive and
+start at 0. The <code>encoding</code> can be <code>&#39;utf8&#39;</code>, <code>&#39;ascii&#39;</code>, or <code>&#39;base64&#39;</code>.</p>
+<p>If <code>autoClose</code> is false, then the file descriptor won&#39;t be closed, even if
+there&#39;s an error.  It is your responsiblity to close it and make sure
+there&#39;s no file descriptor leak.  If <code>autoClose</code> is set to true (default
+behavior), on <code>error</code> or <code>end</code> the file descriptor will be closed
+automatically.</p>
+<p>An example to read the last 10 bytes of a file which is 100 bytes long:</p>
+<pre><code>fs.createReadStream(&#39;sample.txt&#39;, {start: 90, end: 99});
+</code></pre><h2 id="class-fsreadstream">Class: fs.ReadStream</h2>
+<p><code>ReadStream</code> is a <a href="stream.html#stream_class_stream_readable">Readable Stream</a>.</p>
+<h3 id="event-open">Event: &#39;open&#39;</h3>
+<ul>
+<li><code>fd</code> {Integer} file descriptor used by the ReadStream.</li>
+</ul>
+<p>Emitted when the ReadStream&#39;s file is opened.</p>
+<h2 id="fscreatewritestreampath-options">fs.createWriteStream(path, [options])</h2>
+<p>Returns a new WriteStream object (See <code>Writable Stream</code>).</p>
+<p><code>options</code> is an object with the following defaults:</p>
+<pre><code>{ flags: &#39;w&#39;,
+  encoding: null,
+  mode: 0666 }
+</code></pre><p><code>options</code> may also include a <code>start</code> option to allow writing data at
+some position past the beginning of the file.  Modifying a file rather
+than replacing it may require a <code>flags</code> mode of <code>r+</code> rather than the
+default mode <code>w</code>.</p>
+<h2 id="class-fswritestream">Class: fs.WriteStream</h2>
+<p><code>WriteStream</code> is a <a href="stream.html#stream_class_stream_writable">Writable Stream</a>.</p>
+<h3 id="event-open">Event: &#39;open&#39;</h3>
+<ul>
+<li><code>fd</code> {Integer} file descriptor used by the WriteStream.</li>
+</ul>
+<p>Emitted when the WriteStream&#39;s file is opened.</p>
+<h3 id="filebyteswritten">file.bytesWritten</h3>
+<p>The number of bytes written so far. Does not include data that is still queued
+for writing.</p>
+<h2 id="class-fsfswatcher">Class: fs.FSWatcher</h2>
+<p>Objects returned from <code>fs.watch()</code> are of this type.</p>
+<h3 id="watcherclose">watcher.close()</h3>
+<p>Stop watching for changes on the given <code>fs.FSWatcher</code>.</p>
+<h3 id="event-change">Event: &#39;change&#39;</h3>
+<ul>
+<li><code>event</code> {String} The type of fs change</li>
+<li><code>filename</code> {String} The filename that changed (if relevant/available)</li>
+</ul>
+<p>Emitted when something changes in a watched directory or file.
+See more details in <a href="#fs_fs_watch_filename_options_listener">fs.watch</a>.</p>
+<h3 id="event-error">Event: &#39;error&#39;</h3>
+<ul>
+<li><code>error</code> {Error object}</li>
+</ul>
+<p>Emitted when an error occurs.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./events.html" class="navigation navigation-prev " aria-label="Previous page: Events"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./globals.html" class="navigation navigation-next " aria-label="Next page: Globals"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

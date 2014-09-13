@@ -1,0 +1,1032 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>ZLIB | Node.js-Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    
+    <link rel="prev" href="./vm.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="36" data-basepath="." data-revision="1410629928884">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="documentation.html">
+            
+                
+                    <a href="./documentation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         About these Docs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="synopsis.html">
+            
+                
+                    <a href="./synopsis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Synopsis
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="assert.html">
+            
+                
+                    <a href="./assert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Assertion Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="buffer.html">
+            
+                
+                    <a href="./buffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Buffer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="addons.html">
+            
+                
+                    <a href="./addons.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         C/C++ Addons
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="child_process.html">
+            
+                
+                    <a href="./child_process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Child Processes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="cluster.html">
+            
+                
+                    <a href="./cluster.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Cluster
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="console.html">
+            
+                
+                    <a href="./console.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="crypto.html">
+            
+                
+                    <a href="./crypto.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Crypto
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="debugger.html">
+            
+                
+                    <a href="./debugger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         Debugger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="dns.html">
+            
+                
+                    <a href="./dns.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         DNS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="domain.html">
+            
+                
+                    <a href="./domain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Domain
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="fs.html">
+            
+                
+                    <a href="./fs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         File System
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="globals.html">
+            
+                
+                    <a href="./globals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         Globals
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="http.html">
+            
+                
+                    <a href="./http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         HTTP
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="https.html">
+            
+                
+                    <a href="./https.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         HTTPS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="modules.html">
+            
+                
+                    <a href="./modules.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         Modules
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="net.html">
+            
+                
+                    <a href="./net.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         Net
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="os.html">
+            
+                
+                    <a href="./os.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         OS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="path.html">
+            
+                
+                    <a href="./path.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         Path
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="22" data-path="process.html">
+            
+                
+                    <a href="./process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>22.</b>
+                        
+                         Process
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="23" data-path="punycode.html">
+            
+                
+                    <a href="./punycode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>23.</b>
+                        
+                         Punycode
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="24" data-path="querystring.html">
+            
+                
+                    <a href="./querystring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>24.</b>
+                        
+                         Query Strings
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="25" data-path="readline.html">
+            
+                
+                    <a href="./readline.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>25.</b>
+                        
+                         Readline
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="26" data-path="repl.html">
+            
+                
+                    <a href="./repl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>26.</b>
+                        
+                         REPL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="27" data-path="stream.html">
+            
+                
+                    <a href="./stream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>27.</b>
+                        
+                         Stream
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="28" data-path="string_decoder.html">
+            
+                
+                    <a href="./string_decoder.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>28.</b>
+                        
+                         String Decoder
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="29" data-path="timers.html">
+            
+                
+                    <a href="./timers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>29.</b>
+                        
+                         Timers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="30" data-path="tls.html">
+            
+                
+                    <a href="./tls.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>30.</b>
+                        
+                         TLS/SSL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="31" data-path="tty.html">
+            
+                
+                    <a href="./tty.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>31.</b>
+                        
+                         TTY
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="32" data-path="dgram.html">
+            
+                
+                    <a href="./dgram.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>32.</b>
+                        
+                         UDP/Datagram
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="33" data-path="url.html">
+            
+                
+                    <a href="./url.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>33.</b>
+                        
+                         URL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="34" data-path="util.html">
+            
+                
+                    <a href="./util.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>34.</b>
+                        
+                         Utilities
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="35" data-path="vm.html">
+            
+                
+                    <a href="./vm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>35.</b>
+                        
+                         VM
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="36" data-path="zlib.html">
+            
+                
+                    <a href="./zlib.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>36.</b>
+                        
+                         ZLIB
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Node.js-Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_37">
+                    
+                        <h1 id="zlib">Zlib</h1>
+<pre><code>Stability: 3 - Stable
+</code></pre><p>You can access this module with:</p>
+<pre><code>var zlib = require(&#39;zlib&#39;);
+</code></pre><p>This provides bindings to Gzip/Gunzip, Deflate/Inflate, and
+DeflateRaw/InflateRaw classes.  Each class takes the same options, and
+is a readable/writable Stream.</p>
+<h2 id="examples">Examples</h2>
+<p>Compressing or decompressing a file can be done by piping an
+fs.ReadStream into a zlib stream, then into an fs.WriteStream.</p>
+<pre><code>var gzip = zlib.createGzip();
+var fs = require(&#39;fs&#39;);
+var inp = fs.createReadStream(&#39;input.txt&#39;);
+var out = fs.createWriteStream(&#39;input.txt.gz&#39;);
+
+inp.pipe(gzip).pipe(out);
+</code></pre><p>Compressing or decompressing data in one step can be done by using
+the convenience methods.</p>
+<pre><code>var input = &#39;.................................&#39;;
+zlib.deflate(input, function(err, buffer) {
+  if (!err) {
+    console.log(buffer.toString(&#39;base64&#39;));
+  }
+});
+
+var buffer = new Buffer(&#39;eJzT0yMAAGTvBe8=&#39;, &#39;base64&#39;);
+zlib.unzip(buffer, function(err, buffer) {
+  if (!err) {
+    console.log(buffer.toString());
+  }
+});
+</code></pre><p>To use this module in an HTTP client or server, use the
+<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3" target="_blank">accept-encoding</a>
+on requests, and the
+<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.11" target="_blank">content-encoding</a>
+header on responses.</p>
+<p><strong>Note: these examples are drastically simplified to show
+the basic concept.</strong>  Zlib encoding can be expensive, and the results
+ought to be cached.  See <a href="#zlib_memory_usage_tuning">Memory Usage Tuning</a>
+below for more information on the speed/memory/compression
+tradeoffs involved in zlib usage.</p>
+<pre><code>// client request example
+var zlib = require(&#39;zlib&#39;);
+var http = require(&#39;http&#39;);
+var fs = require(&#39;fs&#39;);
+var request = http.get({ host: &#39;izs.me&#39;,
+                         path: &#39;/&#39;,
+                         port: 80,
+                         headers: { &#39;accept-encoding&#39;: &#39;gzip,deflate&#39; } });
+request.on(&#39;response&#39;, function(response) {
+  var output = fs.createWriteStream(&#39;izs.me_index.html&#39;);
+
+  switch (response.headers[&#39;content-encoding&#39;]) {
+    // or, just use zlib.createUnzip() to handle both cases
+    case &#39;gzip&#39;:
+      response.pipe(zlib.createGunzip()).pipe(output);
+      break;
+    case &#39;deflate&#39;:
+      response.pipe(zlib.createInflate()).pipe(output);
+      break;
+    default:
+      response.pipe(output);
+      break;
+  }
+});
+
+// server example
+// Running a gzip operation on every request is quite expensive.
+// It would be much more efficient to cache the compressed buffer.
+var zlib = require(&#39;zlib&#39;);
+var http = require(&#39;http&#39;);
+var fs = require(&#39;fs&#39;);
+http.createServer(function(request, response) {
+  var raw = fs.createReadStream(&#39;index.html&#39;);
+  var acceptEncoding = request.headers[&#39;accept-encoding&#39;];
+  if (!acceptEncoding) {
+    acceptEncoding = &#39;&#39;;
+  }
+
+  // Note: this is not a conformant accept-encoding parser.
+  // See http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3
+  if (acceptEncoding.match(/\bdeflate\b/)) {
+    response.writeHead(200, { &#39;content-encoding&#39;: &#39;deflate&#39; });
+    raw.pipe(zlib.createDeflate()).pipe(response);
+  } else if (acceptEncoding.match(/\bgzip\b/)) {
+    response.writeHead(200, { &#39;content-encoding&#39;: &#39;gzip&#39; });
+    raw.pipe(zlib.createGzip()).pipe(response);
+  } else {
+    response.writeHead(200, {});
+    raw.pipe(response);
+  }
+}).listen(1337);
+</code></pre><h2 id="zlibcreategzipoptions">zlib.createGzip([options])</h2>
+<p>Returns a new <a href="#zlib_class_zlib_gzip">Gzip</a> object with an
+<a href="#zlib_options">options</a>.</p>
+<h2 id="zlibcreategunzipoptions">zlib.createGunzip([options])</h2>
+<p>Returns a new <a href="#zlib_class_zlib_gunzip">Gunzip</a> object with an
+<a href="#zlib_options">options</a>.</p>
+<h2 id="zlibcreatedeflateoptions">zlib.createDeflate([options])</h2>
+<p>Returns a new <a href="#zlib_class_zlib_deflate">Deflate</a> object with an
+<a href="#zlib_options">options</a>.</p>
+<h2 id="zlibcreateinflateoptions">zlib.createInflate([options])</h2>
+<p>Returns a new <a href="#zlib_class_zlib_inflate">Inflate</a> object with an
+<a href="#zlib_options">options</a>.</p>
+<h2 id="zlibcreatedeflaterawoptions">zlib.createDeflateRaw([options])</h2>
+<p>Returns a new <a href="#zlib_class_zlib_deflateraw">DeflateRaw</a> object with an
+<a href="#zlib_options">options</a>.</p>
+<h2 id="zlibcreateinflaterawoptions">zlib.createInflateRaw([options])</h2>
+<p>Returns a new <a href="#zlib_class_zlib_inflateraw">InflateRaw</a> object with an
+<a href="#zlib_options">options</a>.</p>
+<h2 id="zlibcreateunzipoptions">zlib.createUnzip([options])</h2>
+<p>Returns a new <a href="#zlib_class_zlib_unzip">Unzip</a> object with an
+<a href="#zlib_options">options</a>.</p>
+<h2 id="class-zlibzlib">Class: zlib.Zlib</h2>
+<p>Not exported by the <code>zlib</code> module. It is documented here because it is the base
+class of the compressor/decompressor classes.</p>
+<h3 id="zlibflushcallback">zlib.flush(callback)</h3>
+<p>Flush pending data. Don&#39;t call this frivolously, premature flushes negatively
+impact the effectiveness of the compression algorithm.</p>
+<h3 id="zlibreset">zlib.reset()</h3>
+<p>Reset the compressor/decompressor to factory defaults. Only applicable to
+the inflate and deflate algorithms.</p>
+<h2 id="class-zlibgzip">Class: zlib.Gzip</h2>
+<p>Compress data using gzip.</p>
+<h2 id="class-zlibgunzip">Class: zlib.Gunzip</h2>
+<p>Decompress a gzip stream.</p>
+<h2 id="class-zlibdeflate">Class: zlib.Deflate</h2>
+<p>Compress data using deflate.</p>
+<h2 id="class-zlibinflate">Class: zlib.Inflate</h2>
+<p>Decompress a deflate stream.</p>
+<h2 id="class-zlibdeflateraw">Class: zlib.DeflateRaw</h2>
+<p>Compress data using deflate, and do not append a zlib header.</p>
+<h2 id="class-zlibinflateraw">Class: zlib.InflateRaw</h2>
+<p>Decompress a raw deflate stream.</p>
+<h2 id="class-zlibunzip">Class: zlib.Unzip</h2>
+<p>Decompress either a Gzip- or Deflate-compressed stream by auto-detecting
+the header.</p>
+<h2 id="convenience-methods">Convenience Methods</h2>
+<!--type=misc-->
+<p>All of these take a string or buffer as the first argument, and call the
+supplied callback with <code>callback(error, result)</code>.  The
+compression/decompression engine is created using the default settings
+in all convenience methods.  To supply different options, use the
+zlib classes directly.</p>
+<h2 id="zlibdeflatebuf-callback">zlib.deflate(buf, callback)</h2>
+<p>Compress a string with Deflate.</p>
+<h2 id="zlibdeflaterawbuf-callback">zlib.deflateRaw(buf, callback)</h2>
+<p>Compress a string with DeflateRaw.</p>
+<h2 id="zlibgzipbuf-callback">zlib.gzip(buf, callback)</h2>
+<p>Compress a string with Gzip.</p>
+<h2 id="zlibgunzipbuf-callback">zlib.gunzip(buf, callback)</h2>
+<p>Decompress a raw Buffer with Gunzip.</p>
+<h2 id="zlibinflatebuf-callback">zlib.inflate(buf, callback)</h2>
+<p>Decompress a raw Buffer with Inflate.</p>
+<h2 id="zlibinflaterawbuf-callback">zlib.inflateRaw(buf, callback)</h2>
+<p>Decompress a raw Buffer with InflateRaw.</p>
+<h2 id="zlibunzipbuf-callback">zlib.unzip(buf, callback)</h2>
+<p>Decompress a raw Buffer with Unzip.</p>
+<h2 id="options">Options</h2>
+<!--type=misc-->
+<p>Each class takes an options object.  All options are optional.  (The
+convenience methods use the default settings for all options.)</p>
+<p>Note that some options are only relevant when compressing, and are
+ignored by the decompression classes.</p>
+<ul>
+<li>flush (default: <code>zlib.Z_NO_FLUSH</code>)</li>
+<li>chunkSize (default: 16*1024)</li>
+<li>windowBits</li>
+<li>level (compression only)</li>
+<li>memLevel (compression only)</li>
+<li>strategy (compression only)</li>
+<li>dictionary (deflate/inflate only, empty dictionary by default)</li>
+</ul>
+<p>See the description of <code>deflateInit2</code> and <code>inflateInit2</code> at
+<a href="http://zlib.net/manual.html#Advanced" target="_blank">http://zlib.net/manual.html#Advanced</a> for more information on these.</p>
+<h2 id="memory-usage-tuning">Memory Usage Tuning</h2>
+<!--type=misc-->
+<p>From <code>zlib/zconf.h</code>, modified to node&#39;s usage:</p>
+<p>The memory requirements for deflate are (in bytes):</p>
+<pre><code>(1 &lt;&lt; (windowBits+2)) +  (1 &lt;&lt; (memLevel+9))
+</code></pre><p>that is: 128K for windowBits=15  +  128K for memLevel = 8
+(default values) plus a few kilobytes for small objects.</p>
+<p>For example, if you want to reduce
+the default memory requirements from 256K to 128K, set the options to:</p>
+<pre><code>{ windowBits: 14, memLevel: 7 }
+</code></pre><p>Of course this will generally degrade compression (there&#39;s no free lunch).</p>
+<p>The memory requirements for inflate are (in bytes)</p>
+<pre><code>1 &lt;&lt; windowBits
+</code></pre><p>that is, 32K for windowBits=15 (default value) plus a few kilobytes
+for small objects.</p>
+<p>This is in addition to a single internal output slab buffer of size
+<code>chunkSize</code>, which defaults to 16K.</p>
+<p>The speed of zlib compression is affected most dramatically by the
+<code>level</code> setting.  A higher level will result in better compression, but
+will take longer to complete.  A lower level will result in less
+compression, but will be much faster.</p>
+<p>In general, greater memory usage options will mean that node has to make
+fewer calls to zlib, since it&#39;ll be able to process more data in a
+single <code>write</code> operation.  So, this is another factor that affects the
+speed, at the cost of memory usage.</p>
+<h2 id="constants">Constants</h2>
+<!--type=misc-->
+<p>All of the constants defined in zlib.h are also defined on
+<code>require(&#39;zlib&#39;)</code>.
+In the normal course of operations, you will not need to ever set any of
+these.  They are documented here so that their presence is not
+surprising.  This section is taken almost directly from the <a href="http://zlib.net/manual.html#Constants" target="_blank">zlib
+documentation</a>.  See
+<a href="http://zlib.net/manual.html#Constants" target="_blank">http://zlib.net/manual.html#Constants</a> for more details.</p>
+<p>Allowed flush values.</p>
+<ul>
+<li><code>zlib.Z_NO_FLUSH</code></li>
+<li><code>zlib.Z_PARTIAL_FLUSH</code></li>
+<li><code>zlib.Z_SYNC_FLUSH</code></li>
+<li><code>zlib.Z_FULL_FLUSH</code></li>
+<li><code>zlib.Z_FINISH</code></li>
+<li><code>zlib.Z_BLOCK</code></li>
+<li><code>zlib.Z_TREES</code></li>
+</ul>
+<p>Return codes for the compression/decompression functions. Negative
+values are errors, positive values are used for special but normal
+events.</p>
+<ul>
+<li><code>zlib.Z_OK</code></li>
+<li><code>zlib.Z_STREAM_END</code></li>
+<li><code>zlib.Z_NEED_DICT</code></li>
+<li><code>zlib.Z_ERRNO</code></li>
+<li><code>zlib.Z_STREAM_ERROR</code></li>
+<li><code>zlib.Z_DATA_ERROR</code></li>
+<li><code>zlib.Z_MEM_ERROR</code></li>
+<li><code>zlib.Z_BUF_ERROR</code></li>
+<li><code>zlib.Z_VERSION_ERROR</code></li>
+</ul>
+<p>Compression levels.</p>
+<ul>
+<li><code>zlib.Z_NO_COMPRESSION</code></li>
+<li><code>zlib.Z_BEST_SPEED</code></li>
+<li><code>zlib.Z_BEST_COMPRESSION</code></li>
+<li><code>zlib.Z_DEFAULT_COMPRESSION</code></li>
+</ul>
+<p>Compression strategy.</p>
+<ul>
+<li><code>zlib.Z_FILTERED</code></li>
+<li><code>zlib.Z_HUFFMAN_ONLY</code></li>
+<li><code>zlib.Z_RLE</code></li>
+<li><code>zlib.Z_FIXED</code></li>
+<li><code>zlib.Z_DEFAULT_STRATEGY</code></li>
+</ul>
+<p>Possible values of the data_type field.</p>
+<ul>
+<li><code>zlib.Z_BINARY</code></li>
+<li><code>zlib.Z_TEXT</code></li>
+<li><code>zlib.Z_ASCII</code></li>
+<li><code>zlib.Z_UNKNOWN</code></li>
+</ul>
+<p>The deflate compression method (the only one supported in this version).</p>
+<ul>
+<li><code>zlib.Z_DEFLATED</code></li>
+</ul>
+<p>For initializing zalloc, zfree, opaque.</p>
+<ul>
+<li><code>zlib.Z_NULL</code></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./vm.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: VM"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

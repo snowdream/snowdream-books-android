@@ -1,0 +1,941 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>VM | Node.js-Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./zlib.html" />
+    
+    
+    <link rel="prev" href="./util.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="35" data-basepath="." data-revision="1410629928884">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="documentation.html">
+            
+                
+                    <a href="./documentation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         About these Docs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="synopsis.html">
+            
+                
+                    <a href="./synopsis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Synopsis
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="assert.html">
+            
+                
+                    <a href="./assert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Assertion Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="buffer.html">
+            
+                
+                    <a href="./buffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Buffer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="addons.html">
+            
+                
+                    <a href="./addons.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         C/C++ Addons
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="child_process.html">
+            
+                
+                    <a href="./child_process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Child Processes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="cluster.html">
+            
+                
+                    <a href="./cluster.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Cluster
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="console.html">
+            
+                
+                    <a href="./console.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="crypto.html">
+            
+                
+                    <a href="./crypto.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Crypto
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="debugger.html">
+            
+                
+                    <a href="./debugger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         Debugger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="dns.html">
+            
+                
+                    <a href="./dns.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         DNS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="domain.html">
+            
+                
+                    <a href="./domain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Domain
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="fs.html">
+            
+                
+                    <a href="./fs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         File System
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="globals.html">
+            
+                
+                    <a href="./globals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         Globals
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="http.html">
+            
+                
+                    <a href="./http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         HTTP
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="https.html">
+            
+                
+                    <a href="./https.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         HTTPS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="modules.html">
+            
+                
+                    <a href="./modules.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         Modules
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="net.html">
+            
+                
+                    <a href="./net.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         Net
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="os.html">
+            
+                
+                    <a href="./os.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         OS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="path.html">
+            
+                
+                    <a href="./path.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         Path
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="22" data-path="process.html">
+            
+                
+                    <a href="./process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>22.</b>
+                        
+                         Process
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="23" data-path="punycode.html">
+            
+                
+                    <a href="./punycode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>23.</b>
+                        
+                         Punycode
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="24" data-path="querystring.html">
+            
+                
+                    <a href="./querystring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>24.</b>
+                        
+                         Query Strings
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="25" data-path="readline.html">
+            
+                
+                    <a href="./readline.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>25.</b>
+                        
+                         Readline
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="26" data-path="repl.html">
+            
+                
+                    <a href="./repl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>26.</b>
+                        
+                         REPL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="27" data-path="stream.html">
+            
+                
+                    <a href="./stream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>27.</b>
+                        
+                         Stream
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="28" data-path="string_decoder.html">
+            
+                
+                    <a href="./string_decoder.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>28.</b>
+                        
+                         String Decoder
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="29" data-path="timers.html">
+            
+                
+                    <a href="./timers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>29.</b>
+                        
+                         Timers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="30" data-path="tls.html">
+            
+                
+                    <a href="./tls.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>30.</b>
+                        
+                         TLS/SSL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="31" data-path="tty.html">
+            
+                
+                    <a href="./tty.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>31.</b>
+                        
+                         TTY
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="32" data-path="dgram.html">
+            
+                
+                    <a href="./dgram.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>32.</b>
+                        
+                         UDP/Datagram
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="33" data-path="url.html">
+            
+                
+                    <a href="./url.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>33.</b>
+                        
+                         URL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="34" data-path="util.html">
+            
+                
+                    <a href="./util.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>34.</b>
+                        
+                         Utilities
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="35" data-path="vm.html">
+            
+                
+                    <a href="./vm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>35.</b>
+                        
+                         VM
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="36" data-path="zlib.html">
+            
+                
+                    <a href="./zlib.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>36.</b>
+                        
+                         ZLIB
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Node.js-Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_36">
+                    
+                        <h1 id="executing-javascript">Executing JavaScript</h1>
+<pre><code>Stability: 2 - Unstable. See Caveats, below.
+</code></pre><!--name=vm-->
+<p>You can access this module with:</p>
+<pre><code>var vm = require(&#39;vm&#39;);
+</code></pre><p>JavaScript code can be compiled and run immediately or compiled, saved, and run later.</p>
+<h2 id="caveats">Caveats</h2>
+<p>The <code>vm</code> module has many known issues and edge cases. If you run into
+issues or unexpected behavior, please consult <a href="https://github.com/joyent/node/issues?labels=vm&amp;state=open" target="_blank">the open issues on
+GitHub</a>.
+Some of the biggest problems are described below.</p>
+<h3 id="sandboxes">Sandboxes</h3>
+<p>The <code>sandbox</code> argument to <code>vm.runInNewContext</code> and <code>vm.createContext</code>,
+along with the <code>initSandbox</code> argument to <code>vm.createContext</code>, do not
+behave as one might normally expect and their behavior varies
+between different versions of Node.</p>
+<p>The key issue to be aware of is that V8 provides no way to directly
+control the global object used within a context. As a result, while
+properties of your <code>sandbox</code> object will be available in the context,
+any properties from the <code>prototype</code>s of the <code>sandbox</code> may not be
+available. Furthermore, the <code>this</code> expression within the global scope
+of the context evaluates to the empty object (<code>{}</code>) instead of to
+your sandbox.</p>
+<p>Your sandbox&#39;s properties are also not shared directly with the script.
+Instead, the properties of the sandbox are copied into the context at
+the beginning of execution, and then after execution, the properties
+are copied back out in an attempt to propagate any changes.</p>
+<h3 id="globals">Globals</h3>
+<p>Properties of the global object, like <code>Array</code> and <code>String</code>, have
+different values inside of a context. This means that common
+expressions like <code>[] instanceof Array</code> or
+<code>Object.getPrototypeOf([]) === Array.prototype</code> may not produce
+expected results when used inside of scripts evaluated via the <code>vm</code> module.</p>
+<p>Some of these problems have known workarounds listed in the issues for
+<code>vm</code> on GitHub. for example, <code>Array.isArray</code> works around
+the example problem with <code>Array</code>.</p>
+<h2 id="vmruninthiscontextcode-filename">vm.runInThisContext(code, [filename])</h2>
+<p><code>vm.runInThisContext()</code> compiles <code>code</code>, runs it and returns the result. Running
+code does not have access to local scope. <code>filename</code> is optional, it&#39;s used only
+in stack traces.</p>
+<p>Example of using <code>vm.runInThisContext</code> and <code>eval</code> to run the same code:</p>
+<pre><code>var localVar = 123,
+    usingscript, evaled,
+    vm = require(&#39;vm&#39;);
+
+usingscript = vm.runInThisContext(&#39;localVar = 1;&#39;,
+  &#39;myfile.vm&#39;);
+console.log(&#39;localVar: &#39; + localVar + &#39;, usingscript: &#39; +
+  usingscript);
+evaled = eval(&#39;localVar = 1;&#39;);
+console.log(&#39;localVar: &#39; + localVar + &#39;, evaled: &#39; +
+  evaled);
+
+// localVar: 123, usingscript: 1
+// localVar: 1, evaled: 1
+</code></pre><p><code>vm.runInThisContext</code> does not have access to the local scope, so <code>localVar</code> is unchanged.
+<code>eval</code> does have access to the local scope, so <code>localVar</code> is changed.</p>
+<p>In case of syntax error in <code>code</code>, <code>vm.runInThisContext</code> emits the syntax error to stderr
+and throws an exception.</p>
+<h2 id="vmruninnewcontextcode-sandbox-filename">vm.runInNewContext(code, [sandbox], [filename])</h2>
+<p><code>vm.runInNewContext</code> compiles <code>code</code>, then runs it in <code>sandbox</code> and returns the
+result. Running code does not have access to local scope. The object <code>sandbox</code>
+will be used as the global object for <code>code</code>.
+<code>sandbox</code> and <code>filename</code> are optional, <code>filename</code> is only used in stack traces.</p>
+<p>Example: compile and execute code that increments a global variable and sets a new one.
+These globals are contained in the sandbox.</p>
+<pre><code>var util = require(&#39;util&#39;),
+    vm = require(&#39;vm&#39;),
+    sandbox = {
+      animal: &#39;cat&#39;,
+      count: 2
+    };
+
+vm.runInNewContext(&#39;count += 1; name = &quot;kitty&quot;&#39;, sandbox, &#39;myfile.vm&#39;);
+console.log(util.inspect(sandbox));
+
+// { animal: &#39;cat&#39;, count: 3, name: &#39;kitty&#39; }
+</code></pre><p>Note that running untrusted code is a tricky business requiring great care.  To prevent accidental
+global variable leakage, <code>vm.runInNewContext</code> is quite useful, but safely running untrusted code
+requires a separate process.</p>
+<p>In case of syntax error in <code>code</code>, <code>vm.runInNewContext</code> emits the syntax error to stderr
+and throws an exception.</p>
+<h2 id="vmrunincontextcode-context-filename">vm.runInContext(code, context, [filename])</h2>
+<p><code>vm.runInContext</code> compiles <code>code</code>, then runs it in <code>context</code> and returns the
+result. A (V8) context comprises a global object, together with a set of
+built-in objects and functions. Running code does not have access to local scope
+and the global object held within <code>context</code> will be used as the global object
+for <code>code</code>.
+<code>filename</code> is optional, it&#39;s used only in stack traces.</p>
+<p>Example: compile and execute code in a existing context.</p>
+<pre><code>var util = require(&#39;util&#39;),
+    vm = require(&#39;vm&#39;),
+    initSandbox = {
+      animal: &#39;cat&#39;,
+      count: 2
+    },
+    context = vm.createContext(initSandbox);
+
+vm.runInContext(&#39;count += 1; name = &quot;CATT&quot;&#39;, context, &#39;myfile.vm&#39;);
+console.log(util.inspect(context));
+
+// { animal: &#39;cat&#39;, count: 3, name: &#39;CATT&#39; }
+</code></pre><p>Note that <code>createContext</code> will perform a shallow clone of the supplied sandbox object in order to
+initialize the global object of the freshly constructed context.</p>
+<p>Note that running untrusted code is a tricky business requiring great care.  To prevent accidental
+global variable leakage, <code>vm.runInContext</code> is quite useful, but safely running untrusted code
+requires a separate process.</p>
+<p>In case of syntax error in <code>code</code>, <code>vm.runInContext</code> emits the syntax error to stderr
+and throws an exception.</p>
+<h2 id="vmcreatecontextinitsandbox">vm.createContext([initSandbox])</h2>
+<p><code>vm.createContext</code> creates a new context which is suitable for use as the 2nd argument of a subsequent
+call to <code>vm.runInContext</code>. A (V8) context comprises a global object together with a set of
+build-in objects and functions. The optional argument <code>initSandbox</code> will be shallow-copied
+to seed the initial contents of the global object used by the context.</p>
+<h2 id="vmcreatescriptcode-filename">vm.createScript(code, [filename])</h2>
+<p><code>createScript</code> compiles <code>code</code> but does not run it. Instead, it returns a
+<code>vm.Script</code> object representing this compiled code. This script can be run
+later many times using methods below. The returned script is not bound to any
+global object. It is bound before each run, just for that run. <code>filename</code> is
+optional, it&#39;s only used in stack traces.</p>
+<p>In case of syntax error in <code>code</code>, <code>createScript</code> prints the syntax error to stderr
+and throws an exception.</p>
+<h2 id="class-script">Class: Script</h2>
+<p>A class for running scripts.  Returned by vm.createScript.</p>
+<h3 id="scriptruninthiscontext">script.runInThisContext()</h3>
+<p>Similar to <code>vm.runInThisContext</code> but a method of a precompiled <code>Script</code> object.
+<code>script.runInThisContext</code> runs the code of <code>script</code> and returns the result.
+Running code does not have access to local scope, but does have access to the <code>global</code> object
+(v8: in actual context).</p>
+<p>Example of using <code>script.runInThisContext</code> to compile code once and run it multiple times:</p>
+<pre><code>var vm = require(&#39;vm&#39;);
+
+globalVar = 0;
+
+var script = vm.createScript(&#39;globalVar += 1&#39;, &#39;myfile.vm&#39;);
+
+for (var i = 0; i &lt; 1000 ; i += 1) {
+  script.runInThisContext();
+}
+
+console.log(globalVar);
+
+// 1000
+</code></pre><h3 id="scriptruninnewcontextsandbox">script.runInNewContext([sandbox])</h3>
+<p>Similar to <code>vm.runInNewContext</code> a method of a precompiled <code>Script</code> object.
+<code>script.runInNewContext</code> runs the code of <code>script</code> with <code>sandbox</code> as the global object and returns the result.
+Running code does not have access to local scope. <code>sandbox</code> is optional.</p>
+<p>Example: compile code that increments a global variable and sets one, then execute this code multiple times.
+These globals are contained in the sandbox.</p>
+<pre><code>var util = require(&#39;util&#39;),
+    vm = require(&#39;vm&#39;),
+    sandbox = {
+      animal: &#39;cat&#39;,
+      count: 2
+    };
+
+var script = vm.createScript(&#39;count += 1; name = &quot;kitty&quot;&#39;, &#39;myfile.vm&#39;);
+
+for (var i = 0; i &lt; 10 ; i += 1) {
+  script.runInNewContext(sandbox);
+}
+
+console.log(util.inspect(sandbox));
+
+// { animal: &#39;cat&#39;, count: 12, name: &#39;kitty&#39; }
+</code></pre><p>Note that running untrusted code is a tricky business requiring great care.  To prevent accidental
+global variable leakage, <code>script.runInNewContext</code> is quite useful, but safely running untrusted code
+requires a separate process.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./util.html" class="navigation navigation-prev " aria-label="Previous page: Utilities"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./zlib.html" class="navigation navigation-next " aria-label="Next page: ZLIB"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

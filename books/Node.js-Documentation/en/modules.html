@@ -1,0 +1,1161 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Modules | Node.js-Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./net.html" />
+    
+    
+    <link rel="prev" href="./https.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="18" data-basepath="." data-revision="1410629928884">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="documentation.html">
+            
+                
+                    <a href="./documentation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         About these Docs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="synopsis.html">
+            
+                
+                    <a href="./synopsis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Synopsis
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="assert.html">
+            
+                
+                    <a href="./assert.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Assertion Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="buffer.html">
+            
+                
+                    <a href="./buffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Buffer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="addons.html">
+            
+                
+                    <a href="./addons.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         C/C++ Addons
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="child_process.html">
+            
+                
+                    <a href="./child_process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Child Processes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="cluster.html">
+            
+                
+                    <a href="./cluster.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Cluster
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="console.html">
+            
+                
+                    <a href="./console.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="crypto.html">
+            
+                
+                    <a href="./crypto.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Crypto
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="debugger.html">
+            
+                
+                    <a href="./debugger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         Debugger
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="dns.html">
+            
+                
+                    <a href="./dns.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         DNS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="domain.html">
+            
+                
+                    <a href="./domain.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Domain
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="fs.html">
+            
+                
+                    <a href="./fs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         File System
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="globals.html">
+            
+                
+                    <a href="./globals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         Globals
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="http.html">
+            
+                
+                    <a href="./http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         HTTP
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="https.html">
+            
+                
+                    <a href="./https.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         HTTPS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="18" data-path="modules.html">
+            
+                
+                    <a href="./modules.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         Modules
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="net.html">
+            
+                
+                    <a href="./net.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         Net
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="os.html">
+            
+                
+                    <a href="./os.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         OS
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="path.html">
+            
+                
+                    <a href="./path.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         Path
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="22" data-path="process.html">
+            
+                
+                    <a href="./process.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>22.</b>
+                        
+                         Process
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="23" data-path="punycode.html">
+            
+                
+                    <a href="./punycode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>23.</b>
+                        
+                         Punycode
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="24" data-path="querystring.html">
+            
+                
+                    <a href="./querystring.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>24.</b>
+                        
+                         Query Strings
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="25" data-path="readline.html">
+            
+                
+                    <a href="./readline.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>25.</b>
+                        
+                         Readline
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="26" data-path="repl.html">
+            
+                
+                    <a href="./repl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>26.</b>
+                        
+                         REPL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="27" data-path="stream.html">
+            
+                
+                    <a href="./stream.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>27.</b>
+                        
+                         Stream
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="28" data-path="string_decoder.html">
+            
+                
+                    <a href="./string_decoder.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>28.</b>
+                        
+                         String Decoder
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="29" data-path="timers.html">
+            
+                
+                    <a href="./timers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>29.</b>
+                        
+                         Timers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="30" data-path="tls.html">
+            
+                
+                    <a href="./tls.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>30.</b>
+                        
+                         TLS/SSL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="31" data-path="tty.html">
+            
+                
+                    <a href="./tty.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>31.</b>
+                        
+                         TTY
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="32" data-path="dgram.html">
+            
+                
+                    <a href="./dgram.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>32.</b>
+                        
+                         UDP/Datagram
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="33" data-path="url.html">
+            
+                
+                    <a href="./url.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>33.</b>
+                        
+                         URL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="34" data-path="util.html">
+            
+                
+                    <a href="./util.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>34.</b>
+                        
+                         Utilities
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="35" data-path="vm.html">
+            
+                
+                    <a href="./vm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>35.</b>
+                        
+                         VM
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="36" data-path="zlib.html">
+            
+                
+                    <a href="./zlib.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>36.</b>
+                        
+                         ZLIB
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Node.js-Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_19">
+                    
+                        <h1 id="modules">Modules</h1>
+<pre><code>Stability: 5 - Locked
+</code></pre><!--name=module-->
+<p>Node has a simple module loading system.  In Node, files and modules are in
+one-to-one correspondence.  As an example, <code>foo.js</code> loads the module
+<code>circle.js</code> in the same directory.</p>
+<p>The contents of <code>foo.js</code>:</p>
+<pre><code>var circle = require(&#39;./circle.js&#39;);
+console.log( &#39;The area of a circle of radius 4 is &#39;
+           + circle.area(4));
+</code></pre><p>The contents of <code>circle.js</code>:</p>
+<pre><code>var PI = Math.PI;
+
+exports.area = function (r) {
+  return PI * r * r;
+};
+
+exports.circumference = function (r) {
+  return 2 * PI * r;
+};
+</code></pre><p>The module <code>circle.js</code> has exported the functions <code>area()</code> and
+<code>circumference()</code>.  To add functions and objects to the root of your module,
+you can add them to the special <code>exports</code> object.</p>
+<p>Variables local to the module will be private, as though the module was wrapped
+in a function. In this example the variable <code>PI</code> is private to <code>circle.js</code>.</p>
+<p>If you want the root of your module&#39;s export to be a function (such as a
+constructor) or if you want to export a complete object in one assignment
+instead of building it one property at a time, assign it to <code>module.exports</code>
+instead of <code>exports</code>.</p>
+<p>Below, <code>bar.js</code> makes use of the <code>square</code> module, which exports a constructor:</p>
+<pre><code>var square = require(&#39;./square.js&#39;);
+var mySquare = square(2);
+console.log(&#39;The area of my square is &#39; + mySquare.area());
+</code></pre><p>The <code>square</code> module is defined in <code>square.js</code>:</p>
+<pre><code>// assigning to exports will not modify module, must use module.exports
+module.exports = function(width) {
+  return {
+    area: function() {
+      return width * width;
+    }
+  };
+}
+</code></pre><p>The module system is implemented in the <code>require(&quot;module&quot;)</code> module.</p>
+<h2 id="cycles">Cycles</h2>
+<!--type=misc-->
+<p>When there are circular <code>require()</code> calls, a module might not be
+done being executed when it is returned.</p>
+<p>Consider this situation:</p>
+<p><code>a.js</code>:</p>
+<pre><code>console.log(&#39;a starting&#39;);
+exports.done = false;
+var b = require(&#39;./b.js&#39;);
+console.log(&#39;in a, b.done = %j&#39;, b.done);
+exports.done = true;
+console.log(&#39;a done&#39;);
+</code></pre><p><code>b.js</code>:</p>
+<pre><code>console.log(&#39;b starting&#39;);
+exports.done = false;
+var a = require(&#39;./a.js&#39;);
+console.log(&#39;in b, a.done = %j&#39;, a.done);
+exports.done = true;
+console.log(&#39;b done&#39;);
+</code></pre><p><code>main.js</code>:</p>
+<pre><code>console.log(&#39;main starting&#39;);
+var a = require(&#39;./a.js&#39;);
+var b = require(&#39;./b.js&#39;);
+console.log(&#39;in main, a.done=%j, b.done=%j&#39;, a.done, b.done);
+</code></pre><p>When <code>main.js</code> loads <code>a.js</code>, then <code>a.js</code> in turn loads <code>b.js</code>.  At that
+point, <code>b.js</code> tries to load <code>a.js</code>.  In order to prevent an infinite
+loop an <strong>unfinished copy</strong> of the <code>a.js</code> exports object is returned to the
+<code>b.js</code> module.  <code>b.js</code> then finishes loading, and its <code>exports</code> object is
+provided to the <code>a.js</code> module.</p>
+<p>By the time <code>main.js</code> has loaded both modules, they&#39;re both finished.
+The output of this program would thus be:</p>
+<pre><code>$ node main.js
+main starting
+a starting
+b starting
+in b, a.done = false
+b done
+in a, b.done = true
+a done
+in main, a.done=true, b.done=true
+</code></pre><p>If you have cyclic module dependencies in your program, make sure to
+plan accordingly.</p>
+<h2 id="core-modules">Core Modules</h2>
+<!--type=misc-->
+<p>Node has several modules compiled into the binary.  These modules are
+described in greater detail elsewhere in this documentation.</p>
+<p>The core modules are defined in node&#39;s source in the <code>lib/</code> folder.</p>
+<p>Core modules are always preferentially loaded if their identifier is
+passed to <code>require()</code>.  For instance, <code>require(&#39;http&#39;)</code> will always
+return the built in HTTP module, even if there is a file by that name.</p>
+<h2 id="file-modules">File Modules</h2>
+<!--type=misc-->
+<p>If the exact filename is not found, then node will attempt to load the
+required filename with the added extension of <code>.js</code>, <code>.json</code>, and then <code>.node</code>.</p>
+<p><code>.js</code> files are interpreted as JavaScript text files, and <code>.json</code> files are
+parsed as JSON text files. <code>.node</code> files are interpreted as compiled addon
+modules loaded with <code>dlopen</code>.</p>
+<p>A module prefixed with <code>&#39;/&#39;</code> is an absolute path to the file.  For
+example, <code>require(&#39;/home/marco/foo.js&#39;)</code> will load the file at
+<code>/home/marco/foo.js</code>.</p>
+<p>A module prefixed with <code>&#39;./&#39;</code> is relative to the file calling <code>require()</code>.
+That is, <code>circle.js</code> must be in the same directory as <code>foo.js</code> for
+<code>require(&#39;./circle&#39;)</code> to find it.</p>
+<p>Without a leading &#39;/&#39; or &#39;./&#39; to indicate a file, the module is either a
+&quot;core module&quot; or is loaded from a <code>node_modules</code> folder.</p>
+<p>If the given path does not exist, <code>require()</code> will throw an Error with its
+<code>code</code> property set to <code>&#39;MODULE_NOT_FOUND&#39;</code>.</p>
+<h2 id="loading-from-node_modules-folders">Loading from <code>node_modules</code> Folders</h2>
+<!--type=misc-->
+<p>If the module identifier passed to <code>require()</code> is not a native module,
+and does not begin with <code>&#39;/&#39;</code>, <code>&#39;../&#39;</code>, or <code>&#39;./&#39;</code>, then node starts at the
+parent directory of the current module, and adds <code>/node_modules</code>, and
+attempts to load the module from that location.</p>
+<p>If it is not found there, then it moves to the parent directory, and so
+on, until the root of the tree is reached.</p>
+<p>For example, if the file at <code>&#39;/home/ry/projects/foo.js&#39;</code> called
+<code>require(&#39;bar.js&#39;)</code>, then node would look in the following locations, in
+this order:</p>
+<ul>
+<li><code>/home/ry/projects/node_modules/bar.js</code></li>
+<li><code>/home/ry/node_modules/bar.js</code></li>
+<li><code>/home/node_modules/bar.js</code></li>
+<li><code>/node_modules/bar.js</code></li>
+</ul>
+<p>This allows programs to localize their dependencies, so that they do not
+clash.</p>
+<h2 id="folders-as-modules">Folders as Modules</h2>
+<!--type=misc-->
+<p>It is convenient to organize programs and libraries into self-contained
+directories, and then provide a single entry point to that library.
+There are three ways in which a folder may be passed to <code>require()</code> as
+an argument.</p>
+<p>The first is to create a <code>package.json</code> file in the root of the folder,
+which specifies a <code>main</code> module.  An example package.json file might
+look like this:</p>
+<pre><code>{ &quot;name&quot; : &quot;some-library&quot;,
+  &quot;main&quot; : &quot;./lib/some-library.js&quot; }
+</code></pre><p>If this was in a folder at <code>./some-library</code>, then
+<code>require(&#39;./some-library&#39;)</code> would attempt to load
+<code>./some-library/lib/some-library.js</code>.</p>
+<p>This is the extent of Node&#39;s awareness of package.json files.</p>
+<p>If there is no package.json file present in the directory, then node
+will attempt to load an <code>index.js</code> or <code>index.node</code> file out of that
+directory.  For example, if there was no package.json file in the above
+example, then <code>require(&#39;./some-library&#39;)</code> would attempt to load:</p>
+<ul>
+<li><code>./some-library/index.js</code></li>
+<li><code>./some-library/index.node</code></li>
+</ul>
+<h2 id="caching">Caching</h2>
+<!--type=misc-->
+<p>Modules are cached after the first time they are loaded.  This means
+(among other things) that every call to <code>require(&#39;foo&#39;)</code> will get
+exactly the same object returned, if it would resolve to the same file.</p>
+<p>Multiple calls to <code>require(&#39;foo&#39;)</code> may not cause the module code to be
+executed multiple times.  This is an important feature.  With it,
+&quot;partially done&quot; objects can be returned, thus allowing transitive
+dependencies to be loaded even when they would cause cycles.</p>
+<p>If you want to have a module execute code multiple times, then export a
+function, and call that function.</p>
+<h3 id="module-caching-caveats">Module Caching Caveats</h3>
+<!--type=misc-->
+<p>Modules are cached based on their resolved filename.  Since modules may
+resolve to a different filename based on the location of the calling
+module (loading from <code>node_modules</code> folders), it is not a <em>guarantee</em>
+that <code>require(&#39;foo&#39;)</code> will always return the exact same object, if it
+would resolve to different files.</p>
+<h2 id="the-module-object">The <code>module</code> Object</h2>
+<!-- type=var -->
+<!-- name=module -->
+<ul>
+<li>{Object}</li>
+</ul>
+<p>In each module, the <code>module</code> free variable is a reference to the object
+representing the current module.  For convenience, <code>module.exports</code> is
+also accessible via the <code>exports</code> module-global. <code>module</code> isn&#39;t actually
+a global but rather local to each module.</p>
+<h3 id="moduleexports">module.exports</h3>
+<ul>
+<li>{Object}</li>
+</ul>
+<p>The <code>module.exports</code> object is created by the Module system. Sometimes this is not
+acceptable; many want their module to be an instance of some class. To do this
+assign the desired export object to <code>module.exports</code>. Note that assigning the
+desired object to <code>exports</code> will simply rebind the local <code>exports</code> variable,
+which is probably not what you want to do.</p>
+<p>For example suppose we were making a module called <code>a.js</code></p>
+<pre><code>var EventEmitter = require(&#39;events&#39;).EventEmitter;
+
+module.exports = new EventEmitter();
+
+// Do some work, and after some time emit
+// the &#39;ready&#39; event from the module itself.
+setTimeout(function() {
+  module.exports.emit(&#39;ready&#39;);
+}, 1000);
+</code></pre><p>Then in another file we could do</p>
+<pre><code>var a = require(&#39;./a&#39;);
+a.on(&#39;ready&#39;, function() {
+  console.log(&#39;module a is ready&#39;);
+});
+</code></pre><p>Note that assignment to <code>module.exports</code> must be done immediately. It cannot be
+done in any callbacks.  This does not work:</p>
+<p>x.js:</p>
+<pre><code>setTimeout(function() {
+  module.exports = { a: &quot;hello&quot; };
+}, 0);
+</code></pre><p>y.js:</p>
+<pre><code>var x = require(&#39;./x&#39;);
+console.log(x.a);
+</code></pre><h4 id="exports-alias">exports alias</h4>
+<p>The <code>exports</code> variable that is available within a module starts as a reference
+to <code>module.exports</code>. As with any variable, if you assign a new value to it, it
+is no longer bound to the previous value.</p>
+<p>To illustrate the behaviour, imagine this hypothetical implementation of
+<code>require()</code>:</p>
+<pre><code>function require(...) {
+  // ...
+  function (module, exports) {
+    // Your module code here
+    exports = some_func;        // re-assigns exports, exports is no longer
+                                // a shortcut, and nothing is exported.
+    module.exports = some_func; // makes your module export 0
+  } (module, module.exports);
+  return module;
+}
+</code></pre><p>As a guideline, if the relationship between <code>exports</code> and <code>module.exports</code>
+seems like magic to you, ignore <code>exports</code> and only use <code>module.exports</code>.</p>
+<h3 id="modulerequireid">module.require(id)</h3>
+<ul>
+<li><code>id</code> {String}</li>
+<li>Return: {Object} <code>module.exports</code> from the resolved module</li>
+</ul>
+<p>The <code>module.require</code> method provides a way to load a module as if
+<code>require()</code> was called from the original module.</p>
+<p>Note that in order to do this, you must get a reference to the <code>module</code>
+object.  Since <code>require()</code> returns the <code>module.exports</code>, and the <code>module</code> is
+typically <em>only</em> available within a specific module&#39;s code, it must be
+explicitly exported in order to be used.</p>
+<h3 id="moduleid">module.id</h3>
+<ul>
+<li>{String}</li>
+</ul>
+<p>The identifier for the module.  Typically this is the fully resolved
+filename.</p>
+<h3 id="modulefilename">module.filename</h3>
+<ul>
+<li>{String}</li>
+</ul>
+<p>The fully resolved filename to the module.</p>
+<h3 id="moduleloaded">module.loaded</h3>
+<ul>
+<li>{Boolean}</li>
+</ul>
+<p>Whether or not the module is done loading, or is in the process of
+loading.</p>
+<h3 id="moduleparent">module.parent</h3>
+<ul>
+<li>{Module Object}</li>
+</ul>
+<p>The module that required this one.</p>
+<h3 id="modulechildren">module.children</h3>
+<ul>
+<li>{Array}</li>
+</ul>
+<p>The module objects required by this one.</p>
+<h2 id="all-together">All Together...</h2>
+<!-- type=misc -->
+<p>To get the exact filename that will be loaded when <code>require()</code> is called, use
+the <code>require.resolve()</code> function.</p>
+<p>Putting together all of the above, here is the high-level algorithm
+in pseudocode of what require.resolve does:</p>
+<pre><code>require(X) from module at path Y
+1. If X is a core module,
+   a. return the core module
+   b. STOP
+2. If X begins with &#39;./&#39; or &#39;/&#39; or &#39;../&#39;
+   a. LOAD_AS_FILE(Y + X)
+   b. LOAD_AS_DIRECTORY(Y + X)
+3. LOAD_NODE_MODULES(X, dirname(Y))
+4. THROW &quot;not found&quot;
+
+LOAD_AS_FILE(X)
+1. If X is a file, load X as JavaScript text.  STOP
+2. If X.js is a file, load X.js as JavaScript text.  STOP
+3. If X.json is a file, parse X.json to a JavaScript Object.  STOP
+4. If X.node is a file, load X.node as binary addon.  STOP
+
+LOAD_AS_DIRECTORY(X)
+1. If X/package.json is a file,
+   a. Parse X/package.json, and look for &quot;main&quot; field.
+   b. let M = X + (json main field)
+   c. LOAD_AS_FILE(M)
+2. If X/index.js is a file, load X/index.js as JavaScript text.  STOP
+3. If X/index.node is a file, load X/index.node as binary addon.  STOP
+
+LOAD_NODE_MODULES(X, START)
+1. let DIRS=NODE_MODULES_PATHS(START)
+2. for each DIR in DIRS:
+   a. LOAD_AS_FILE(DIR/X)
+   b. LOAD_AS_DIRECTORY(DIR/X)
+
+NODE_MODULES_PATHS(START)
+1. let PARTS = path split(START)
+2. let ROOT = index of first instance of &quot;node_modules&quot; in PARTS, or 0
+3. let I = count of PARTS - 1
+4. let DIRS = []
+5. while I &gt; ROOT,
+   a. if PARTS[I] = &quot;node_modules&quot; CONTINUE
+   c. DIR = path join(PARTS[0 .. I] + &quot;node_modules&quot;)
+   b. DIRS = DIRS + DIR
+   c. let I = I - 1
+6. return DIRS
+</code></pre><h2 id="loading-from-the-global-folders">Loading from the global folders</h2>
+<!-- type=misc -->
+<p>If the <code>NODE_PATH</code> environment variable is set to a colon-delimited list
+of absolute paths, then node will search those paths for modules if they
+are not found elsewhere.  (Note: On Windows, <code>NODE_PATH</code> is delimited by
+semicolons instead of colons.)</p>
+<p>Additionally, node will search in the following locations:</p>
+<ul>
+<li>1: <code>$HOME/.node_modules</code></li>
+<li>2: <code>$HOME/.node_libraries</code></li>
+<li>3: <code>$PREFIX/lib/node</code></li>
+</ul>
+<p>Where <code>$HOME</code> is the user&#39;s home directory, and <code>$PREFIX</code> is node&#39;s
+configured <code>node_prefix</code>.</p>
+<p>These are mostly for historic reasons.  You are highly encouraged to
+place your dependencies locally in <code>node_modules</code> folders.  They will be
+loaded faster, and more reliably.</p>
+<h2 id="accessing-the-main-module">Accessing the main module</h2>
+<!-- type=misc -->
+<p>When a file is run directly from Node, <code>require.main</code> is set to its
+<code>module</code>. That means that you can determine whether a file has been run
+directly by testing</p>
+<pre><code>require.main === module
+</code></pre><p>For a file <code>foo.js</code>, this will be <code>true</code> if run via <code>node foo.js</code>, but
+<code>false</code> if run by <code>require(&#39;./foo&#39;)</code>.</p>
+<p>Because <code>module</code> provides a <code>filename</code> property (normally equivalent to
+<code>__filename</code>), the entry point of the current application can be obtained
+by checking <code>require.main.filename</code>.</p>
+<h2 id="addenda-package-manager-tips">Addenda: Package Manager Tips</h2>
+<!-- type=misc -->
+<p>The semantics of Node&#39;s <code>require()</code> function were designed to be general
+enough to support a number of sane directory structures. Package manager
+programs such as <code>dpkg</code>, <code>rpm</code>, and <code>npm</code> will hopefully find it possible to
+build native packages from Node modules without modification.</p>
+<p>Below we give a suggested directory structure that could work:</p>
+<p>Let&#39;s say that we wanted to have the folder at
+<code>/usr/lib/node/&lt;some-package&gt;/&lt;some-version&gt;</code> hold the contents of a
+specific version of a package.</p>
+<p>Packages can depend on one another. In order to install package <code>foo</code>, you
+may have to install a specific version of package <code>bar</code>.  The <code>bar</code> package
+may itself have dependencies, and in some cases, these dependencies may even
+collide or form cycles.</p>
+<p>Since Node looks up the <code>realpath</code> of any modules it loads (that is,
+resolves symlinks), and then looks for their dependencies in the
+<code>node_modules</code> folders as described above, this situation is very simple to
+resolve with the following architecture:</p>
+<ul>
+<li><code>/usr/lib/node/foo/1.2.3/</code> - Contents of the <code>foo</code> package, version 1.2.3.</li>
+<li><code>/usr/lib/node/bar/4.3.2/</code> - Contents of the <code>bar</code> package that <code>foo</code>
+depends on.</li>
+<li><code>/usr/lib/node/foo/1.2.3/node_modules/bar</code> - Symbolic link to
+<code>/usr/lib/node/bar/4.3.2/</code>.</li>
+<li><code>/usr/lib/node/bar/4.3.2/node_modules/*</code> - Symbolic links to the packages
+that <code>bar</code> depends on.</li>
+</ul>
+<p>Thus, even if a cycle is encountered, or if there are dependency
+conflicts, every module will be able to get a version of its dependency
+that it can use.</p>
+<p>When the code in the <code>foo</code> package does <code>require(&#39;bar&#39;)</code>, it will get the
+version that is symlinked into <code>/usr/lib/node/foo/1.2.3/node_modules/bar</code>.
+Then, when the code in the <code>bar</code> package calls <code>require(&#39;quux&#39;)</code>, it&#39;ll get
+the version that is symlinked into
+<code>/usr/lib/node/bar/4.3.2/node_modules/quux</code>.</p>
+<p>Furthermore, to make the module lookup process even more optimal, rather
+than putting packages directly in <code>/usr/lib/node</code>, we could put them in
+<code>/usr/lib/node_modules/&lt;name&gt;/&lt;version&gt;</code>.  Then node will not bother
+looking for missing dependencies in <code>/usr/node_modules</code> or <code>/node_modules</code>.</p>
+<p>In order to make modules available to the node REPL, it might be useful to
+also add the <code>/usr/lib/node_modules</code> folder to the <code>$NODE_PATH</code> environment
+variable.  Since the module lookups using <code>node_modules</code> folders are all
+relative, and based on the real path of the files making the calls to
+<code>require()</code>, the packages themselves can be anywhere.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./https.html" class="navigation navigation-prev " aria-label="Previous page: HTTPS"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./net.html" class="navigation navigation-next " aria-label="Next page: Net"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
