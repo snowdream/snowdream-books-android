@@ -280,5 +280,10 @@ android {
             packageName "com.github.snowdream.android.app.books.JavaInterviewQuestionsandAnswers"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/115-Java-Interview-Questions-and-Answers/115-Java-Interview-Questions-and-Answers/\""
         }
+
+        Nodejs_Documentation{
+            packageName "com.github.snowdream.android.app.books.NodejsDocumentation"
+            buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/Node.js-Documentation/\""
+        }
     }
 }

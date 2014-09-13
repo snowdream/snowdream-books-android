@@ -58,7 +58,9 @@ Android 2.2+
 48.[Build Web Application with Golang](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.buildwebapplicationwithgolang)    
 49.[七天学会NodeJS](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.servendaysnodejs)    
 50.[javascript-style-guide](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.javascriptstyleguide)    
-51.[115 Java Interview Questions and Answers](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.JavaInterviewQuestionsandAnswers)    
+51.[115 Java Interview Questions and Answers](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.JavaInterviewQuestionsandAnswers)     
+52.[Node.js Manual & Documentation](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.NodejsDocumentation)    
+
 
 
 ##License
