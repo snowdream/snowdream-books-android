@@ -285,5 +285,10 @@ android {
             packageName "com.github.snowdream.android.app.books.NodejsDocumentation"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/Node.js-Documentation/\""
         }
+
+        linux_c_functions_zh{
+            packageName "com.github.snowdream.android.app.books.linuxcfunctionzh"
+            buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/linux-c-functions-zh\""
+        }
     }
 }
