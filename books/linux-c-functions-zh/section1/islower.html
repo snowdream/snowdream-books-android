@@ -1,0 +1,4942 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>islower | Linux 常用C函数（中文版）</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.1.1">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../section1/isprint.html" />
+    
+    
+    <link rel="prev" href="../section1/isgraphis.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="1.7" data-basepath=".." data-revision="1414656037866">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 字符测试篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="section1/isalnum.html">
+            
+                
+                    <a href="../section1/isalnum.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         isalnum
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="section1/isalpha.html">
+            
+                
+                    <a href="../section1/isalpha.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         isalpha
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="section1/isascii.html">
+            
+                
+                    <a href="../section1/isascii.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         isascii
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="section1/iscntrl.html">
+            
+                
+                    <a href="../section1/iscntrl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         iscntrl
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="section1/isdigit.html">
+            
+                
+                    <a href="../section1/isdigit.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         isdigit
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="section1/isgraphis.html">
+            
+                
+                    <a href="../section1/isgraphis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         isgraphis
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.7" data-path="section1/islower.html">
+            
+                
+                    <a href="../section1/islower.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         islower
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="section1/isprint.html">
+            
+                
+                    <a href="../section1/isprint.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                         isprint
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="section1/isspace.html">
+            
+                
+                    <a href="../section1/isspace.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                         isspace
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="section1/ispunct.html">
+            
+                
+                    <a href="../section1/ispunct.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                         ispunct
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.11" data-path="section1/isupper.html">
+            
+                
+                    <a href="../section1/isupper.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                         isupper
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.12" data-path="section1/isxdigit.html">
+            
+                
+                    <a href="../section1/isxdigit.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                         isxdigit
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 字符串转换篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="section2/atof.html">
+            
+                
+                    <a href="../section2/atof.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         atof
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="section2/atoi.html">
+            
+                
+                    <a href="../section2/atoi.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         atoi
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="section2/atol.html">
+            
+                
+                    <a href="../section2/atol.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         atol
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="section2/gcvt.html">
+            
+                
+                    <a href="../section2/gcvt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         gcvt
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="section2/strtod.html">
+            
+                
+                    <a href="../section2/strtod.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         strtod
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="section2/strtol.html">
+            
+                
+                    <a href="../section2/strtol.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         strtol
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.7" data-path="section2/strtoul.html">
+            
+                
+                    <a href="../section2/strtoul.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                         strtoul
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.8" data-path="section2/toascii.html">
+            
+                
+                    <a href="../section2/toascii.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                         toascii
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.9" data-path="section2/tolower.html">
+            
+                
+                    <a href="../section2/tolower.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                         tolower
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10" data-path="section2/toupper.html">
+            
+                
+                    <a href="../section2/toupper.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                         toupper
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> 内存控制篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="section3/calloc.html">
+            
+                
+                    <a href="../section3/calloc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         calloc
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="section3/free.html">
+            
+                
+                    <a href="../section3/free.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         free
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="section3/getpagesize.html">
+            
+                
+                    <a href="../section3/getpagesize.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         getpagesize
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="section3/malloc.html">
+            
+                
+                    <a href="../section3/malloc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         malloc
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.5" data-path="section3/mmap.html">
+            
+                
+                    <a href="../section3/mmap.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                         mmap
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.6" data-path="section3/munmap.html">
+            
+                
+                    <a href="../section3/munmap.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                         munmap
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> 日期时间篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="section4/asctime.html">
+            
+                
+                    <a href="../section4/asctime.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         asctime
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="section4/ctime.html">
+            
+                
+                    <a href="../section4/ctime.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         ctime
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="section4/gettimeofday.html">
+            
+                
+                    <a href="../section4/gettimeofday.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         gettimeofday
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="section4/gmtime.html">
+            
+                
+                    <a href="../section4/gmtime.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         gmtime
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="section4/localtime.html">
+            
+                
+                    <a href="../section4/localtime.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         localtime
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="section4/mktime.html">
+            
+                
+                    <a href="../section4/mktime.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         mktime
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="section4/settimeofday.html">
+            
+                
+                    <a href="../section4/settimeofday.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         settimeofday
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.8" data-path="section4/time.html">
+            
+                
+                    <a href="../section4/time.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                         time
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> 内存及字符串操作篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="section5/bcmp.html">
+            
+                
+                    <a href="../section5/bcmp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         bcmp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="section5/bcopy.html">
+            
+                
+                    <a href="../section5/bcopy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         bcopy
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="section5/bzero.html">
+            
+                
+                    <a href="../section5/bzero.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         bzero
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="section5/index.html">
+            
+                
+                    <a href="../section5/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         index
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="section5/memccpy.html">
+            
+                
+                    <a href="../section5/memccpy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         memccpy
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="section5/memchr.html">
+            
+                
+                    <a href="../section5/memchr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         memchr
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="section5/memcmp.html">
+            
+                
+                    <a href="../section5/memcmp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         memcmp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.8" data-path="section5/memcpy.html">
+            
+                
+                    <a href="../section5/memcpy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                         memcpy
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.9" data-path="section5/memmove.html">
+            
+                
+                    <a href="../section5/memmove.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                         memmove
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.10" data-path="section5/memset.html">
+            
+                
+                    <a href="../section5/memset.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                         memset
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.11" data-path="section5/rindex.html">
+            
+                
+                    <a href="../section5/rindex.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                         rindex
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.12" data-path="section5/strcasecmp.html">
+            
+                
+                    <a href="../section5/strcasecmp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                         strcasecmp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.13" data-path="section5/strcat.html">
+            
+                
+                    <a href="../section5/strcat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.13.</b>
+                        
+                         strcat
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.14" data-path="section5/strchr.html">
+            
+                
+                    <a href="../section5/strchr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.14.</b>
+                        
+                         strchr
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.15" data-path="section5/strcmp.html">
+            
+                
+                    <a href="../section5/strcmp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.15.</b>
+                        
+                         strcmp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.16" data-path="section5/strcoll.html">
+            
+                
+                    <a href="../section5/strcoll.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.16.</b>
+                        
+                         strcoll
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.17" data-path="section5/strcpy.html">
+            
+                
+                    <a href="../section5/strcpy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.17.</b>
+                        
+                         strcpy
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.18" data-path="section5/strcspn.html">
+            
+                
+                    <a href="../section5/strcspn.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.18.</b>
+                        
+                         strcspn
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.19" data-path="section5/strdup.html">
+            
+                
+                    <a href="../section5/strdup.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.19.</b>
+                        
+                         strdup
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.20" data-path="section5/strlen.html">
+            
+                
+                    <a href="../section5/strlen.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.20.</b>
+                        
+                         strlen
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.21" data-path="section5/strncasecmp.html">
+            
+                
+                    <a href="../section5/strncasecmp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.21.</b>
+                        
+                         strncasecmp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.22" data-path="section5/strncat.html">
+            
+                
+                    <a href="../section5/strncat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.22.</b>
+                        
+                         strncat
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.23" data-path="section5/strncpy.html">
+            
+                
+                    <a href="../section5/strncpy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.23.</b>
+                        
+                         strncpy
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.24" data-path="section5/strpbrk.html">
+            
+                
+                    <a href="../section5/strpbrk.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.24.</b>
+                        
+                         strpbrk
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.25" data-path="section5/strrchr.html">
+            
+                
+                    <a href="../section5/strrchr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.25.</b>
+                        
+                         strrchr
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.26" data-path="section5/strspn.html">
+            
+                
+                    <a href="../section5/strspn.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.26.</b>
+                        
+                         strspn
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.27" data-path="section5/strstr.html">
+            
+                
+                    <a href="../section5/strstr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.27.</b>
+                        
+                         strstr
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.28" data-path="section5/strtok.html">
+            
+                
+                    <a href="../section5/strtok.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.28.</b>
+                        
+                         strtok
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> 常用数学函数篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="section6/abs.html">
+            
+                
+                    <a href="../section6/abs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         abs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2" data-path="section6/acos.html">
+            
+                
+                    <a href="../section6/acos.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         acos
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.3" data-path="section6/asin.html">
+            
+                
+                    <a href="../section6/asin.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                         asin
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4" data-path="section6/atan.html">
+            
+                
+                    <a href="../section6/atan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                         atan
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.5" data-path="section6/atan2.html">
+            
+                
+                    <a href="../section6/atan2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                         atan2
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.6" data-path="section6/ceil.html">
+            
+                
+                    <a href="../section6/ceil.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                         ceil
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.7" data-path="section6/cos.html">
+            
+                
+                    <a href="../section6/cos.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                         cos
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.8" data-path="section6/cosh.html">
+            
+                
+                    <a href="../section6/cosh.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                         cosh
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.9" data-path="section6/exp.html">
+            
+                
+                    <a href="../section6/exp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                         exp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.10" data-path="section6/frexp.html">
+            
+                
+                    <a href="../section6/frexp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                         frexp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.11" data-path="section6/ldexp.html">
+            
+                
+                    <a href="../section6/ldexp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                         ldexp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.12" data-path="section6/log.html">
+            
+                
+                    <a href="../section6/log.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.12.</b>
+                        
+                         log
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.13" data-path="section6/log10.html">
+            
+                
+                    <a href="../section6/log10.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.13.</b>
+                        
+                         log10
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.14" data-path="section6/pow.html">
+            
+                
+                    <a href="../section6/pow.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.14.</b>
+                        
+                         pow
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.15" data-path="section6/sin.html">
+            
+                
+                    <a href="../section6/sin.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.15.</b>
+                        
+                         sin
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.16" data-path="section6/sinh.html">
+            
+                
+                    <a href="../section6/sinh.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.16.</b>
+                        
+                         sinh
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.17" data-path="section6/sqrt.html">
+            
+                
+                    <a href="../section6/sqrt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.17.</b>
+                        
+                         sqrt
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.18" data-path="section6/tan.html">
+            
+                
+                    <a href="../section6/tan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.18.</b>
+                        
+                         tan
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.19" data-path="section6/tanh.html">
+            
+                
+                    <a href="../section6/tanh.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.19.</b>
+                        
+                         tanh
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> 用户组篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="section7/endgrent.html">
+            
+                
+                    <a href="../section7/endgrent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         endgrent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.2" data-path="section7/endpwent.html">
+            
+                
+                    <a href="../section7/endpwent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                         endpwent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.3" data-path="section7/endutent.html">
+            
+                
+                    <a href="../section7/endutent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                         endutent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.4" data-path="section7/fgetgrent.html">
+            
+                
+                    <a href="../section7/fgetgrent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                         fgetgrent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.5" data-path="section7/fgetpwent.html">
+            
+                
+                    <a href="../section7/fgetpwent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                         fgetpwent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.6" data-path="section7/getegid.html">
+            
+                
+                    <a href="../section7/getegid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                         getegid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.7" data-path="section7/geteuid.html">
+            
+                
+                    <a href="../section7/geteuid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                         geteuid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.8" data-path="section7/getgid.html">
+            
+                
+                    <a href="../section7/getgid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                         getgid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.9" data-path="section7/getgrent.html">
+            
+                
+                    <a href="../section7/getgrent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                         getgrent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.10" data-path="section7/getgrgid.html">
+            
+                
+                    <a href="../section7/getgrgid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                         getgrgid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.11" data-path="section7/getgrnam.html">
+            
+                
+                    <a href="../section7/getgrnam.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                         getgrnam
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.12" data-path="section7/getgroups.html">
+            
+                
+                    <a href="../section7/getgroups.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.12.</b>
+                        
+                         getgroups
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.13" data-path="section7/getpw.html">
+            
+                
+                    <a href="../section7/getpw.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.13.</b>
+                        
+                         getpw
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.14" data-path="section7/getpwent.html">
+            
+                
+                    <a href="../section7/getpwent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.14.</b>
+                        
+                         getpwent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.15" data-path="section7/getpwnam.html">
+            
+                
+                    <a href="../section7/getpwnam.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.15.</b>
+                        
+                         getpwnam
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.16" data-path="section7/getpwuid.html">
+            
+                
+                    <a href="../section7/getpwuid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.16.</b>
+                        
+                         getpwuid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.17" data-path="section7/getuid.html">
+            
+                
+                    <a href="../section7/getuid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.17.</b>
+                        
+                         getuid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.18" data-path="section7/getutent.html">
+            
+                
+                    <a href="../section7/getutent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.18.</b>
+                        
+                         getutent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.19" data-path="section7/getutid.html">
+            
+                
+                    <a href="../section7/getutid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.19.</b>
+                        
+                         getutid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.20" data-path="section7/getutline.html">
+            
+                
+                    <a href="../section7/getutline.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.20.</b>
+                        
+                         getutline
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.21" data-path="section7/initgroups.html">
+            
+                
+                    <a href="../section7/initgroups.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.21.</b>
+                        
+                         initgroups
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.22" data-path="section7/pututline.html">
+            
+                
+                    <a href="../section7/pututline.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.22.</b>
+                        
+                         pututline
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.23" data-path="section7/seteuid.html">
+            
+                
+                    <a href="../section7/seteuid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.23.</b>
+                        
+                         seteuid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.24" data-path="section7/setfsgid.html">
+            
+                
+                    <a href="../section7/setfsgid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.24.</b>
+                        
+                         setfsgid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.25" data-path="section7/setfsuid.html">
+            
+                
+                    <a href="../section7/setfsuid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.25.</b>
+                        
+                         setfsuid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.26" data-path="section7/setgid.html">
+            
+                
+                    <a href="../section7/setgid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.26.</b>
+                        
+                         setgid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.27" data-path="section7/setgrent.html">
+            
+                
+                    <a href="../section7/setgrent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.27.</b>
+                        
+                         setgrent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.28" data-path="section7/setgroups.html">
+            
+                
+                    <a href="../section7/setgroups.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.28.</b>
+                        
+                         setgroups
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.29" data-path="section7/setpwent.html">
+            
+                
+                    <a href="../section7/setpwent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.29.</b>
+                        
+                         setpwent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.30" data-path="section7/setregid.html">
+            
+                
+                    <a href="../section7/setregid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.30.</b>
+                        
+                         setregid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.31" data-path="section7/setreuid.html">
+            
+                
+                    <a href="../section7/setreuid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.31.</b>
+                        
+                         setreuid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.32" data-path="section7/setuid.html">
+            
+                
+                    <a href="../section7/setuid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.32.</b>
+                        
+                         setuid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.33" data-path="section7/setutent.html">
+            
+                
+                    <a href="../section7/setutent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.33.</b>
+                        
+                         setutent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.34" data-path="section7/utmpname.html">
+            
+                
+                    <a href="../section7/utmpname.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.34.</b>
+                        
+                         utmpname
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> 数据结构及算法篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="section8/crypt.html">
+            
+                
+                    <a href="../section8/crypt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         crypt
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="section8/bsearch.html">
+            
+                
+                    <a href="../section8/bsearch.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         bsearch
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="section8/lfind.html">
+            
+                
+                    <a href="../section8/lfind.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         lfind
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.4" data-path="section8/lsearch.html">
+            
+                
+                    <a href="../section8/lsearch.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                         lsearch
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.5" data-path="section8/qsort.html">
+            
+                
+                    <a href="../section8/qsort.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                         qsort
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.6" data-path="section8/rand.html">
+            
+                
+                    <a href="../section8/rand.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                         rand
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.7" data-path="section8/srand.html">
+            
+                
+                    <a href="../section8/srand.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.7.</b>
+                        
+                         srand
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" >
+            
+            <span><b>9.</b> 文件操作篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="9.1" data-path="section9/close.html">
+            
+                
+                    <a href="../section9/close.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                         close
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.2" data-path="section9/creat.html">
+            
+                
+                    <a href="../section9/creat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                         creat
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.3" data-path="section9/dup.html">
+            
+                
+                    <a href="../section9/dup.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                         dup
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.4" data-path="section9/dup2.html">
+            
+                
+                    <a href="../section9/dup2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                         dup2
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.5" data-path="section9/fcntl.html">
+            
+                
+                    <a href="../section9/fcntl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                         fcntl
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.6" data-path="section9/flock.html">
+            
+                
+                    <a href="../section9/flock.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                         flock
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.7" data-path="section9/fsync.html">
+            
+                
+                    <a href="../section9/fsync.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                         fsync
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.8" data-path="section9/lseek.html">
+            
+                
+                    <a href="../section9/lseek.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.8.</b>
+                        
+                         lseek
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.9" data-path="section9/mkstemp.html">
+            
+                
+                    <a href="../section9/mkstemp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.9.</b>
+                        
+                         mkstemp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.10" data-path="section9/open.html">
+            
+                
+                    <a href="../section9/open.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.10.</b>
+                        
+                         open
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.11" data-path="section9/read.html">
+            
+                
+                    <a href="../section9/read.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.11.</b>
+                        
+                         read
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.12" data-path="section9/sync.html">
+            
+                
+                    <a href="../section9/sync.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.12.</b>
+                        
+                         sync
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.13" data-path="section9/write.html">
+            
+                
+                    <a href="../section9/write.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.13.</b>
+                        
+                         write
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" >
+            
+            <span><b>10.</b> 文件内容操作篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="10.1" data-path="section10/clearerr.html">
+            
+                
+                    <a href="../section10/clearerr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                         clearerr
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.2" data-path="section10/fclose.html">
+            
+                
+                    <a href="../section10/fclose.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                         fclose
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.3" data-path="section10/fdopen.html">
+            
+                
+                    <a href="../section10/fdopen.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                         fdopen
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.4" data-path="section10/feof.html">
+            
+                
+                    <a href="../section10/feof.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                         feof
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.5" data-path="section10/fflush.html">
+            
+                
+                    <a href="../section10/fflush.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                         fflush
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.6" data-path="section10/fgetc.html">
+            
+                
+                    <a href="../section10/fgetc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                         fgetc
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.7" data-path="section10/fgets.html">
+            
+                
+                    <a href="../section10/fgets.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.7.</b>
+                        
+                         fgets
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.8" data-path="section10/fileno.html">
+            
+                
+                    <a href="../section10/fileno.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.8.</b>
+                        
+                         fileno
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.9" data-path="section10/fopen.html">
+            
+                
+                    <a href="../section10/fopen.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.9.</b>
+                        
+                         fopen
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.10" data-path="section10/fputc.html">
+            
+                
+                    <a href="../section10/fputc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.10.</b>
+                        
+                         fputc
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.11" data-path="section10/fputs.html">
+            
+                
+                    <a href="../section10/fputs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.11.</b>
+                        
+                         fputs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.12" data-path="section10/fread.html">
+            
+                
+                    <a href="../section10/fread.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.12.</b>
+                        
+                         fread
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.13" data-path="section10/freopen.html">
+            
+                
+                    <a href="../section10/freopen.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.13.</b>
+                        
+                         freopen
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.14" data-path="section10/fseek.html">
+            
+                
+                    <a href="../section10/fseek.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.14.</b>
+                        
+                         fseek
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.15" data-path="section10/ftell.html">
+            
+                
+                    <a href="../section10/ftell.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.15.</b>
+                        
+                         ftell
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.16" data-path="section10/fwrite.html">
+            
+                
+                    <a href="../section10/fwrite.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.16.</b>
+                        
+                         fwrite
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.17" data-path="section10/getc.html">
+            
+                
+                    <a href="../section10/getc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.17.</b>
+                        
+                         getc
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.18" data-path="section10/getchar.html">
+            
+                
+                    <a href="../section10/getchar.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.18.</b>
+                        
+                         getchar
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.19" data-path="section10/gets.html">
+            
+                
+                    <a href="../section10/gets.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.19.</b>
+                        
+                         gets
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.20" data-path="section10/mktemp.html">
+            
+                
+                    <a href="../section10/mktemp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.20.</b>
+                        
+                         mktemp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.21" data-path="section10/putc.html">
+            
+                
+                    <a href="../section10/putc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.21.</b>
+                        
+                         putc
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.22" data-path="section10/putchar.html">
+            
+                
+                    <a href="../section10/putchar.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.22.</b>
+                        
+                         putchar
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.23" data-path="section10/rewind.html">
+            
+                
+                    <a href="../section10/rewind.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.23.</b>
+                        
+                         rewind
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.24" data-path="section10/setbuf.html">
+            
+                
+                    <a href="../section10/setbuf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.24.</b>
+                        
+                         setbuf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.25" data-path="section10/setbuffer.html">
+            
+                
+                    <a href="../section10/setbuffer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.25.</b>
+                        
+                         setbuffer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.26" data-path="section10/setlinebuf.html">
+            
+                
+                    <a href="../section10/setlinebuf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.26.</b>
+                        
+                         setlinebuf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.27" data-path="section10/setvbuf.html">
+            
+                
+                    <a href="../section10/setvbuf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.27.</b>
+                        
+                         setvbuf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10.28" data-path="section10/ungetc.html">
+            
+                
+                    <a href="../section10/ungetc.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.28.</b>
+                        
+                         ungetc
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" >
+            
+            <span><b>11.</b> 进程操作篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="11.1" data-path="section11/atexit.html">
+            
+                
+                    <a href="../section11/atexit.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                         atexit
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.2" data-path="section11/execl.html">
+            
+                
+                    <a href="../section11/execl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                         execl
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.3" data-path="section11/execlp.html">
+            
+                
+                    <a href="../section11/execlp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                         execlp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.4" data-path="section11/execv.html">
+            
+                
+                    <a href="../section11/execv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                         execv
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.5" data-path="section11/execve.html">
+            
+                
+                    <a href="../section11/execve.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.5.</b>
+                        
+                         execve
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.6" data-path="section11/execvp.html">
+            
+                
+                    <a href="../section11/execvp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.6.</b>
+                        
+                         execvp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.7" data-path="section11/exit.html">
+            
+                
+                    <a href="../section11/exit.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.7.</b>
+                        
+                         exit
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.8" data-path="section11/_exit.html">
+            
+                
+                    <a href="../section11/_exit.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.8.</b>
+                        
+                         _exit
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.9" data-path="section11/vfork.html">
+            
+                
+                    <a href="../section11/vfork.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.9.</b>
+                        
+                         vfork
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.10" data-path="section11/getpgid.html">
+            
+                
+                    <a href="../section11/getpgid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.10.</b>
+                        
+                         getpgid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.11" data-path="section11/getpgrp.html">
+            
+                
+                    <a href="../section11/getpgrp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.11.</b>
+                        
+                         getpgrp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.12" data-path="section11/getpid.html">
+            
+                
+                    <a href="../section11/getpid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.12.</b>
+                        
+                         getpid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.13" data-path="section11/getppid.html">
+            
+                
+                    <a href="../section11/getppid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.13.</b>
+                        
+                         getppid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.14" data-path="section11/getpriority.html">
+            
+                
+                    <a href="../section11/getpriority.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.14.</b>
+                        
+                         getpriority
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.15" data-path="section11/nice.html">
+            
+                
+                    <a href="../section11/nice.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.15.</b>
+                        
+                         nice
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.16" data-path="section11/on_exit.html">
+            
+                
+                    <a href="../section11/on_exit.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.16.</b>
+                        
+                         on_exit
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.17" data-path="section11/setpgid.html">
+            
+                
+                    <a href="../section11/setpgid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.17.</b>
+                        
+                         setpgid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.18" data-path="section11/setpgrp.html">
+            
+                
+                    <a href="../section11/setpgrp.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.18.</b>
+                        
+                         setpgrp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.19" data-path="section11/setpriority.html">
+            
+                
+                    <a href="../section11/setpriority.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.19.</b>
+                        
+                         setpriority
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.20" data-path="section11/system.html">
+            
+                
+                    <a href="../section11/system.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.20.</b>
+                        
+                         system
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.21" data-path="section11/wait.html">
+            
+                
+                    <a href="../section11/wait.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.21.</b>
+                        
+                         wait
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.22" data-path="section11/waitpid.html">
+            
+                
+                    <a href="../section11/waitpid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.22.</b>
+                        
+                         waitpid
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.23" data-path="section11/fprintf.html">
+            
+                
+                    <a href="../section11/fprintf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.23.</b>
+                        
+                         fprintf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.24" data-path="section11/fscanf.html">
+            
+                
+                    <a href="../section11/fscanf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.24.</b>
+                        
+                         fscanf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.25" data-path="section11/printf.html">
+            
+                
+                    <a href="../section11/printf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.25.</b>
+                        
+                         printf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.26" data-path="section11/sacnf.html">
+            
+                
+                    <a href="../section11/sacnf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.26.</b>
+                        
+                         sacnf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.27" data-path="section11/sprintf.html">
+            
+                
+                    <a href="../section11/sprintf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.27.</b>
+                        
+                         sprintf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.28" data-path="section11/sscanf.html">
+            
+                
+                    <a href="../section11/sscanf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.28.</b>
+                        
+                         sscanf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.29" data-path="section11/vfprintf.html">
+            
+                
+                    <a href="../section11/vfprintf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.29.</b>
+                        
+                         vfprintf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.30" data-path="section11/vfscanf.html">
+            
+                
+                    <a href="../section11/vfscanf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.30.</b>
+                        
+                         vfscanf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.31" data-path="section11/vprintf.html">
+            
+                
+                    <a href="../section11/vprintf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.31.</b>
+                        
+                         vprintf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.32" data-path="section11/vscanf.html">
+            
+                
+                    <a href="../section11/vscanf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.32.</b>
+                        
+                         vscanf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.33" data-path="section11/vsprintf.html">
+            
+                
+                    <a href="../section11/vsprintf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.33.</b>
+                        
+                         vsprintf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11.34" data-path="section11/vsscanf.html">
+            
+                
+                    <a href="../section11/vsscanf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.34.</b>
+                        
+                         vsscanf
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" >
+            
+            <span><b>12.</b> 文件权限控制篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="12.1" data-path="section12/access.html">
+            
+                
+                    <a href="../section12/access.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                         access
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.2" data-path="section12/alphasort.html">
+            
+                
+                    <a href="../section12/alphasort.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                         alphasort
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.3" data-path="section12/chdir.html">
+            
+                
+                    <a href="../section12/chdir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                         chdir
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.4" data-path="section12/chmod.html">
+            
+                
+                    <a href="../section12/chmod.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.4.</b>
+                        
+                         chmod
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.5" data-path="section12/chown.html">
+            
+                
+                    <a href="../section12/chown.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.5.</b>
+                        
+                         chown
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.6" data-path="section12/chroot.html">
+            
+                
+                    <a href="../section12/chroot.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.6.</b>
+                        
+                         chroot
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.7" data-path="section12/closedir.html">
+            
+                
+                    <a href="../section12/closedir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.7.</b>
+                        
+                         closedir
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.8" data-path="section12/fchdir.html">
+            
+                
+                    <a href="../section12/fchdir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.8.</b>
+                        
+                         fchdir
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.9" data-path="section12/fchmod.html">
+            
+                
+                    <a href="../section12/fchmod.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.9.</b>
+                        
+                         fchmod
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.10" data-path="section12/fchown.html">
+            
+                
+                    <a href="../section12/fchown.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.10.</b>
+                        
+                         fchown
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.11" data-path="section12/fstat.html">
+            
+                
+                    <a href="../section12/fstat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.11.</b>
+                        
+                         fstat
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.12" data-path="section12/ftruncate.html">
+            
+                
+                    <a href="../section12/ftruncate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.12.</b>
+                        
+                         ftruncate
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.13" data-path="section12/getcwd.html">
+            
+                
+                    <a href="../section12/getcwd.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.13.</b>
+                        
+                         getcwd
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.14" data-path="section12/link.html">
+            
+                
+                    <a href="../section12/link.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.14.</b>
+                        
+                         link
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.15" data-path="section12/lstat.html">
+            
+                
+                    <a href="../section12/lstat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.15.</b>
+                        
+                         lstat
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.16" data-path="section12/opendir.html">
+            
+                
+                    <a href="../section12/opendir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.16.</b>
+                        
+                         opendir
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.17" data-path="section12/readdir.html">
+            
+                
+                    <a href="../section12/readdir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.17.</b>
+                        
+                         readdir
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.18" data-path="section12/readlink.html">
+            
+                
+                    <a href="../section12/readlink.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.18.</b>
+                        
+                         readlink
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.19" data-path="section12/remove.html">
+            
+                
+                    <a href="../section12/remove.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.19.</b>
+                        
+                         remove
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.20" data-path="section12/rename.html">
+            
+                
+                    <a href="../section12/rename.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.20.</b>
+                        
+                         rename
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.21" data-path="section12/rewinddir.html">
+            
+                
+                    <a href="../section12/rewinddir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.21.</b>
+                        
+                         rewinddir
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.22" data-path="section12/seekdir.html">
+            
+                
+                    <a href="../section12/seekdir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.22.</b>
+                        
+                         seekdir
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.23" data-path="section12/stat.html">
+            
+                
+                    <a href="../section12/stat.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.23.</b>
+                        
+                         stat
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.24" data-path="section12/symlink.html">
+            
+                
+                    <a href="../section12/symlink.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.24.</b>
+                        
+                         symlink
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.25" data-path="section12/telldir.html">
+            
+                
+                    <a href="../section12/telldir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.25.</b>
+                        
+                         telldir
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.26" data-path="section12/truncate.html">
+            
+                
+                    <a href="../section12/truncate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.26.</b>
+                        
+                         truncate
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.27" data-path="section12/umask.html">
+            
+                
+                    <a href="../section12/umask.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.27.</b>
+                        
+                         umask
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.28" data-path="section12/unlink.html">
+            
+                
+                    <a href="../section12/unlink.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.28.</b>
+                        
+                         unlink
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.29" data-path="section12/utime.html">
+            
+                
+                    <a href="../section12/utime.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.29.</b>
+                        
+                         utime
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12.30" data-path="section12/utimes.html">
+            
+                
+                    <a href="../section12/utimes.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.30.</b>
+                        
+                         utimes
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" >
+            
+            <span><b>13.</b> 信号处理篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="13.1" data-path="section13/alarm.html">
+            
+                
+                    <a href="../section13/alarm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.1.</b>
+                        
+                         alarm
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.2" data-path="section13/kill.html">
+            
+                
+                    <a href="../section13/kill.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.2.</b>
+                        
+                         kill
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.3" data-path="section13/pause.html">
+            
+                
+                    <a href="../section13/pause.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.3.</b>
+                        
+                         pause
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.4" data-path="section13/sigaction.html">
+            
+                
+                    <a href="../section13/sigaction.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.4.</b>
+                        
+                         sigaction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.5" data-path="section13/sigaddset.html">
+            
+                
+                    <a href="../section13/sigaddset.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.5.</b>
+                        
+                         sigaddset
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.6" data-path="section13/sigdelset.html">
+            
+                
+                    <a href="../section13/sigdelset.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.6.</b>
+                        
+                         sigdelset
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.7" data-path="section13/sigemptyset.html">
+            
+                
+                    <a href="../section13/sigemptyset.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.7.</b>
+                        
+                         sigemptyset
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.8" data-path="section13/sigfillset.html">
+            
+                
+                    <a href="../section13/sigfillset.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.8.</b>
+                        
+                         sigfillset
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.9" data-path="section13/sigismember.html">
+            
+                
+                    <a href="../section13/sigismember.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.9.</b>
+                        
+                         sigismember
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.10" data-path="section13/signal.html">
+            
+                
+                    <a href="../section13/signal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.10.</b>
+                        
+                         signal
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.11" data-path="section13/sigpending.html">
+            
+                
+                    <a href="../section13/sigpending.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.11.</b>
+                        
+                         sigpending
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.12" data-path="section13/sigprocmask.html">
+            
+                
+                    <a href="../section13/sigprocmask.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.12.</b>
+                        
+                         sigprocmask
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.13" data-path="section13/sleep.html">
+            
+                
+                    <a href="../section13/sleep.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.13.</b>
+                        
+                         sleep
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.14" data-path="section13/ferror.html">
+            
+                
+                    <a href="../section13/ferror.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.14.</b>
+                        
+                         ferror
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.15" data-path="section13/perror.html">
+            
+                
+                    <a href="../section13/perror.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.15.</b>
+                        
+                         perror
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.16" data-path="section13/strerror.html">
+            
+                
+                    <a href="../section13/strerror.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.16.</b>
+                        
+                         strerror
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.17" data-path="section13/mkfifo.html">
+            
+                
+                    <a href="../section13/mkfifo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.17.</b>
+                        
+                         mkfifo
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.18" data-path="section13/pclose.html">
+            
+                
+                    <a href="../section13/pclose.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.18.</b>
+                        
+                         pclose
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.19" data-path="section13/pipe.html">
+            
+                
+                    <a href="../section13/pipe.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.19.</b>
+                        
+                         pipe
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13.20" data-path="section13/popen.html">
+            
+                
+                    <a href="../section13/popen.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.20.</b>
+                        
+                         popen
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" >
+            
+            <span><b>14.</b> 接口处理篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="14.1" data-path="section14/accept.html">
+            
+                
+                    <a href="../section14/accept.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.1.</b>
+                        
+                         accept
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.2" data-path="section14/bind.html">
+            
+                
+                    <a href="../section14/bind.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.2.</b>
+                        
+                         bind
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.3" data-path="section14/connect.html">
+            
+                
+                    <a href="../section14/connect.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.3.</b>
+                        
+                         connect
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.4" data-path="section14/endprotoent.html">
+            
+                
+                    <a href="../section14/endprotoent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.4.</b>
+                        
+                         endprotoent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.5" data-path="section14/endservent.html">
+            
+                
+                    <a href="../section14/endservent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.5.</b>
+                        
+                         endservent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.6" data-path="section14/getsockopt.html">
+            
+                
+                    <a href="../section14/getsockopt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.6.</b>
+                        
+                         getsockopt
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.7" data-path="section14/htonl.html">
+            
+                
+                    <a href="../section14/htonl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.7.</b>
+                        
+                         htonl
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.8" data-path="section14/htons.html">
+            
+                
+                    <a href="../section14/htons.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.8.</b>
+                        
+                         htons
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.9" data-path="section14/inet_addr.html">
+            
+                
+                    <a href="../section14/inet_addr.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.9.</b>
+                        
+                         inet_addr
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.10" data-path="section14/inet_aton.html">
+            
+                
+                    <a href="../section14/inet_aton.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.10.</b>
+                        
+                         inet_aton
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.11" data-path="section14/inet_ntoa.html">
+            
+                
+                    <a href="../section14/inet_ntoa.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.11.</b>
+                        
+                         inet_ntoa
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.12" data-path="section14/listen.html">
+            
+                
+                    <a href="../section14/listen.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.12.</b>
+                        
+                         listen
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.13" data-path="section14/ntohl.html">
+            
+                
+                    <a href="../section14/ntohl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.13.</b>
+                        
+                         ntohl
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.14" data-path="section14/ntohs.html">
+            
+                
+                    <a href="../section14/ntohs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.14.</b>
+                        
+                         ntohs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.15" data-path="section14/recv.html">
+            
+                
+                    <a href="../section14/recv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.15.</b>
+                        
+                         recv
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.16" data-path="section14/recvfrom.html">
+            
+                
+                    <a href="../section14/recvfrom.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.16.</b>
+                        
+                         recvfrom
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.17" data-path="section14/recvmsg.html">
+            
+                
+                    <a href="../section14/recvmsg.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.17.</b>
+                        
+                         recvmsg
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.18" data-path="section14/send.html">
+            
+                
+                    <a href="../section14/send.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.18.</b>
+                        
+                         send
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.19" data-path="section14/sendmsg.html">
+            
+                
+                    <a href="../section14/sendmsg.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.19.</b>
+                        
+                         sendmsg
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.20" data-path="section14/sendto.html">
+            
+                
+                    <a href="../section14/sendto.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.20.</b>
+                        
+                         sendto
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.21" data-path="section14/setprotoent.html">
+            
+                
+                    <a href="../section14/setprotoent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.21.</b>
+                        
+                         setprotoent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.22" data-path="section14/setservent.html">
+            
+                
+                    <a href="../section14/setservent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.22.</b>
+                        
+                         setservent
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.23" data-path="section14/setsockopt.html">
+            
+                
+                    <a href="../section14/setsockopt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.23.</b>
+                        
+                         setsockopt
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.24" data-path="section14/shutdown.html">
+            
+                
+                    <a href="../section14/shutdown.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.24.</b>
+                        
+                         shutdown
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14.25" data-path="section14/socket.html">
+            
+                
+                    <a href="../section14/socket.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.25.</b>
+                        
+                         socket
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" >
+            
+            <span><b>15.</b> 环境变量篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="15.1" data-path="section15/getenv.html">
+            
+                
+                    <a href="../section15/getenv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.1.</b>
+                        
+                         getenv
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15.2" data-path="section15/putenv.html">
+            
+                
+                    <a href="../section15/putenv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.2.</b>
+                        
+                         putenv
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15.3" data-path="section15/setenv.html">
+            
+                
+                    <a href="../section15/setenv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.3.</b>
+                        
+                         setenv
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" >
+            
+            <span><b>16.</b> 终端控制篇</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="16.1" data-path="section16/getopt.html">
+            
+                
+                    <a href="../section16/getopt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.1.</b>
+                        
+                         getopt
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16.2" data-path="section16/isatty.html">
+            
+                
+                    <a href="../section16/isatty.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.2.</b>
+                        
+                         isatty
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16.3" data-path="section16/select.html">
+            
+                
+                    <a href="../section16/select.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.3.</b>
+                        
+                         select
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16.4" data-path="section16/ttyname.html">
+            
+                
+                    <a href="../section16/ttyname.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.4.</b>
+                        
+                         ttyname
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Linux 常用C函数（中文版）</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_6">
+                    
+                        <p>islower（测试字符是否为小写字母）
+相关函数
+isalpha，isupper
+表头文件</p>
+<h1 id="includectypeh">include<ctype.h></h1>
+<p>定义函数
+int islower(int c)
+函数说明
+检查参数c是否为小写英文字母。
+返回值
+若参数c为小写英文字母，则返回TRUE，否则返回NULL(0)。
+附加说明
+此为宏定义，非真正函数。
+范例</p>
+<h1 id="includectypeh">include<ctype.h></h1>
+<p>main()
+{
+char str[]=&quot;123@#FDsP[e?&quot;;
+int i;
+for(i=0;str[i]!=0;i++)
+if(islower(str[i])) printf(&quot;%c is a lower-case character\n&quot;,str[i]);
+}
+执行
+c is a lower-case character
+s is a lower-case character
+e is a lower-case character</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../section1/isgraphis.html" class="navigation navigation-prev " aria-label="Previous page: isgraphis"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../section1/isprint.html" class="navigation navigation-next " aria-label="Next page: isprint"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
