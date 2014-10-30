@@ -28,266 +28,266 @@ dependencies {
 android {
     productFlavors {
         Learn_JavaScript{
-            packageName "com.github.snowdream.android.app.books.javascript"
+            applicationId "com.github.snowdream.android.app.books.javascript"
             buildConfigField "String", "BOOK_URL", "\"http://gitbookio.github.io/javascript\""
         }
 
         Pro_Git{
-            packageName "com.github.snowdream.android.app.books.progit"
+            applicationId "com.github.snowdream.android.app.books.progit"
             buildConfigField "String", "BOOK_URL", "\"http://gitbookio.github.io/git/\""
         }
 
         How_to_Make_a_Computer_Operating_System{
-            packageName "com.github.snowdream.android.app.books.howtomakeacomputeros"
+            applicationId "com.github.snowdream.android.app.books.howtomakeacomputeros"
             buildConfigField "String", "BOOK_URL", "\"http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/\""
         }
 
         Survive_JavaScript{
-            packageName "com.github.snowdream.android.app.books.survivejavascript"
+            applicationId "com.github.snowdream.android.app.books.survivejavascript"
             buildConfigField "String", "BOOK_URL", "\"http://survivejs.com/\""
         }
         
         Rust_by_Example{
-            packageName "com.github.snowdream.android.app.books.rustbyexample"
+            applicationId "com.github.snowdream.android.app.books.rustbyexample"
             buildConfigField "String", "BOOK_URL", "\"http://rustbyexample.com/\""
         }
         
         Learn_Markdown{
-            packageName "com.github.snowdream.android.app.books.learnmarkdown"
+            applicationId "com.github.snowdream.android.app.books.learnmarkdown"
             buildConfigField "String", "BOOK_URL", "\"http://gitbookio.github.io/markdown/\""
         }
         
         About_Haskell{
-            packageName "com.github.snowdream.android.app.books.abouthaskell"
+            applicationId "com.github.snowdream.android.app.books.abouthaskell"
             buildConfigField "String", "BOOK_URL", "\"http://denisshevchenko.github.io/ohaskell/\""
         }
         
         Ramayana_Book{
-            packageName "com.github.snowdream.android.app.books.ramayanabook"
+            applicationId "com.github.snowdream.android.app.books.ramayanabook"
             buildConfigField "String", "BOOK_URL", "\"http://svenkatreddy.github.io/Ramayana_Book/\""
         }
                 
         Build_Your_Own_Lisp{
-            packageName "com.github.snowdream.android.app.books.buildyourownlisp"
+            applicationId "com.github.snowdream.android.app.books.buildyourownlisp"
             buildConfigField "String", "BOOK_URL", "\"http://gh.landersbenjamin.com/BuildYourOwnLispGitbook/\""
         }
                 
         Mac_OS_X_Setup_Guide{
-            packageName "com.github.snowdream.android.app.books.macosxsetupguide"
+            applicationId "com.github.snowdream.android.app.books.macosxsetupguide"
             buildConfigField "String", "BOOK_URL", "\"http://sourabhbajaj.com/mac-setup/\""
         }
                 
         FileMaker_Open_Directory{
-            packageName "com.github.snowdream.android.app.books.filwmakeropendirectory"
+            applicationId "com.github.snowdream.android.app.books.filwmakeropendirectory"
             buildConfigField "String", "BOOK_URL", "\"http://fmod.fmtricks.com/\""
         }
                 
         Exobook{
-            packageName "com.github.snowdream.android.app.books.exobook"
+            applicationId "com.github.snowdream.android.app.books.exobook"
             buildConfigField "String", "BOOK_URL", "\"http://codac.co/\""
         }
                 
         Learn_Gulp_js{
-            packageName "com.github.snowdream.android.app.books.learngulpjs"
+            applicationId "com.github.snowdream.android.app.books.learngulpjs"
             buildConfigField "String", "BOOK_URL", "\"http://coalman.github.io/tott-gulpjs/book/\""
         }
                 
         Erle_Robot_the_educational_drone{
-            packageName "com.github.snowdream.android.app.books.erlerobottheeducationaldrone"
+            applicationId "com.github.snowdream.android.app.books.erlerobottheeducationaldrone"
             buildConfigField "String", "BOOK_URL", "\"http://erlerobot.github.io/erle_gitbook/\""
         }
                 
         R_Package_for_Gitbook_and_R_Markdown{
-            packageName "com.github.snowdream.android.app.books.rpackageforgitbookandrmarkdown"
+            applicationId "com.github.snowdream.android.app.books.rpackageforgitbookandrmarkdown"
             buildConfigField "String", "BOOK_URL", "\"http://jason.bryer.org/Rgitbook/\""
         }
 
         Hard_Rock_CoffeeScript{
-            packageName "com.github.snowdream.android.app.books.hardrockcoffeescript"
+            applicationId "com.github.snowdream.android.app.books.hardrockcoffeescript"
             buildConfigField "String", "BOOK_URL", "\"http://alchapone.github.io/hard-rock-coffeescript/\""
         }
 
         Gradschool_Survival_Manual{
-            packageName "com.github.snowdream.android.app.books.gradleschoolsurvival"
+            applicationId "com.github.snowdream.android.app.books.gradleschoolsurvival"
             buildConfigField "String", "BOOK_URL", "\"http://openmetric.org/gradschool/book/index.html\""
         }
 
         Heroku_Node_js{
-            packageName "com.github.snowdream.android.app.books.herokunodejs"
+            applicationId "com.github.snowdream.android.app.books.herokunodejs"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/samypesse/heroku-node\""
         }
 
         GitBook_Documentation{
-            packageName "com.github.snowdream.android.app.books.gitbookdocumentation"
+            applicationId "com.github.snowdream.android.app.books.gitbookdocumentation"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/gitbookio/documentation\""
         }
 
         Sitecore_MVC_The_Community_Book{
-            packageName "com.github.snowdream.android.app.books.sitecoremvc"
+            applicationId "com.github.snowdream.android.app.books.sitecoremvc"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/gallarotti/sitecore-mvc-the-community-book\""
         }
 
         RubyKin{
-            packageName "com.github.snowdream.android.app.books.rubykin"
+            applicationId "com.github.snowdream.android.app.books.rubykin"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/mrdougwright/rubykin\""
         }
 
         Javascript_Challenges{
-            packageName "com.github.snowdream.android.app.books.javascriptchallenges"
+            applicationId "com.github.snowdream.android.app.books.javascriptchallenges"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/amischol/javascript_challenges\""
         }
         
         Git_Tutorial{
-            packageName "com.github.snowdream.android.app.books.gittutorial"
+            applicationId "com.github.snowdream.android.app.books.gittutorial"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/lvwzhen/git-tutorial\""
         }
 //
 //        Devise_젬_파헤치기{
-//            packageName "com.github.snowdream.android.app.books.devisebook"
+//            applicationId "com.github.snowdream.android.app.books.devisebook"
 //            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/luciuschoi/exploring_devise\""
 //        }
 //
 //        Les_règles_YSlow{
-//            packageName "com.github.snowdream.android.app.books.lesyslow"
+//            applicationId "com.github.snowdream.android.app.books.lesyslow"
 //            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/olivjan/yslow\""
 //        }
 
         The_Guide_To_Cuba{
-            packageName "com.github.snowdream.android.app.books.theguidetocuba"
+            applicationId "com.github.snowdream.android.app.books.theguidetocuba"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/frodsan/theguidetocuba\""
         }
 
         SFERA{
-            packageName "com.github.snowdream.android.app.books.sfera"
+            applicationId "com.github.snowdream.android.app.books.sfera"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/ideutschlion/sfera\""
         }
 
         The_Guide_to_Cortex_Chinese_Version{
-            packageName "com.github.snowdream.android.app.books.theguidetocortex"
+            applicationId "com.github.snowdream.android.app.books.theguidetocortex"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/kaelzhang/the-guide-to-cortex-chinese-version\""
         }
 
         Dataviz{
-            packageName "com.github.snowdream.android.app.books.dataviz"
+            applicationId "com.github.snowdream.android.app.books.dataviz"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/doughertyjack/dataviz\""
         }
 
         Manual_definitivo_de_Laravel{
-            packageName "com.github.snowdream.android.app.books.manualdefinitivodelaravel"
+            applicationId "com.github.snowdream.android.app.books.manualdefinitivodelaravel"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/jlmerdiez/laravel\""
         }
 
         gulp_book{
-            packageName "com.github.snowdream.android.app.books.gulpbook"
+            applicationId "com.github.snowdream.android.app.books.gulpbook"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/davinov/gulp-book\""
         }
 
         makescape_adage_gitbook{
-            packageName "com.github.snowdream.android.app.books.makescapeadagegitbook"
+            applicationId "com.github.snowdream.android.app.books.makescapeadagegitbook"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/capbri/makescape-adage-gitbook\""
         }
 //
 //        초보자를_위한_레일스_가이드북{
-//            packageName "com.github.snowdream.android.app.books.railsguidebook"
+//            applicationId "com.github.snowdream.android.app.books.railsguidebook"
 //            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/rorlab/railsguidebook\""
 //        }
 //
 //        RORLa_오픈소스_프로젝트_매뉴얼{
-//            packageName "com.github.snowdream.android.app.books.RORLa"
+//            applicationId "com.github.snowdream.android.app.books.RORLa"
 //            buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/rorlab/rorla\""
 //        }
 
         Dog_Of_Science{
-            packageName "com.github.snowdream.android.app.books.DogofScience"
+            applicationId "com.github.snowdream.android.app.books.DogofScience"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/emptymalei/dogofscience\""
         }
 
         Inventario2{
-            packageName "com.github.snowdream.android.app.books.Inventario2"
+            applicationId "com.github.snowdream.android.app.books.Inventario2"
             buildConfigField "String", "BOOK_URL", "\"https://www.gitbook.io/read/book/rmontanana/inventario2\""
         }
         
         The_Swift_Programming_Language_In_Chinese{
-            packageName "com.github.snowdream.android.app.books.theswiftprogramminglanguageinchinese"
+            applicationId "com.github.snowdream.android.app.books.theswiftprogramminglanguageinchinese"
             buildConfigField "String", "BOOK_URL", "\"http://numbbbbb.github.io/the-swift-programming-language-in-chinese/\""
         }
 
         Swift_cheat_sheet{
-            packageName "com.github.snowdream.android.app.books.swiftcheatsheet"
+            applicationId "com.github.snowdream.android.app.books.swiftcheatsheet"
             buildConfigField "String", "BOOK_URL", "\"http://mhm5000.gitbooks.io/swift-cheat-sheet/\""
         }
         
         Android_Training_Course_in_Chinese{
-            packageName "com.github.snowdream.android.app.books.androidtraininginchinese"
+            applicationId "com.github.snowdream.android.app.books.androidtraininginchinese"
             buildConfigField "String", "BOOK_URL", "\"http://hukai.me/android-training-course-in-chinese/index.html\""
         }
 
         Git_for_Everyone{
-            packageName "com.github.snowdream.android.app.books.gitforeveryone"
+            applicationId "com.github.snowdream.android.app.books.gitforeveryone"
             buildConfigField "String", "BOOK_URL", "\"http://anotheruiguy.gitbooks.io/gitforeveryone/\""
         }
         
         Rails_102{
-            packageName "com.github.snowdream.android.app.books.rails102"
+            applicationId "com.github.snowdream.android.app.books.rails102"
             buildConfigField "String", "BOOK_URL", "\"http://rocodev.gitbooks.io/rails-102/\""
         }
 
         Konpa{
-            packageName "com.github.snowdream.android.app.books.konpa"
+            applicationId "com.github.snowdream.android.app.books.konpa"
             buildConfigField "String", "BOOK_URL", "\"http://leny_be.gitbooks.io/konpa/\""
         }
 
         Nodeexpreslibsass_from_scratch{
-            packageName "com.github.snowdream.android.app.books.nodeexpreslibsass"
+            applicationId "com.github.snowdream.android.app.books.nodeexpreslibsass"
             buildConfigField "String", "BOOK_URL", "\"http://anotheruiguy.gitbooks.io/nodeexpreslibsass_from-scratch/\""
         }
 
         github_cheat_sheet{
-            packageName "com.github.snowdream.android.app.books.githubchecatsheet"
+            applicationId "com.github.snowdream.android.app.books.githubchecatsheet"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/github-cheat-sheet/\""
         }
         markdown_syntax{
-            packageName "com.github.snowdream.android.app.books.markdownsyntax"
+            applicationId "com.github.snowdream.android.app.books.markdownsyntax"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/markdown-syntax/\""
         }
 
         material_design{
-            packageName "com.github.snowdream.android.app.books.materialdesign"
+            applicationId "com.github.snowdream.android.app.books.materialdesign"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/material-design/\""
         }
 
         chinese_docker{
-            packageName "com.github.snowdream.android.app.books.chinesedocker"
+            applicationId "com.github.snowdream.android.app.books.chinesedocker"
             buildConfigField "String", "BOOK_URL", "\"http://www.widuu.com/chinese_docker/index.html\""
         }
 
         build_web_application_with_golang{
-            packageName "com.github.snowdream.android.app.books.buildwebapplicationwithgolang"
+            applicationId "com.github.snowdream.android.app.books.buildwebapplicationwithgolang"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/build-web-application-with-golang/\""
         }
 
         seven_days_nodejs{
-            packageName "com.github.snowdream.android.app.books.servendaysnodejs"
+            applicationId "com.github.snowdream.android.app.books.servendaysnodejs"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/7-days-nodejs/\""
         }
 
         javascript_style_guide{
-            packageName "com.github.snowdream.android.app.books.javascriptstyleguide"
+            applicationId "com.github.snowdream.android.app.books.javascriptstyleguide"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/javascript-style-guide/javascript-style-guide/\""
         }
 
         java_Interview_Questions_and_Answers{
-            packageName "com.github.snowdream.android.app.books.JavaInterviewQuestionsandAnswers"
+            applicationId "com.github.snowdream.android.app.books.JavaInterviewQuestionsandAnswers"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/115-Java-Interview-Questions-and-Answers/115-Java-Interview-Questions-and-Answers/\""
         }
 
         Nodejs_Documentation{
-            packageName "com.github.snowdream.android.app.books.NodejsDocumentation"
+            applicationId "com.github.snowdream.android.app.books.NodejsDocumentation"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/Node.js-Documentation/\""
         }
 
         linux_c_functions_zh{
-            packageName "com.github.snowdream.android.app.books.linuxcfunctionzh"
+            applicationId "com.github.snowdream.android.app.books.linuxcfunctionzh"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/linux-c-functions-zh\""
         }
     }
