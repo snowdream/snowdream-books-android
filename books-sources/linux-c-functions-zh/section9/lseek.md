@@ -1,11 +1,11 @@
 
 
 lseek（移动文件的读写位置）
-相关函数
+<pre>相关函数
 dup，open，fseek
 表头文件
-#include<sys/types.h>
-#include<unistd.h>
+#include< sys/types.h>
+#include< unistd.h>
 定义函数
 off_t lseek(int fildes,off_t offset ,int whence);
 函数说明
@@ -25,4 +25,4 @@ SEEK_END 将读写位置指向文件尾后再增加offset个位移量。
 附加说明
 Linux系统不允许lseek（）对tty装置作用，此项动作会令lseek（）返回ESPIPE。
 范例
-参考本函数说明
+参考本函数说明</pre>

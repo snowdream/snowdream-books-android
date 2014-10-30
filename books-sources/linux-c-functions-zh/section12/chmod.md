@@ -1,9 +1,9 @@
 chmod（改变文件的权限）
-相关函数
+<pre>相关函数
 fchmod，stat，open，chown
 表头文件
-#include<sys/types.h>
-#include<sys/stat.h>
+#include< sys/types.h>
+#include< sys/stat.h>
 定义函数
 int chmod(const char * path,mode_t mode);
 函数说明
@@ -39,9 +39,9 @@ ELOOP 参数path有过多符号连接问题。
 EIO I/O 存取错误
 范例
 /* 将/etc/passwd 文件权限设成S_IRUSR|S_IWUSR|S_IRGRP|S_IROTH */
-#include<sys/types.h>
-#include<sys/stat.h>
+#include< sys/types.h>
+#include< sys/stat.h>
 main()
 {
 chmod(“/etc/passwd”,S_IRUSR|S_IWUSR|S_IRGRP|S_IROTH);
-}
+}</pre>

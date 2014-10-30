@@ -1,8 +1,8 @@
 fscanf（格式化字符串输入）
-相关函数
+<pre>相关函数
 scanf，sscanf
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 int fscanf(FILE * stream ,const char *format,....);
 函数说明
@@ -12,7 +12,7 @@ fscanf()会自参数stream的文件流中读取字符串，再根据参数format
 附加说明
 
 范例
-#include<stdio.h>
+#include< stdio.h>
 main()
 {
 int i;
@@ -23,4 +23,4 @@ printf(“%d %d %s \n”,i,j,s);
 }
 执行
 10 0x1b aaaaaaaaa bbbbbbbbbb /*从键盘输入*/
-10 27 aaaaa
+10 27 aaaaa</pre>

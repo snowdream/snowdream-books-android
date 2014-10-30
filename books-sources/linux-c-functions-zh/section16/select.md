@@ -1,9 +1,9 @@
 
 select（I/O多工机制）
-表头文件
-#include<sys/time.h>
-#include<sys/types.h>
-#include<unistd.h>
+<pre>表头文件
+#include< sys/time.h>
+#include< sys/types.h>
+#include< unistd.h>
 定义函数
 int select(int n,fd_set * readfds,fd_set * writefds,fd_set * exceptfds,struct timeval * timeout);
 函数说明
@@ -32,4 +32,4 @@ ENOMEM 核心内存不足
 FD_ZERO(&readset);
 FD_SET(fd,&readset);
 select(fd+1,&readset,NULL,NULL,NULL);
-if(FD_ISSET(fd,readset){……}
+if(FD_ISSET(fd,readset){……}</pre>

@@ -1,8 +1,8 @@
 bsearch（二元搜索）
-相关函数
+<pre>相关函数
 qsort
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 void *bsearch(const void *key,const void *base,size_t nmemb,size_tsize,int (*compar) (const void*,const void*));
 函数说明
@@ -10,8 +10,8 @@ bsearch()利用二元搜索从排序好的数组中查找数据。参数key指�
 附加说明
 找到关键数据则返回找到的地址，如果在数组中找不到关键数据则返回NULL。
 范例
-#include<stdio.h>
-#include<stdlib.h>
+#include< stdio.h>
+#include< stdlib.h>
 #define NMEMB 5
 #define SIZE 10
 int compar(const void *a,const void *b)
@@ -57,4 +57,4 @@ sunos
 windows
 hello
 >hello
-found: hello
+found: hello</pre>

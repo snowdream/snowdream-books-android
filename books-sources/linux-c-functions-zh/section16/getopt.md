@@ -1,8 +1,8 @@
 getopt（分析命令行参数）
-相关函数
+<pre>相关函数
 
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int getopt(int argc,char * const argv[ ],const char * optstring);
 函数说明
@@ -10,8 +10,8 @@ getopt()用来分析命令行参数。参数argc和argv是由main()传递的参�
 返回值
 如果找到符合的参数则返回此参数字母，如果参数不包含在参数optstring 的选项字母则返回“?”字符，分析结束则返回-1。
 范例
-#include<stdio.h>
-#include<unistd.h>
+#include< stdio.h>
+#include< unistd.h>
 int main(int argc,char **argv)
 {
 int ch;
@@ -40,3 +40,4 @@ other option :?
 $./getopt –a12345
 option a:’12345’
 　
+</pre>

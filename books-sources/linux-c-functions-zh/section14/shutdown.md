@@ -1,10 +1,10 @@
 
 
 shutdown（终止socket通信）
-相关函数
+<pre>相关函数
 socket，connect
 表头文件
-#include<sys/socket.h>
+#include< sys/socket.h>
 定义函数
 int shutdown(int s,int how);
 函数说明
@@ -17,4 +17,4 @@ how=2 终止读取及传送操作
 错误代码
 EBADF 参数s不是有效的socket处理代码
 ENOTSOCK 参数s为一文件描述词，非socket
-ENOTCONN 参数s指定的socket并未连线
+ENOTCONN 参数s指定的socket并未连线</pre>

@@ -1,8 +1,8 @@
 fseek（移动文件流的读写位置）
-相关函数
+<pre>相关函数
 rewind，ftell，fgetpos，fsetpos，lseek
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 int fseek(FILE * stream,long offset,int whence);
 函数说明
@@ -20,7 +20,7 @@ SEEK_END将读写位置指向文件尾后再增加offset个位移量。
 附加说明
 fseek()不像lseek()会返回读写位置，因此必须使用ftell()来取得目前读写的位置。
 范例
-#include<stdio.h>
+#include< stdio.h>
 main()
 {
 FILE * stream;
@@ -40,4 +40,4 @@ fclose(stream);
 执行
 offset = 5
 offset =0
-offset=10
+offset=10</pre>

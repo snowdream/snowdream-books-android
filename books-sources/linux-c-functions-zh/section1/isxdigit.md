@@ -1,8 +1,8 @@
 isxdigit（测试字符是否为16进制数字）
-相关函数
+<pre>相关函数
 isalnum，isdigit
 表头文件
-#include<ctype.h>
+#include< ctype.h>
 定义函数
 int isxdigit (int c)
 函数说明
@@ -13,7 +13,7 @@ int isxdigit (int c)
 此为宏定义，非真正函数。
 范例
 /*找出字符串str中为十六进制数字的字符*/
-#include <ctype.h>
+#include < ctype.h>
 main()
 {
 char str[]="123c@#FDsP[e?";
@@ -28,4 +28,4 @@ if(isxdigit(str[i])) printf("%c is a hexadecimal digits\n",str[i]);
 c is a hexadecimal digits
 F is a hexadecimal digits
 D is a hexadecimal digits
-e is a hexadecimal digits
+e is a hexadecimal digits</pre>

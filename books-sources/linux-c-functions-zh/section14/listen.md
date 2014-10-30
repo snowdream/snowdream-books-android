@@ -1,8 +1,8 @@
 listen（等待连接）
-相关函数
+<pre>相关函数
 socket，bind，accept，connect
 表头文件
-#include<sys/socket.h>
+#include< sys/socket.h>
 定义函数
 int listen(int s,int backlog);
 函数说明
@@ -16,11 +16,11 @@ EBADF 参数sockfd非合法socket处理代码
 EACCESS 权限不足
 EOPNOTSUPP 指定的socket并未支援listen模式。
 范例
-#include<sys/types.h>
-#include<sys/socket.h>
-#include<netinet/in.h>
-#include<arpa/inet.h>
-#include<unistd.h>
+#include< sys/types.h>
+#include< sys/socket.h>
+#include< netinet/in.h>
+#include< arpa/inet.h>
+#include< unistd.h>
 #define PORT 1234
 #define MAXSOCKFD 10
 main()
@@ -79,4 +79,4 @@ printf(“%s”,buffer);
 $ ./listen
 connect from 127.0.0.1
 hi I am client
-connected closed.
+connected closed.</pre>

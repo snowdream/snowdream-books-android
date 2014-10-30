@@ -1,10 +1,8 @@
-
-
 symlink（建立文件符号连接）
-相关函数
+<pre>相关函数
 link，unlink
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int symlink( const char * oldpath,const char * newpath);
 函数说明
@@ -23,8 +21,8 @@ ELOOP 参数pathname有过多符号连接问题
 ENOSPC 文件系统的剩余空间不足
 EIO I/O 存取错误
 范例
-#include<unistd.h>
+#include< unistd.h>
 main()
 {
 symlink(“/etc/passwd”,”pass”);
-}
+}</pre>

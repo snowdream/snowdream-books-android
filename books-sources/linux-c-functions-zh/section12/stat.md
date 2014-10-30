@@ -1,11 +1,10 @@
 
-
 stat（取得文件状态）
-相关函数
+<pre>相关函数
 fstat，lstat，chmod，chown，readlink，utime
 表头文件
-#include<sys/stat.h>
-#include<unistd.h>
+#include< sys/stat.h>
+#include< unistd.h>
 定义函数
 int stat(const char * file_name,struct stat *buf);
 函数说明
@@ -79,8 +78,8 @@ EACCESS 存取文件时被拒绝
 ENOMEM 核心内存不足
 ENAMETOOLONG 参数file_name的路径名称太长
 范例
-#include<sys/stat.h>
-#include<unistd.h>
+#include< sys/stat.h>
+#include< unistd.h>
 mian()
 {
 struct stat buf;
@@ -88,4 +87,4 @@ stat (“/etc/passwd”,&buf);
 printf(“/etc/passwd file size = %d \n”,buf.st_size);
 }
 执行
-/etc/passwd file size = 705
+/etc/passwd file size = 705</pre>

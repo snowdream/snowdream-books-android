@@ -1,9 +1,9 @@
 getgroups（取得组代码）
-相关函数
+<pre>相关函数
 initgroups，setgroup，getgid，setgid
 表头文件
-#include<unistd.h>
-#include<sys/types.h>
+#include< unistd.h>
+#include< sys/types.h>
 定义函数
 int getgroups(int size,gid_t list[]);
 函数说明
@@ -13,8 +13,8 @@ getgroup（）用来取得目前用户所属的组代码。参数size为list〔�
 错误代码
 EFAULT 参数list数组地址不合法。EINVAL 参数size值不足以容纳所有的组。
 范例
-#include<unistd.h>
-#include<sys/types.h>
+#include< unistd.h>
+#include< sys/types.h>
 main()
 {
 gid_t list[500];
@@ -31,4 +31,4 @@ printf(“%d:%d\n”,i,list[i]);
 3:03
 4:04
 5:06
-6:10
+6:10</pre>

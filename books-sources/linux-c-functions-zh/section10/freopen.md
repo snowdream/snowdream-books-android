@@ -1,8 +1,8 @@
 freopen（打开文件）
-相关函数
+<pre>相关函数
 fopen，fclose
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 FILE * freopen(const char * path,const char * mode,FILE * stream);
 函数说明
@@ -10,11 +10,11 @@ FILE * freopen(const char * path,const char * mode,FILE * stream);
 返回值
 文件顺利打开后，指向该流的文件指针就会被返回。如果文件打开失败则返回NULL，并把错误代码存在errno 中。
 范例
-#include<stdio.h>
+#include< stdio.h>
 main()
 {
 FILE * fp;
 fp=fopen(“/etc/passwd”,”r”);
 fp=freopen(“/etc/group”,”r”,fp);
 fclose(fp);
-}
+}</pre>

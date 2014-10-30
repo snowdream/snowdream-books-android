@@ -1,8 +1,8 @@
 bcopy（拷贝内存内容）
-相关函数
+<pre>相关函数
 memccpy，memcpy，memmove，strcpy，ctrncpy
 表头文件
-#include <string.h>
+#include < string.h>
 定义函数
 void bcopy ( const void *src,void *dest ,int n);
 函数说明
@@ -12,7 +12,7 @@ bcopy()与memcpy()一样都是用来拷贝src所指的内存内容前n个字节�
 附加说明
 建议使用memcpy()取代
 范例
-#include<string.h>
+#include< string.h>
 main()
 {
 char dest[30]=”string(a)”;
@@ -28,4 +28,4 @@ for(i=0;i<30;i++)
 printf(“%c”,dest[i]);
 执行
 bcopy() : string string
-memcpy() :string sring
+memcpy() :string sring</pre>

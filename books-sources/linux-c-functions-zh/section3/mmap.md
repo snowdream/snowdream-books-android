@@ -1,9 +1,9 @@
 mmap（建立内存映射）
-相关函数
+<pre>相关函数
 munmap，open
 表头文件
-#include <unistd.h>
-#include <sys/mman.h>
+#include < unistd.h>
+#include < sys/mman.h>
 定义函数
 void *mmap(void *start,size_t length,int prot,int flags,int fd,off_t offsize);
 函数说明
@@ -33,11 +33,11 @@ EAGAIN 文件被锁住，或是有太多内存被锁住。
 ENOMEM 内存不足。
 范例
 /* 利用mmap()来读取/etc/passwd 文件内容*/
-#include<sys/types.h>
-#include<sys/stat.h>
-#include<fcntl.h>
-#include<unistd.h>
-#include<sys/mman.h>
+#include< sys/types.h>
+#include< sys/stat.h>
+#include< fcntl.h>
+#include< unistd.h>
+#include< sys/mman.h>
 main()
 {
 int fd;
@@ -71,4 +71,4 @@ ftp : x : 14 : 50 : FTP User : /home/ftp:
 nobody : x :99: 99: Nobody : /:
 xfs :x :100 :101 : X Font Server : /etc/xll/fs : /bin/false
 gdm : x : 42 :42 : : /home/gdm: /bin/bash
-kids : x : 500 :500 :/home/kids : /bin/bash
+kids : x : 500 :500 :/home/kids : /bin/bash</pre>

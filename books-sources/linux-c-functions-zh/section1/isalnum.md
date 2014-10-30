@@ -1,8 +1,8 @@
 isalnum（测试字符是否为英文或数字）
-相关函数
+<pre>相关函数
 isalpha，isdigit，islower，isupper
 表头文件
-#include<ctype.h>
+#include< ctype.h>
 定义函数
 int isalnum (int c)
 函数说明
@@ -13,7 +13,7 @@ int isalnum (int c)
 此为宏定义，非真正函数。
 范例
 /* 找出str 字符串中为英文字母或数字的字符*/
-#include < ctype.h>
+#include <  ctype.h>
 main()
 {
 char str[]=”123c@#FDsP[e?”;
@@ -31,3 +31,4 @@ D is an apphabetic character
 s is an apphabetic character
 P is an apphabetic character
 e is an apphabetic character
+</pre>

@@ -1,8 +1,8 @@
 mktime（将时间结构数据转换成经过的秒数）
-相关函数
+<pre>相关函数
 time，asctime，gmtime，localtime
 表头文件
-#include<time.h>
+#include< time.h>
 定义函数
 time_t mktime(strcut tm * timeptr);
 函数说明
@@ -12,7 +12,7 @@ mktime()用来将参数timeptr所指的tm结构数据转换成从公元1970年1�
 范例
 /* 用time()取得时间（秒数），利用localtime()
 转换成struct tm 再利用mktine（）将struct tm转换成原来的秒数*/
-#include<time.h>
+#include< time.h>
 main()
 {
 time_t timep;
@@ -25,4 +25,4 @@ printf(“time()->localtime()->mktime():%d\n”,timep);
 }
 执行
 time():974943297
-time()->localtime()->mktime():974943297
+time()->localtime()->mktime():974943297</pre>

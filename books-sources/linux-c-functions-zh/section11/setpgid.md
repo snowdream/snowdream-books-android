@@ -1,8 +1,8 @@
 setpgid（设置进程组识别码）
-相关函数
+<pre>相关函数
 getpgid，setpgrp，getpgrp
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int setpgid(pid_t pid,pid_t pgid);
 函数说明
@@ -12,4 +12,4 @@ setpgid()将参数pid 指定进程所属的组识别码设为参数pgid 指定�
 错误代码
 EINVAL 参数pgid小于0。
 EPERM 进程权限不足，无法完成调用。
-ESRCH 找不到符合参数pid指定的进程。
+ESRCH 找不到符合参数pid指定的进程。</pre>

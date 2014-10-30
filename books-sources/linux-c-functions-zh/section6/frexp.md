@@ -1,8 +1,8 @@
 frexp（将浮点型数分为底数与指数）
-相关函数
+<pre>相关函数
 ldexp，modf
 表头文件
-#include<math.h>
+#include< math.h>
 定义函数
 double frexp( double x, int *exp);
 函数说明
@@ -12,7 +12,7 @@ frexp()用来将参数x 的浮点型数切割成底数和指数。底数部分�
 附加说明
 使用GCC编译时请加入-lm。
 范例
-#include <math.h>
+#include < math.h>
 main()
 {
 int exp;
@@ -23,4 +23,4 @@ printf("fraction = %f\n", fraction);
 }
 执行
 exp = 11
-fraction = 0.500000 /* 0.5*(2^11)=1024*/
+fraction = 0.500000 /* 0.5*(2^11)=1024*/</pre>

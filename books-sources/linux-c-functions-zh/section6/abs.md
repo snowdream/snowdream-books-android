@@ -1,8 +1,8 @@
 abs（计算整型数的绝对值）
-相关函数
+<pre>相关函数
 labs, fabs
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 int abs (int j)
 函数说明
@@ -17,4 +17,4 @@ answer = abs(-12);
 printf("|-12| = %d\n", answer);
 }
 执行
-|-12| = 12
+|-12| = 12</pre>

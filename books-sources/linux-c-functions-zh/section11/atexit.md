@@ -1,8 +1,8 @@
 atexit（设置程序正常结束前调用的函数）
-相关函数
+<pre>相关函数
 _exit,exit,on_exit
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 int atexit (void (*function)(void));
 函数说明
@@ -10,7 +10,7 @@ atexit()用来设置一个程序正常结束前调用的函数。当程序通过
 返回值
 如果执行成功则返回0，否则返回-1，失败原因存于errno中。
 范例
-#include<stdlib.h>
+#include< stdlib.h>
 void my_exit(void)
 {
 printf(“before exit () !\n”);
@@ -21,4 +21,4 @@ atexit (my_exit);
 exit(0);
 }
 执行
-before exit()!
+before exit()!</pre>

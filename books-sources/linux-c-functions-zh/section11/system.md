@@ -1,8 +1,8 @@
 system（执行shell 命令）
-相关函数
+<pre>相关函数
 fork，execve，waitpid，popen
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 int system(const char * string);
 函数说明
@@ -12,11 +12,11 @@ system()会调用fork()产生子进程，由子进程来调用/bin/sh-c string�
 附加说明
 在编写具有SUID/SGID权限的程序时请勿使用system()，system()会继承环境变量，通过环境变量可能会造成系统安全的问题。
 范例
-#include<stdlib.h>
+#include< stdlib.h>
 main()
 {
 system(“ls -al /etc/passwd /etc/shadow”);
 }
 执行
 -rw-r--r-- 1 root root 705 Sep 3 13 :52 /etc/passwd
--r--------- 1 root root 572 Sep 2 15 :34 /etc/shadow
+-r--------- 1 root root 572 Sep 2 15 :34 /etc/shadow</pre>

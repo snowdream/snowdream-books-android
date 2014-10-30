@@ -1,8 +1,8 @@
 close（关闭文件）
-相关函数
+<pre>相关函数
 open，fcntl，shutdown，unlink，fclose
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int close(int fd);
 函数说明
@@ -14,4 +14,4 @@ EBADF 参数fd 非有效的文件描述词或该文件已关闭。
 附加说明
 虽然在进程结束时，系统会自动关闭已打开的文件，但仍建议自行关闭文件，并确实检查返回值。
 范例
-参考open()
+参考open()</pre>

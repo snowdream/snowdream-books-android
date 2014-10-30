@@ -1,8 +1,8 @@
 toupper（将小写字母转换成大写字母）
-相关函数
+<pre>相关函数
 isalpha，tolower
 表头文件
-#include<ctype.h>
+#include< ctype.h>
 定义函数
 int toupper(int c);
 函数说明
@@ -13,7 +13,7 @@ int toupper(int c);
 
 范例
 /* 将s字符串内的小写字母转换成大写字母*/
-#include<ctype.h>
+#include< ctype.h>
 main()
 {
 char s[]=”aBcDeFgH12345;!#$”;
@@ -25,4 +25,4 @@ printf(“after toupper() : %s\n”,s);
 }
 执行
 before toupper() : aBcDeFgH12345;!#$
-after toupper() : ABCDEFGH12345;!#$
+after toupper() : ABCDEFGH12345;!#$</pre>

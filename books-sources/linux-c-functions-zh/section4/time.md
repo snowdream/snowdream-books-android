@@ -1,8 +1,8 @@
 time（取得目前的时间）
-相关函数
+<pre>相关函数
 ctime，ftime，gettimeofday
 表头文件
-#include<time.h>
+#include< time.h>
 定义函数
 time_t time(time_t *t);
 函数说明
@@ -10,11 +10,11 @@ time_t time(time_t *t);
 返回值
 成功则返回秒数，失败则返回((time_t)-1)值，错误原因存于errno中。
 范例
-#include<time.h>
+#include< time.h>
 mian()
 {
 int seconds= time((time_t*)NULL);
 printf(“%d\n”,seconds);
 }
 执行
-9.73E+08
+9.73E+08</pre>

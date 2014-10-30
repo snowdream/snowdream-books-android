@@ -1,8 +1,8 @@
 mkstemp（建立唯一的临时文件）
-相关函数
+<pre>相关函数
 mktemp
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 int mkstemp(char * template);
 函数说明
@@ -15,7 +15,7 @@ char template[ ] =”template-XXXXXX”;
 千万不可以使用下列的表达方式
 char *template = “template-XXXXXX”;
 范例
-#include<stdlib.h>
+#include< stdlib.h>
 main( )
 {
 int fd;
@@ -25,4 +25,4 @@ printf(“template = %s\n”,template);
 close(fd);
 }
 执行
-template = template-lgZcbo
+template = template-lgZcbo</pre>

@@ -1,9 +1,9 @@
 closedir（关闭目录）
-相关函数
+<pre>相关函数
 opendir
 表头文件
-#include<sys/types.h>
-#include<dirent.h>
+#include< sys/types.h>
+#include< dirent.h>
 定义函数
 int closedir(DIR *dir);
 函数说明
@@ -13,4 +13,4 @@ closedir()关闭参数dir所指的目录流。
 错误代码
 EBADF 参数dir为无效的目录流
 范例
-参考readir()。
+参考readir()。</pre>

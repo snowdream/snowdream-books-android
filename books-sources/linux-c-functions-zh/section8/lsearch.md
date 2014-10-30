@@ -1,8 +1,8 @@
 lsearch（线性搜索）
-相关函数
+<pre>相关函数
 lfind
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 void *lsearch(const void * key ,const void * base ,size_t * nmemb,size_t size, int ( * compar) (const void * ,const void *));
 函数说明
@@ -10,8 +10,8 @@ lsearch()利用线性搜索在数组中从头至尾一项项查找数据。参�
 返回值
 找到关键数据则返回找到的该笔元素的四肢，如果在数组中找不到关键数据则将此关键数据加入数组，再把加入数组后的地址返回。
 范例
-#include<stdio.h>
-#include<stdlib.h>
+#include< stdio.h>
+#include< stdlib.h>
 #define NMEMB 50
 #define SIZE 10
 int compar (comst void *a,const void *b)
@@ -44,4 +44,4 @@ os/2
 os/2 not found!
 add os/2 to data array
 os/2
-found:os/2
+found:os/2</pre>

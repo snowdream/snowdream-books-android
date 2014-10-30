@@ -1,9 +1,9 @@
 utime（修改文件的存取时间和更改时间）
-相关函数
+<pre>相关函数
 utimes，stat
 表头文件
-#include<sys/types.h>
-#include<utime.h>
+#include< sys/types.h>
+#include< utime.h>
 定义函数
 int utime(const char * filename,struct utimbuf * buf);
 函数说明
@@ -18,4 +18,4 @@ time_t modtime;
 执行成功则返回0，失败返回-1，错误代码存于errno。
 错误代码
 EACCESS 存取文件时被拒绝，权限不足
-ENOENT 指定的文件不存在。
+ENOENT 指定的文件不存在。</pre>

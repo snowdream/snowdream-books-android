@@ -1,9 +1,9 @@
 gettimeofday（取得目前的时间）
-相关函数
+<pre>相关函数
 time，ctime，ftime，settimeofday
 表头文件
-#include <sys/time.h>
-#include <unistd.h>
+#include < sys/time.h>
+#include < unistd.h>
 定义函数
 int gettimeofday ( struct timeval * tv , struct timezone * tz )
 函数说明
@@ -33,8 +33,8 @@ DST_AUSTALT /*澳洲（1986年以后）*/
 返回值
 成功则返回0，失败返回－1，错误代码存于errno。附加说明EFAULT指针tv和tz所指的内存空间超出存取权限。
 范例
-#include<sys/time.h>
-#include<unistd.h>
+#include< sys/time.h>
+#include< unistd.h>
 main(){
 struct timeval tv;
 struct timezone tz;
@@ -48,4 +48,4 @@ printf(“tz_dsttime, %d\n”,tz.tz_dsttime);
 tv_sec: 974857339
 tv_usec:136996
 tz_minuteswest:-540
-tz_dsttime:0
+tz_dsttime:0</pre>

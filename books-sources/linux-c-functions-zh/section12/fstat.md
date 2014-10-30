@@ -1,9 +1,9 @@
 fstat（由文件描述词取得文件状态）
-相关函数
+<pre>相关函数
 stat，lstat，chmod，chown，readlink，utime
 表头文件
-#include<sys/stat.h>
-#include<unistd.h>
+#include< sys/stat.h>
+#include< unistd.h>
 定义函数
 int fstat(int fildes,struct stat *buf);
 函数说明
@@ -11,9 +11,9 @@ fstat()用来将参数fildes所指的文件状态，复制到参数buf所指的�
 返回值
 执行成功则返回0，失败返回-1，错误代码存于errno。
 范例
-#include<sys/stat.h>
-#include<unistd.h>
-#include<fcntk.h>
+#include< sys/stat.h>
+#include< unistd.h>
+#include< fcntk.h>
 main()
 {
 struct stat buf;
@@ -23,4 +23,4 @@ fstat(fd,&buf);
 printf(“/etc/passwd file size +%d\n “,buf.st_size);
 }
 执行
-/etc/passwd file size = 705
+/etc/passwd file size = 705</pre>

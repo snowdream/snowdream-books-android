@@ -1,9 +1,9 @@
 geteuid（取得有效的用户识别码）
-相关函数
+<pre>相关函数
 getuid，setreuid，setuid
 表头文件
-#include<unistd.h>
-#include<sys/types.h>
+#include< unistd.h>
+#include< sys/types.h>
 定义函数
 uid_t geteuid(void)
 函数说明
@@ -16,4 +16,4 @@ main()
 printf ("euid is %d \n",geteuid());
 }
 执行
-euid is 0 /*当使用root身份执行范例程序时*/
+euid is 0 /*当使用root身份执行范例程序时*/</pre>

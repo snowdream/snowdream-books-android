@@ -1,10 +1,8 @@
-
-
 sprintf（格式化字符串复制）
-相关函数
+<pre>相关函数
 printf，sprintf
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 int sprintf( char *str,const char * format,.........);
 函数说明
@@ -14,7 +12,7 @@ sprintf()会根据参数format字符串来转换并格式化数据，然后将�
 附加说明
 使用此函数得留意堆栈溢出，或改用snprintf（）。
 范例
-#include<stdio.h>
+#include< stdio.h>
 main()
 {
 char * a=”This is string A!”;
@@ -23,4 +21,4 @@ sprintf(buf,”>>> %s<<<\n”,a);
 printf(“%s”.buf);
 }
 执行
->>>This is string A!<<<
+>>>This is string A!<<<</pre>

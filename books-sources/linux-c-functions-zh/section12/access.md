@@ -1,8 +1,8 @@
 access（判断是否具有存取文件的权限）
-相关函数
+<pre>相关函数
 stat，open，chmod，chown，setuid，setgid
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int access(const char * pathname,int mode);
 函数说明
@@ -23,11 +23,11 @@ EIO I/O 存取错误。
 使用access()作用户认证方面的判断要特别小心，例如在access()后再做open()的空文件可能会造成系统安全上的问题。
 范例
 /* 判断是否允许读取/etc/passwd */
-#include<unistd.h>
+#include< unistd.h>
 int main()
 {
 if (access(“/etc/passwd”,R_OK) = =0)
 printf(“/etc/passwd can be read\n”);
 }
 执行
-/etc/passwd can be read
+/etc/passwd can be read</pre>

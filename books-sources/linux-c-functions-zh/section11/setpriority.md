@@ -1,9 +1,9 @@
 setpriority（设置程序进程执行优先权）
-相关函数
+<pre>相关函数
 getpriority，nice
 表头文件
-#include<sys/time.h>
-#include<sys/resource.h>
+#include< sys/time.h>
+#include< sys/resource.h>
 定义函数
 int setpriority(int which,int who, int prio);
 函数说明
@@ -18,4 +18,4 @@ PRIO_USER who为用户识别码
 ESRCH 参数which或who 可能有错，而找不到符合的进程
 EINVAL 参数which值错误。
 EPERM 权限不够，无法完成设置
-EACCES 一般用户无法降低优先权
+EACCES 一般用户无法降低优先权</pre>

@@ -1,8 +1,8 @@
 lfind（线性搜索）
-相关函数
+<pre>相关函数
 lsearch
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 void *lfind (const void *key,const void *base,size_t *nmemb,size_t
 size,int(* compar) (const void * ,const void *));
@@ -11,4 +11,4 @@ lfind()利用线性搜索在数组中从头至尾一项项查找数据。参数k
 返回值
 找到关键数据则返回找到的该笔元素的地址，如果在数组中找不到关键数据则返回空指针(NULL)。
 范例
-参考lsearch()。
+参考lsearch()。</pre>

@@ -1,9 +1,9 @@
 recvmsg（经socket接收数据）
-相关函数
+<pre>相关函数
 recv，recvfrom，send，sendto，sendmsg，socket
 表头文件
-#include<sys/types.h>
-#include<sys/socktet.h>
+#include< sys/types.h>
+#include< sys/socktet.h>
 定义函数
 int recvmsg(int s,struct msghdr *msg,unsigned int flags);
 函数说明
@@ -20,4 +20,4 @@ ENOBUFS 系统的缓冲内存不足
 ENOMEM 核心内存不足
 EINVAL 传给系统调用的参数不正确。
 范例
-参考recvfrom()。
+参考recvfrom()。</pre>

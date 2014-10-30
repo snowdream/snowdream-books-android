@@ -1,9 +1,9 @@
 rewinddir（重设读取目录的位置为开头位置）
-相关函数
+<pre>相关函数
 open，opendir，closedir，telldir，seekdir，readdir，scandir
 表头文件
-#include<sys/types.h>
-#include<dirent.h>
+#include< sys/types.h>
+#include< dirent.h>
 定义函数
 void rewinddir(DIR *dir);
 函数说明
@@ -13,9 +13,9 @@ rewinddir()用来设置参数dir 目录流目前的读取位置为原来开头�
 错误代码
 EBADF dir为无效的目录流
 范例
-#include<sys/types.h>
-#include<dirent.h>
-#include<unistd.h>
+#include< sys/types.h>
+#include< dirent.h>
+#include< unistd.h>
 main()
 {
 DIR * dir;
@@ -60,4 +60,4 @@ d_name:rc5.d
 d_name:rc6.d
 d_name:rc
 d_name:rc.local
-d_name:rc.sysinit
+d_name:rc.sysinit</pre>

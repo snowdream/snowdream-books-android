@@ -1,10 +1,8 @@
-
-
 getpgid（取得进程组识别码）
-相关函数
+<pre>相关函数
 setpgid，setpgrp，getpgrp
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 pid_t getpgid( pid_t pid);
 函数说明
@@ -15,10 +13,10 @@ getpgid()用来取得参数pid 指定进程所属的组识别码。如果参数p
 ESRCH 找不到符合参数pid 指定的进程。
 范例
 /*取得init 进程（pid＝1）的组识别码*/
-#include<unistd.h>
+#include< unistd.h>
 mian()
 {
 printf(“init gid = %d\n”,getpgid(1));
 }
 执行
-init gid = 0
+init gid = 0</pre>

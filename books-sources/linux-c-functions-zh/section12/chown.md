@@ -1,11 +1,9 @@
-
-
 chown（改变文件的所有者）
-相关函数
+<pre>相关函数
 fchown，lchown，chmod
 表头文件
-#include<sys/types.h>
-#include<unistd.h>
+#include< sys/types.h>
+#include< unistd.h>
 定义函数
 int chown(const char * path, uid_t owner,gid_t group);
 函数说明
@@ -16,9 +14,9 @@ chown()会将参数path指定文件的所有者变更为参数owner代表的用�
 参考chmod（）。
 范例
 /* 将/etc/passwd 的所有者和组都设为root */
-#include<sys/types.h>
-#include<unistd.h>
+#include< sys/types.h>
+#include< unistd.h>
 main()
 {
 chown(“/etc/passwd”,0,0);
-}
+}</pre>

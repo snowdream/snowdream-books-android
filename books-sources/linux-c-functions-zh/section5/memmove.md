@@ -1,8 +1,8 @@
 memmove（拷贝内存内容）
-相关函数
+<pre>相关函数
 bcopy，memccpy，memcpy，strcpy，strncpy
 表头文件
-#include<string.h>
+#include< string.h>
 定义函数
 void * memmove(void *dest,const void *src,size_t n);
 函数说明
@@ -12,4 +12,4 @@ memmove()与memcpy()一样都是用来拷贝src所指的内存内容前n个字�
 附加说明
 指针src和dest所指的内存区域可以重叠。
 范例
-参考memcpy()。
+参考memcpy()。</pre>

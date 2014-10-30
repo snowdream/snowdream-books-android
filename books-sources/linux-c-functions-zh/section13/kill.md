@@ -1,11 +1,10 @@
 
-
 kill（传送信号给指定的进程）
-相关函数
+<pre>相关函数
 raise，signal
 表头文件
-#include<sys/types.h>
-#include<signal.h>
+#include< sys/types.h>
+#include< signal.h>
 定义函数
 int kill(pid_t pid,int sig);
 函数说明
@@ -22,10 +21,10 @@ EINVAL 参数sig 不合法
 ESRCH 参数pid 所指定的进程或进程组不存在
 EPERM 权限不够无法传送信号给指定进程
 范例
-#include<unistd.h>
-#include<signal.h>
-#include<sys/types.h>
-#include<sys/wait.h>
+#include< unistd.h>
+#include< signal.h>
+#include< sys/types.h>
+#include< sys/wait.h>
 main()
 {
 pid_t pid;
@@ -47,4 +46,4 @@ printf(“chile process receive signal %d\n”,WTERMSIG(status));
 执行
 sen signal to child process(3170)
 Hi I am child process!
-child process receive signal 6
+child process receive signal 6</pre>

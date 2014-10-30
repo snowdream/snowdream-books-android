@@ -1,8 +1,8 @@
 memcpy（拷贝内存内容）
-相关函数
+<pre>相关函数
 bcopy，memccpy，memcpy，memmove，strcpy，strncpy
 表头文件
-#include<string.h>
+#include< string.h>
 定义函数
 void * memcpy (void * dest ,const void *src, size_t n);
 函数说明
@@ -12,7 +12,7 @@ memcpy()用来拷贝src所指的内存内容前n个字节到dest所指的内存�
 附加说明
 指针src和dest所指的内存区域不可重叠。
 范例
-#include<string.h>
+#include< string.h>
 main()
 {
 char a[30]="string (a)";
@@ -29,4 +29,4 @@ printf("%c",a[i]);
 }
 执行
 strcpy() : string a )
-memcpy() : string string
+memcpy() : string string</pre>

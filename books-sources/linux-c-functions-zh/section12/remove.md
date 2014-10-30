@@ -1,10 +1,8 @@
-
-
 remove（删除文件）
-相关函数
+<pre>相关函数
 link，rename，unlink
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 int remove(const char * pathname);
 函数说明
@@ -17,4 +15,4 @@ EFAULT 参数pathname指针超出可存取内存空间
 ENAMETOOLONG 参数pathname太长
 ENOMEM 核心内存不足
 ELOOP 参数pathname有过多符号连接问题
-EIO I/O 存取错误。
+EIO I/O 存取错误。</pre>

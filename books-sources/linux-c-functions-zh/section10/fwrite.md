@@ -1,10 +1,8 @@
-
-
 fwrite（将数据写至文件流）
-相关函数
+<pre>相关函数
 fopen，fread，fseek，fscanf
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 size_t fwrite(const void * ptr,size_t size,size_t nmemb,FILE * stream);
 函数说明
@@ -12,7 +10,7 @@ fwrite()用来将数据写入文件流中。参数stream为已打开的文件指
 返回值
 返回实际写入的nmemb数目。
 范例
-#include<stdio.h>
+#include< stdio.h>
 #define set_s (x,y) {strcoy(s[x].name,y);s[x].size=strlen(y);}
 #define nmemb 3
 struct test
@@ -31,5 +29,5 @@ fwrite(s,sizeof(struct test),nmemb,stream);
 fclose(stream);
 }
 执行
-参考fread（）。
+参考fread（）。</pre>
 　

@@ -1,8 +1,8 @@
 ttyname（返回一终端机名称）
-相关函数
+<pre>相关函数
 Isatty
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 char * ttyname(int desc);
 函数说明
@@ -10,10 +10,10 @@ char * ttyname(int desc);
 返回值
 如果成功则返回指向终端机名称的字符串指针，有错误情况发生时则返回NULL。
 范例
-#include<unistd.h>
-#include<sys/types.h>
-#include <sys/stat.h>
-#include<fcntl.h>
+#include< unistd.h>
+#include< sys/types.h>
+#include < sys/stat.h>
+#include< fcntl.h>
 main()
 {
 int fd;
@@ -29,4 +29,4 @@ close(fd);
 }
 执行
 /dev/tty is a tty
-ttyname = /dev/tty
+ttyname = /dev/tty</pre>

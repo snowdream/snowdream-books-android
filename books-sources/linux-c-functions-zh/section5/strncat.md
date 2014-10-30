@@ -1,5 +1,5 @@
 strncat（连接两字符串）
-相关函数
+<pre>相关函数
 bcopy，memccpy，memecpy，strcpy，strncpy
 表头文件
 #inclue <string.h>
@@ -10,7 +10,7 @@ strncat()会将参数src字符串拷贝n个字符到参数dest所指的字符串
 返回值
 返回参数dest的字符串起始地址。
 范例
-#include <string.h>
+#include < string.h>
 main()
 {
 char a[30]="string(1)";
@@ -20,4 +20,4 @@ printf("after strncat() :%s\n", strncat(a,b,6));
 }
 执行
 before strnact() : string(1)
-after strncat() : string(1) string
+after strncat() : string(1) string</pre>

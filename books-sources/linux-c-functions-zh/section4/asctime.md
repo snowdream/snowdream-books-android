@@ -1,8 +1,8 @@
 asctime（将时间和日期以字符串格式表示）
-相关函数
+<pre>相关函数
 time，ctime，gmtime，localtime
 表头文件
-#include<time.h>
+#include< time.h>
 定义函数
 char * asctime(const struct tm * timeptr);
 函数说明
@@ -12,7 +12,7 @@ asctime()将参数timeptr所指的tm结构中的信息转换成真实世界所�
 附加说明
 返回一字符串表示目前当地的时间日期。
 范例
-#include <time.h>
+#include < time.h>
 main()
 {
 time_t timep;
@@ -20,4 +20,4 @@ time (&timep);
 printf(“%s”,asctime(gmtime(&timep)));
 }
 执行
-Sat Oct 28 02:10:06 2000
+Sat Oct 28 02:10:06 2000</pre>

@@ -1,9 +1,9 @@
 getgrent（从组文件中取得账号的数据）
-相关函数
+<pre>相关函数
 setgrent，endgrent
 表头文件
-#include<grp.h>
-#include <sys/types.h>
+#include< grp.h>
+#include < sys/types.h>
 定义函数
 struct group *getgrent(void);
 函数说明
@@ -21,8 +21,8 @@ getgrent()在第一次调用时会打开组文件，读取数据完毕后可使�
 错误代码
 ENOMEM 内存不足，无法配置group结构。
 范例
-#include<grp.h>
-#include<sys/types.h>
+#include< grp.h>
+#include< sys/types.h>
 main()
 {
 struct group *data;
@@ -55,4 +55,4 @@ games:x:20
 gopher:x:30
 dip:x:40
 ftp:x:50
-nobody:x:99
+nobody:x:99</pre>

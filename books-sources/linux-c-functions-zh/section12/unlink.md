@@ -1,10 +1,9 @@
 
-
 unlink（删除文件）
-相关函数
+<pre>相关函数
 link，rename，remove
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int unlink(const char * pathname);
 函数说明
@@ -19,3 +18,4 @@ ENOMEM 核心内存不足
 ELOOP 参数pathname 有过多符号连接问题
 EIO I/O 存取错误
 　
+</pre>

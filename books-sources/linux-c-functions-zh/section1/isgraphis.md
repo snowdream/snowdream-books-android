@@ -1,8 +1,8 @@
 isgraphis（测试字符是否为可打印字符）
-相关函数
+<pre>相关函数
 isprint
 表头文件
-#include <ctype.h>
+#include < ctype.h>
 定义函数
 int isgraph (int c)
 函数说明
@@ -13,7 +13,7 @@ int isgraph (int c)
 此为宏定义，非真正函数。
 范例
 /* 判断str字符串中哪些为可打印字符*/
-#include<ctype.h>
+#include< ctype.h>
 main()
 {
 char str[]="a5 @;";
@@ -25,4 +25,4 @@ if(isgraph(str[i])) printf("str[%d] is printable character:%d\n",i,str[i]);
 str[0] is printable character:a
 str[1] is printable character:5
 str[3] is printable character:@
-str[4] is printable character:;
+str[4] is printable character:;</pre>

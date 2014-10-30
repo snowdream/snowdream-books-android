@@ -1,8 +1,8 @@
 exit（正常结束进程）
-相关函数
+<pre>相关函数
 _exit，atexit，on_exit
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 void exit(int status);
 函数说明
@@ -10,4 +10,4 @@ exit()用来正常终结目前进程的执行，并把参数status返回给父�
 返回值
 
 范例
-参考wait（）
+参考wait（）</pre>

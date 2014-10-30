@@ -1,8 +1,8 @@
 isascii（测试字符是否为ASCII 码字符）
-相关函数
+<pre>相关函数
 iscntrl
 表头文件
-#include <ctype.h>
+#include < ctype.h>
 定义函数
 int isascii(int c);
 函数说明
@@ -13,7 +13,7 @@ int isascii(int c);
 此为宏定义，非真正函数。
 范例
 /* 判断int i是否具有对映的ASCII码字符*/
-#include<ctype.h>
+#include< ctype.h>
 main()
 {
 int i;
@@ -28,4 +28,4 @@ printf("%d is not an ascii character\n",i);
 126 is an ascii character:~
 127 is an ascii character:
 128 is not an ascii character
-129 is not an ascii character
+129 is not an ascii character</pre>

@@ -1,8 +1,8 @@
 strcmp（比较字符串）
-相关函数
+<pre>相关函数
 bcmp，memcmp，strcasecmp，strncasecmp，strcoll
 表头文件
-#include<string.h>
+#include< string.h>
 定义函数
 int strcmp(const char *s1,const char *s2);
 函数说明
@@ -10,7 +10,7 @@ strcmp()用来比较参数s1和s2字符串。字符串大小的比较是以ASCII
 返回值
 若参数s1和s2字符串相同则返回0。s1若大于s2则返回大于0的值。s1若小于s2则返回小于0 的值。
 范例
-#include<string.h>
+#include< string.h>
 main()
 {
 char *a="aBcDeF";
@@ -24,4 +24,4 @@ printf("strcmp(a,d) : %d\n",strcmp(a,d));
 执行
 strcmp(a,b) : 32
 strcmp(a,c) :-31
-strcmp(a,d) : 0
+strcmp(a,d) : 0</pre>

@@ -1,9 +1,9 @@
 crypt（将密码或数据编码）
-相关函数
+<pre>相关函数
 getpass
 表头文件
 #define _XOPEN_SOURCE
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 char * crypt (const char *key,const char * salt);
 函数说明
@@ -13,7 +13,7 @@ crypt()将使用Data Encryption Standard(DES)演算法将参数key所指的字�
 附加说明
 使用GCC编译时需加-lcrypt。
 范例
-#include<unistd.h>
+#include< unistd.h>
 main()
 {
 char passwd[13];
@@ -33,4 +33,4 @@ printf(“After crypt(),2nd passwd:%s \n”,crypt(key slat));
 Input First Password: /* 输入test，编码后存于passwd[ ] */
 Input Second Password /*输入test，密码相同编码后也会相同*/
 After crypt () 1st Passwd : teH0wLIpW0gyQ
-After crypt () 2nd Passwd : teH0wLIpW0gyQ
+After crypt () 2nd Passwd : teH0wLIpW0gyQ</pre>

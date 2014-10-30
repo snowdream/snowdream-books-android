@@ -1,8 +1,8 @@
 qsort（利用快速排序法排列数组）
-相关函数
+<pre>相关函数
 bsearch
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 void qsort(void * base,size_t nmemb,size_t size,int ( * compar)(const void *, const void *));
 函数说明
@@ -13,7 +13,7 @@ void qsort(void * base,size_t nmemb,size_t size,int ( * compar)(const void *, co
 
 范例
 #define nmemb 7
-#include <stdlib.h>
+#include < stdlib.h>
 int compar (const void *a ,const void *b)
 {
 int *aa=(int * ) a,*bb = (int * )b;
@@ -35,4 +35,4 @@ printf(“\n”);
 }
 执行
 3 102 5 -2 98 52 18
--2 3 5 18 52 98 102
+-2 3 5 18 52 98 102</pre>

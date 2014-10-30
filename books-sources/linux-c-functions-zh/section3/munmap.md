@@ -1,9 +1,9 @@
 munmap（解除内存映射）
-相关函数
+<pre>相关函数
 mmap
 表头文件
-#include<unistd.h>
-#include<sys/mman.h>
+#include< unistd.h>
+#include< sys/mman.h>
 定义函数
 int munmap(void *start,size_t length);
 函数说明
@@ -13,4 +13,4 @@ munmap()用来取消参数start所指的映射内存起始地址，参数length�
 参数
 start或length 不合法。
 范例
-参考mmap（）
+参考mmap（）</pre>

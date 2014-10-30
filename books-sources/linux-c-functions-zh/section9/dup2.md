@@ -1,8 +1,8 @@
 dup2（复制文件描述词）
-相关函数
+<pre>相关函数
 open，close，fcntl，dup
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int dup2(int odlfd,int newfd);
 函数说明
@@ -12,4 +12,4 @@ dup2()用来复制参数oldfd所指的文件描述词，并将它拷贝至参数
 附加说明
 dup2()相当于调用fcntl(oldfd，F_DUPFD，newfd)；请参考fcntl()。
 错误代码
-EBADF 参数fd 非有效的文件描述词，或该文件已关闭
+EBADF 参数fd 非有效的文件描述词，或该文件已关闭</pre>

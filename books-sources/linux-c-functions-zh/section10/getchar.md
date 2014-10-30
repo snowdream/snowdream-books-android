@@ -1,8 +1,8 @@
 getchar（由标准输入设备内读进一字符）
-相关函数
+<pre>相关函数
 fopen，fread，fscanf，getc
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 int getchar(void);
 函数说明
@@ -12,7 +12,7 @@ getchar()会返回读取到的字符，若返回EOF则表示有错误发生。
 附加说明
 getchar()非真正函数，而是getc(stdin)宏定义。
 范例
-#include<stdio.h>
+#include< stdio.h>
 main()
 {
 FILE * fp;
@@ -25,4 +25,4 @@ putchar(c);
 }
 执行
 1234 /*输入*/
-1234 /*输出*/
+1234 /*输出*/</pre>

@@ -1,8 +1,8 @@
 setvbuf（设置文件流的缓冲区）
-相关函数
+<pre>相关函数
 setbuffer，setlinebuf，setbuf
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 int setvbuf(FILE * stream,char * buf,int mode,size_t size);
 函数说明
@@ -11,3 +11,4 @@ _IONBF 无缓冲IO
 _IOLBF 以换行为依据的无缓冲IO
 _IOFBF 完全无缓冲IO。如果参数buf为NULL指针，则为无缓冲IO。
 返回值
+</pre>

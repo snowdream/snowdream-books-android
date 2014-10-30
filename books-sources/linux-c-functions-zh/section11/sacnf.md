@@ -1,8 +1,8 @@
 sacnf（格式化字符串输入）
-相关函数
+<pre>相关函数
 fscanf，snprintf
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 int scanf(const char * format,.......);
 函数说明
@@ -31,7 +31,7 @@ h 输入的数据数值以short int 型保存。
 返回值
 成功则返回参数数目，失败则返回-1，错误原因存于errno中。
 范例
-#include <stdio.h>
+#include < stdio.h>
 main()
 {
 int i;
@@ -42,4 +42,4 @@ printf(“%d %d %s\n”,i,j,s);
 }
 执行
 10 0x1b aaaaaaaaaa bbbbbbbbbb
-10 27 aaaaa
+10 27 aaaaa</pre>

@@ -1,10 +1,8 @@
-
-
 fopen（打开文件）
-相关函数
+<pre>相关函数
 open，fclose
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 FILE * fopen(const char * path,const char * mode);
 函数说明
@@ -22,11 +20,11 @@ a+ 以附加方式打开可读写的文件。若文件不存在，则会建立�
 附加说明
 一般而言，开文件后会作一些文件读取或写入的动作，若开文件失败，接下来的读写动作也无法顺利进行，所以在fopen()后请作错误判断及处理。
 范例
-#include<stdio.h>
+#include< stdio.h>
 main()
 {
 FILE * fp;
 fp=fopen(“noexist”,”a+”);
 if(fp= =NULL) return;
 fclose(fp);
-}
+}</pre>

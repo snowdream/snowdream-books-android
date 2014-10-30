@@ -1,8 +1,8 @@
 srand（设置随机数种子）
-相关函数
+<pre>相关函数
 rand，random srandom
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 void srand (unsigned int seed);
 函数说明
@@ -11,8 +11,8 @@ srand()用来设置rand()产生随机数时的随机数种子。参数seed必须
 
 范例
 /* 产生介于1 到10 间的随机数值，此范例与执行结果可与rand（）参照*/
-#include<time.h>
-#include<stdlib.h>
+#include< time.h>
+#include< stdlib.h>
 main()
 {
 int i,j;
@@ -25,4 +25,4 @@ printf(“ %d “,j);
 }
 执行
 5 8 8 8 10 2 10 8 9 9
-2 9 7 4 10 3 2 10 8 7
+2 9 7 4 10 3 2 10 8 7</pre>

@@ -1,10 +1,10 @@
 
 
 isatty（判断文件描述词是否是为终端机）
-相关函数
+<pre>相关函数
 ttyname
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int isatty(int desc);
 函数说明
@@ -12,4 +12,4 @@ int isatty(int desc);
 返回值
 如果文件为终端机则返回1，否则返回0。
 范例
-参考ttyname()。
+参考ttyname()。</pre>

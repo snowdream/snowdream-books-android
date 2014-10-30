@@ -1,11 +1,9 @@
-
-
 readdir（读取目录）
-相关函数
+<pre>相关函数
 open，opendir，closedir，rewinddir，seekdir，telldir，scandir
 表头文件
-#include<sys/types.h>
-#include<dirent.h>
+#include< sys/types.h>
+#include< dirent.h>
 定义函数
 struct dirent * readdir(DIR * dir);
 函数说明
@@ -29,9 +27,9 @@ d_name 文件名
 附加说明
 EBADF参数dir为无效的目录流。
 范例
-#include<sys/types.h>
-#include<dirent.h>
-#include<unistd.h>
+#include< sys/types.h>
+#include< dirent.h>
+#include< unistd.h>
 main()
 {
 DIR * dir;
@@ -57,4 +55,4 @@ d_name:rc5.d
 d_name:rc6.d
 d_name:rc
 d_name:rc.local
-d_name:rc.sysinit
+d_name:rc.sysinit</pre>

@@ -1,11 +1,11 @@
 
 
 sendto（经socket传送数据）
-相关函数
+<pre>相关函数
 send , sendmsg,recv , recvfrom , socket
 表头文件
-#include < sys/types.h >
-#include < sys/socket.h >
+#include <  sys/types.h >
+#include <  sys/socket.h >
 定义函数
 int sendto ( int s , const void * msg, int len, unsigned int flags, const 
 struct sockaddr * to , int tolen ) ;
@@ -22,10 +22,10 @@ EAGAIN 此动作会令进程阻断，但参数s的soket为补课阻断的。
 ENOBUFS 系统的缓冲内存不足。
 EINVAL 传给系统调用的参数不正确。
 范例
-#include < sys/types.h >
-#include < sys/socket.h >
+#include <  sys/types.h >
+#include <  sys/socket.h >
 # include <netinet.in.h>
-#include <arpa.inet.h>
+#include < arpa.inet.h>
 #define PORT 2345 /*使用的port*/
 main(){
 int sockfd,len;
@@ -55,4 +55,4 @@ sendto(sockfd,buffer,len,0,&addr,addr_len);”
 }
 }
 执行
-请参考recvfrom()
+请参考recvfrom()</pre>

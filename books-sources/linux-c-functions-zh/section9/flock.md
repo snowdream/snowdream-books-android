@@ -1,8 +1,8 @@
 flock（锁定文件或解除锁定）
-相关函数
+<pre>相关函数
 open,fcntl
 表头文件
-#include<sys/file.h>
+#include< sys/file.h>
 定义函数
 int flock(int fd,int operation);
 函数说明
@@ -15,4 +15,4 @@ LOCK_UN 解除文件锁定状态。
 LOCK_NB 无法建立锁定时，此操作可不被阻断，马上返回进程。通常与LOCK_SH或LOCK_EX 做OR(|)组合。
 单一文件无法同时建立共享锁定和互斥锁定，而当使用dup()或fork()时文件描述词不会继承此种锁定。
 返回值
-返回0表示成功，若有错误则返回-1，错误代码存于errno。
+返回0表示成功，若有错误则返回-1，错误代码存于errno。</pre>

@@ -1,9 +1,9 @@
 wait（等待子进程中断或结束）
-相关函数
+<pre>相关函数
 waitpid，fork
 表头文件
-#include<sys/types.h>
-#include<sys/wait.h>
+#include< sys/types.h>
+#include< sys/wait.h>
 定义函数
 pid_t wait (int * status);
 函数说明
@@ -15,10 +15,10 @@ status可以设成NULL。子进程的结束状态值请参考waitpid()。
 附加说明
 
 范例
-#include<stdlib.h>
-#include<unistd.h>
-#include<sys/types.h>
-#include<sys/wait.h>
+#include< stdlib.h>
+#include< unistd.h>
+#include< sys/types.h>
+#include< sys/wait.h>
 main()
 {
 pid_t pid;
@@ -37,4 +37,4 @@ printf(“child’s pid =%d .exit status=^d\n”,pid,i);
 执行
 This is the child process.pid=1501
 This is the parent process .wait for child...
-child’s pid =1501,exit status =5
+child’s pid =1501,exit status =5</pre>

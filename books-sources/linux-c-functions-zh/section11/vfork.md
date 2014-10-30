@@ -1,8 +1,8 @@
 vfork（建立一个新的进程）
-相关函数
+<pre>相关函数
 wait，execve
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 pid_t vfork(void);
 函数说明
@@ -14,7 +14,7 @@ vfork()会产生一个新的子进程，其子进程会复制父进程的数据�
 错误代码
 EAGAIN 内存不足。ENOMEM 内存不足，无法配置核心所需的数据结构空间。
 范例
-#include<unistd.h>
+#include< unistd.h>
 main()
 {
 if(vfork() = =0)
@@ -26,4 +26,4 @@ printf(“This is the parent process\n”);
 }
 执行
 this is the parent process
-this is the child process
+this is the child process</pre>

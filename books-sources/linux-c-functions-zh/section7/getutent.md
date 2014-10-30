@@ -1,8 +1,8 @@
 getutent（从utmp 文件中取得账号登录数据）
-相关函数
+<pre>相关函数
 getutent，getutid，getutline，setutent，endutent，pututline，utmpname
 表头文件
-#include<utmp.h>
+#include< utmp.h>
 定义函数
 struct utmp *getutent(void);
 函数说明
@@ -50,7 +50,7 @@ UT_HOSTSIZE 256
 附加说明
 getutent()在第一次调用时会打开utmp 文件，读取数据完毕后可使用endutent()来关闭该utmp文件。
 范例
-#include<utmp.h>
+#include< utmp.h>
 main()
 {
 struct utmp *u;
@@ -64,4 +64,4 @@ endutent();
 /* 表示有三个root账号分别登录/dev/pts/0，/dev/pts/1，/dev/pts/2 */
 7 root pts/0
 7 root pts/1
-7 root pts/2
+7 root pts/2</pre>

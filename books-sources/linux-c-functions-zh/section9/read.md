@@ -1,10 +1,10 @@
 
 
 read（由已打开的文件读取数据）
-相关函数
+<pre>相关函数
 readdir，write，fcntl，close，lseek，readlink，fread
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 ssize_t read(int fd,void * buf ,size_t count);
 函数说明
@@ -16,4 +16,4 @@ EINTR 此调用被信号所中断。
 EAGAIN 当使用不可阻断I/O 时（O_NONBLOCK），若无数据可读取则返回此值。
 EBADF 参数fd 非有效的文件描述词，或该文件已关闭。
 范例
-参考open（）。
+参考open（）。</pre>

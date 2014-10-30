@@ -1,9 +1,9 @@
 getpwent（从密码文件中取得账号的数据）
-相关函数
+<pre>相关函数
 getpw，fgetpwent，getpwnam，getpwuid，setpwent，endpwent
 表头文件
-#include<pwd.h>
-#include<sys/types.h>
+#include< pwd.h>
+#include< sys/types.h>
 定义函数
 strcut passwd * getpwent(void);
 函数说明
@@ -23,8 +23,8 @@ char * pw_shell; /* 所使用的shell路径*/
 附加说明
 getpwent()在第一次调用时会打开密码文件，读取数据完毕后可使用endpwent()来关闭该密码文件。错误代码ENOMEM 内存不足，无法配置passwd结构。
 范例
-#include<pwd.h>
-#include<sys/types.h>
+#include< pwd.h>
+#include< sys/types.h>
 main()
 {
 struct passwd *user;
@@ -53,4 +53,4 @@ ftp:14:50:FTP User:/home/ftp:
 nobody:99:99:Nobody:/:
 xfs:100:101:X Font Server: /etc/Xll/fs:/bin/false
 gdm:42:42:/home/gdm:/bin/bash
-kids:500:500: : /home/kids:/bin/bash
+kids:500:500: : /home/kids:/bin/bash</pre>

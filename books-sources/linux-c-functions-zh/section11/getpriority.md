@@ -1,9 +1,9 @@
 getpriority（取得程序进程执行优先权）
-相关函数
+<pre>相关函数
 setpriority，nice
 表头文件
-#include<sys/time.h>
-#include<sys/resource.h>
+#include< sys/time.h>
+#include< sys/resource.h>
 定义函数
 int getpriority(int which,int who);
 函数说明
@@ -20,4 +20,4 @@ PRIO_USER who 为用户识别码
 附加说明
 由于返回值有可能是-1，因此要同时检查errno是否存有错误原因。最好在调用次函数前先清除errno变量。
 错误代码
-ESRCH 参数which或who 可能有错，而找不到符合的进程。EINVAL 参数which 值错误。
+ESRCH 参数which或who 可能有错，而找不到符合的进程。EINVAL 参数which 值错误。</pre>

@@ -1,11 +1,9 @@
-
-
 mkfifo（建立具名管道）
-相关函数
+<pre>相关函数
 pipe，popen，open，umask
 表头文件
-#include<sys/types.h>
-#include<sys/stat.h>
+#include< sys/types.h>
+#include< sys/stat.h>
 定义函数
 int mkfifo(const char * pathname,mode_t mode);
 函数说明
@@ -23,9 +21,9 @@ ENOSPC 文件系统的剩余空间不足
 ENOTDIR 参数pathname路径中的目录存在但却非真正的目录。
 EROFS 参数pathname指定的文件存在于只读文件系统内。
 范例
-#include<sys/types.h>
-#include<sys/stat.h>
-#include<fcntl.h>
+#include< sys/types.h>
+#include< sys/stat.h>
+#include< fcntl.h>
 main()
 {
 char buffer[80];
@@ -46,4 +44,4 @@ close(fd);
 }
 }
 执行
-hello!
+hello!</pre>

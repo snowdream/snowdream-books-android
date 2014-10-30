@@ -1,9 +1,9 @@
 fcntl（文件描述词操作）
-相关函数
+<pre>相关函数
 open，flock
 表头文件
-#include<unistd.h>
-#include<fcntl.h>
+#include< unistd.h>
+#include< fcntl.h>
 定义函数
 int fcntl(int fd , int cmd);
 int fcntl(int fd,int cmd,long arg);
@@ -35,4 +35,4 @@ SEEK_SET 以文件开头为锁定的起始位置。
 SEEK_CUR 以目前文件读写位置为锁定的起始位置
 SEEK_END 以文件结尾为锁定的起始位置。
 返回值
-成功则返回0，若有错误则返回-1，错误原因存于errno.
+成功则返回0，若有错误则返回-1，错误原因存于errno.</pre>

@@ -1,8 +1,8 @@
 getcwd（取得当前的工作目录）
-相关函数
+<pre>相关函数
 get_current_dir_name，getwd，chdir
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 char * getcwd(char * buf,size_t size);
 函数说明
@@ -10,7 +10,7 @@ getcwd()会将当前的工作目录绝对路径复制到参数buf所指的内存
 返回值
 执行成功则将结果复制到参数buf所指的内存空间，或是返回自动配置的字符串指针。失败返回NULL，错误代码存于errno。
 范例
-#include<unistd.h>
+#include< unistd.h>
 main()
 {
 char buf[80];
@@ -18,4 +18,4 @@ getcwd(buf,sizeof(buf));
 printf(“current working directory : %s\n”,buf);
 }
 执行
-current working directory :/tmp
+current working directory :/tmp</pre>

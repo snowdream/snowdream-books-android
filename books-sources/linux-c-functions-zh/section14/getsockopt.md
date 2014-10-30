@@ -1,9 +1,9 @@
 getsockopt（取得socket状态）
-相关函数
+<pre>相关函数
 setsockopt
 表头文件
-#include<sys/types.h>
-#include<sys/socket.h>
+#include< sys/types.h>
+#include< sys/socket.h>
 定义函数
 int getsockopt(int s,int level,int optname,void* optval,socklen_t* optlen);
 函数说明
@@ -16,8 +16,8 @@ ENOTSOCK 参数s为一文件描述词，非socket
 ENOPROTOOPT 参数optname指定的选项不正确
 EFAULT 参数optval指针指向无法存取的内存空间
 范例
-#include<sys/types.h>
-#include<sys/socket.h>
+#include< sys/types.h>
+#include< sys/socket.h>
 main()
 {
 int s,optval,optlen = sizeof(int);
@@ -26,4 +26,4 @@ getsockopt(s,SOL_SOCKET,SO_TYPE,&optval,&optlen);
 printf(“optval = %d\n”,optval);
 close(s);}
 执行
-optval = 1 /*SOCK_STREAM的定义正是此值*/
+optval = 1 /*SOCK_STREAM的定义正是此值*/</pre>

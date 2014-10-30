@@ -1,9 +1,9 @@
 bind（对socket定位）
-相关函数
+<pre>相关函数
 socket，accept，connect，listen
 表头文件
-#include<sys/types.h>
-#include<sys/socket.h>
+#include< sys/types.h>
+#include< sys/socket.h>
 定义函数
 int bind(int sockfd,struct sockaddr * my_addr,int addrlen);
 函数说明
@@ -40,4 +40,4 @@ EBADF 参数sockfd 非合法socket处理代码。
 EACCESS 权限不足
 ENOTSOCK 参数sockfd为一文件描述词，非socket。
 范例
-参考listen()
+参考listen()</pre>

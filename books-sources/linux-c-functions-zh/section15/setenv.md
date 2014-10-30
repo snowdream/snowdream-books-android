@@ -1,8 +1,8 @@
 setenv（改变或增加环境变量）
-相关函数
+<pre>相关函数
 getenv，putenv，unsetenv
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 int setenv(const char *name,const char * value,int overwrite);
 函数说明
@@ -14,7 +14,7 @@ value则为变量内容，参数overwrite用来决定是否要改变已存在的
 错误代码
 ENOMEM 内存不足，无法配置新的环境变量空间
 范例
-#include<stdlib.h>
+#include< stdlib.h>
 main()
 {
 char * p;
@@ -28,4 +28,4 @@ printf(“USER=%s\n”,getenv(“USER”));
 执行
 USER = root
 USER = test
-USER = (null)
+USER = (null)</pre>

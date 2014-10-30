@@ -1,9 +1,9 @@
 getgid（取得真实的组识别码）
-相关函数
+<pre>相关函数
 getegid，setregid，setgid
 表头文件
-#include<unistd.h>
-#include<sys/types.h>
+#include< unistd.h>
+#include< sys/types.h>
 定义函数
 gid_t getgid(void);
 函数说明
@@ -16,4 +16,4 @@ main()
 printf(“gid is %d\n”,getgid());
 }
 执行
-gid is 0 /*当使用root身份执行范例程序时*/
+gid is 0 /*当使用root身份执行范例程序时*/</pre>

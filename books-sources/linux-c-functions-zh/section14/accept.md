@@ -1,11 +1,11 @@
 
 
 accept（接受socket连线）
-相关函数
+<pre>相关函数
 socket，bind，listen，connect
 表头文件
-#include<sys/types.h>
-#include<sys/socket.h>
+#include< sys/types.h>
+#include< sys/socket.h>
 定义函数
 int accept(int s,struct sockaddr * addr,int * addrlen);
 函数说明
@@ -21,4 +21,4 @@ EPERM 防火墙拒绝此连线。
 ENOBUFS 系统的缓冲内存不足。
 ENOMEM 核心内存不足。
 范例
-参考listen()。
+参考listen()。</pre>

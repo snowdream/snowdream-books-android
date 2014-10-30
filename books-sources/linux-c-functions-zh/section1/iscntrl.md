@@ -1,8 +1,9 @@
 iscntrl（测试字符是否为ASCII 码的控制字符）
+<pre>
 相关函数
 isascii
 表头文件
-#include <ctype.h>
+#include < ctype.h>
 定义函数
 int iscntrl(int c)；
 函数说明
@@ -10,4 +11,4 @@ int iscntrl(int c)；
 返回值
 若参数c为ASCII控制码，则返回TRUE，否则返回NULL(0)。
 附加说明
-此为宏定义，非真正函数。
+此为宏定义，非真正函数。</pre>

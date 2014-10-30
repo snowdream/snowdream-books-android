@@ -1,10 +1,10 @@
 open（打开文件）
-相关函数
+<pre>相关函数
 read，write，fcntl，close，link，stat，umask，unlink，fopen
 表头文件
-#include<sys/types.h>
-#include<sys/stat.h>
-#include<fcntl.h>
+#include< sys/types.h>
+#include< sys/stat.h>
+#include< fcntl.h>
 定义函数
 int open( const char * pathname, int flags);
 int open( const char * pathname,int flags, mode_t mode);
@@ -52,10 +52,10 @@ EIO I/O 存取错误。
 附加说明
 使用access()作用户认证方面的判断要特别小心，例如在access()后再作open()空文件可能会造成系统安全上的问题。
 范例
-#include<unistd.h>
-#include<sys/types.h>
-#include<sys/stat.h>
-#include<fcntl.h>
+#include< unistd.h>
+#include< sys/types.h>
+#include< sys/stat.h>
+#include< fcntl.h>
 main()
 {
 int fd,size;
@@ -69,4 +69,4 @@ close(fd);
 printf(“%s”,buffer);
 }
 执行
-Linux Programmer!
+Linux Programmer!</pre>

@@ -1,8 +1,8 @@
 strncpy（拷贝字符串）
-相关函数
+<pre>相关函数
 bcopy，memccpy，memcpy，memmove
 表头文件
-#include<string.h>
+#include< string.h>
 定义函数
 char * strncpy(char *dest,const char *src,size_t n);
 函数说明
@@ -20,4 +20,4 @@ printf("after strncpy() : %s\n",strncpy(a,b,6));
 }
 执行
 before strncpy() : string(1)
-after strncpy() : string(1)
+after strncpy() : string(1)</pre>

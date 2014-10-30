@@ -1,9 +1,9 @@
 vfprintf（格式化输出数据至文件）
-相关函数
+<pre>相关函数
 printf，fscanf，fprintf
 表头文件
-#include<stdio.h>
-#include<stdarg.h>
+#include< stdio.h>
+#include< stdarg.h>
 定义函数
 int vfprintf(FILE *stream,const char * format,va_list ap);
 函数说明
@@ -11,4 +11,4 @@ vfprintf()会根据参数format字符串来转换并格式化数据，然后将�
 返回值
 成功则返回实际输出的字符数，失败则返回-1，错误原因存于errno中。
 范例
-参考fprintf()及vprintf()。
+参考fprintf()及vprintf()。</pre>

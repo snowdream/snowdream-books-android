@@ -1,9 +1,9 @@
 opendir（打开目录）
-相关函数
+<pre>相关函数
 open，readdir，closedir，rewinddir，seekdir，telldir，scandir
 表头文件
-#include<sys/types.h>
-#include<dirent.h>
+#include< sys/types.h>
+#include< dirent.h>
 定义函数
 DIR * opendir(const char * name);
 函数说明
@@ -16,4 +16,4 @@ EMFILE 已达到进程可同时打开的文件数上限。
 ENFILE 已达到系统可同时打开的文件数上限。
 ENOTDIR 参数name非真正的目录
 ENOENT 参数name 指定的目录不存在，或是参数name 为一空字符串。
-ENOMEM 核心内存不足。
+ENOMEM 核心内存不足。</pre>

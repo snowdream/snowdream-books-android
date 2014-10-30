@@ -1,8 +1,8 @@
 tolower（将大写字母转换成小写字母）
-相关函数
+<pre>相关函数
 isalpha，toupper
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 int tolower(int c);
 函数说明
@@ -13,7 +13,7 @@ int tolower(int c);
 
 范例
 /* 将s字符串内的大写字母转换成小写字母*/
-#include<ctype.h>
+#include< ctype.h>
 main()
 {
 char s[]=”aBcDeFgH12345;!#$”;
@@ -25,4 +25,4 @@ printf(“after tolower() : %s\n”,s);
 }
 执行
 before tolower() : aBcDeFgH12345;!#$
-after tolower() : abcdefgh12345;!#$
+after tolower() : abcdefgh12345;!#$</pre>

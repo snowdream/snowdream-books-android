@@ -1,11 +1,11 @@
 
 creat（建立文件）
-相关函数
+<pre>相关函数
 read，write，fcntl，close，link，stat，umask，unlink，fopen
 表头文件
-#include<sys/types.h>
-#include<sys/stat.h>
-#include<fcntl.h>
+#include< sys/types.h>
+#include< sys/stat.h>
+#include< fcntl.h>
 定义函数
 int creat(const char * pathname, mode_tmode);
 函数说明
@@ -29,4 +29,4 @@ ENFILE 已达到系统可同时打开的文件数上限
 附加说明
 creat()无法建立特别的装置文件，如果需要请使用mknod()。
 范例
-请参考open()。
+请参考open()。</pre>

@@ -1,10 +1,10 @@
 
 
 sigaction（查询或设置信号处理方式）
-相关函数
+<pre>相关函数
 signal，sigprocmask，sigpending，sigsuspend
 表头文件
-#include<signal.h>
+#include< signal.h>
 定义函数
 int sigaction(int signum,const struct sigaction *act ,struct sigaction *oldact);
 函数说明
@@ -34,8 +34,8 @@ EINVAL 参数signum 不合法， 或是企图拦截SIGKILL/SIGSTOPSIGKILL信号
 EFAULT 参数act，oldact指针地址无法存取。
 EINTR 此调用被中断
 范例
-#include<unistd.h>
-#include<signal.h>
+#include< unistd.h>
+#include< signal.h>
 void show_handler(struct sigaction * act)
 {
 switch (act->sa_flags)
@@ -68,4 +68,4 @@ sa_handler of signal 10 = 0x8048400
 sa_handler of signal 11 = Default action
 sa_handler of signal 12 = Default action
 sa_handler of signal 13 = Default action
-sa_handler of signal 14 = Default action
+sa_handler of signal 14 = Default action</pre>

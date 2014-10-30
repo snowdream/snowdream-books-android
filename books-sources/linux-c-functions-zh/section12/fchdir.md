@@ -1,8 +1,8 @@
 fchdir（改变当前的工作目录）
-相关函数
+<pre>相关函数
 getcwd，chroot
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int fchdir(int fd);
 函数说明
@@ -12,10 +12,10 @@ fchdir()用来将当前的工作目录改变成以参数fd 所指的文件描述
 附加说明
 
 范例
-#include<sys/types.h>
-#include<sys/stat.h>
-#include<fcntl.h>
-#include<unistd.h>
+#include< sys/types.h>
+#include< sys/stat.h>
+#include< fcntl.h>
+#include< unistd.h>
 main()
 {
 int fd;
@@ -25,4 +25,4 @@ printf(“current working directory : %s \n”,getcwd(NULL,NULL));
 close(fd);
 }
 执行
-current working directory : /tmp
+current working directory : /tmp</pre>

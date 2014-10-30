@@ -1,10 +1,8 @@
-
-
 link（建立文件连接）
-相关函数
+<pre>相关函数
 symlink，unlink
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int link (const char * oldpath,const char * newpath);
 函数说明
@@ -27,8 +25,8 @@ ENOSPC 文件系统的剩余空间不足。
 EIO I/O 存取错误。
 范例
 /* 建立/etc/passwd 的硬连接为pass */
-#include<unistd.h>
+#include< unistd.h>
 main()
 {
 link(“/etc/passwd”,”pass”);
-}
+}</pre>

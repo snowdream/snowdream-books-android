@@ -1,9 +1,9 @@
 recvfrom（经socket接收数据）
-相关函数
+<pre>相关函数
 recv，recvmsg，send，sendto，socket
 表头文件
-#include<sys/types.h>
-#include<sys/socket.h>
+#include< sys/types.h>
+#include< sys/socket.h>
 定义函数
 int recvfrom(int s,void *buf,int len,unsigned int flags ,struct sockaddr *from ,int *fromlen);
 函数说明
@@ -24,13 +24,13 @@ EINVAL 传给系统调用的参数不正确。
 此程序会连线UDP server，并将键盘输入的字符串传给server。
 UDP server 范例请参考sendto（）。
 */
-#include<sys/stat.h>
-#include<fcntl.h>
-#include<unistd.h>
-#include<sys/typs.h>
-#include<sys/socket.h>
-#include<netinet/in.h>
-#include<arpa/inet.h>
+#include< sys/stat.h>
+#include< fcntl.h>
+#include< unistd.h>
+#include< sys/typs.h>
+#include< sys/socket.h>
+#include< netinet/in.h>
+#include< arpa/inet.h>
 #define PORT 2345
 #define SERVER_IP “127.0.0.1”
 main()
@@ -63,4 +63,4 @@ printf(“receive: %s”,buffer);
 执行
 (先执行udp server 再执行udp client)
 hello /*从键盘输入字符串*/
-receive: hello /*server端返回来的字符串*/
+receive: hello /*server端返回来的字符串*/</pre>

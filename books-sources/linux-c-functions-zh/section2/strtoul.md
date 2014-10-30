@@ -1,8 +1,8 @@
 strtoul（将字符串转换成无符号长整型数）
-相关函数
+<pre>相关函数
 atof，atoi，atol，strtod，strtol
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 unsigned long int strtoul(const char *nptr,char **endptr,int base);
 函数说明
@@ -12,4 +12,4 @@ strtoul()会将参数nptr字符串根据参数base来转换成无符号的长整
 附加说明
 ERANGE指定的转换字符串超出合法范围。
 范例
-参考strtol()
+参考strtol()</pre>

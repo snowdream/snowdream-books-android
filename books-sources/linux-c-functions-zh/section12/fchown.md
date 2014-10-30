@@ -1,9 +1,9 @@
 fchown（改变文件的所有者）
-相关函数
+<pre>相关函数
 chown，lchown，chmod
 表头文件
-#include<sys/types.h>
-#include<unistd.h>
+#include< sys/types.h>
+#include< unistd.h>
 定义函数
 int fchown(int fd,uid_t owner,gid_t group);
 函数说明
@@ -17,13 +17,13 @@ EROFS 欲写入的文件存在于只读文件系统内。
 ENOENT 指定的文件不存在
 EIO I/O存取错误
 范例
-#include<sys/types.h>
-#include<unistd.h>
-#include<fcntl.h>
+#include< sys/types.h>
+#include< unistd.h>
+#include< fcntl.h>
 main()
 {
 int fd;
 fd = open (“/etc/passwd”,O_RDONLY);
 chown(fd,0,0);
 close(fd);
-}
+}</pre>

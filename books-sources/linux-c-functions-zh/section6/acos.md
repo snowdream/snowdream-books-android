@@ -1,8 +1,8 @@
 acos（取反余弦函数数值）
-相关函数
+<pre>相关函数
 asin , atan , atan2 , cos , sin , tan
 表头文件
-#include <math.h>
+#include < math.h>
 定义函数
 double acos (double x);
 函数说明
@@ -14,11 +14,11 @@ EDOM参数x超出范围。
 附加说明
 使用GCC编译时请加入－lm。
 范例
-#include <math.h>
+#include < math.h>
 main (){
 double angle;
 angle = acos(0.5);
 printf("angle = %f\n", angle);
 }
 执行
-angle = 1.047198
+angle = 1.047198</pre>

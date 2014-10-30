@@ -1,10 +1,8 @@
-
-
 chroot（改变根目录）
-相关函数
+<pre>相关函数
 chdir
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int chroot(const char * path);
 函数说明
@@ -22,9 +20,9 @@ ELOOP 参数path有过多符号连接问题。
 EIO I/O 存取错误。
 范例
 /* 将根目录改为/tmp ,并将工作目录切换至/tmp */
-#include<unistd.h>
+#include< unistd.h>
 main()
 {
 chroot(“/tmp”);
 chdir(“/”);
-}
+}</pre>

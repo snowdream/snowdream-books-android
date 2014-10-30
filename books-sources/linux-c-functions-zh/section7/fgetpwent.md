@@ -1,10 +1,10 @@
 fgetpwent（从指定的文件来读取密码格式）
-相关函数
+<pre>相关函数
 fgetgrent
 表头文件
-#include<pwd.h>
-#include<stdio.h>
-#include<sys/types.h>
+#include< pwd.h>
+#include< stdio.h>
+#include< sys/types.h>
 定义函数
 struct passwd * fgetpwent(FILE *stream);
 函数说明
@@ -12,8 +12,8 @@ fgetpwent()会从参数stream指定的文件读取一行数据，然后以passwd
 返回值
 返回passwd结构数据，如果返回NULL则表示已无数据，或有错误发生。
 范例
-#include<pwd.h>
-#include<sys/types.h>
+#include< pwd.h>
+#include< sys/types.h>
 main()
 {
 struct passwd *user;
@@ -42,4 +42,4 @@ ftp:14:50:FTP User:/home/ftp:
 nobody:99:99:Nobody:/:
 xfs:100:101:X Font Server: /etc/Xll/fs:/bin/false
 gdm:42:42:/home/gdm:/bin/bash
-kids:500:500: : /home/kids:/bin/bash
+kids:500:500: : /home/kids:/bin/bash</pre>

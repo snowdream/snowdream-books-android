@@ -1,8 +1,8 @@
 gcvt（将浮点型数转换为字符串，取四舍五入）
-相关函数
+<pre>相关函数
 ecvt，fcvt，sprintf
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 char *gcvt(double number，size_t ndigits，char *buf);
 函数说明
@@ -12,7 +12,7 @@ gcvt()用来将参数number转换成ASCII码字符串，参数ndigits表示显�
 附加说明
 
 范例
-#include<stdlib.h>
+#include< stdlib.h>
 main()
 {
 double a=123.45;
@@ -26,4 +26,4 @@ printf(“b value=%s\n”,ptr);
 }
 执行
 a value=123.45
-b value=-1234.56
+b value=-1234.56</pre>

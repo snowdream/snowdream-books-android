@@ -2,11 +2,11 @@
 
 
 socket（建立一个socket通信）
-相关函数
+<pre>相关函数
 accept，bind，connect，listen
 表头文件
-#include<sys/types.h>
-#include<sys/socket.h>
+#include< sys/types.h>
+#include< sys/socket.h>
 定义函数
 int socket(int domain,int type,int protocol);
 函数说明
@@ -41,5 +41,5 @@ EACCESS 权限不足，无法建立type或protocol指定的协议
 ENOBUFS/ENOMEM 内存不足
 EINVAL 参数domain/type/protocol不合法
 范例
-参考connect()。
+参考connect()。</pre>
 　

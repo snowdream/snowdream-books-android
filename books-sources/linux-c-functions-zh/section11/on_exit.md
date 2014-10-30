@@ -1,8 +1,8 @@
 on_exit（设置程序正常结束前调用的函数）
-相关函数
+<pre>相关函数
 _exit，atexit，exit
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 int on_exit(void (* function)(int, void*),void *arg);
 函数说明
@@ -12,7 +12,7 @@ on_exit()用来设置一个程序正常结束前调用的函数。当程序通�
 附加说明
 
 范例
-#include<stdlib.h>
+#include< stdlib.h>
 void my_exit(int status,void *arg)
 {
 printf(“before exit()!\n”);
@@ -28,4 +28,4 @@ exit(1234);
 执行
 before exit()!
 exit (1234)
-arg = test
+arg = test</pre>

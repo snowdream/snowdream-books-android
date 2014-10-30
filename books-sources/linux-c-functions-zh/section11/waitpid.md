@@ -1,9 +1,9 @@
 waitpid（等待子进程中断或结束）
-相关函数
+<pre>相关函数
 wait，fork
 表头文件
-#include<sys/types.h>
-#include<sys/wait.h>
+#include< sys/types.h>
+#include< sys/wait.h>
 定义函数
 pid_t waitpid(pid_t pid,int * status,int options);
 函数说明
@@ -25,4 +25,4 @@ WSTOPSIG(status)取得引发子进程暂停的信号代码，一般会先用WIFS
 返回值
 如果执行成功则返回子进程识别码(PID)，如果有错误发生则返回-1。失败原因存于errno中。
 范例
-参考wait()。
+参考wait()。</pre>

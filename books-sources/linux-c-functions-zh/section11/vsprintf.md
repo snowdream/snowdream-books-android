@@ -1,8 +1,8 @@
 vsprintf（格式化字符串复制）
-相关函数
+<pre>相关函数
 vnsprintf，vprintf，snprintf
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 int vsprintf( char * str,const char * format,va_list ap);
 函数说明
@@ -10,4 +10,4 @@ vsprintf()会根据参数format字符串来转换并格式化数据，然后将�
 返回值
 成功则返回参数str字符串长度，失败则返回-1，错误原因存于errno中。
 范例
-请参考vprintf()及vsprintf()。
+请参考vprintf()及vsprintf()。</pre>

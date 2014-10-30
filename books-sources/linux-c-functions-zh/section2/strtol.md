@@ -1,8 +1,8 @@
 strtol（将字符串转换成长整型数）
-相关函数
+<pre>相关函数
 atof，atoi，atol，strtod，strtoul
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 long int strtol(const char *nptr,char **endptr,int base);
 函数说明
@@ -13,7 +13,7 @@ strtol()会将参数nptr字符串根据参数base来转换成长整型数。参�
 ERANGE指定的转换字符串超出合法范围。
 范例
 /* 将字符串a，b，c 分别采用10，2，16进制转换成数字*/
-#include<stdlib.h>
+#include< stdlib.h>
 main()
 {
 char a[]=”1000000000”;
@@ -26,4 +26,4 @@ printf(“c=%d\n”,strtol(c,NULL,16));
 执行
 a=1000000000
 b=512
-c=65535
+c=65535</pre>

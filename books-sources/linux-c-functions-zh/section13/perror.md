@@ -1,10 +1,9 @@
 
-
 perror（打印出错误原因信息字符串）
-相关函数
+<pre>相关函数
 strerror
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 void perror(const char *s);
 函数说明
@@ -12,7 +11,7 @@ perror()用来将上一个函数发生错误的原因输出到标准错误(stder
 返回值
 
 范例
-#include<stdio.h>
+#include< stdio.h>
 main()
 {
 FILE *fp;
@@ -21,4 +20,4 @@ if(fp = =NULL) perror(“fopen”);
 }
 执行
 $ ./perror
-fopen : No such file or diretory
+fopen : No such file or diretory</pre>

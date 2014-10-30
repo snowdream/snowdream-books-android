@@ -1,10 +1,8 @@
-
-
 ftruncate（改变文件大小）
-相关函数
+<pre>相关函数
 open，truncate
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int ftruncate(int fd,off_t length);
 函数说明
@@ -13,4 +11,4 @@ ftruncate()会将参数fd指定的文件大小改为参数length指定的大小�
 执行成功则返回0，失败返回-1，错误原因存于errno。
 错误代码
 EBADF 参数fd文件描述词为无效的或该文件已关闭。
-EINVAL 参数fd 为一socket 并非文件，或是该文件并非以写入模式打开
+EINVAL 参数fd 为一socket 并非文件，或是该文件并非以写入模式打开</pre>

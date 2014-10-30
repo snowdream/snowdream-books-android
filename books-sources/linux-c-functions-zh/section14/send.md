@@ -1,9 +1,9 @@
 send（经socket传送数据）
-相关函数
+<pre>相关函数
 sendto，sendmsg，recv，recvfrom，socket
 表头文件
-#include<sys/types.h>
-#include<sys/socket.h>
+#include< sys/types.h>
+#include< sys/socket.h>
 定义函数
 int send(int s,const void * msg,int len,unsigned int falgs);
 函数说明
@@ -24,4 +24,4 @@ ENOBUFS 系统的缓冲内存不足
 ENOMEM 核心内存不足
 EINVAL 传给系统调用的参数不正确。
 范例
-参考connect()
+参考connect()</pre>

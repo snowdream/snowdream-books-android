@@ -1,11 +1,11 @@
 
 
 setsockopt（设置socket状态）
-相关函数
+<pre>相关函数
 getsockopt
 表头文件
-#include<sys/types.h>
-#include<sys/socket.h>
+#include< sys/types.h>
+#include< sys/socket.h>
 定义函数
 int setsockopt(int s,int level,int optname,const void * optval,,socklen_toptlen);
 函数说明
@@ -31,4 +31,4 @@ ENOTSOCK 参数s为一文件描述词，非socket
 ENOPROTOOPT 参数optname指定的选项不正确。
 EFAULT 参数optval指针指向无法存取的内存空间。
 范例
-参考getsockopt()。
+参考getsockopt()。</pre>

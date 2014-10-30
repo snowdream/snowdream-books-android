@@ -1,8 +1,8 @@
 printf（格式化输出数据）
-相关函数
+<pre>相关函数
 scanf，snprintf
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 int printf(const char * format,.............);
 函数说明
@@ -45,7 +45,7 @@ flags 有下列几种情况
 返回值
 成功则返回实际输出的字符数，失败则返回-1，错误原因存于errno中。
 范例
-#include<stdio.h>
+#include< stdio.h>
 main()
 {
 int i = 150;
@@ -56,4 +56,4 @@ printf(“%2d %*d\n”,i,2,i); /*参数2 会代入格式*中，而与%2d同意�
 }
 执行
 -100 3.14159 96
-150 150
+150 150</pre>

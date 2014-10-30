@@ -1,8 +1,8 @@
 execve（执行文件）
-相关函数
+<pre>相关函数
 fork，execl，execle，execlp，execv，execvp
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int execve(const char * filename,char * const argv[ ],char * const envp[ ]);
 函数说明
@@ -34,7 +34,7 @@ EINVAL 欲执行文件的ELF执行格式不只一个PT_INTERP节区
 EISDIR ELF翻译器为一目录
 ELIBBAD ELF翻译器有问题。
 范例
-#include<unistd.h>
+#include< unistd.h>
 main()
 {
 char * argv[ ]={“ls”,”-al”,”/etc/passwd”,(char *)0};
@@ -42,4 +42,4 @@ char * envp[ ]={“PATH=/bin”,0}
 execve(“/bin/ls”,argv,envp);
 }
 执行
--rw-r--r-- 1 root root 705 Sep 3 13 :52 /etc/passwd
+-rw-r--r-- 1 root root 705 Sep 3 13 :52 /etc/passwd</pre>

@@ -1,8 +1,8 @@
 islower（测试字符是否为小写字母）
-相关函数
+<pre>相关函数
 isalpha，isupper
 表头文件
-#include<ctype.h>
+#include< ctype.h>
 定义函数
 int islower(int c)
 函数说明
@@ -12,7 +12,7 @@ int islower(int c)
 附加说明
 此为宏定义，非真正函数。
 范例
-#include<ctype.h>
+#include< ctype.h>
 main()
 {
 char str[]="123@#FDsP[e?";
@@ -23,4 +23,4 @@ if(islower(str[i])) printf("%c is a lower-case character\n",str[i]);
 执行
 c is a lower-case character
 s is a lower-case character
-e is a lower-case character
+e is a lower-case character</pre>

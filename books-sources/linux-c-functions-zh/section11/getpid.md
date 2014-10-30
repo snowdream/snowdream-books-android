@@ -1,8 +1,8 @@
 getpid（取得进程识别码）
-相关函数
+<pre>相关函数
 fork，kill，getpid
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 pid_t getpid(void);
 函数说明
@@ -10,10 +10,10 @@ getpid（）用来取得目前进程的进程识别码，许多程序利用取�
 返回值
 目前进程的进程识别码
 范例
-#include<unistd.h>
+#include< unistd.h>
 main()
 {
 printf(“pid=%d\n”,getpid());
 }
 执行
-pid=1494 /*每次执行结果都不一定相同*/
+pid=1494 /*每次执行结果都不一定相同*/</pre>

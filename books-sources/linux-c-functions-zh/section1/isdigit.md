@@ -1,8 +1,8 @@
 isdigit（测试字符是否为阿拉伯数字）
-相关函数
+<pre>相关函数
 isxdigit
 表头文件
-#include<ctype.h>
+#include< ctype.h>
 定义函数
 int isdigit(int c)
 函数说明
@@ -13,7 +13,7 @@ int isdigit(int c)
 此为宏定义，非真正函数。
 范例
 /* 找出str字符串中为阿拉伯数字的字符*/
-#include<ctype.h>
+#include< ctype.h>
 main()
 {
 char str[]="123@#FDsP[e?";
@@ -24,4 +24,4 @@ if(isdigit(str[i])) printf("%c is an digit character\n",str[i]);
 执行
 1 is an digit character
 2 is an digit character
-3 is an digit character
+3 is an digit character</pre>

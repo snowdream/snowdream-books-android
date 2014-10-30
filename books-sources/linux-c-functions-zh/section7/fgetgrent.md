@@ -1,10 +1,10 @@
 fgetgrent（从指定的文件来读取组格式）
-相关函数
+<pre>相关函数
 fgetpwent
 表头文件
-#include<grp.h>
-#include<stdio.h>
-#include<sys/types.h>
+#include< grp.h>
+#include< stdio.h>
+#include< sys/types.h>
 定义函数
 struct group * getgrent(FILE * stream);
 函数说明
@@ -12,9 +12,9 @@ fgetgrent()会从参数stream指定的文件读取一行数据，然后以group�
 返回值
 返回group结构数据，如果返回NULL则表示已无数据，或有错误发生。
 范例
-#include <grp.h>
-#include<sys/types.h>
-#include<stdio.h>
+#include < grp.h>
+#include< sys/types.h>
+#include< stdio.h>
 main()
 {
 struct group *data;
@@ -49,4 +49,4 @@ games:x:20
 gopher:x:30
 dip:x:40:
 ftp:x:50
-nobody:x:99:
+nobody:x:99:</pre>

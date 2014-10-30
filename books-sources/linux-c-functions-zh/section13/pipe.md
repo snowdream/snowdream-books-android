@@ -1,10 +1,9 @@
 
-
 pipe（建立管道）
-相关函数
+<pre>相关函数
 mkfifo，popen，read，write，fork
 表头文件
-#include<unistd.h>
+#include< unistd.h>
 定义函数
 int pipe(int filedes[2]);
 函数说明
@@ -17,7 +16,7 @@ ENFILE 系统已无文件描述词可用。
 EFAULT 参数filedes数组地址不合法。
 范例
 /* 父进程借管道将字符串“hello!\n”传给子进程并显示*/
-#include <unistd.h>
+#include < unistd.h>
 main()
 {
 int filedes[2];
@@ -35,4 +34,4 @@ printf(“%s”,buffer);
 }
 }
 执行
-hello!
+hello!</pre>

@@ -1,8 +1,8 @@
 ftell（取得文件流的读取位置）
-相关函数
+<pre>相关函数
 fseek，rewind，fgetpos，fsetpos
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 long ftell(FILE * stream);
 函数说明
@@ -12,5 +12,5 @@ ftell()用来取得文件流目前的读写位置。参数stream为已打开的�
 错误代码
 EBADF 参数stream无效或可移动读写位置的文件流。
 范例
-参考fseek()。
+参考fseek()。</pre>
 　

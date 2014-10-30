@@ -1,9 +1,9 @@
 connect（建立socket连线）
-相关函数
+<pre>相关函数
 socket，bind，listen
 表头文件
-#include<sys/types.h>
-#include<sys/socket.h>
+#include< sys/types.h>
+#include< sys/socket.h>
 定义函数
 int connect (int sockfd,struct sockaddr * serv_addr,int addrlen);
 函数说明
@@ -25,13 +25,13 @@ EALREADY socket为不可阻断且先前的连线操作还未完成。
 此程序会连线TCP server，并将键盘输入的字符串传送给server。
 TCP server范例请参考listen（）。
 */
-#include<sys/stat.h>
-#include<fcntl.h>
-#include<unistd.h>
-#include<sys/types.h>
-#include<sys/socket.h>
-#include<netinet/in.h>
-#include<arpa/inet.h>
+#include< sys/stat.h>
+#include< fcntl.h>
+#include< unistd.h>
+#include< sys/types.h>
+#include< sys/socket.h>
+#include< netinet/in.h>
+#include< arpa/inet.h>
 #define PORT 1234
 #define SERVER_IP “127.0.0.1”
 main()
@@ -71,4 +71,4 @@ exit(1);
 $ ./connect
 Welcome to server!
 hi I am client! /*键盘输入*/
-/*<Ctrl+C>中断程序*/
+/*<Ctrl+C>中断程序*/</pre>

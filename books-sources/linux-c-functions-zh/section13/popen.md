@@ -1,10 +1,10 @@
 
 
 popen（建立管道I/O）
-相关函数
+<pre>相关函数
 pipe，mkfifo，pclose，fork，system，fopen
 表头文件
-#include<stdio.h>
+#include< stdio.h>
 定义函数
 FILE * popen( const char * command,const char * type);
 函数说明
@@ -16,7 +16,7 @@ EINVAL参数type不合法。
 注意事项
 在编写具SUID/SGID权限的程序时请尽量避免使用popen()，popen()会继承环境变量，通过环境变量可能会造成系统安全的问题。
 范例
-#include<stdio.h>
+#include< stdio.h>
 main()
 {
 FILE * fp;
@@ -27,4 +27,4 @@ printf(“%s”,buffer);
 pclose(fp);
 }
 执行
-root :x:0 0: root: /root: /bin/bash
+root :x:0 0: root: /root: /bin/bash</pre>

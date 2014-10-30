@@ -1,8 +1,8 @@
 setgroups（设置组代码）
-相关函数
+<pre>相关函数
 initgroups，getgroup，getgid，setgid
 表头文件
-#include<grp.h>
+#include< grp.h>
 定义函数
 int setgroups(size_t size,const gid_t * list);
 函数说明
@@ -12,4 +12,4 @@ setgroups()用来将list 数组中所标明的组加入到目前进程的组设�
 错误代码
 EFAULT 参数list数组地址不合法。
 EPERM 权限不足，必须是root权限
-EINVAL 参数size值大于NGROUP(32)。
+EINVAL 参数size值大于NGROUP(32)。</pre>

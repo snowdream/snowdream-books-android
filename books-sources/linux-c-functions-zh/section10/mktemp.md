@@ -1,8 +1,8 @@
 mktemp（产生唯一的临时文件名）
-相关函数
+<pre>相关函数
 tmpfile
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 char * mktemp(char * template);
 函数说明
@@ -14,10 +14,10 @@ mktemp()用来产生唯一的临时文件名。参数template所指的文件名�
 char template[ ]=”template-XXXXXX”；
 不可用char * template=”template-XXXXXX”；
 范例
-#include<stdlib.h>
+#include< stdlib.h>
 main()
 {
 char template[ ]=”template-XXXXXX”;
 mktemp(template);
 printf(“template=%s\n”,template);
-}
+}</pre>

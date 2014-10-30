@@ -1,8 +1,8 @@
 strtod（将字符串转换成浮点数）
-相关函数
+<pre>相关函数
 atoi，atol，strtod，strtol，strtoul
 表头文件
-#include<stdlib.h>
+#include< stdlib.h>
 定义函数
 double strtod(const char *nptr,char **endptr);
 函数说明
@@ -13,7 +13,7 @@ strtod()会扫描参数nptr字符串，跳过前面的空格字符，直到遇�
 参考atof()。
 范例
 /*将字符串a，b，c 分别采用10，2，16 进制转换成数字*/
-#include<stdlib.h>
+#include< stdlib.h>
 mian()
 {
 char a[]=”1000000000”;
@@ -26,4 +26,4 @@ printf(“c=%d\n”,strtod(c,NULL,16));
 执行
 a=1000000000
 b=512
-c=65535
+c=65535</pre>
