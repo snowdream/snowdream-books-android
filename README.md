@@ -60,7 +60,7 @@ Android 2.2+
 50.[javascript-style-guide](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.javascriptstyleguide)    
 51.[115 Java Interview Questions and Answers](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.JavaInterviewQuestionsandAnswers)     
 52.[Node.js Manual & Documentation](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.NodejsDocumentation)    
-
+53.[LINUX 常用C函数（中文版）](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.linuxcfunctionzh)
 
 
 ##License
