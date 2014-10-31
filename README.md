@@ -61,6 +61,16 @@ Android 2.2+
 51.[115 Java Interview Questions and Answers](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.JavaInterviewQuestionsandAnswers)     
 52.[Node.js Manual & Documentation](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.NodejsDocumentation)    
 53.[LINUX 常用C函数（中文版）](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.linuxcfunctionzh)
+54.[BUILD APPS WITH PHONEGAP](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.buildingwebappswithgo)
+55.[正體中文版蘋果 SWIFT 官方教學](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.theswiftprogramminglanguageinchinesetw)
+56.[APPLYING TO MAKERSQUARE](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.preparingformakersquare)
+57.[DJANGO GIRLS TUTORIAL ](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.djangogirlstutorial)
+58.[DOCKER —— 从入门到实践](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.dockerpractice)
+59.[MATERIAL DESIGN 正體中文版 ](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.materialdesigntw)
+60.[LIBSODIUM](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.libsodium)
+61.[SEAFILE SERVER MANUAL](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.seafileservermanual)
+62.[SEAFILE服务器手册中文版](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.seafileservermanualzh)
+
 
 
 ##License
