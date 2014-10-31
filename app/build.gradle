@@ -300,5 +300,60 @@ android {
             applicationId "com.github.snowdream.android.app.books.macsetup"
             buildConfigField "String", "BOOK_URL", "\"http://www.sourabhbajaj.com/mac-setup/\""
         }
+
+        Seafile_Server_Manual{
+            applicationId "com.github.snowdream.android.app.books.seafileservermanual"
+            buildConfigField "String", "BOOK_URL", "\"http://manual.seafile.com/\""
+        }
+
+        Seafile_Server_Manual_zh{
+            applicationId "com.github.snowdream.android.app.books.seafileservermanualzh"
+            buildConfigField "String", "BOOK_URL", "\"http://manual-cn.seafile.com/\""
+        }
+
+        material_design_tw{
+            applicationId "com.github.snowdream.android.app.books.materialdesigntw"
+            buildConfigField "String", "BOOK_URL", "\"http://wcc723.gitbooks.io/google_design_translate/content/\""
+        }
+
+        docker_practice{
+            applicationId "com.github.snowdream.android.app.books.dockerpractice"
+            buildConfigField "String", "BOOK_URL", "\"http://yeasy.gitbooks.io/docker_practice/content/\""
+        }
+
+        djangogirls_tutorial{
+            applicationId "com.github.snowdream.android.app.books.djangogirlstutorial"
+            buildConfigField "String", "BOOK_URL", "\"http://tutorial.djangogirls.org/\""
+        }
+
+        libsodium{
+            applicationId "com.github.snowdream.android.app.books.libsodium"
+            buildConfigField "String", "BOOK_URL", "\"http://doc.libsodium.org/\""
+        }
+
+        preparing_for_makersquare{
+            applicationId "com.github.snowdream.android.app.books.preparingformakersquare"
+            buildConfigField "String", "BOOK_URL", "\"http://makersquare.gitbooks.io/preparing-for-makersquare/content/\""
+        }
+
+        The_Swift_Programming_Language_In_Chinese_TW{
+            applicationId "com.github.snowdream.android.app.books.theswiftprogramminglanguageinchinesetw"
+            buildConfigField "String", "BOOK_URL", "\"http://tommy60703.gitbooks.io/swift-language-traditional-chinese/content/\""
+        }
+
+        building_web_apps_with_go{
+            applicationId "com.github.snowdream.android.app.books.buildingwebappswithgo"
+            buildConfigField "String", "BOOK_URL", "\"http://codegangsta.gitbooks.io/building-web-apps-with-go/content/\""
+        }
+
+        ProblemBookNET{
+            applicationId "com.github.snowdream.android.app.books.problembooknet"
+            buildConfigField "String", "BOOK_URL", "\"http://problembook.net/content/\""
+        }
+
+        famousmobileapps{
+            applicationId "com.github.snowdream.android.app.books.famousmobileapps"
+            buildConfigField "String", "BOOK_URL", "\"http://book.famousmobileapps.com/\""
+        }
     }
 }
