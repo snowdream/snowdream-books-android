@@ -290,5 +290,15 @@ android {
             applicationId "com.github.snowdream.android.app.books.linuxcfunctionzh"
             buildConfigField "String", "BOOK_URL", "\"http://snowdream.github.io/android-books/books/linux-c-functions-zh\""
         }
+
+        mac_setup_zh{
+            applicationId "com.github.snowdream.android.app.books.macsetupzh"
+            buildConfigField "String", "BOOK_URL", "\"http://aaaaaashu.gitbooks.io/mac-dev-setup/content/\""
+        }
+
+        mac_setup{
+            applicationId "com.github.snowdream.android.app.books.macsetup"
+            buildConfigField "String", "BOOK_URL", "\"http://www.sourabhbajaj.com/mac-setup/\""
+        }
     }
 }
