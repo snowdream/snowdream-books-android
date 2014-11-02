@@ -71,6 +71,20 @@ Android 2.2+
 61.[SEAFILE SERVER MANUAL](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.seafileservermanual)     
 62.[SEAFILE服务器手册中文版](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.seafileservermanualzh)     
 63.[PROBLEMBOOK.NET](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.problembooknet)     
+64.[OPENWRT智能、自动、透明翻墙路由器教程](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.openwrtfanqiang)      
+65.[ELASTICSEARCH 权威指南](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.learnelasticsearch)      
+66.[INTRO TO ANDROID](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.introtoandroid)      
+67.[WORDPRESS THE RIGHT WAY ](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.wordpresstherightway)      
+68.[ANGULARJS学习笔记 ](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.angularjslearningnotes)      
+69.[SNIPE-IT INSTALLATION GUIDE](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.snipeitmanua)      
+70.[The VisualOps Book](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.visualops)      
+71.[WDI PREWORK](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.wdiprework)      
+72.[A Student Guide to A-Level Mathematics](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.alevelmathematicsguide)      
+73.[The Self-organising book for Founders & Coders](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.selforganising)      
+74.[The Swift Programming Language 正體中文版](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.theswiftprogramminglanguagezhtw)      
+75.[Gradle User Guide 中文版](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.gradleuserguidezh)      
+76.[Python Web Workshop](https://play.google.com/store/apps/details?id=com.github.snowdream.android.app.books.pythonwebworkshop)      
+    
 
 
 ##License

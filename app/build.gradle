@@ -54,7 +54,7 @@ android {
         
         Learn_Markdown{
             applicationId "com.github.snowdream.android.app.books.learnmarkdown"
-            buildConfigField "String", "BOOK_URL", "\"http://gitbookio.github.io/markdown/\""
+            buildConfigField "String", "BOOK_URL", "\"http://gitbookio.gitbooks.io/markdown/content/\""
         }
         
         About_Haskell{
@@ -354,6 +354,75 @@ android {
         famousmobileapps{
             applicationId "com.github.snowdream.android.app.books.famousmobileapps"
             buildConfigField "String", "BOOK_URL", "\"http://book.famousmobileapps.com/\""
+        }
+
+        openwrt_fanqiang{
+            applicationId "com.github.snowdream.android.app.books.openwrtfanqiang"
+            buildConfigField "String", "BOOK_URL", "\"http://softwaredownload.gitbooks.io/openwrt-fanqiang/content/\""
+        }
+
+        intro_to_android{
+            applicationId "com.github.snowdream.android.app.books.introtoandroid"
+            buildConfigField "String", "BOOK_URL", "\"http://colabug.gitbooks.io/intro-to-android/content/\""
+        }
+
+        wordpress_the_right_way{
+            applicationId "com.github.snowdream.android.app.books.wordpresstherightway"
+            buildConfigField "String", "BOOK_URL", "\"http://www.wptherightway.org/\""
+        }
+
+        learnelasticsearch{
+            applicationId "com.github.snowdream.android.app.books.learnelasticsearch"
+            buildConfigField "String", "BOOK_URL", "\"http://fuxiaopang.gitbooks.io/learnelasticsearch/content/\""
+        }
+
+        angularjs_learning_notes{
+            applicationId "com.github.snowdream.android.app.books.angularjslearningnotes"
+            buildConfigField "String", "BOOK_URL", "\"http://checkcheckzz.gitbooks.io/angularjs-learning-notes/content/\""
+        }
+
+        snipe_it_manual{
+            applicationId "com.github.snowdream.android.app.books.snipeitmanua"
+            buildConfigField "String", "BOOK_URL", "\"http://docs.snipeitapp.com/\""
+        }
+
+        visualops{
+            applicationId "com.github.snowdream.android.app.books.visualops"
+            buildConfigField "String", "BOOK_URL", "\"http://docs.visualops.io/\""
+        }
+
+        the_swift_programming_language_zh_tw{
+            applicationId "com.github.snowdream.android.app.books.theswiftprogramminglanguagezhtw"
+            buildConfigField "String", "BOOK_URL", "\"http://mikimoto.gitbooks.io/the-swift-programming-language-zh-tw/content/\""
+        }
+        wdi_prework{
+            applicationId "com.github.snowdream.android.app.books.wdiprework"
+            buildConfigField "String", "BOOK_URL", "\"http://generalassembly.gitbooks.io/wdi-prework/content/\""
+        }
+
+        a_level_mathematics_guide{
+            applicationId "com.github.snowdream.android.app.books.alevelmathematicsguide"
+            buildConfigField "String", "BOOK_URL", "\"http://ewon521.gitbooks.io/a-level-mathematics-guide/content/\""
+        }
+
+        selforganising{
+            applicationId "com.github.snowdream.android.app.books.selforganising"
+            buildConfigField "String", "BOOK_URL", "\"http://book.selforganising.org/\""
+        }
+
+        gradle_user_guide_zh{
+            applicationId "com.github.snowdream.android.app.books.gradleuserguidezh"
+            buildConfigField "String", "BOOK_URL", "\"http://dongchuan.gitbooks.io/gradle-user-guide-/content/\""
+        }
+
+        the_guide_to_cortex{
+            applicationId "com.github.snowdream.android.app.books.theguidetocortexen"
+            buildConfigField "String", "BOOK_URL", "\"http://book.ctx.io/\""
+        }
+
+        python_web_workshop{
+            applicationId "com.github.snowdream.android.app.books.pythonwebworkshop"
+            buildConfigField "String", "BOOK_URL", "\"http://daikeren.gitbooks.io/python-web-workshop/content/\""
         }
     }
 }
