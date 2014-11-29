@@ -22,27 +22,31 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.*;
+import com.github.snowdream.android.util.Log;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import fr.castorflex.android.smoothprogressbar.SmoothProgressBar;
 
+import java.util.Locale;
 
-public class MainActivity extends Activity{
+
+public class MainActivity extends Activity {
     private static final String TEST_DEVICE_ID = "INSERT_YOUR_TEST_DEVICE_ID_HERE";
-  
-    private  WebView webView = null;
-    private SmoothProgressBar progressbar =null;
+
+    private WebView webView = null;
+    private SmoothProgressBar progressbar = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initUI();
     }
 
-    private void initUI(){
+    private void initUI() {
         setContentView(R.layout.activity_main);
 
-        webView = (WebView)findViewById(R.id.webView);
-        progressbar = (SmoothProgressBar)findViewById(R.id.progressbar);
+        webView = (WebView) findViewById(R.id.webView);
+        progressbar = (SmoothProgressBar) findViewById(R.id.progressbar);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setDomStorageEnabled(true);
@@ -55,7 +59,7 @@ public class MainActivity extends Activity{
         webSettings.setAppCacheEnabled(true);
 
 
-        webView.setWebViewClient(new WebViewClient(){
+        webView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 super.onPageStarted(view, url, favicon);
@@ -74,7 +78,7 @@ public class MainActivity extends Activity{
                 progressbar.setVisibility(View.INVISIBLE);
             }
         });
-        webView.setWebChromeClient(new WebChromeClient(){
+        webView.setWebChromeClient(new WebChromeClient() {
             @Override
             public boolean onJsAlert(WebView view, String url, String message, JsResult result) {
                 return super.onJsAlert(view, url, message, result);
@@ -82,15 +86,38 @@ public class MainActivity extends Activity{
         });
 
         webView.loadUrl("http://denisshevchenko.github.io/ohaskell/");
-        
-        
-    // The "loadAdOnCreate" and "testDevices" XML attributes no longer available.
-    AdView adView = (AdView) this.findViewById(R.id.adView);
-    AdRequest adRequest = new AdRequest.Builder()
-        .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-        .addTestDevice(TEST_DEVICE_ID)
-        .build();
-    adView.loadAd(adRequest);
+
+
+        // The "loadAdOnCreate" and "testDevices" XML attributes no longer available.
+        AdView adView = (AdView) this.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice(TEST_DEVICE_ID)
+                .build();
+        adView.loadAd(adRequest);
+
+
+        //for test
+//        Locale[] locals = Locale.getAvailableLocales();
+//        for (Locale locale : locals) {
+//            StringBuilder builder = new StringBuilder();
+//            builder.append("Local Country: ");
+//            builder.append( locale.getCountry());
+//            builder.append(" Language: ");
+//            builder.append( locale.getLanguage());
+//            builder.append(" Variant: ");
+//            builder.append(locale.getVariant());
+//            builder.append(" DisplayCountry: ");
+//            builder.append( locale.getDisplayCountry());
+//            builder.append( " DisplayLanguage: " );
+//            builder.append(locale.getDisplayLanguage());
+//            builder.append("  DisplayName:  ");
+//            builder.append( locale.getDisplayName());
+//            builder.append(" DisplayVariant: ");
+//            builder.append(locale.getDisplayVariant());
+//            Log.i(builder.toString());
+//        }
+
     }
 
     @Override
@@ -100,8 +127,8 @@ public class MainActivity extends Activity{
         super.onDestroy();
     }
 
-    public boolean onKeyDown(int keyCoder,KeyEvent event){
-        if(webView.canGoBack() && keyCoder == KeyEvent.KEYCODE_BACK){
+    public boolean onKeyDown(int keyCoder, KeyEvent event) {
+        if (webView.canGoBack() && keyCoder == KeyEvent.KEYCODE_BACK) {
             webView.goBack();
 
             return true;
