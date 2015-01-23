@@ -85,7 +85,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        webView.loadUrl("http://denisshevchenko.github.io/ohaskell/");
+        webView.loadUrl("http://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/");
 
 
         // The "loadAdOnCreate" and "testDevices" XML attributes no longer available.
