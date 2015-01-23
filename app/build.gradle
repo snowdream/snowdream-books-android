@@ -3,8 +3,11 @@ apply plugin: 'idea'
 apply from: '../config/android.gradle'
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:19.1.0'
-    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:support-v4:21.0.3'
+    //noinspection GradleDependency
+    compile "com.android.support:appcompat-v7:21.0.0"
+    compile 'com.android.support:recyclerview-v7:21.0.0'
+
     compile 'com.github.castorflex.smoothprogressbar:library:0.4.0'
     compile 'com.google.android.gms:play-services:4.3.23'
     compile 'com.github.snowdream.android.util:log:1.0.4'

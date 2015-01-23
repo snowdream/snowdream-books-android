@@ -1,59 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer-array name="colors">
-        <item>@color/holo_blue_dark</item>
-        <item>@color/holo_yellow_dark</item>
-        <item>@color/holo_green_dark</item>
-        <item>@color/holo_purple_dark</item>
-        <item>@color/holo_red_dark</item>
-    </integer-array>
 
-    <integer-array name="gplus_colors">
-        <item>@color/gplus_color_1</item>
-        <item>@color/gplus_color_2</item>
-        <item>@color/gplus_color_3</item>
-        <item>@color/gplus_color_4</item>
-    </integer-array>
+    <!--
+        Check Android Theme colors for color reference:
+        https://developer.android.com/training/material/images/ThemeColors.png
 
-    <integer-array name="pocket_bar_colors">
-        <item>@color/pocket_color_1</item>
-        <item>@color/pocket_color_1</item>
-        <item>@color/pocket_color_1</item>
-        <item>@color/pocket_color_1</item>
-        <item>@color/pocket_color_2</item>
-        <item>@color/pocket_color_2</item>
-        <item>@color/pocket_color_2</item>
-        <item>@color/pocket_color_2</item>
-        <item>@color/pocket_color_3</item>
-        <item>@color/pocket_color_3</item>
-        <item>@color/pocket_color_3</item>
-        <item>@color/pocket_color_3</item>
-        <item>@color/pocket_color_4</item>
-        <item>@color/pocket_color_4</item>
-        <item>@color/pocket_color_4</item>
-        <item>@color/pocket_color_4</item>
-    </integer-array>
+        Refer also to Color palette for the UI colors you should use:
+        http://www.google.com/design/spec/style/color.html#color-ui-color-palette
+    -->
 
-    <integer-array name="pocket_background_colors">
-        <item>@color/pocket_color_1</item>
-        <item>@color/pocket_color_2</item>
-        <item>@color/pocket_color_3</item>
-        <item>@color/pocket_color_4</item>
-    </integer-array>
+    <color name="myPrimaryColor">#3F51B5</color>
+    <color name="myPrimaryDarkColor">#3F51B5</color>
+    <color name="myAccentColor">#3F51B5</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#FFFFFF</color>
+    <color name="myNavigationColor">#000000</color>
 
-    <color name="pocket_color_1">#85edb9</color>
-    <color name="pocket_color_2">#34bdb7</color>
-    <color name="pocket_color_3">#ee4458</color>
-    <color name="pocket_color_4">#fcb74d</color>
-
-    <color name="gplus_color_1">#3e802f</color>
-    <color name="gplus_color_2">#f4b400</color>
-    <color name="gplus_color_3">#427fed</color>
-    <color name="gplus_color_4">#b23424</color>
-
-    <color name="holo_blue_dark">#0099cc</color>
-    <color name="holo_yellow_dark">#ff8800</color>
-    <color name="holo_green_dark">#669900</color>
-    <color name="holo_purple_dark">#9933cc</color>
-    <color name="holo_red_dark">#cc0000</color>
+    <color name="selected_gray">#ffdbdbdb</color>
 </resources>
