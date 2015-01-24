@@ -5,12 +5,12 @@
                 {
                     "language": "zh", 
                     "country": "TW", 
-                    "author": "Open Source Geek", 
-                    "title": "物件導向軟體工程", 
-                    "desc": "這是專為逢甲資工 OOSE 課程設計的講義。", 
+                    "author": "XBadaBing", 
+                    "title": "導遊、領隊FUN英語(mp3) “The Whole Package”", 
+                    "desc": "導遊、領隊FUN英語(mp3) “The Whole Package”", 
                     "default": true, 
-                    "url": "https://www.gitbook.com/read/book/nlhsueh/oose", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/nlhsueh/oose.jpg?build=1420295795402&v=6.3.3"
+                    "url": "https://www.gitbook.com/read/book/michaelchen/test", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/michaelchen/test.jpg?build=1421878828655&v=6.3.3"
                 }
             ]
         }, 
