@@ -39,7 +39,7 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
         items.add(new NavigationItem(new Subject("REC000000","Recommend","推荐","https://raw.githubusercontent.com/snowdream/android-books/master/docs/test/recomend.json"), getResources().getDrawable(R.drawable.ic_menu_check)));
         items.add(new NavigationItem(new Subject("COM000000","Computers","计算机技术","https://raw.githubusercontent.com/snowdream/android-books/master/docs/test/computer.json"), getResources().getDrawable(R.drawable.ic_menu_check)));
         items.add(new NavigationItem(new Subject("FOR000000","Foreign Language Study","外语学习","https://raw.githubusercontent.com/snowdream/android-books/master/docs/test/foreign.json"), getResources().getDrawable(R.drawable.ic_menu_check)));
-        items.add(new NavigationItem(new Subject("EDU000000","Education","外语学习","https://raw.githubusercontent.com/snowdream/android-books/master/docs/test/education.json"), getResources().getDrawable(R.drawable.ic_menu_check)));
+        items.add(new NavigationItem(new Subject("EDU000000","Education","教育","https://raw.githubusercontent.com/snowdream/android-books/master/docs/test/education.json"), getResources().getDrawable(R.drawable.ic_menu_check)));
 
         mNavigationDrawerFragment.setMenu(items);
         mNavigationDrawerFragment.refresh();
