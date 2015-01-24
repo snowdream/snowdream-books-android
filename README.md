@@ -8,8 +8,8 @@ android books from github or other websites.
 Android 2.3+
 
 ##Download
-Google Play : [![Get it on Google Play](https://developer.android.com/images/brand/en_generic_rgb_wo_60.png "Get it on Google Play")][1]
-Github : [https://github.com/snowdream/android-explorer/releases/download/android-explorer-0.1.20/explorer-v0.1.20-release.apk][2]
+Google Play : [![Get it on Google Play](https://developer.android.com/images/brand/en_generic_rgb_wo_60.png "Get it on Google Play")][1]       
+Github : [https://github.com/snowdream/android-books/releases/download/v1.2/books-v1.2-release.apk][2]
 
 ##Preview
 [![雪梦图书android客户端](https://raw.githubusercontent.com/snowdream/android-books/master/docs/preview/device-2015-01-24-223829.png)](https://play.google.com/store/apps/details?id=com.github.snowdream.android.apps.jokes)
@@ -110,4 +110,4 @@ limitations under the License.
 ```
 
 [1]:https://play.google.com/store/apps/details?id=com.github.snowdream.android.apps.books
-[2]:https://github.com/snowdream/android-explorer/releases/download/android-explorer-0.1.20/explorer-v0.1.20-release.apk
+[2]:https://github.com/snowdream/android-books/releases/download/v1.2/books-v1.2-release.apk
