@@ -87,7 +87,7 @@ public class BookManager {
 
                 Book book = new Book();
 
-                List<BookItem> bookItemList = parseBook(obj);
+                List<BookItem> bookItemList = parseBook(oj);
 
                 if (bookItemList != null){
                     book.setList(bookItemList);
