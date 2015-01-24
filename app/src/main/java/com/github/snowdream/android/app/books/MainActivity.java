@@ -2,6 +2,7 @@ package com.github.snowdream.android.app.books;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
@@ -65,8 +66,14 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
                     Bundle bundle = new Bundle();
                     bundle.putParcelable(SubjectFragment.KEY_SUBJECT_BOOKS, Parcels.wrap(books));
                     fragment.setArguments(bundle);
+                    getSupportFragmentManager().getFragments().size();
 
-                    getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).addToBackStack(null).commit();
+                    List<Fragment> list = getSupportFragmentManager().getFragments();
+                    if (list == null || list.isEmpty()){
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
+                    }else {
+                        getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).addToBackStack(null).commit();
+                    }
                 }
             }
         });
