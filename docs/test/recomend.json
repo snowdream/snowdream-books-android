@@ -3,76 +3,282 @@
         {
             "book": [
                 {
-                    "language": "zh",
-                    "country": "CN",
-                    "author": "梁杰",
-                    "title": "The Swift Programming Language 中文版",
-                    "desc": "The Swift Programming Language 中文版",
-                    "default": true,
-                    "url": "http://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/",
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
-                },
+                    "language": "zh", 
+                    "country": "CN", 
+                    "author": "梁杰", 
+                    "title": "The Swift Programming Language 中文版", 
+                    "desc": "The Swift Programming Language 中文版", 
+                    "default": true, 
+                    "url": "http://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/numbbbbb/-the-swift-programming-language-.jpg?build=1419866148789&v=6.3.3"
+                }, 
                 {
-                    "language": "zh",
-                    "country": "TW",
-                    "author": "Tommy Lin",
-                    "title": "The Swift Programming Language 正體中文版",
-                    "desc": "正體中文版蘋果 Swift 官方教學《The Swift Programming Language》",
-                    "default": false,
-                    "url": "https://www.gitbook.com/read/book/tommy60703/swift-language-traditional-chinese",
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
+                    "language": "zh", 
+                    "country": "TW", 
+                    "author": "Tommy Lin", 
+                    "title": "The Swift Programming Language 正體中文版", 
+                    "desc": "正體中文版蘋果 Swift 官方教學《The Swift Programming Language》", 
+                    "default": false, 
+                    "url": "https://www.gitbook.com/read/book/tommy60703/swift-language-traditional-chinese", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/tommy60703/swift-language-traditional-chinese.jpg?build=1416974934692&v=6.3.3"
                 }
             ]
-        },
+        }, 
         {
             "book": [
                 {
-                    "language": "en",
-                    "country": "US",
-                    "author": "plt",
-                    "title": "Seafile Server Manual",
-                    "desc": "Manual of Seafile Server",
-                    "default": true,
-                    "url": "http://manual.seafile.com/",
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
-                },
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "plt", 
+                    "title": "Seafile Server Manual", 
+                    "desc": "Manual of Seafile Server", 
+                    "default": true, 
+                    "url": "http://manual.seafile.com/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/freeplant/seafile-server-manual.jpg?build=1421919619980&v=6.3.3"
+                }, 
                 {
-                    "language": "zh",
-                    "country": "CN",
-                    "author": "plt",
-                    "title": "Seafile服务器手册中文版",
-                    "desc": "Seafile 是一个开源的文件云存储平台。它提供更丰富的文件同步和管理功能，以及更好的数据隐私保护和群组协作功能。",
-                    "default": false,
-                    "url": "http://manual-cn.seafile.com/",
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
+                    "language": "zh", 
+                    "country": "CN", 
+                    "author": "plt", 
+                    "title": "Seafile服务器手册中文版", 
+                    "desc": "Seafile 是一个开源的文件云存储平台。它提供更丰富的文件同步和管理功能，以及更好的数据隐私保护和群组协作功能。", 
+                    "default": false, 
+                    "url": "http://manual-cn.seafile.com/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/freeplant/seafile-server-manual.jpg?build=1421919619980&v=6.3.3"
                 }
             ]
-        },
+        }, 
         {
             "book": [
                 {
-                    "language": "zh",
-                    "country": "CN",
-                    "author": "yeasy",
-                    "title": "Docker —— 从入门到实践",
-                    "desc": "本书既适用于具备基础 Linux 知识的 Docker 初学者，也可供希望理解原理和实现的高级用户参考。同时，书中给出的实践案例，可供在进行实际部署时借鉴。",
-                    "default": true,
-                    "url": "http://yeasy.gitbooks.io/docker_practice/content/",
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "Jeremy Saenz", 
+                    "title": "Building Web Apps with Go", 
+                    "desc": "Learn how to build and deploy web applications with Go.", 
+                    "default": true, 
+                    "url": "http://codegangsta.gitbooks.io/building-web-apps-with-go/content/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/codegangsta/building-web-apps-with-go.jpg?build=1417051877195&v=6.3.3"
                 }
             ]
-        },
+        }, 
         {
             "book": [
                 {
-                    "language": "en",
-                    "country": "US",
-                    "author": "Jeremy Saenz",
-                    "title": "Building Web Apps with Go",
-                    "desc": "Learn how to build and deploy web applications with Go.",
-                    "default": true,
-                    "url": "http://codegangsta.gitbooks.io/building-web-apps-with-go/content/",
+                    "language": "zh", 
+                    "country": "CN", 
+                    "author": "yeasy", 
+                    "title": "Docker —— 从入门到实践", 
+                    "desc": "本书既适用于具备基础 Linux 知识的 Docker 初学者，也可供希望理解原理和实现的高级用户参考。同时，书中给出的实践案例，可供在进行实际部署时借鉴。", 
+                    "default": true, 
+                    "url": "http://yeasy.gitbooks.io/docker_practice/content/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/yeasy/docker_practice.jpg?build=1421893844822&v=6.3.3"
+                }, 
+                {
+                    "language": "zh", 
+                    "country": "TW", 
+                    "author": "philipzheng", 
+                    "title": "《Docker —— 從入門到實踐­》正體中文版", 
+                    "desc": "出處：Docker —— 从入门到实践 ", 
+                    "default": false, 
+                    "url": "https://www.gitbook.com/read/book/philipzheng/docker_practice", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/philipzheng/docker_practice.jpg?build=1418779400405&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "Frank Denis", 
+                    "title": "libsodium", 
+                    "desc": "A high-security, cross-platform, easy-to-use crypto library.", 
+                    "default": true, 
+                    "url": "http://doc.libsodium.org/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/jedisct1/libsodium.jpg?build=1421921622089&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "DjangoGirls , Ola Sitarska , Ola Sendecka and Baptiste Mispelon", 
+                    "title": "Django Girls Tutorial", 
+                    "desc": "This book is a Django tutorial created for DjangoGirls event.", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/djangogirls/djangogirls-tutorial", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/djangogirls/djangogirls-tutorial.jpg?build=1420795447441&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "jp", 
+                    "country": "JP", 
+                    "author": "tarukosu", 
+                    "title": "現役東大院生が教える高校数学の考え方", 
+                    "desc": "This book is a Django tutorial created for DjangoGirls event.", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/tarukosu/mathbook", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/tarukosu/mathbook.jpg?build=1414796385436&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "zh", 
+                    "country": "TW", 
+                    "author": "wcc723", 
+                    "title": "Google Material Design 正體中文版", 
+                    "desc": "Google Material Design 正體中文版", 
+                    "default": true, 
+                    "url": "http://wcc723.gitbooks.io/google_design_translate/content/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/wcc723/google_design_translate.jpg?build=1420620075081&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "zh", 
+                    "country": "CN", 
+                    "author": "Donald Tu", 
+                    "title": "OpenWrt智能、自动、透明翻墙路由器教程", 
+                    "desc": "手把手教你路由器刷OpenWrt固件，自动穿越万里长城", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/softwaredownload/openwrt-fanqiang", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/softwaredownload/openwrt-fanqiang.jpg?build=1417048955696&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "Samy Pessé", 
+                    "title": "How to make an Operating System", 
+                    "desc": "Online book about how to write a computer operating system in C/C++ from scratch.", 
+                    "default": true, 
+                    "url": "http://samypesse.gitbooks.io/how-to-create-an-operating-system/content/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/samypesse/how-to-create-an-operating-system.jpg?build=1418850966857&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "zh", 
+                    "country": "TW", 
+                    "author": "雨蒼 and 洪偉", 
+                    "title": "讓你真的讀懂草案的「自經區爭議書」", 
+                    "desc": "全法條摘要、各章節要點整理、十四個經典爭議，讓你一手掌握自經區當前爭論所在！", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/billy3321/taiwanfepzs", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/billy3321/taiwanfepzs.jpg?build=1416957340837&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "Mohammad Hossein Mojtahedi", 
+                    "title": "Swift Cheat Sheet", 
+                    "desc": "A short guide to using Apple's new programming language, Swift.", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/mhm5000/swift-cheat-sheet", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/mhm5000/swift-cheat-sheet.jpg?build=1416966376809&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "GitBook", 
+                    "title": "Learn Javascript", 
+                    "desc": "This book will teach you the basics of programming and Javascript. ", 
+                    "default": true, 
+                    "url": "http://gitbookio.gitbooks.io/javascript/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/javascript.jpg?build=1418385941206&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "GitBook", 
+                    "title": "GitBook Documentation", 
+                    "desc": "This book contains the entire documentation for GitBook (platform and toolchain).", 
+                    "default": true, 
+                    "url": "http://help.gitbook.io/", 
                     "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "GitBook", 
+                    "title": "Pro Git", 
+                    "desc": "A GitBook version of the famous Pro Git book written by Scott Chacon.", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/gitbookio/progit", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/progit.jpg?build=1414793393766&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "GitBook", 
+                    "title": "Learn Markdown", 
+                    "desc": "Learn how to write great documents using Markdown.", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/gitbookio/markdown", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/markdown.jpg?build=1414791083337&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "zh", 
+                    "country": "CN", 
+                    "author": "Fu Kailong", 
+                    "title": "ElasticSearch 权威指南", 
+                    "desc": "ElasticSearch 权威指南", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/fuxiaopang/learnelasticsearch", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/fuxiaopang/learnelasticsearch.jpg?build=1414839122394&v=6.3.3"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "zh", 
+                    "country": "TW", 
+                    "author": "Fu Kailong", 
+                    "title": "勞權律師蔡瑞麟【2014台北市勞動局長參選】政見簡述", 
+                    "desc": "勞權律師蔡瑞麟【2014台北市勞動局長參選】政見簡述", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/arny/arnypolicy2014", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/arny/arnypolicy2014.jpg?build=1418319355584&v=6.3.3"
                 }
             ]
         }
