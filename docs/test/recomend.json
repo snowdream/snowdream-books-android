@@ -56,7 +56,7 @@
                     "author": "yeasy",
                     "title": "Docker —— 从入门到实践",
                     "desc": "本书既适用于具备基础 Linux 知识的 Docker 初学者，也可供希望理解原理和实现的高级用户参考。同时，书中给出的实践案例，可供在进行实际部署时借鉴。",
-                    "default": false,
+                    "default": true,
                     "url": "http://yeasy.gitbooks.io/docker_practice/content/",
                     "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
                 }
