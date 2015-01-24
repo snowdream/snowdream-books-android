@@ -1,5 +1,6 @@
 package com.github.snowdream.android.app.books;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
@@ -36,6 +37,14 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
+        BookFragment fragment = new BookFragment();
+
+        Bundle bundle = new Bundle();
+        bundle.putString(BookFragment.BOOK_URL_KEY,"http://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/");
+
+        fragment.setArguments(bundle);
+
+        getSupportFragmentManager().beginTransaction().add(R.id.container,fragment).addToBackStack(null).commit();
     }
 
     @Override
