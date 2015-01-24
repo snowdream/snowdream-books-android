@@ -5,8 +5,8 @@
           android:layout_height="match_parent"
           android:background="#FFFFFFFF"
           android:cacheColorHint="#00000000"
-          android:divider="@null"
-          android:dividerHeight="0dp"
+          android:divider="#efeeee"
+          android:dividerHeight="1dp"
           android:fadingEdgeLength="0dp"
           android:listSelector="@null"
           android:scrollbars="none">

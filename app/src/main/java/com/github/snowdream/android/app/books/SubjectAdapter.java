@@ -9,7 +9,9 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.github.snowdream.android.app.books.entity.Book;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
 import java.util.List;
 import java.util.Locale;
@@ -22,6 +24,7 @@ public class SubjectAdapter extends BaseAdapter {
     private List<Book> list = null;
     private LayoutInflater inflater = null;
     private String language = null;
+    DisplayImageOptions options = null;
 
     private SubjectAdapter(){}
 
@@ -31,6 +34,14 @@ public class SubjectAdapter extends BaseAdapter {
         inflater = (LayoutInflater) context.getSystemService(Service.LAYOUT_INFLATER_SERVICE);
 
         language = Locale.getDefault().getLanguage();
+
+        options =  new DisplayImageOptions.Builder()
+                .showImageOnLoading(R.drawable.ic_book)
+                .showImageForEmptyUri(R.drawable.ic_book)
+                .showImageOnFail(R.drawable.ic_book)
+                .displayer(new FadeInBitmapDisplayer(500))
+                .build();
+
     }
 
     @Override
@@ -76,7 +87,7 @@ public class SubjectAdapter extends BaseAdapter {
         if (book != null){
             holder.title.setText(book.getTitle(language));
             holder.subtitle.setText(book.getDesc(language));
-            ImageLoader.getInstance().displayImage(book.getImg(language), holder.imageView);
+            ImageLoader.getInstance().displayImage(book.getImg(language), holder.imageView,options);
         }
 
         return convertView;
