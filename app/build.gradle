@@ -11,4 +11,6 @@ dependencies {
     compile 'com.github.snowdream.android.util:log:1.0.4'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     compile 'com.loopj.android:android-async-http:1.4.6'
+    compile "org.parceler:parceler-api:0.2.15"
+    provided  "org.parceler:parceler:0.2.15"
 }

@@ -118,28 +118,8 @@ public class BookFragment extends Fragment {
                 return false;
             }
         } );
-        //for test
-        Locale[] locals = Locale.getAvailableLocales();
-        for (Locale locale : locals) {
-            StringBuilder builder = new StringBuilder();
-            builder.append("Local Country: ");
-            builder.append( locale.getCountry());
-            builder.append(" Language: ");
-            builder.append( locale.getLanguage());
-            builder.append(" Variant: ");
-            builder.append(locale.getVariant());
-            builder.append(" DisplayCountry: ");
-            builder.append( locale.getDisplayCountry());
-            builder.append( " DisplayLanguage: " );
-            builder.append(locale.getDisplayLanguage());
-            builder.append("  DisplayName:  ");
-            builder.append( locale.getDisplayName());
-            builder.append(" DisplayVariant: ");
-            builder.append(locale.getDisplayVariant());
-            Log.i(builder.toString());
-        }
-
     }
+
     private void initData() {
         Bundle bundle = getArguments();
         String book_url = bundle.getString(BOOK_URL_KEY);

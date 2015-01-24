@@ -1,8 +1,11 @@
 package com.github.snowdream.android.app.books.entity;
 
+import org.parceler.Parcel;
+
 /**
  * Created by hui.yang on 2015/1/24.
  */
+@Parcel(Parcel.Serialization.METHOD)
 public class BookItem {
     private String language = null;
     private String country = null;

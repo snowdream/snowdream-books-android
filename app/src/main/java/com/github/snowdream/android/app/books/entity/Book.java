@@ -1,12 +1,15 @@
 package com.github.snowdream.android.app.books.entity;
 
 import android.text.TextUtils;
+import org.parceler.Parcel;
+import org.parceler.Transient;
 
 import java.util.List;
 
 /**
  * Created by hui.yang on 2015/1/24.
  */
+@Parcel(Parcel.Serialization.METHOD)
 public class Book {
     private List<BookItem> list = null;
     private BookItem cacheBookItem = null;
@@ -18,6 +21,7 @@ public class Book {
      * @param language
      * @return
      */
+    @Transient
     private BookItem getBookItemFromCache(String language){
         if (!TextUtils.isEmpty(this.language) && this.language.equalsIgnoreCase(language)){
             return cacheBookItem;
@@ -31,6 +35,7 @@ public class Book {
      * @param item
      * @param language
      */
+    @Transient
     private void setBookItemToCache(BookItem item,String language){
             this.language = language;
             this.cacheBookItem = item;
@@ -50,6 +55,7 @@ public class Book {
         return false;
     }
 
+    @Transient
     private BookItem getBookItem(String language){
         if (isEmpty()){
             return null;
@@ -96,6 +102,7 @@ public class Book {
         return bookItem;
     }
 
+    @Transient
     public String getLanguage(String language) {
         BookItem item = getBookItem(language);
         if (item != null){
@@ -105,6 +112,7 @@ public class Book {
         return null;
     }
 
+    @Transient
     public String getCountry(String language) {
         BookItem item = getBookItem(language);
         if (item != null){
@@ -114,6 +122,7 @@ public class Book {
         return null;
     }
 
+    @Transient
     public String getAuthor(String language) {
         BookItem item = getBookItem(language);
         if (item != null){
@@ -123,6 +132,7 @@ public class Book {
         return null;
     }
 
+    @Transient
     public String getTitle(String language) {
         BookItem item = getBookItem(language);
         if (item != null){
@@ -132,6 +142,7 @@ public class Book {
         return null;
     }
 
+    @Transient
     public String getDesc(String language) {
         BookItem item = getBookItem(language);
         if (item != null){
@@ -150,6 +161,7 @@ public class Book {
         return false;
     }
 
+    @Transient
     public String getUrl(String language) {
         BookItem item = getBookItem(language);
         if (item != null){
@@ -159,6 +171,7 @@ public class Book {
         return null;
     }
 
+    @Transient
     public String getImg(String language) {
         BookItem item = getBookItem(language);
         if (item != null){

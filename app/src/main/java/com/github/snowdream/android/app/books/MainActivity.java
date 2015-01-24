@@ -12,6 +12,7 @@ import com.github.snowdream.android.app.books.controller.CallBack;
 import com.github.snowdream.android.app.books.entity.Book;
 import com.github.snowdream.android.app.books.entity.Subject;
 import com.github.snowdream.android.util.Log;
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,27 +49,24 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
-        Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
-
         NavigationItem item  = items.get(position);
         Subject subject = item.getSubject();
 
         BookManager.getBooks(subject.getUrl(), new CallBack<List<Book>>() {
             @Override
-            public void callback(List<Book> result) {
-                Log.i(result.toString());
+            public void callback(List<Book> books) {
+                Log.i(books.toString());
+                if (books != null && !books.isEmpty()) {
+                    SubjectFragment fragment = new SubjectFragment();
 
+                    Bundle bundle = new Bundle();
+                    bundle.putParcelable(SubjectFragment.KEY_SUBJECT_BOOKS, Parcels.wrap(books));
+                    fragment.setArguments(bundle);
+
+                    getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).addToBackStack(null).commit();
+                }
             }
         });
-
-        BookFragment fragment = new BookFragment();
-
-        Bundle bundle = new Bundle();
-        bundle.putString(BookFragment.BOOK_URL_KEY,"http://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/");
-
-        fragment.setArguments(bundle);
-
-        getSupportFragmentManager().beginTransaction().add(R.id.container,fragment).addToBackStack(null).commit();
     }
 
     @Override
