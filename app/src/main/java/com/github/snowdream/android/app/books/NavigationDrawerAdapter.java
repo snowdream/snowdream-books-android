@@ -7,6 +7,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import com.github.snowdream.android.app.books.entity.Subject;
 
 import java.util.List;
 
@@ -40,7 +41,8 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
 
     @Override
     public void onBindViewHolder(NavigationDrawerAdapter.ViewHolder viewHolder, final int i) {
-        viewHolder.textView.setText(mData.get(i).getText());
+        Subject subject = mData.get(i).getSubject();
+        viewHolder.textView.setText(subject.getName());
         viewHolder.textView.setCompoundDrawablesWithIntrinsicBounds(mData.get(i).getDrawable(), null, null, null);
 
         viewHolder.itemView.setOnTouchListener(new View.OnTouchListener() {

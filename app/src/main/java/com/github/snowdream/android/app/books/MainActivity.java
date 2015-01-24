@@ -7,13 +7,21 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.widget.Toast;
+import com.github.snowdream.android.app.books.controller.BookManager;
+import com.github.snowdream.android.app.books.controller.CallBack;
+import com.github.snowdream.android.app.books.entity.Book;
+import com.github.snowdream.android.app.books.entity.Subject;
+import com.github.snowdream.android.util.Log;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity implements NavigationDrawerCallbacks {
 
     private Toolbar mToolbar;
     private NavigationDrawerFragment mNavigationDrawerFragment;
-
+    private  List<NavigationItem> items;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +30,14 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-
-
         mNavigationDrawerFragment = (NavigationDrawerFragment)getSupportFragmentManager().findFragmentById(R.id.fragment_drawer);
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), mToolbar);
+
+        items = new ArrayList<NavigationItem>();
+        items.add(new NavigationItem(new Subject("REC000000","Recommend","https://raw.githubusercontent.com/snowdream/android-books/master/docs/test/recomend.json"), getResources().getDrawable(R.drawable.ic_menu_check)));
+
+        mNavigationDrawerFragment.setMenu(items);
+        mNavigationDrawerFragment.refresh();
     }
 
     @Override
@@ -37,6 +49,18 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         Toast.makeText(this, "Menu item selected -> " + position, Toast.LENGTH_SHORT).show();
+
+        NavigationItem item  = items.get(position);
+        Subject subject = item.getSubject();
+
+        BookManager.getBooks(subject.getUrl(), new CallBack<List<Book>>() {
+            @Override
+            public void callback(List<Book> result) {
+                Log.i(result.toString());
+
+            }
+        });
+
         BookFragment fragment = new BookFragment();
 
         Bundle bundle = new Bundle();

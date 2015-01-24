@@ -16,7 +16,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,6 +25,8 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
     private static final String PREF_USER_LEARNED_DRAWER = "navigation_drawer_learned";
     private static final String STATE_SELECTED_POSITION = "selected_navigation_drawer_position";
     private static final String PREFERENCES_FILE = "my_app_settings"; //TODO: change this to your file
+    public static final String KEY_NAVIGATION_ITEM = "key_navigation_item";
+
     private NavigationDrawerCallbacks mCallbacks;
     private RecyclerView mDrawerList;
     private View mFragmentContainerView;
@@ -34,6 +35,7 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
     private boolean mUserLearnedDrawer;
     private boolean mFromSavedInstanceState;
     private int mCurrentSelectedPosition;
+    private List<NavigationItem> items = null;
 
 
     @Nullable
@@ -46,11 +48,6 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
         mDrawerList.setLayoutManager(layoutManager);
         mDrawerList.setHasFixedSize(true);
 
-        final List<NavigationItem> navigationItems = getMenu();
-        NavigationDrawerAdapter adapter = new NavigationDrawerAdapter(navigationItems);
-        adapter.setNavigationDrawerCallbacks(this);
-        mDrawerList.setAdapter(adapter);
-        selectItem(mCurrentSelectedPosition);
         return view;
     }
 
@@ -80,6 +77,18 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
 
     public void setActionBarDrawerToggle(ActionBarDrawerToggle actionBarDrawerToggle) {
         mActionBarDrawerToggle = actionBarDrawerToggle;
+    }
+
+    public void setMenu(List<NavigationItem> list){
+        items = list;
+    }
+
+    public void refresh(){
+        final List<NavigationItem> navigationItems = getMenu();
+        NavigationDrawerAdapter adapter = new NavigationDrawerAdapter(navigationItems);
+        adapter.setNavigationDrawerCallbacks(this);
+        mDrawerList.setAdapter(adapter);
+        selectItem(mCurrentSelectedPosition);
     }
 
     public void setup(int fragmentId, DrawerLayout drawerLayout, Toolbar toolbar) {
@@ -137,10 +146,6 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
     }
 
     public List<NavigationItem> getMenu() {
-        List<NavigationItem> items = new ArrayList<NavigationItem>();
-        items.add(new NavigationItem("item 1", getResources().getDrawable(R.drawable.ic_menu_check)));
-        items.add(new NavigationItem("item 2", getResources().getDrawable(R.drawable.ic_menu_check)));
-        items.add(new NavigationItem("item 3", getResources().getDrawable(R.drawable.ic_menu_check)));
         return items;
     }
 

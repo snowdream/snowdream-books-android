@@ -29,6 +29,8 @@ import com.github.snowdream.android.util.Log;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
+import java.util.Locale;
+
 
 public class BookFragment extends Fragment {
     private static final String TEST_DEVICE_ID = "INSERT_YOUR_TEST_DEVICE_ID_HERE";
@@ -117,25 +119,25 @@ public class BookFragment extends Fragment {
             }
         } );
         //for test
-//        Locale[] locals = Locale.getAvailableLocales();
-//        for (Locale locale : locals) {
-//            StringBuilder builder = new StringBuilder();
-//            builder.append("Local Country: ");
-//            builder.append( locale.getCountry());
-//            builder.append(" Language: ");
-//            builder.append( locale.getLanguage());
-//            builder.append(" Variant: ");
-//            builder.append(locale.getVariant());
-//            builder.append(" DisplayCountry: ");
-//            builder.append( locale.getDisplayCountry());
-//            builder.append( " DisplayLanguage: " );
-//            builder.append(locale.getDisplayLanguage());
-//            builder.append("  DisplayName:  ");
-//            builder.append( locale.getDisplayName());
-//            builder.append(" DisplayVariant: ");
-//            builder.append(locale.getDisplayVariant());
-//            Log.i(builder.toString());
-//        }
+        Locale[] locals = Locale.getAvailableLocales();
+        for (Locale locale : locals) {
+            StringBuilder builder = new StringBuilder();
+            builder.append("Local Country: ");
+            builder.append( locale.getCountry());
+            builder.append(" Language: ");
+            builder.append( locale.getLanguage());
+            builder.append(" Variant: ");
+            builder.append(locale.getVariant());
+            builder.append(" DisplayCountry: ");
+            builder.append( locale.getDisplayCountry());
+            builder.append( " DisplayLanguage: " );
+            builder.append(locale.getDisplayLanguage());
+            builder.append("  DisplayName:  ");
+            builder.append( locale.getDisplayName());
+            builder.append(" DisplayVariant: ");
+            builder.append(locale.getDisplayVariant());
+            Log.i(builder.toString());
+        }
 
     }
     private void initData() {
