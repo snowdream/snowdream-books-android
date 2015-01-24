@@ -5,7 +5,17 @@ android app - books
 android books from github or other websites.
 
 ##System requirements
-Android 2.2+
+Android 2.3+
+
+##Download
+Google Play : [![Get it on Google Play](https://developer.android.com/images/brand/en_generic_rgb_wo_60.png "Get it on Google Play")][1]
+Github : [https://github.com/snowdream/android-explorer/releases/download/android-explorer-0.1.20/explorer-v0.1.20-release.apk][2]
+
+##Preview
+[![雪梦图书android客户端](https://raw.githubusercontent.com/snowdream/android-books/master/docs/preview/device-2015-01-24-223829.png)](https://play.google.com/store/apps/details?id=com.github.snowdream.android.apps.jokes)
+[![雪梦图书android客户端](https://raw.githubusercontent.com/snowdream/android-books/master/docs/preview/device-2015-01-24-223848.png)](https://play.google.com/store/apps/details?id=com.github.snowdream.android.apps.books)
+[![雪梦图书android客户端](https://raw.githubusercontent.com/snowdream/android-books/master/docs/preview/device-2015-01-24-223935.png)](https://play.google.com/store/apps/details?id=com.github.snowdream.android.apps.books)
+[![雪梦图书android客户端](https://raw.githubusercontent.com/snowdream/android-books/master/docs/preview/device-2015-01-24-224002.png)](https://play.google.com/store/apps/details?id=com.github.snowdream.android.apps.books)
 
 ##Books
 1. [Pro Git](https://github.com/snowdream/android-books/blob/master/release/Pro_Git-release-v1.1.apk?raw=true)
@@ -98,3 +108,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+[1]:https://play.google.com/store/apps/details?id=com.github.snowdream.android.apps.books
+[2]:https://github.com/snowdream/android-explorer/releases/download/android-explorer-0.1.20/explorer-v0.1.20-release.apk
