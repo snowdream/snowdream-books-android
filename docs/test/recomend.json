@@ -10,7 +10,7 @@
                     "desc": "The Swift Programming Language 中文版",
                     "default": true,
                     "url": "http://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/",
-                    "img": "https://sm3lir.cloudimage.io/s/cdn/x/https://www.gitbook.com/cover/book/numbbbbb/-the-swift-programming-language-?build=1416923156549"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
                 },
                 {
                     "language": "zh",
@@ -20,7 +20,7 @@
                     "desc": "正體中文版蘋果 Swift 官方教學《The Swift Programming Language》",
                     "default": false,
                     "url": "https://www.gitbook.com/read/book/tommy60703/swift-language-traditional-chinese",
-                    "img": "https://sm3lir.cloudimage.io/s/cdn/x/https://www.gitbook.com/cover/book/tommy60703/swift-language-traditional-chinese?build=1416974934692"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
                 }
             ]
         },
@@ -34,7 +34,7 @@
                     "desc": "Manual of Seafile Server",
                     "default": true,
                     "url": "http://manual.seafile.com/",
-                    "img": "https://sm3lir.cloudimage.io/s/cdn/x/https://www.gitbook.com/cover/book/freeplant/seafile-server-manual?build=1417255814320"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
                 },
                 {
                     "language": "zh",
@@ -44,7 +44,7 @@
                     "desc": "Seafile 是一个开源的文件云存储平台。它提供更丰富的文件同步和管理功能，以及更好的数据隐私保护和群组协作功能。",
                     "default": false,
                     "url": "http://manual-cn.seafile.com/",
-                    "img": "https://sm3lir.cloudimage.io/s/cdn/x/https://www.gitbook.com/cover/book/freeplant/seafile-manual-cn?build=1417145766641"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
                 }
             ]
         },
@@ -58,7 +58,7 @@
                     "desc": "本书既适用于具备基础 Linux 知识的 Docker 初学者，也可供希望理解原理和实现的高级用户参考。同时，书中给出的实践案例，可供在进行实际部署时借鉴。",
                     "default": false,
                     "url": "http://yeasy.gitbooks.io/docker_practice/content/",
-                    "img": "https://sm3lir.cloudimage.io/s/cdn/x/https://www.gitbook.com/cover/book/yeasy/docker_practice?build=1416894196434"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
                 }
             ]
         },
@@ -72,7 +72,7 @@
                     "desc": "Learn how to build and deploy web applications with Go.",
                     "default": true,
                     "url": "http://codegangsta.gitbooks.io/building-web-apps-with-go/content/",
-                    "img": "https://sm3lir.cloudimage.io/s/cdn/x/https://www.gitbook.com/cover/book/codegangsta/building-web-apps-with-go?build=1417051877195"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
                 }
             ]
         }
