@@ -1,0 +1,80 @@
+{
+    "books": [
+        {
+            "book": [
+                {
+                    "language": "zh",
+                    "country": "CN",
+                    "author": "梁杰",
+                    "title": "The Swift Programming Language 中文版",
+                    "desc": "The Swift Programming Language 中文版",
+                    "default": true,
+                    "url": "http://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/",
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
+                },
+                {
+                    "language": "zh",
+                    "country": "TW",
+                    "author": "Tommy Lin",
+                    "title": "The Swift Programming Language 正體中文版",
+                    "desc": "正體中文版蘋果 Swift 官方教學《The Swift Programming Language》",
+                    "default": false,
+                    "url": "https://www.gitbook.com/read/book/tommy60703/swift-language-traditional-chinese",
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
+                }
+            ]
+        },
+        {
+            "book": [
+                {
+                    "language": "en",
+                    "country": "US",
+                    "author": "plt",
+                    "title": "Seafile Server Manual",
+                    "desc": "Manual of Seafile Server",
+                    "default": true,
+                    "url": "http://manual.seafile.com/",
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
+                },
+                {
+                    "language": "zh",
+                    "country": "CN",
+                    "author": "plt",
+                    "title": "Seafile服务器手册中文版",
+                    "desc": "Seafile 是一个开源的文件云存储平台。它提供更丰富的文件同步和管理功能，以及更好的数据隐私保护和群组协作功能。",
+                    "default": false,
+                    "url": "http://manual-cn.seafile.com/",
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
+                }
+            ]
+        },
+        {
+            "book": [
+                {
+                    "language": "zh",
+                    "country": "CN",
+                    "author": "yeasy",
+                    "title": "Docker —— 从入门到实践",
+                    "desc": "本书既适用于具备基础 Linux 知识的 Docker 初学者，也可供希望理解原理和实现的高级用户参考。同时，书中给出的实践案例，可供在进行实际部署时借鉴。",
+                    "default": false,
+                    "url": "http://yeasy.gitbooks.io/docker_practice/content/",
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
+                }
+            ]
+        },
+        {
+            "book": [
+                {
+                    "language": "en",
+                    "country": "US",
+                    "author": "Jeremy Saenz",
+                    "title": "Building Web Apps with Go",
+                    "desc": "Learn how to build and deploy web applications with Go.",
+                    "default": true,
+                    "url": "http://codegangsta.gitbooks.io/building-web-apps-with-go/content/",
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
+                }
+            ]
+        }
+    ]
+}
