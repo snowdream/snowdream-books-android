@@ -10,7 +10,7 @@
                     "desc": "The Swift Programming Language 中文版", 
                     "default": true, 
                     "url": "http://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/numbbbbb/-the-swift-programming-language-.jpg?build=1419866148789&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/numbbbbb/-the-swift-programming-language-.jpg?build=1422352186169&v=6.3.4"
                 }, 
                 {
                     "language": "zh", 
@@ -20,7 +20,7 @@
                     "desc": "正體中文版蘋果 Swift 官方教學《The Swift Programming Language》", 
                     "default": false, 
                     "url": "https://www.gitbook.com/read/book/tommy60703/swift-language-traditional-chinese", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/tommy60703/swift-language-traditional-chinese.jpg?build=1416974934692&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/tommy60703/swift-language-traditional-chinese.jpg?build=1416974934692&v=6.3.4"
                 }
             ]
         }, 
@@ -34,7 +34,7 @@
                     "desc": "Manual of Seafile Server", 
                     "default": true, 
                     "url": "http://manual.seafile.com/", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/freeplant/seafile-server-manual.jpg?build=1421919619980&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/freeplant/seafile-server-manual.jpg?build=1421919619980&v=6.3.4"
                 }, 
                 {
                     "language": "zh", 
@@ -44,7 +44,7 @@
                     "desc": "Seafile 是一个开源的文件云存储平台。它提供更丰富的文件同步和管理功能，以及更好的数据隐私保护和群组协作功能。", 
                     "default": false, 
                     "url": "http://manual-cn.seafile.com/", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/freeplant/seafile-server-manual.jpg?build=1421919619980&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/freeplant/seafile-server-manual.jpg?build=1421919619980&v=6.3.4"
                 }
             ]
         }, 
@@ -58,7 +58,7 @@
                     "desc": "Learn how to build and deploy web applications with Go.", 
                     "default": true, 
                     "url": "http://codegangsta.gitbooks.io/building-web-apps-with-go/content/", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/codegangsta/building-web-apps-with-go.jpg?build=1417051877195&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/codegangsta/building-web-apps-with-go.jpg?build=1417051877195&v=6.3.4"
                 }
             ]
         }, 
@@ -72,7 +72,7 @@
                     "desc": "本书既适用于具备基础 Linux 知识的 Docker 初学者，也可供希望理解原理和实现的高级用户参考。同时，书中给出的实践案例，可供在进行实际部署时借鉴。", 
                     "default": true, 
                     "url": "http://yeasy.gitbooks.io/docker_practice/content/", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/yeasy/docker_practice.jpg?build=1421893844822&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/yeasy/docker_practice.jpg?build=1421893844822&v=6.3.4"
                 }, 
                 {
                     "language": "zh", 
@@ -82,7 +82,7 @@
                     "desc": "出處：Docker —— 从入门到实践 ", 
                     "default": false, 
                     "url": "https://www.gitbook.com/read/book/philipzheng/docker_practice", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/philipzheng/docker_practice.jpg?build=1418779400405&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/philipzheng/docker_practice.jpg?build=1418779400405&v=6.3.4"
                 }
             ]
         }, 
@@ -96,7 +96,7 @@
                     "desc": "A high-security, cross-platform, easy-to-use crypto library.", 
                     "default": true, 
                     "url": "http://doc.libsodium.org/", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/jedisct1/libsodium.jpg?build=1421921622089&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/jedisct1/libsodium.jpg?build=1421921622089&v=6.3.4"
                 }
             ]
         }, 
@@ -110,7 +110,7 @@
                     "desc": "This book is a Django tutorial created for DjangoGirls event.", 
                     "default": true, 
                     "url": "https://www.gitbook.com/read/book/djangogirls/djangogirls-tutorial", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/djangogirls/djangogirls-tutorial.jpg?build=1420795447441&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/djangogirls/djangogirls-tutorial.jpg?build=1420795447441&v=6.3.4"
                 }
             ]
         }, 
@@ -124,7 +124,7 @@
                     "desc": "This book is a Django tutorial created for DjangoGirls event.", 
                     "default": true, 
                     "url": "https://www.gitbook.com/read/book/tarukosu/mathbook", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/tarukosu/mathbook.jpg?build=1414796385436&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/tarukosu/mathbook.jpg?build=1414796385436&v=6.3.4"
                 }
             ]
         }, 
@@ -138,7 +138,7 @@
                     "desc": "Google Material Design 正體中文版", 
                     "default": true, 
                     "url": "http://wcc723.gitbooks.io/google_design_translate/content/", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/wcc723/google_design_translate.jpg?build=1420620075081&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/wcc723/google_design_translate.jpg?build=1420620075081&v=6.3.4"
                 }
             ]
         }, 
@@ -152,7 +152,7 @@
                     "desc": "手把手教你路由器刷OpenWrt固件，自动穿越万里长城", 
                     "default": true, 
                     "url": "https://www.gitbook.com/read/book/softwaredownload/openwrt-fanqiang", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/softwaredownload/openwrt-fanqiang.jpg?build=1417048955696&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/softwaredownload/openwrt-fanqiang.jpg?build=1417048955696&v=6.3.4"
                 }
             ]
         }, 
@@ -166,7 +166,7 @@
                     "desc": "Online book about how to write a computer operating system in C/C++ from scratch.", 
                     "default": true, 
                     "url": "http://samypesse.gitbooks.io/how-to-create-an-operating-system/content/", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/samypesse/how-to-create-an-operating-system.jpg?build=1418850966857&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/samypesse/how-to-create-an-operating-system.jpg?build=1418850966857&v=6.3.4"
                 }
             ]
         }, 
@@ -180,7 +180,7 @@
                     "desc": "全法條摘要、各章節要點整理、十四個經典爭議，讓你一手掌握自經區當前爭論所在！", 
                     "default": true, 
                     "url": "https://www.gitbook.com/read/book/billy3321/taiwanfepzs", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/billy3321/taiwanfepzs.jpg?build=1416957340837&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/billy3321/taiwanfepzs.jpg?build=1416957340837&v=6.3.4"
                 }
             ]
         }, 
@@ -194,7 +194,7 @@
                     "desc": "A short guide to using Apple's new programming language, Swift.", 
                     "default": true, 
                     "url": "https://www.gitbook.com/read/book/mhm5000/swift-cheat-sheet", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/mhm5000/swift-cheat-sheet.jpg?build=1416966376809&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/mhm5000/swift-cheat-sheet.jpg?build=1416966376809&v=6.3.4"
                 }
             ]
         }, 
@@ -208,7 +208,7 @@
                     "desc": "This book will teach you the basics of programming and Javascript. ", 
                     "default": true, 
                     "url": "http://gitbookio.gitbooks.io/javascript/", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/javascript.jpg?build=1418385941206&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/javascript.jpg?build=1418385941206&v=6.3.4"
                 }
             ]
         }, 
@@ -222,7 +222,7 @@
                     "desc": "This book contains the entire documentation for GitBook (platform and toolchain).", 
                     "default": true, 
                     "url": "http://help.gitbook.io/", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/documentation.jpg?build=1420932119816&v=6.3.4"
                 }
             ]
         }, 
@@ -236,7 +236,7 @@
                     "desc": "A GitBook version of the famous Pro Git book written by Scott Chacon.", 
                     "default": true, 
                     "url": "https://www.gitbook.com/read/book/gitbookio/progit", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/progit.jpg?build=1414793393766&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/progit.jpg?build=1414793393766&v=6.3.4"
                 }
             ]
         }, 
@@ -250,7 +250,7 @@
                     "desc": "Learn how to write great documents using Markdown.", 
                     "default": true, 
                     "url": "https://www.gitbook.com/read/book/gitbookio/markdown", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/markdown.jpg?build=1414791083337&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/gitbookio/markdown.jpg?build=1414791083337&v=6.3.4"
                 }
             ]
         }, 
@@ -264,7 +264,245 @@
                     "desc": "ElasticSearch 权威指南", 
                     "default": true, 
                     "url": "https://www.gitbook.com/read/book/fuxiaopang/learnelasticsearch", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/fuxiaopang/learnelasticsearch.jpg?build=1414839122394&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/fuxiaopang/learnelasticsearch.jpg?build=1414839122394&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "snipe", 
+                    "title": "Snipe-IT Installation Guide & User's Manual", 
+                    "desc": "Snipe-IT Installation Guide & User's Manual", 
+                    "default": true, 
+                    "url": "http://snipe.gitbooks.io/snipe-it-manual/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/snipe/snipe-it-manual.jpg?build=1417053830514&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "snipe", 
+                    "title": "Famous Mobile Apps", 
+                    "desc": "From the creator of Wehicle and Hackathon.io", 
+                    "default": true, 
+                    "url": "http://book.famousmobileapps.com/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/nicholasareed/playbook-to-build-apps-with-phonegap-famous.jpg?build=1421713445984&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "zh", 
+                    "country": "CN", 
+                    "author": "tobe", 
+                    "title": "理解Linux进程", 
+                    "desc": "理解Linux进程", 
+                    "default": true, 
+                    "url": "http://www.linuxprocess.com/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/tobegit3hub1/understanding-linux-processes.jpg?build=1422417487455&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "databricks", 
+                    "title": "Databricks Spark Reference Applications", 
+                    "desc": "Reference Applications demonstrating Apache Spark - brought to you by Databricks.", 
+                    "default": true, 
+                    "url": "http://databricks.gitbooks.io/databricks-spark-reference-applications/content/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/databricks/databricks-spark-reference-applications.jpg?build=1417048541908&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "zh", 
+                    "country": "TW", 
+                    "author": "rocodev , xdite and WayneChu", 
+                    "title": "Rails 102", 
+                    "desc": "Rails 102", 
+                    "default": true, 
+                    "url": "http://rocodev.gitbooks.io/rails-102/content/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/rocodev/rails-102.jpg?build=1416972033497&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "Samy Pessé", 
+                    "title": "Marc Andreessen Tweetstorms", 
+                    "desc": "Collection of essays from Marc Andreessen (entrepreneur, investor, and software engineer) published on Twitter.", 
+                    "default": true, 
+                    "url": "http://samypesse.gitbooks.io/pmarca-notes/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/samypesse/pmarca-notes.jpg?build=1414805919248&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "97 Things Every X Should Know", 
+                    "title": "97 Things Every Programmer Should Know", 
+                    "desc": "Pearls of wisdom for programmers collected from leading practitioners.", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/97-things-every-x-should-know/97-things-every-programmer-should-know", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/97-things-every-x-should-know/97-things-every-programmer-should-know.jpg?build=1422649438761&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "MakerSquare", 
+                    "title": "Applying to MakerSquare", 
+                    "desc": "Learn the basics of Ruby while applying to MakerSquare, a programming school in San Francisco, CA & Austin, TX.", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/makersquare/preparing-for-makersquare", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/makersquare/preparing-for-makersquare.jpg?build=1418071121677&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "Tom J Nowell", 
+                    "title": "WordPress The Right Way", 
+                    "desc": "WIP Book", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/tarendai/wordpress-the-right-way", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/tarendai/wordpress-the-right-way.jpg?build=1421420739802&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "snowdream", 
+                    "title": "github-cheat-sheet", 
+                    "desc": "A collection of cool hidden and not so hidden features of Git and GitHub. ", 
+                    "default": true, 
+                    "url": "http://snowdream86.gitbooks.io/github-cheat-sheet/content/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/snowdream86/github-cheat-sheet.jpg?build=1416974605786&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "zh", 
+                    "country": "CN", 
+                    "author": "lv", 
+                    "title": "Git-Tutorial", 
+                    "desc": "A Git Tutorial By liaoxuefeng ", 
+                    "default": true, 
+                    "url": "http://lvwzhen.gitbooks.io/git-tutorial/content/", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/lvwzhen/git-tutorial.jpg?build=1416965152102&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "Dale Sande", 
+                    "title": "Git for Everyone", 
+                    "desc": "he Git Workshop Guide ", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/anotheruiguy/gitforeveryone", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/anotheruiguy/gitforeveryone.jpg?build=1414787507253&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "zh", 
+                    "country": "CN", 
+                    "author": "饶琛琳", 
+                    "title": "Kibana 中文指南", 
+                    "desc": "翻译官网指南 kibana 部分，并补充了自己的 panels 说明，代码解析等", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/chenryn/kibana-guide-cn", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/chenryn/kibana-guide-cn.jpg?build=1422346273259&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "maxolson", 
+                    "title": "Blue Chip Stamps", 
+                    "desc": "The annual letters for Blue Chip Stamps from 1978 to 1982, written by Charlie Munger.", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/maxolson/blue-chip-stamps", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/maxolson/blue-chip-stamps.jpg?build=1417287295299&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "en", 
+                    "country": "US", 
+                    "author": "h2o", 
+                    "title": "H2O World Training", 
+                    "desc": "Full day of immersive training with H2O.", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/h2o/h2o-training-day", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/h2o/h2o-training-day.jpg?build=1421967851702&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "zh", 
+                    "country": "CN", 
+                    "author": "Zach", 
+                    "title": "AngularJS学习笔记", 
+                    "desc": "AngularJS学习笔记", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/checkcheckzz/angularjs-learning-notes", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/checkcheckzz/angularjs-learning-notes.jpg?build=1418901431589&v=6.3.4"
+                }
+            ]
+        }, 
+        {
+            "book": [
+                {
+                    "language": "zh", 
+                    "country": "CN", 
+                    "author": "Zach", 
+                    "title": "Appium 中文教程", 
+                    "desc": "Appium 中文教程", 
+                    "default": true, 
+                    "url": "https://www.gitbook.com/read/book/lihuazhang/appium-chinese-tutorial", 
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/lihuazhang/appium-chinese-tutorial.jpg?build=1414796810918&v=6.3.4"
                 }
             ]
         }, 
@@ -278,7 +516,7 @@
                     "desc": "勞權律師蔡瑞麟【2014台北市勞動局長參選】政見簡述", 
                     "default": true, 
                     "url": "https://www.gitbook.com/read/book/arny/arnypolicy2014", 
-                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/arny/arnypolicy2014.jpg?build=1418319355584&v=6.3.3"
+                    "img": "https://sm3lir.cloudimage.io/s/width/210/https://www.gitbook.com/cover/book/arny/arnypolicy2014.jpg?build=1418319355584&v=6.3.4"
                 }
             ]
         }
