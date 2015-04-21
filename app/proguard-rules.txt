@@ -22,3 +22,11 @@
 -keep public class com.google.ads.**{
     public *;
 }
+
+-keep class com.nostra13.universalimageloader.** { *; }
+-keep class org.parceler.** { *; }
+-keep class com.loopj.android.** { *; }
+
+-dontwarn com.nostra13.universalimageloader.**
+-dontwarn org.parceler.**
+-dontwarn com.loopj.android.**
