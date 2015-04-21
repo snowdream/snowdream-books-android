@@ -1,4 +1,3 @@
-
 apply plugin: 'android'
 
 dependencies {
@@ -14,6 +13,7 @@ android {
         minSdkVersion Integer.parseInt(project.MIN_SDK_VERSION)
         targetSdkVersion Integer.parseInt(project.TARGET_SDK_VERSION)
         applicationId project.PACKAGE_NAME
+
         testApplicationId project.PACKAGE_NAME+".test"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
         testHandleProfiling true
@@ -31,9 +31,10 @@ android {
 
     buildTypes {
         release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-app-optimize.txt'), 'proguard-rules.txt'
             signingConfig signingConfigs.release
-            minifyEnabled false
-            proguardFile 'proguard-rules.txt'
         }
     }
 
