@@ -11,7 +11,7 @@
                                        android:layout_height="wrap_content"
                                        ads:adSize="SMART_BANNER"
                                        android:layout_alignParentBottom="true"
-                                       ads:adUnitId="ca-app-pub-4784160492252285/3437558858"/>
+                                       ads:adUnitId="ca-app-pub-4784160492252285/8592850050"/>
     <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
